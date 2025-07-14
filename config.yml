@@ -1,0 +1,206 @@
+baseURL: "https://inclusionai.github.io/"
+title: INCLUSION AI
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+ignoreErrors: ["error-remote-getjson"]
+
+# googleAnalytics: UA-123-45
+googleAnalytics: G-NMEMBZ8R90
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+  zh:
+    languageName: 简体中文
+    weight: 2
+    params:
+      date_format: "2006年1月2日"
+    disableKinds:
+      - home
+
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: inclusionAI
+  description: "inclusionAI"
+  keywords: ["AI", "deep learning", "Ant Group"]
+  author: inclusionAI, Ant Group
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+
+  # custom site variables
+  date_format: "January 2, 2006"
+  default_theme: light # dark, light
+  disable_theme_toggle: true
+  disable_special_first_post: false
+  disable_scroll_to_top: false
+  disable_language_switch: true
+  displayFullLangName: true
+
+  # custom site and page variables
+  show_share_buttons: true
+  show_bread_crumbs: true
+  hide_meta: false
+  math: false
+  
+  # single page only
+  show_code_copy_buttons: true
+  show_word_count: true
+  use_hugo_toc: true
+  show_toc: false
+  toc_open: false
+  comments: false
+  show_reading_time: true
+  show_post_nav_links: false
+  
+  # list page only
+  hide_summary: false
+  show_rss_button_in_section_term_list: false
+
+  assets:
+    disable_hljs: true # to disable highlight.js
+    disable_fingerprinting: false
+    disable_scroll_bar_style: false
+
+    favicon: "/favicon.png"
+    apple_touch_icon:  "/favicon.png"
+    webmanifest: "/site.webmanifest"
+    theme_color: "#615CED"
+
+  label:
+    text: "inclusionAI"
+    icon: /img/logo_head.png
+    iconHeight: 50
+
+  # profile-mode
+  # profileMode:
+  #   enabled: false # needs to be explicitly set
+  #   title: ExampleSite
+  #   subtitle: "This is subtitle"
+  #   imageUrl: "<img location>"
+  #   imageWidth: 120
+  #   imageHeight: 120
+  #   imageTitle: my image
+  #   buttons:
+  #     - name: Posts
+  #       url: posts
+  #     - name: Tags
+  #       url: tags
+
+  # home-info mode
+  # home_info_params:
+  #   title: "OFA: Towards Unified AI Models"
+  #   header:
+  #     # background: "linear-gradient(36deg, var(--hero1) 0%, var(--hero2) 80%);"
+  #     background_images: "/image/outpainting-home-right-optimized.jpg"
+  #     gradient: false
+  #   # content: Welcome to my blog
+
+  # social_icons:
+  #   # - name: twitter
+  #   #   url: "https://twitter.com/"
+  #   # - name: stackoverflow
+  #   #   url: "https://stackoverflow.com"
+  #   - name: github
+  #     url: "https://github.com/OFA-Sys"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    link_full_images: true
+    responsive_images: true
+    hidden: false # hide everywhere but not in structured data
+    hidden_in_list: false # hide on list pages and home
+    hidden_in_single: false # hide on single page
+
+  # edit_post:
+  #   url: "https://github.com/<path_to_repo>/content"
+  #   text: "Suggest Changes" # edit text
+  #   append_file_path: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    findAllMatches: false
+    minMatchCharLength: 2
+    keys: ["title", "summary"]
+
+    threshold: 0.1
+    ignoreLocation: false
+    location: 0
+    distance: 1000
+    
+menu:
+  main:
+    # - identifier: api
+    #   name: Resources
+    #   url: /resources
+    #   weight: 10
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 20
+    - identifier: publication
+      name: Publication
+      url: /publication
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about
+      weight: 40
+    - identifer: production
+      name: Try Ling & Ming
+      url: https://github.com/inclusionAI
+      weight: 50
+    # - identifier: search
+    #   name: SEARCH
+    #   url: /search
+    #   weight: 50
+    # - identifier: categories
+    #   name: CATEGORIES
+    #   url: /categories/
+    #   weight: 10
+    # - identifier: tags
+    #   name: TAGS
+    #   url: /tags/
+    #   weight: 20
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      footnote: true
+  highlight:
+    style: vs
+    noClasses: false
+    # anchorLineNos: true
+    codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+outputs:
+    home:
+        - HTML
+        - JSON # is necessarylog
