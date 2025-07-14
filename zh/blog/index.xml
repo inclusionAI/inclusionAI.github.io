@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on INCLUSION AI</title>
+    <link>https://inclusionai.github.io/zh/blog/</link>
+    <description>Recent content in Blog on INCLUSION AI</description>
+    <image>
+      <url>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 11 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M2-Reasoning: 赋予多模态大语言模型统一的通用与空间推理能力</title>
+      <link>https://inclusionai.github.io/zh/blog/m2-reasoning/</link>
+      <pubDate>Fri, 11 Jul 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/m2-reasoning/</guid>
+      <description>📖 Technical Report | 🤗 Hugging Face｜ 🤖 ModelScope
+介绍 我们推出了 M2-Reasoning-7B，一个在通用与空间推理方面都表现卓越的模型。我们的方法融合了两项关键创新：(1) 一个全新的数据管道，生成了29.42万个高质量数据样本（其中16.8万用于冷启动微调，12.62万用于RLVR）。这些数据具有逻辑连贯的推理轨迹，并经过了全面评估。(2) 一种动态多任务训练策略，通过逐步优化来缓解数据间的冲突，并利用针对特定任务的奖励机制来提供定制化的激励信号。通过这种精心筛选的数据与先进训练方法的结合，M2-Reasoning-7B 在8个基准测试中创造了新的业界最佳水平（SOTA），在通用和空间推理领域均展现出卓越的性能。 📌 更新 [2025.07.14] 🔥 我们的技术报告已公开发布于 arxiv。 [2025.07.11] 🔥 M2-Reasoning模型开源: 🤗 Hugging Face、🤖 ModelScope。 主要特性 高质量的数据构建流程：我们设计并实现了一个多阶段的数据合成与筛选流程，能够生成大量的推理数据。 动态多任务训练策略：我们提出了一种高效的训练策略，能够有效应对数据异构性问题。该策略包括逐步动态优化，以缓解不同数据源之间的冲突，以及任务特定的奖励机制，提供定制化的激励信号。 统一的通用与空间推理模型：我们提出了 M2-Reasoning-7B，这是一款专为通用推理与空间推理任务而设计的多模态大语言模型（MLLM）。在8个不同的基准测试中进行的广泛评估表明，借助我们定制的数据和训练流程，M2-Reasoning在通用推理和空间推理领域均取得了新的SOTA成果。 评测 我们在通用推理和空间推理对模型进行了全面评估。我们的评估使用了一组多样化的公开基准测试，这些测试根据它们主要衡量的能力进行分类：
+通用推理（数学与逻辑）：为了评估这一能力，我们采用了六项基准测试：MathVista、MathVision、MathVerse、DynaMath、WeMath 和 LogicVista。 Models MathVista MathVision MathVerse DynaMath WeMath LogicVista Avg. (Δ) 基础规模通用模型 InternVL3-8B 70.5 30.0 38.5 25.7 39.5 44.5 41.4 InternVL3-9B 69.0 29.3 37.9 25.1 34.8 49.0 40.8 Qwen2.5-VL-7B 68.1 25.4 41.1 21.8 36.2 47.</description>
+    </item>
+    
+    <item>
+      <title>AWorld：为智能体自我演进提供运行环境</title>
+      <link>https://inclusionai.github.io/zh/blog/aworld/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/aworld/</guid>
+      <description>&amp;ldquo;自我认知：最难的问题不是在有局限的情况下解决问题，而是发现自己的局限性&amp;rdquo; 目录 最新动态 — 项目最新更新与公告。 简介 — 项目概述与目标。 安装 — 步骤详尽的安装指南。 快速开始 — 使用示例，快速上手。 架构 — 多智能体系统设计解析。 演示 — 项目实际运行演示。 贡献 — 如何参与和贡献代码。 许可证 — 项目授权信息。 最新动态 🦤 [2025/07/07] AWorld 作为运行时现已准备好进行智能体训练。详情请参见自我改进部分。我们在 GAIA 测试中的得分已更新至 77.08。在演示部分了解如何构建 GAIA 运行时。 🦩 [2025/06/19] GAIA 测试分数提升至 72.43，新增本地运行模式，详见 ./README-local.md。 🐳 [2025/05/22] GAIA 评测、MCP 工具、AWorld 及模型现已集成于单一 Docker 镜像，详见 ./README-docker.md，演示视频。 🥳 [2025/05/13] 浏览器场景状态管理升级，视频处理 MCP server 增强，GAIA 验证分数 77.58（Pass@1 = 61.8），继续保持开源框架第一。详见 GAIA 排行榜。 ✨ [2025/04/23] GAIA 基准测试排名第三（69.7 分），Pass@1 = 58.8，开源框架第一。可用 python examples/gaia/run.</description>
+    </item>
+    
+    <item>
+      <title>Ming-Omni：一个用于感知与生成的统一多模态模型</title>
+      <link>https://inclusionai.github.io/zh/blog/ming-omni/</link>
+      <pubDate>Wed, 11 Jun 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/ming-omni/</guid>
+      <description>GITHUB 📑 Technical Report｜📖Project Page ｜🤗 Hugging Face｜ 🤖 ModelScope
+介绍 Ming-lite-omni 是 Ming-omni 的轻量版，源自 Ling-lite，拥有 28 亿激活参数。Ming-lite-omni 是一个统一的多模态模型，能够处理图像、文本、音频和视频，并在语音和图像生成方面表现出较强能力。Ming-lite-omni 使用专用编码器从不同模态提取 token，然后由 Ling 处理，Ling 是一个 MoE 架构，配备了新提出的模态专用路由器。该设计使单一模型能在统一框架内高效处理和融合多模态输入，从而支持多样化任务，无需使用多个模型、任务专用微调或结构改动。重要的是，Ming-lite-omni 超越传统多模态模型，支持音频和图像生成。通过集成先进的音频解码器实现自然语音，以及利用 Ming-Lite-Uni 实现高质量图像生成，模型还能进行上下文感知聊天、文本转语音及多功能图像编辑。我们的实验结果表明，Ming-lite-omni 在所有模态上的统一感知与生成方面提供了强大解决方案。值得注意的是，Ming-lite-omni 是我们所知首个模态支持与 GPT-4o 匹配的开源模型，且我们发布了全部代码和模型权重，以促进社区进一步研究和发展。
+📌 更新 [2025.06.12] 🔥 我们的技术报告已公开发布于 arxiv。 [2025.05.28] 🔥 Ming-lite-omni 官方版本发布，性能更佳并支持图像生成。 [2025.05.04] 🔥 发布 Ming-lite-omni 测试版本：Ming-lite-omni-Preview。 主要特性 统一全模态感知：Ming-lite-omni 基于 Ling（一个 MoE 架构的大语言模型），通过模态专用路由器解决任务冲突，确保来自不同模态的 token 的连贯融合。
+统一感知与生成：Ming-lite-omni 实现统一的理解与生成，使模型在生成过程中能解读多模态指令和用户意图，从而提升生成质量并增强多任务使用便利性。
+创新的生成能力：Ming-lite-omni 能感知所有模态，同时生成高质量文本、实时语音和生动图像，展现出卓越的跨模态表现，涵盖图像感知、视听交互和图像生成等多样任务。
+评测 Ming-lite-omni 在图像感知、视听交互及图像生成任务中均展现出优异的跨模态性能。具体来说，在图像感知任务中，Ming-lite-omni 仅激活 28 亿参数，性能已可与 Qwen2.5-VL-7B 相媲美。它在端到端语音理解和指令执行上表现优于 Qwen2.5-Omni 和 Kimi-Audio。同时支持原生分辨率的图像生成、编辑及风格迁移，GenEval 得分达 0.</description>
+    </item>
+    
+    <item>
+      <title>Ming-Lite-Uni：自然多模态交互统一架构的进展</title>
+      <link>https://inclusionai.github.io/zh/blog/ming-lite-uni/</link>
+      <pubDate>Wed, 07 May 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/ming-lite-uni/</guid>
+      <description>GITHUB 📑 Technical Report｜🤗 Hugging Face｜🤖 ModelScope 简介 Ming-Lite-Uni 是一个开源的多模态框架，包含一个全新设计的统一视觉生成器，以及一个原生多模态自回归模型，用于整合视觉与语言能力。
+本项目提供了集成 MetaQueries 与 M2-omni 框架的开源实现，并引入了创新性的多尺度可学习Token机制与多尺度表示对齐策略。Ming-Lite-Uni 利用固定的MLLM与可训练的扩散模型，使原生多模态AR模型不仅支持文本生成图像（text-to-image），还支持基于指令的图像编辑，从而扩展其功能，不再局限于视觉理解。实验结果表明，Ming-Lite-Uni 具备强大的性能表现，并在交互体验上展现出高度流畅性。目前该项目处于alpha阶段，将持续优化中。
+感谢大家的支持与关注！我们正在稳步推进项目，并取得了良好进展，更多更新即将到来，敬请期待！
+📌 更新日志 [2025.05.03] 🔥 我们的 技术报告 已在 arXiv 发布 [2025.05.03] 🔥 Ming-Lite-Uni 首个版本正式开源 为什么重要？ Ming-Lite-Uni 的统一架构克服了传统方法的根本性局限：
+传统方法 Ming-Lite-Uni 的优势 模块化流程
+（如 CLIP/SigLIP + 扩散模型） 端到端统一模型
+理解与生成无缝融合 离散Token自回归
+（视觉定位能力有限） 连续Token空间
+原生支持细粒度视觉概念 固定分辨率处理
+（上采样会产生伪影） 多尺度自适应
+各分辨率下均保持一致的画质 编辑流程分离
+（需要手动对齐） 对话驱动控制
+自然语言指导像素级编辑 理解瓶颈
+（视觉语义错位） 联合表示学习
+理解与生成能力相互增强 核心增强点 统一的视觉理解与生成架构：Ming-Lite-Uni 在 OpenCompass 榜单中理解得分达 69.7，优于 DeepSeek-VL2 (66.4)；同时在 GenEval 图像生成基准上取得 0.</description>
+    </item>
+    
+    <item>
+      <title>Ming-Lite-Omni-Preview: MOE架构的多模态大模型</title>
+      <link>https://inclusionai.github.io/zh/blog/ming-lite-omni-preview/</link>
+      <pubDate>Mon, 05 May 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/ming-lite-omni-preview/</guid>
+      <description>GITHUB 🤗 Hugging Face | 🤖 ModelScope
+简介 Ming-Lite-Omni-Preview 构建自 Ling-Lite，它是一个 MoE（专家混合）模型，能够感知文本、图像、音频和视频等多种模态，并以流式方式生成文本和自然语音。 为了更自然地处理多模态输入，我们对 Ling-Lite 进行了增强，为每种模态引入了专用路由模块。 因此，Ming-Omni 在处理多模态信息方面表现优异，并具有很强的可扩展性。
+主要特性 Omni and Novel MoE Architecture: 一种基于专家混合（MoE）的创新型 Omni 架构，在多个多模态评测中取得了领先性能。
+Video understanding: 支持视觉 Token 的 KV-Cache 动态压缩机制，既能理解数小时的长视频，也能对几秒钟的短视频进行精细分析。
+Natural Speech Generation and Fine-grained Voice Dialogue: 支持端到端对话中的方言理解与生成，具备一次性语音克隆能力，并通过音频分词器压缩提升语调表现力。
+评测结果 Image benchmark Benchmarks Ming-Lite-Omni-Preview Qwen2.5-VL-7B-Instruct InternVL2.5-8B-MPO AI2D 83.84 83.9 84.5 HallusionBench 54.68 51.9 51.7 MMBench_TEST_V11 79.63 84.3 82.0 MMMU 57.0 58.6 54.8 MMStar 62.0 63.9 65.2 MMVet 73.6 67.</description>
+    </item>
+    
+  </channel>
+</rss>
