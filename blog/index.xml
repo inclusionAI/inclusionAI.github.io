@@ -9,16 +9,7 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ming-Lite-Omni V1.5</title>
-      <link>https://inclusionai.github.io/blog/ming-lite-omni-1_5/</link>
-      <pubDate>Tue, 15 Jul 2025 00:00:03 +0800</pubDate>
-      
-      <guid>https://inclusionai.github.io/blog/ming-lite-omni-1_5/</guid>
-      <description>GITHUB 🚀 Exciting News We&amp;rsquo;ve just rolled out Ming-Lite-Omni V1.5, a major upgrade from the original version. This release keeps its core strengths while expanding into more multimodal tasks with optimized performance across the board. Experience enhancements like advanced document comprehension, MRoPE-based spatiotemporal position encoding, generative image segmentation, and improved image generation with ID retention. All these amazing features stem from one unified multimodal model, showcasing the power of modality unification.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 11 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>M2-Reasoning: Empowering MLLMs with Unified General and Spatial Reasoning</title>
       <link>https://inclusionai.github.io/blog/m2-reasoning/</link>

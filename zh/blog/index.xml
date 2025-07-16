@@ -9,20 +9,7 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ming-Lite-Omni V1.5 介绍</title>
-      <link>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5/</link>
-      <pubDate>Tue, 15 Jul 2025 00:00:03 +0800</pubDate>
-      
-      <guid>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5/</guid>
-      <description>GITHUB 前言 本次发布的 Ming-Lite-Omni V1.5 是对初版 Ming-Lite-Omni 的一次全面升级。在保留既有优势的前提下，我们扩展了更多的多模态任务，并对所有任务的性能表现做了大幅度的优化，实现了诸如更强的复杂文档理解、基于 MRoPE 的时空感知位置编码、生成式图像分割、更棒的图像生成效果和ID保持能力等。所有这一切都来自 一个 多模态大模型，凸显了多模态统一的魅力。下面我们对各部分的能力做详细介绍，感谢大家的关注，欢迎广泛尝试并沟通交流！
-复杂文档理解 我们在多种文字识别、图表分析和文档理解基准上对Ming-Omni-Lite模型进行了系统评估。如下表所示：
-&lt;!DOCTYPE html&gt; 任务类型 评测基准 Qwen2.5-VL-7B InternVL3-8B Ming-Omni-Lite OCR理解 ChartQA_test 87.24 86.60 88.84 DocVQA_test 95.57 92.70 93.68 TextVQA_val 85.06 80.20 82.27 OCRBench 87.8 88.00 88.90 average 88.91 86.87 88.42 OCR解析 OmniDocBench↓ en/zh 30.8/39.8 -- 34.9/34.9 OCR综合能力 OCRBenchV2 en/zh 56.3/57.2 -- 52.1/55.2 在OCR理解任务上，Ming-Omni-Lite平均得分88.42，其综合表现与当前领先的70亿参数多模态语言模型Qwen2.5VL-7B-Instruct（88.91）处于同一水平。特别是在具有挑战性的OCRBench基准（聚焦文本视觉理解任务）以及需深度图表视觉分析与逻辑推理的ChartQA任务中，Ming-Omni-Lite分别取得突破性进展，相较Qwen2.5-VL-7B等主流竞品模型实现显著性能跃升。这一优势源于其创新的训练策略——通过引入&amp;quot;思维链&amp;quot;（Chain-of-Thought）范式，使模型能够分步骤构建结构化推理路径，从而有效提升复杂问题的解决能力。 在面向多场景应用且覆盖手写体、表格、图表及数学公式等复杂版式文档的多模态OCR解析基准OmniDocBench中，Ming-Omni-Lite通过多源异构训练数据集的构建，在中英文双语环境下均展现出卓越的性能表现（英文34.9/中文34.9）。
-图文及体验 图文 新版本Ming-lite-omni 1.5融合了3D位置编码，大幅提升对图像结构与动态信息的感知能力，配合更优的训练方法及全面升级的高质量数据，v1.5在通用图片理解、图像目标识别、垂类场景识别等多个关键任务上实现显著性能跃升，为广泛视觉应用提供更强大的基础能力。下面是本次版本迭代的改进清单及评测结果：
-MRoPE 时空感知位置编码：引入了MRoPE，通过时间、高度、宽度三维分块位置编码，赋予模型时空感知能力，实现高效跨模态联合建模，提升对视频、复杂图像场景的理解精度。 高效全参数训练策略：优化学习率与多模态数据配比，将理解阶段需分步冻结/解冻 LLM 的预训练流程，升级为高效全参数训练，缩短周期/降低消耗，保持性能无损。 全方位数据升级： ○ 预训练阶段： 扩展知识广度与数据质量：新增文本实体结构化数据补全图谱盲区，生成任务引入原始描述约束抑制幻觉，扩充高质量垂类语料深化领域理解。 ○ 指令微调阶段： 强化核心任务与高阶理解：提升细粒度视觉感知（目标计数/颜色/场景识别）精度，深化垂类识别（动植物/车辆/食材等）深度，优化跨学科复杂图文推理能力。 任务类型 评测基准 Qwen2.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 11 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>M2-Reasoning: 赋予多模态大语言模型统一的通用与空间推理能力</title>
       <link>https://inclusionai.github.io/zh/blog/m2-reasoning/</link>
