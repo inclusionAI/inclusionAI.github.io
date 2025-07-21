@@ -1,9 +1,9 @@
 ---
 title: "Ming-Lite-Omni V1.5 介绍"
-date: 2025-07-18T00:00:03+08:00
+date: 2025-07-21T00:00:03+08:00
 weight: 1
 math: true
-draft: true
+# draft: true
 show_reading_time: true
 show_bread_crumbs: true
 show_post_nav_links: false # the prev/next after the content
@@ -20,7 +20,7 @@ show_word_count: true
 
 
 <div style="text-align:center;margin: auto; width: 70%;">
-  <img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/2rsRTbFpQrcAAAAAZoAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
+  <img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/dv7TTL8MW5EAAAAAWtAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
   <p style="font-size:14px; color:gray;">性能对比图</p>
 </div>
 
@@ -186,6 +186,161 @@ show_word_count: true
 
 
 
+### 视频理解
+<table style="
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    font-size: 14.4px;
+">
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Users</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        "><video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/tMqiS4N2yPAAAAAAgEAAAAgAeuUHAQFr" height="256px" controls></video><br>视频里的小女孩在做什么？</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Ming-Lite-Omni</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        ">视频中的场景发生在一家商店里，可能是超市或大型零售店，货架上摆满了各种商品，包括零食和家庭用品。视频里的小女孩正在拉动一个展示架，看起来她在尝试移动或者玩耍这个展示架。价格标签清晰可见，其中一个显著地标记着蓝色和白色的'18,690'字样。店内照明良好，荧光灯照亮了整个区域。如需更详细的分析或其他帮助，请告诉我！</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Ming-Lite-Omni V1.5</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        ">小女孩坐在购物车里睡觉。</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Users</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        "><video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/NGX_T5E13IAAAAAAgIAAAAgAfoeUAQBr" height="192px" controls></video><br>描述下视频中主人公的穿着。</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Ming-Lite-Omni</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        ">视频中，主人公穿着红色上衣，肩上背着一个彩色图案的包。</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Ming-Lite-Omni V1.5</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        ">视频中的主人公穿着一件红色的高领毛衣。</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Users</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        "><video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/KD6LTqp9VTsAAAAAgMAAAAgAfoeUAQBr" height="192px" controls></video><br>推测一下这个视频的拍摄时间和位置。</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Ming-Lite-Omni</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        ">从视频中的画面来看，这应该是在纽约的中央公园拍摄的。画面中可以看到中央公园的标志性建筑和景观，比如中央公园的湖泊、桥梁和雕像。此外，视频中还有游客在公园内散步、拍照和享受户外活动，这进一步确认了拍摄地点为纽约的中央公园。</td>
+    </tr>
+    <tr>
+        <td style="
+            padding: 10px;
+            text-align: right;
+            vertical-align: top;
+            color: #777;
+            border: none;
+            white-space: nowrap;
+        ">Ming-Lite-Omni V1.5</td>
+        <td style="
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            border: none;
+        ">从视频中的场景来看，拍摄地点位于纽约中央公园。视频展示了公园内的多个景点，包括湖泊、桥梁、雕像和喷泉等。拍摄时间似乎是在白天，阳光明媚，天气晴朗，适合户外活动。</td>
+    </tr>
+</table>
+
+<br>
 
 ## 开始使用 Ming-lite-omni v1.5
 
