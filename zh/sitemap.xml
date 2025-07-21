@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5/</loc>
+    <lastmod>2025-07-21T00:00:03+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://inclusionai.github.io/blog/ming-lite-omni-1_5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5/"
+                />
+  </url><url>
     <loc>https://inclusionai.github.io/zh/blog/m2-reasoning/</loc>
     <lastmod>2025-07-11T00:00:03+08:00</lastmod>
     <xhtml:link
@@ -68,7 +81,7 @@
                 />
   </url><url>
     <loc>https://inclusionai.github.io/zh/blog/</loc>
-    <lastmod>2025-07-11T00:00:03+08:00</lastmod>
+    <lastmod>2025-07-21T00:00:03+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

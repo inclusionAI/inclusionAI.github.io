@@ -1,0 +1,35 @@
+{
+    "title": "Generative Image Segmentation",
+    "messages": [
+        {
+            "role": "User",
+            "content": "{{< figure src=\"https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752115158022-12254e69-e8c0-43fb-a725-f6730cda22d8.webp\" height=\"256px\" >}}\n  Given the following instructions: little girl, pink, your monitors colors off friend p pink shirt girl; please perform referring segmentation on this image."
+
+        },
+        {
+            "role": "Ming-Lite-Omni V1.5",
+            "content": "{{< figure src=\"https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752115142775-3975827c-4110-445b-af53-e20201d1043a.webp\" height=\"256px\" >}}"
+
+        },
+        {
+            "role": "User",
+            "content": "Please segment different classes in this image."
+
+        },
+        {
+            "role": "Ming-Lite-Omni V1.5",
+            "content": "{{< figure src=\"https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752116495974-7708ba3a-5909-46df-82f5-a1bfa1519d4d.webp\" height=\"256px\" >}}"
+
+        },
+                {
+            "role": "User",
+            "content": "Please segment different instances in this image."
+
+        },
+        {
+            "role": "Ming-Lite-Omni V1.5",
+            "content": "{{< figure src=\"https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752115151406-c4780a97-5f1c-46cd-9a45-d4ef600d0897.webp\" height=\"256px\" >}}"
+
+        }
+    ]
+}
