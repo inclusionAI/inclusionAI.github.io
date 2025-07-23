@@ -123,7 +123,7 @@ Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consi
 
 ### 音视频交互理解
 
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" controls></video>
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" width="540px" height="960px" controls></video>
 
 
 
@@ -138,9 +138,8 @@ Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consi
 
 ## 开始使用 Ming-lite-omni v1.5
 
-<!-- Ming-lite-omni v1.5的模型和代码已开源，欢迎大家试用、反馈和交流。后续我们会持续优化Ming-lite-omni，持续提升在全模态的效果同时，让Ming-lite-omni更加轻量化，同时强化Ming-lite-omni的多模推理能力和生成能力。 -->
-
 Ming-lite-omni v1.5的模型和代码已开源，诚邀大家试用、反馈和交流。值得期待的是，我们即将发布量化加速版本的Ming-lite-omni，该版本将不仅进一步优化全模态效果，还使Ming-lite-omni更加轻量化，同时强化多模推理和生成能力。欢迎持续关注！
-  - Github: https://github.com/inclusionAI/Ming
-  - Hugging Face: https://huggingface.co/inclusionAI/Ming-Lite-Omni-1.5 
-  - ModelScope: https://www.modelscope.cn/models/inclusionAI/Ming-Lite-Omni-1.5
+
+- Github: https://github.com/inclusionAI/Ming
+- Hugging Face: https://huggingface.co/inclusionAI/Ming-Lite-Omni-1.5 
+- ModelScope: https://www.modelscope.cn/models/inclusionAI/Ming-Lite-Omni-1.5
