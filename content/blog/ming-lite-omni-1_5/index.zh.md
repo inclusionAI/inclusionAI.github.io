@@ -1,5 +1,5 @@
 ---
-title: "Ming-Lite-Omni V1.5：全能模型再升级，性能与体验双重突破！"
+title: "Ming-lite-omni v1.5：全能模型再升级，效果与体验双优化"
 date: 2025-07-21T00:00:03+08:00
 weight: 1
 math: true
@@ -63,7 +63,7 @@ Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consi
 
 
 # 模型架构升级与能力评测
-Ming-lite-omni v1.5 模型架构如下，和Ming-lite-omni v1版本的结构大体相同，区别在于为了增强图像编辑人物 和 场景一致性，升级Vision head 支持参考图特征输入。 
+Ming-lite-omni v1.5 模型架构如下，主题参考了Ming-lite-omni v1版本的结构，区别在于为了增强图像编辑人物 和 场景一致性，升级Vision head 支持参考图特征输入。 
 
 
 <div style="text-align:center">
