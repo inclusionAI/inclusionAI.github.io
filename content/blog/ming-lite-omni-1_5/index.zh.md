@@ -123,7 +123,7 @@ Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consi
 
 ### 音视频交互理解
 
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" height="192px" controls></video>
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" controls></video>
 
 
 
