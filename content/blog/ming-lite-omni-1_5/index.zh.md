@@ -15,14 +15,16 @@ show_word_count: true
 
 
 
-## 前言
-本次发布的 Ming-lite-omni V1.5 是对 Ming-lite-omni (🤗<a href="https://huggingface.co/inclusionAI/Ming-Lite-Omni">Hugging Face</a>) 全模态能力的一次全面升级, 在包括图文理解、文档理解、视频理解、语音理解和合成、图像生成和编辑等任务上均有明显提升。Ming-lite-omni V1.5 基于Ling-lite-1.5 构建，总参数20.3B, MoE部分激活参数为3B，在各模态基准测试中取得较好的成绩。下面是我们本次更新在部分重要指标和模型架构上的提升的展示。
-
+# 概述
+本次发布的 Ming-lite-omni V1.5 是对 Ming-lite-omni(<a href="https://github.com/inclusionAI/Ming/tree/v1.0">Github</a>)  全模态能力的一次全面升级， 在包括图文理解、文档理解、视频理解、语音理解和合成、图像生成和编辑等任务上均有明显提升。Ming-lite-omni V1.5 基于Ling-lite-1.5 构建，总参数20.3B, MoE部分激活参数为3B。与各领域同等规模的业界领先模型相比，在各模态基准测试中展现出极具竞争力的结果：
 
 <div style="text-align:center;margin: auto; width: 70%;">
-  <img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/dv7TTL8MW5EAAAAAWtAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
+  <img src="https://mdn.alipayobjects.com/huamei_drbxn1/afts/img/vh2qSIuScFMAAAAAYuAAAAgADkliAQFr/original" alt="Image description" />
   <p style="font-size:14px; color:gray;">性能对比图</p>
 </div>
+
+# 关键能力升级
+Ming-lite-omni v1.5 模型架构如下，和Ming-lite-omni v1版本的结构大体相同，区别在于为了增强图像编辑人物 和 场景一致性，升级Vision head 支持参考图特征输入。 
 
 
 <div style="text-align:center">
@@ -31,106 +33,78 @@ show_word_count: true
 </div>
 
 
+模型能力上重点在全模态理解能力、精准的视觉编辑控制 以及 用户体验 三个方面进行优化升级。
+
+## 增强的全模态理解能力
+得益于数据质量优化，Ming-lite-omni v1.5 在视觉文本理解(包括图文理解、文档理解、视频理解)和语音理解等任务上均有明显提升，达到相同规模的业界领先水平。
+
+**视觉文本理解**
+
+| Task Type | Dataset | Qwen2.5-VL-7B | Ming-lite-omni | Ming-lite-omni v1.5 |
+|---|---|---|---|---|
+| OpenCompass图文 | AI2D | 84.36 | 83.1 | **84.91** |
+| | HallusionBench | **55.77** | 55.0 | 54.59 |
+| | MMBench_TEST_V11 | **82.75** | 80.8 | 80.73 |
+| | MMMU | **56.56** | 56.3 | 54.33 |
+| | MMStar | **65.27** | 64.7 | 65.07 |
+| | MMVet | 71.61 | 71.3 | **73.99** |
+| | MathVista | 68.10 | 71.6 | **72.00** |
+| | OCRBench | 87.80 | 88.4 | **88.90** |
+| | **Average** | 71.5 | 71.4 | **71.8** |
+| 视频理解 | VideoMME(w/o subs) | 65.10 | 63.4 | **67.07** |
+| | VideoMME(w/ subs) | 71.60 | 66.01 | **72.59** |
+| | VideoMME(avg) | 68.35 | 67.7 | **69.83** |
+| | MVBench | **69.60** | 67.7 | 69.43 |
+| | LongVideoBench | 56.00 | 56.6 | **59.54** |
+| | OvOBench | 51.10 | 48.48 | **52.17** |
+| | **Average** | 61.26 | 58.89 | **62.74** |
+| 文档理解 | ChartQA_test | 87.24 | 85.1 | **88.84** |
+| | DocVQA_test | **95.57** | 93 | 93.68 |
+| | TextVQA_val | **85.06** | 82.8 | 82.27 |
+| | OCRBench | 87.8 | 88.4 | **88.9** |
+| | **Average** | **88.91** | 87.32 | 88.42 |
+
+**语音理解**
+| Model | Average(Open-ended QA) | AlpacaEval | CommonEval | SD-QA | MMSU | OpenBookQA | IFEval | AdvBench |
+|---|---|---|---|---|---|---|---|---|
+| Ming-lite-omni v1.5 | 4.474 | 4.648 | 4.3 | 61.16 | 45.77 | 65.934 | 55.599 | 98.076 |
+| Ming-lite-omni | 4.34 | 4.63 | 4.06 | 58.84 | 47.53 | 61.98 | 58.36 | 99.04 |
+| MiniCPM-o | 4.285 | 4.42 | 4.15 | 50.72 | 54.78 | 78.02 | 49.25 | 97.69 |
+| Kimi-Audio | 4.215 | 4.46 | 3.97 | 63.12 | 62.17 | 83.52 | 61.10 | 100.00 |
+| Qwen2.5-Omni | 4.21 | 4.49 | 3.93 | 55.71 | 61.32 | 81.10 | 52.87 | 99.42 |
+| GLM-4-Voice | 3.77 | 4.06 | 3.48 | 43.31 | 40.11 | 52.97 | 24.91 | 88.08 |
+
+## 精准的视觉编辑控制
+
+Ming-lite-omni v1.5 针对图像编辑时的人物ID及场景ID一致性问题采用以下优化策略: 
+1. 引入ID和场景一致性损失，通过增大目标图编辑区域的权重 和 参考图非编辑区域的参考强度， 同时降低参考图编辑区域的参考强度 以增强图像编辑一致性
+2. 引入生成式检测分割任务增强感知能力。通过支持生成式分割和关键点检测，提升模型对画面细节和空间关系的理解，增强编辑和生成过程的结构可控性，显著提高评测指标中与位置、结构、数量相关的得分。
+3. 引入多任务协同学习策略。通过联合训练链路实现生成与编辑的相互促进，将分割任务转化为彩色上色编辑任务，显著提升分割指标和图像局部编辑的精度与可控性，使编辑区域边缘更光滑。
+基于以上优化，Ming-lite-omni v1.5在图像编辑能力明显提升，Gen-eval上达到0.87。
+
+| Gen-eval | 1-Obj | 2-Obj | Counting | Colors | Position | ColorAttr | Avg. |
+|---|---|---|---|---|---|---|---|
+| Ming-lite-omni | 0.99 | 0.77 | 0.68 | 0.78 | 0.46 | 0.42 | 0.64 |
+| Ming-lite-omni v1.5 | 0.99 | 0.93 | 0.86 | 0.87 | 0.90 | 0.66 | 0.87 |
+
+## 优化的用户体验
+得益于高质量的对齐偏好数据构建， Ming-lite-omni v1.5 在图文问答的内容准确性、相关性、格式美观性以及表述流畅性方面相比领先模型展现出一定优势， Ming-lite-omni v1.5在内部对抗评测集上相比Ming-lite-omni v1 胜和率为 87.07%, 使用体验得到了明显优化。
+
+| 体验评测维度 | Qwen2.5-VL-7B | Ming-Omni-Lite V1.5 |
+|---|---|---|
+| 相关性 | 4.308 | 4.5 |
+| 流畅性 | 4.765 | 4.91 |
+| 内容丰富性 | 3.828 | 3.69 |
+| 格式合理性 | 4.727 | 4.8 |
+| 正确性 | 3.741 | 3.92 |
+| **均分** | 4.274 | **4.365** |
 
 
-## 详细介绍
-为了实现这样的提升，我们将自研方案与学术界/开源社区的最新进展相结合，在以下几个部分做了有效尝试，并取得多个重要结论。
 
-**图像/语音生成**
+## Ming-lite-omni v1.5能力展示
+### 可控图像编辑和生成
+Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。
 
-1. 图像生成侧采用<u>双分支解耦策略</u>提升模型对参考图的可学习参数量。具体来说，在图像进入 DiT 之前，我们使用不同的权重对参考图像与噪声图像分别进行处理，并增加额外两层transformer layers作为refiner进一步增强这一效果。
-2. 为了解决图像编辑时的人物ID及场景ID一致性问题，我们新增了<u>ID & Scene Consistency Loss</u>，增大目标图编辑区域的权重、增大参考图非编辑区域的参考强度、降低参考图编辑区域的参考强度。
-3. 引入<u>感知增强策略</u>。通过优化结构感知能力，如分割和关键点检测，提升模型对画面细节和空间关系的理解，增强编辑和生成过程的结构可控性，显著提高评测指标中与位置、结构、数量相关的得分，详见 [表A](#table1)。
-4. 引入<u>多任务协同学习策略</u>。通过联合训练链路实现生成与编辑的相互促进，将分割任务转化为彩色上色编辑任务，显著提升分割指标和图像局部编辑的精度与可控性，使编辑区域边缘更光滑。
-5. 语音生成解码器方面，我们实现了全新的音频解码器，直接接受来自LLM的输出特征实现上下文感知。
-6. 语音生成效率方面，为了提高韵律性能和实时生成能力，我们将离散的Audio codec token进行BPE编码，使得音频帧率降低了35%。
-7. 全方位数据升级
-    - 获取高质量人物图像数据，标准包括：图像分辨率/质量、人脸细粒度、人脸大小等。
-    - 采集名人数据，并做质量筛选和人脸裁剪获取名人图像数据。
-    - 构建边缘图、分割图、文字图、人物表情图等训练子集，扩充模型能力边界。
-
-**图像/文本/视频/语音理解**
-
-1. MRoPE 时空感知位置编码。引入了MRoPE，通过时间、高度、宽度三维分块位置编码，赋予模型时空感知能力，实现高效跨模态联合建模，提升对视频、复杂图像场景的理解精度。
-2. 高效全参数训练策略。优化学习率与多模态数据配比，将理解阶段需<u>分步冻结/解冻 LLM 的预训练流程</u>，升级为<u>高效全参数训练</u>，训练周期缩短 26.5%，保持性能无损。
-3. 针对视频理解任务，采用从短视频到长视频的课程学习策略，逐步提升模型处理长视频的复杂度。
-4. 针对复杂文档理解任务，引入 Chain-of-Thought 策略分步骤构建结构化推理路径，有效提升模型对复杂问题的解决能力。
-5. 全方位数据升级  
-    - 预训练阶段
-      - 新增文本实体结构化数据，补全图谱盲区。
-      - 扩充高质量商品数据，提升通识能力。
-    - 指令微调阶段
-      - 提升细粒度视觉感知（目标计数/颜色/场景识别）数据精准性。
-      - 提高垂类识别（动植物/车辆/食材等）数据深度。
-      - 从数据角度优化跨学科复杂图文推理能力。
-      - 针对语音理解任务，将领域、主题、语种（包括方言）等信息引入到语音理解任务的指令文本中，增强模型的理解表现，实现对中英文，粤语，四川话，上海话，闽南语等方言的全面支持。
-
-**用户偏好对齐**
-
-为了保证我们模型的真实使用体验与常用Benchmark上的提升一致，我们自建了<u>体验评测集</u>，在内部进行多模型的人工对抗评分。得益于高质量的对齐偏好数据构建， Ming-lite-omni v1.5 在图文问答的内容准确性（低幻觉率）、相关性、格式美观性以及表述流畅性方面相比领先模型展现出一定优势， Ming-lite-omni v1.5在内部对抗评测集上相比Ming-lite-omni v1 胜和率为 87.07%, 使用体验得到了明显优化。  
-
-
-
-<!-- | 评测维度          | Qwen2.5-VL-7B | Ming-Omni-Lite V1.5 |
-|:---------------:|:---------------:|:---------------:|
-| 相关性   | 4.308         | 4.5            |
-| 流畅性   | 4.765         | 4.91           |
-| 内容丰富性 | 3.828         | 3.69           |
-| 格式合理性 | 4.727         | 4.8            |
-| 正确性   | 3.741         | 3.92           |
-| **均分**            | **4.274**         | **4.365**          | -->
-
-
-
-<div style="text-align: center; margin: auto; width: 80%; line-height: 1.1;">
-  <table style="margin: 0 auto;">
-    <thead>
-      <tr>
-        <th style="text-align: center;padding: 5px;">自建体验集评测维度</th>
-        <th style="text-align: center;padding: 5px;">Qwen2.5-VL-7B</th>
-        <th style="text-align: center;padding: 5px;">Ming-Omni-Lite V1.5</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: center;padding: 2px;">相关性</td>
-        <td style="text-align: center;padding: 2px;">4.308</td>
-        <td style="text-align: center;padding: 2px;">4.5</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;padding: 2px;">流畅性</td>
-        <td style="text-align: center;padding: 2px;">4.765</td>
-        <td style="text-align: center;padding: 2px;">4.91</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;padding: 2px;">内容丰富性</td>
-        <td style="text-align: center;padding: 2px;">3.828</td>
-        <td style="text-align: center;padding: 2px;">3.69</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;padding: 2px;">格式合理性</td>
-        <td style="text-align: center;padding: 2px;">4.727</td>
-        <td style="text-align: center;padding: 2px;">4.8</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;padding: 2px;">正确性</td>
-        <td style="text-align: center;padding: 2px;">3.741</td>
-        <td style="text-align: center;padding: 2px;">3.92</td>
-      </tr>
-      <tr>
-        <td style="text-align: center;padding: 2px;"><strong>均分</strong></td>
-        <td style="text-align: center;padding: 2px;"><strong>4.274</strong></td>
-        <td style="text-align: center;padding: 2px;"><strong>4.365</strong></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<br>
-
-## Demo展示
-### 图像编辑
-为了解决图像编辑时的人物ID及场景ID一致性问题，我们新增了<u>ID & Scene Consistency Loss</u>，增大目标图编辑区域的权重、增大参考图非编辑区域的参考强度、降低参考图编辑区域的参考强度。
 <div style="text-align:center">
 <img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/e-mDS5UyUogAAAAAgCAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
 <video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/UoqbRYQnZYEAAAAAgCAAAAgAeuUHAQFr" controls></video>
@@ -140,207 +114,28 @@ show_word_count: true
 {{< example data="cases/seg.json" hide=false next=true scroll=true >}}
 {{< /fullwidth >}}
 
-<!-- 
-引入<u>多任务协同学习策略</u>。通过联合训练链路实现生成与编辑的相互促进，将分割任务转化为彩色上色编辑任务，显著提升分割指标和图像局部编辑的精度与可控性，使编辑区域边缘更光滑：
-
-<a id="image1"></a>
-<div style="text-align:center">
-  <img src="https://gcore.jsdelivr.net/gh/biao-gong/static@main/0715/0.webp" alt="Image description" />
-  【待补充】
-  <p style="font-size:14px; color:gray;">图A【占位】</p>
-</div> -->
-
-### 图像生成
-
-引入<u>感知增强策略</u>。通过优化结构感知能力，如分割和关键点检测，提升模型对画面细节和空间关系的理解，增强编辑和生成过程的结构可控性，显著提高GenEval评测指标中与位置、结构、数量相关的得分：
-<a id="table1"></a>
-|   | 1-Obj | 2-Obj | Counting | Colors | Position | Color Attr | Avg. |
-|---| :---:   | :---:   | :---:      | :---: |:---: |:---: |:---: |
-|Ming-lite-omni| 0.99   | 0.77   | 0.68      | 0.78 | 0.46 |0.42 |0.64 |
-|Ming-lite-omni V1.5| 0.99   | 0.93   | 0.86      | 0.87 |0.90 |0.66 |0.87 |  
+**深度及边缘检测**
 
 | 原图 | 生成的深度图 | 生成的检测框 | 生成的边缘轮廓 |
 | :---: | :---: | :---: | :---: |
 | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466889319-bd19acce-c07d-4664-9890-41e4dff1ba8d.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466903529-996bcd35-a9a0-484b-98bf-2f2468f4df42.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466895795-1955ead5-6d94-4142-8d7b-e265352d2bcb.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752467020122-ad8b436c-bb33-4ef0-85b8-cf45ae8c9be1.webp) |
 
 
+### 音视频交互理解
+
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" height="192px" controls>
+
+
+
+### 交互体验优化
+
 {{< fullwidth class="example-container" >}}
 {{< example data="cases/chat.json" hide=false next=true scroll=true >}}
 {{< /fullwidth >}}
 
 
-### 语音合成
-
-| 输入文本 | Ming-lite-omni | Ming-lite-omni V1.5 |
-| --- | :---: | :---: |
-| Tyler, Lucy, Michelle, we're going to space! | <audio controls><source src="https://gcore.jsdelivr.net/gh/biao-gong/static@main/0715/tts_en1_v1.wav" type="audio/wav"></audio>  | <audio controls><source src="https://gcore.jsdelivr.net/gh/biao-gong/static@main/0715/tts_en1_v1.5.wav" type="audio/wav"></audio>  |
-| what is the forecast for California for rain | <audio controls><source src="https://gcore.jsdelivr.net/gh/biao-gong/static@main/0715/tts_en2_v1.wav" type="audio/wav"></audio>  | <audio controls><source src="https://gcore.jsdelivr.net/gh/biao-gong/static@main/0715/tts_en2_v1.5.wav" type="audio/wav"></audio>  |
-| Television can make you dumb, but it can also be good education. | <audio controls><source src="https://gcore.jsdelivr.net/gh/biao-gong/static@main/0715/tts_en3_v1.wav" type="audio/wav"></audio>  | <audio controls><source src="https://gcore.jsdelivr.net/gh/biao-gong/static@main/0715/tts_en3_v1.5.wav" type="audio/wav"></audio>  |
 
 
-
-{{< fullwidth class="example-container" >}}
-{{< example data="cases/ocrchat.json" hide=false next=true scroll=true >}}
-{{< /fullwidth >}}
-
-
-
-
-### 视频理解
-<table style="
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px auto;
-    border: none;
-    font-size: 14.4px;
-">
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Users</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        "><video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/tMqiS4N2yPAAAAAAgEAAAAgAeuUHAQFr" height="256px" controls></video><br>视频里的小女孩在做什么？</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Ming-Lite-Omni</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        ">视频中的场景发生在一家商店里，可能是超市或大型零售店，货架上摆满了各种商品，包括零食和家庭用品。视频里的小女孩正在拉动一个展示架，看起来她在尝试移动或者玩耍这个展示架。价格标签清晰可见，其中一个显著地标记着蓝色和白色的'18,690'字样。店内照明良好，荧光灯照亮了整个区域。如需更详细的分析或其他帮助，请告诉我！</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Ming-Lite-Omni V1.5</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        ">小女孩坐在购物车里睡觉。</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Users</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        "><video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/NGX_T5E13IAAAAAAgIAAAAgAfoeUAQBr" height="192px" controls></video><br>描述下视频中主人公的穿着。</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Ming-Lite-Omni</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        ">视频中，主人公穿着红色上衣，肩上背着一个彩色图案的包。</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Ming-Lite-Omni V1.5</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        ">视频中的主人公穿着一件红色的高领毛衣。</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Users</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        "><video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/KD6LTqp9VTsAAAAAgMAAAAgAfoeUAQBr" height="192px" controls></video><br>推测一下这个视频的拍摄时间和位置。</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Ming-Lite-Omni</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        ">从视频中的画面来看，这应该是在纽约的中央公园拍摄的。画面中可以看到中央公园的标志性建筑和景观，比如中央公园的湖泊、桥梁和雕像。此外，视频中还有游客在公园内散步、拍照和享受户外活动，这进一步确认了拍摄地点为纽约的中央公园。</td>
-    </tr>
-    <tr>
-        <td style="
-            padding: 10px;
-            text-align: right;
-            vertical-align: top;
-            color: #777;
-            border: none;
-            white-space: nowrap;
-        ">Ming-Lite-Omni V1.5</td>
-        <td style="
-            padding: 10px;
-            text-align: left;
-            vertical-align: top;
-            border: none;
-        ">从视频中的场景来看，拍摄地点位于纽约中央公园。视频展示了公园内的多个景点，包括湖泊、桥梁、雕像和喷泉等。拍摄时间似乎是在白天，阳光明媚，天气晴朗，适合户外活动。</td>
-    </tr>
-</table>
-
-<br>
 
 ## 开始使用 Ming-lite-omni v1.5
 
