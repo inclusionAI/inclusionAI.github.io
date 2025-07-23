@@ -1,5 +1,5 @@
 ---
-title: "Ming-Lite-Omni V1.5 介绍"
+title: "Ming-Lite-Omni V1.5：全能模型再升级，性能与体验双重突破！"
 date: 2025-07-21T00:00:03+08:00
 weight: 1
 math: true
@@ -23,7 +23,46 @@ show_word_count: true
   <p style="font-size:14px; color:gray;">性能对比图</p>
 </div>
 
-# 关键能力升级
+
+
+
+## Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双提升！ 
+
+### 可控图像生成：像素级掌控，创意无限
+Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。
+
+<div style="text-align:center">
+<img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/e-mDS5UyUogAAAAAgCAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
+<video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/UoqbRYQnZYEAAAAAgCAAAAgAeuUHAQFr" controls></video>
+</div>
+
+{{< fullwidth class="example-container" >}}
+{{< example data="cases/seg.json" hide=false next=true scroll=true >}}
+{{< /fullwidth >}}
+
+**深度及边缘检测**
+
+| 原图 | 生成的深度图 | 生成的检测框 | 生成的边缘轮廓 |
+| :---: | :---: | :---: | :---: |
+| ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466889319-bd19acce-c07d-4664-9890-41e4dff1ba8d.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466903529-996bcd35-a9a0-484b-98bf-2f2468f4df42.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466895795-1955ead5-6d94-4142-8d7b-e265352d2bcb.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752467020122-ad8b436c-bb33-4ef0-85b8-cf45ae8c9be1.webp) |
+
+
+### 音视频交互理解：音视频全线提升，理解力MAX！
+
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" width="540px" height="800px" controls></video>
+
+
+
+### 体验对齐优化：智能交互更懂你，沟通无障碍
+
+{{< fullwidth class="example-container" >}}
+{{< example data="cases/chat.json" hide=false next=true scroll=true >}}
+{{< /fullwidth >}}
+
+
+
+
+# 模型架构升级与能力评测
 Ming-lite-omni v1.5 模型架构如下，和Ming-lite-omni v1版本的结构大体相同，区别在于为了增强图像编辑人物 和 场景一致性，升级Vision head 支持参考图特征输入。 
 
 
@@ -99,39 +138,6 @@ Ming-lite-omni v1.5 针对图像编辑时的人物ID及场景ID一致性问题�
 | 正确性 | 3.741 | 3.92 |
 | **均分** | 4.274 | **4.365** |
 
-
-
-## Ming-lite-omni v1.5能力展示
-### 可控图像编辑和生成
-Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。
-
-<div style="text-align:center">
-<img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/e-mDS5UyUogAAAAAgCAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
-<video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/UoqbRYQnZYEAAAAAgCAAAAgAeuUHAQFr" controls></video>
-</div>
-
-{{< fullwidth class="example-container" >}}
-{{< example data="cases/seg.json" hide=false next=true scroll=true >}}
-{{< /fullwidth >}}
-
-**深度及边缘检测**
-
-| 原图 | 生成的深度图 | 生成的检测框 | 生成的边缘轮廓 |
-| :---: | :---: | :---: | :---: |
-| ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466889319-bd19acce-c07d-4664-9890-41e4dff1ba8d.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466903529-996bcd35-a9a0-484b-98bf-2f2468f4df42.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752466895795-1955ead5-6d94-4142-8d7b-e265352d2bcb.webp) | ![](https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752467020122-ad8b436c-bb33-4ef0-85b8-cf45ae8c9be1.webp) |
-
-
-### 音视频交互理解
-
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" width="540px" height="960px" controls></video>
-
-
-
-### 体验对齐优化
-
-{{< fullwidth class="example-container" >}}
-{{< example data="cases/chat.json" hide=false next=true scroll=true >}}
-{{< /fullwidth >}}
 
 
 
