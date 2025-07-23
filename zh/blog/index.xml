@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 21 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ming-Lite-Omni V1.5 介绍</title>
+      <title>Ming-Lite-Omni V1.5：全能模型再升级，性能与体验双重突破！</title>
       <link>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5/</link>
       <pubDate>Mon, 21 Jul 2025 00:00:03 +0800</pubDate>
       
@@ -19,12 +19,8 @@
       <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
 概述 本次发布的 Ming-lite-omni V1.5 是对 Ming-lite-omni(Github) 全模态能力的一次全面升级， 在包括图文理解、文档理解、视频理解、语音理解和合成、图像生成和编辑等任务上均有明显提升。Ming-lite-omni V1.5 基于Ling-lite-1.5 构建，总参数20.3B, MoE部分激活参数为3B。与各领域同等规模的业界领先模型相比，在各模态基准测试中展现出极具竞争力的结果：
 性能对比图
-关键能力升级 Ming-lite-omni v1.5 模型架构如下，和Ming-lite-omni v1版本的结构大体相同，区别在于为了增强图像编辑人物 和 场景一致性，升级Vision head 支持参考图特征输入。
-模型架构图
-模型能力上重点在全模态理解能力、精准的视觉编辑控制 以及 用户体验 三个方面进行优化升级。
-增强的全模态理解能力 得益于数据质量优化，Ming-lite-omni v1.5 在视觉文本理解(包括图文理解、文档理解、视频理解)和语音理解等任务上均有明显提升，达到相同规模的业界领先水平。
-视觉文本理解
-Task Type Dataset Qwen2.5-VL-7B Ming-lite-omni Ming-lite-omni v1.5 OpenCompass图文 AI2D 84.36 83.1 84.91 HallusionBench 55.77 55.0 54.59 MMBench_TEST_V11 82.75 80.8 80.73 MMMU 56.56 56.3 54.33 MMStar 65.27 64.7 65.07 MMVet 71.61 71.3 73.99 MathVista 68.</description>
+Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双提升！ 可控图像生成：像素级掌控，创意无限 Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。
+生成式图像分割 Next User Given the following instructions: little girl, pink, your monitors colors off friend p pink shirt girl; please perform referring segmentation on this image. Ming-Lite-Omni V1.5 User Please segment different classes in this image.</description>
     </item>
     
     <item>
