@@ -20,7 +20,7 @@
 概述 本次发布的 Ming-lite-omni V1.5 是对 Ming-lite-omni(Github) 全模态能力的一次全面升级， 在包括图文理解、文档理解、视频理解、语音理解和合成、图像生成和编辑等任务上均有明显提升。Ming-lite-omni V1.5 基于Ling-lite-1.5 构建，总参数20.3B, MoE部分激活参数为3B。与各领域同等规模的业界领先模型相比，在各模态基准测试中展现出极具竞争力的结果：
 性能对比图
 Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双提升！ 可控图像生成：像素级掌控，创意无限 Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。
-生成式图像分割 Next User Given the following instructions: little girl, pink, your monitors colors off friend p pink shirt girl; please perform referring segmentation on this image. Ming-Lite-Omni V1.5 User Please segment different classes in this image.</description>
+生成式图像分割 Next User Given the following instructions: little girl, pink, your monitors colors off friend p pink shirt girl; please perform referring segmentation on this image. Ming-lite-omni v1.5 User Please segment different classes in this image.</description>
     </item>
     
     <item>
