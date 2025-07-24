@@ -134,7 +134,7 @@ To ensure that improvements on standard benchmarks translate directly to a super
 ### Image Editing
 To address the challenge of maintaining character and scene identity during image editing, we've introduced the **ID & Scene Consistency Loss**. This function strategically increases the weight of the edited region in the target image, boosts the influence of unedited areas from the reference image, and reduces the influence of the edited areas within that same reference.
 <div style="text-align:center">
-<img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/e-mDS5UyUogAAAAAgCAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
+<img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/n66PSYmtwHcAAAAAY_AAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
 <video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/UoqbRYQnZYEAAAAAgCAAAAgAeuUHAQFr" controls></video>
 </div>
 

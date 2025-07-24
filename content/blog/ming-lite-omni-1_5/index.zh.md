@@ -18,8 +18,8 @@ show_word_count: true
 # 概述
 本次发布的 Ming-lite-omni V1.5 是对 Ming-lite-omni(<a href="https://github.com/inclusionAI/Ming/tree/v1.0">Github</a>)  全模态能力的一次全面升级， 在包括图文理解、文档理解、视频理解、语音理解和合成、图像生成和编辑等任务上均有明显提升。Ming-lite-omni V1.5 基于Ling-lite-1.5 构建，总参数20.3B, MoE部分激活参数为3B。与各领域同等规模的业界领先模型相比，在各模态基准测试中展现出极具竞争力的结果：
 
-<div style="text-align:center;margin: auto; width: 70%;">
-  <img src="https://mdn.alipayobjects.com/huamei_drbxn1/afts/img/vh2qSIuScFMAAAAAYuAAAAgADkliAQFr/original" alt="Image description" />
+<div style="text-align:center;margin: auto; width: 100%;">
+  <img src="https://mdn.alipayobjects.com/huamei_drbxn1/afts/img/tXyrSrRR09UAAAAAgCAAAAgADkliAQFr/original" alt="Image description" />
   <p style="font-size:14px; color:gray;">性能对比图</p>
 </div>
 
@@ -32,7 +32,7 @@ show_word_count: true
 Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。
 
 <div style="text-align:center">
-<img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/e-mDS5UyUogAAAAAgCAAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
+<img src="https://mdn.alipayobjects.com/huamei_aukff7/afts/img/n66PSYmtwHcAAAAAY_AAAAgAeuUHAQFr/fmt.webp" alt="Image description" />
 <video src="https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/UoqbRYQnZYEAAAAAgCAAAAgAeuUHAQFr" controls></video>
 </div>
 
@@ -119,18 +119,18 @@ Ming-lite-omni v1.5 针对图像编辑时的人物ID及场景ID一致性问题�
 1. 引入ID和场景一致性损失，通过增大目标图编辑区域的权重 和 参考图非编辑区域的参考强度， 同时降低参考图编辑区域的参考强度 以增强图像编辑一致性
 2. 引入生成式检测分割任务增强感知能力。通过支持生成式分割和关键点检测，提升模型对画面细节和空间关系的理解，增强编辑和生成过程的结构可控性，显著提高评测指标中与位置、结构、数量相关的得分。
 3. 引入多任务协同学习策略。通过联合训练链路实现生成与编辑的相互促进，将分割任务转化为彩色上色编辑任务，显著提升分割指标和图像局部编辑的精度与可控性，使编辑区域边缘更光滑。
-基于以上优化，Ming-lite-omni v1.5在图像编辑能力明显提升，Gen-eval上达到0.87。
+基于以上优化，Ming-lite-omni v1.5在图像编辑能力明显提升，GenEval上达到0.87。
 
-| Gen-eval | 1-Obj | 2-Obj | Counting | Colors | Position | ColorAttr | Avg. |
-|---|---|---|---|---|---|---|---|
-| Ming-lite-omni | 0.99 | 0.77 | 0.68 | 0.78 | 0.46 | 0.42 | 0.64 |
-| Ming-lite-omni v1.5 | 0.99 | 0.93 | 0.86 | 0.87 | 0.90 | 0.66 | 0.87 |
+|   | 1-Obj | 2-Obj | Counting | Colors | Position | Color Attr | Avg. |
+|:---:| :---:   | :---:   | :---:      | :---: |:---: |:---: |:---: |
+|Ming-lite-omni| 0.99   | 0.77   | 0.68      | 0.78 | 0.46 |0.42 |0.64 |
+|Ming-lite-omni V1.5| 0.99   | 0.93   | 0.86      | 0.87 |0.90 |0.66 |0.87 |  
 
 ## 优化的用户体验
 得益于高质量的对齐偏好数据构建， Ming-lite-omni v1.5 在图文问答的内容准确性、相关性、格式美观性以及表述流畅性方面相比领先模型展现出一定优势， Ming-lite-omni v1.5在内部对抗评测集上相比Ming-lite-omni v1 胜和率为 87.07%, 使用体验得到了明显优化。
 
 | 体验评测维度 | Qwen2.5-VL-7B | Ming-Omni-Lite V1.5 |
-|---|---|---|
+|:---:|:---:|:---:|
 | 相关性 | 4.308 | 4.5 |
 | 流畅性 | 4.765 | 4.91 |
 | 内容丰富性 | 3.828 | 3.69 |
