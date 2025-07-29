@@ -37,7 +37,7 @@ Ming-lite-omni v1.5 significantly optimizes Scene Consistency and ID Consistency
 </div>
 
 {{< fullwidth class="example-container" >}}
-{{< example data="cases/seg.json" hide=false next=true scroll=true >}}
+{{< example data="cases/seg_en.json" hide=false next=true scroll=true >}}
 {{< /fullwidth >}}
 
 ** Depth and Edge Detection**
@@ -71,9 +71,9 @@ The model's capabilities have been significantly optimized and upgraded across t
 
 ### Enhanced Omni-Modal Comprehension
 
-Thanks to optimized data quality, Ming-lite-omni v1.5 shows significant improvements in tasks such as visual-text comprehension (including image-text, document, and video understanding) and speech understanding. It has reached an industry-leading level for models of comparable scale.
+Thanks to optimized data quality, Ming-lite-omni v1.5 shows significant improvements in tasks such as vision-text comprehension (including image-text, document, and video understanding) and speech understanding. It has reached an industry-leading level for models of comparable scale.
 
-**visual-text comprehension**
+**Vision-text Comprehension**
 
 | Task Type | Dataset | Qwen2.5-VL-7B | Ming-lite-omni | Ming-lite-omni v1.5 |
 |---|---|---|---|---|
@@ -99,7 +99,7 @@ Thanks to optimized data quality, Ming-lite-omni v1.5 shows significant improvem
 | | OCRBench | 87.8 | 88.4 | **88.9** |
 | | **Average** | **88.91** | 87.32 | 88.42 |
 
-**speech understanding**
+**Speech Understanding**
 
 | Model | Average(Open-ended QA) | AlpacaEval | CommonEval | SD-QA | MMSU | OpenBookQA | IFEval | AdvBench |
 |---|---|---|---|---|---|---|---|---|
