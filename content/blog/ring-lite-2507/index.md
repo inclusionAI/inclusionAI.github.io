@@ -25,41 +25,9 @@ To address the optimization instability of MoE RL training, we propose a novel a
 + 🔍 **Publicly available**: We fully release our training recipe and model weights.
 
 
-## Constrained Contextual Computation Policy Optimization(C3PO)
-We introduce <u>C</u>onstrained <u>C</u>ontextual <u>C</u>omputation <u>P</u>olicy <u>O</u>ptimization(C3PO), an innovative token-level optimization framework designed to mitigate training instability while enhancing throughput consistency. Different from sampling-level filtering, C3PO operates at the token level by sampling tokens to form a token-level global batch, each training step maintains consistent token input to optimizer, which results in reduced gradient variance and consequently achieving stable optimization.
-<div style="text-align:center;margin: auto; width:500px;">
-  <img src="./assets/C3PO_overview_formal.png" alt="Image description" />
-  <p style="font-size:14px; color:gray;">C3PO</p>
-</div>
-
-## Balancing Token efficiency between Distillation and RL
-While distillation is effective, we find it requires more training tokens to achieve comparable performance compared to RL training. 
-Instead, we observe that varying the number of training epochs of the distilled model significantly influences the trend of entropy loss, thereby determining the exploration scope for RL. Based on our experiments, increasing the number of SFT training epochs leads to a rapid collapse of entropy. However, insufficient SFT training inevitably results in inferior performance. To systematically quantify the choice of optimal SFT epoch, we employ token efficiency to determine the suitable checkpoint for RL scaling.
-
-
-## Training Data
-We follow a stringent data processing pipeline.
-<div style="text-align:center;margin: auto; width: 500px;">
-  <img src="./assets/data-pipeline.png" alt="Image description" />
-  <p style="font-size:14px; color:gray;">Data Pipeline</p>
-</div>
-
-## Training Pipeline
-<div style="text-align:center;margin: auto; width: 500px;">
-  <img src="./assets/0731-pipeline.png" alt="Image description" />
-  <p style="font-size:14px; color:gray;">Training Pipeline</p>
-</div>
-
-### Reasoning RL
-Compared to our Ring-lite, we expand our reasoning dataset by incorporating more chanlleging math, coding and STEM dataset. Sepecifically, we adopted 67K math data, 32K coding data, 9.9K scientific data for reasoning RL training. In addition, we amplify our reasoning dataset by including more than 19K logical games, such as ARC-AGI, Countdown, sudoku, AlphaMaze, etc. For each type of problems, we specifically design the suitable reward function to make sure our training examples are verifiable. We apply RL on various reasoning tasks, including math, stem, code, logical games. 
-
-
-### General RL
-Except for reasoning tasks, our Ring-lite-0731 has significantly expanded the collection of general RL training dataset. Our general RL does not sacrifices performance on reasoning tasks, instead, it imporved the overal text understanding ability across a broad range of general benchmarks. 
-Our general RL training incorporates various sources of general tasks, including instruction following, question answering, text summarizaiton, ect. For open-formed question, we adopt a strong reward model to assign reward scores for the problems. Besides, we also incorporated rule-based verifier to tackle problems which can be easily verified, such as the instruction-following problems. 
-
-
 ## Evaluation
+
+We evaluate our models comprehensively across two core domains: reasoning domamin and general domain, using a diverse set of public benchmarks categorized by their primary measured capability.
 
 ### Knowledge Understanding
 
@@ -111,6 +79,41 @@ Our general RL training incorporates various sources of general tasks, including
 | AlignBench v1.1(gpt-4.1)  |   80.90   |	69.60   |	74.70   |
 | FoFo (gpt-4-turbo)        |   85.02	|   67.81   |	81.93   |
 | ArenaHard (gpt-4.1)       |   88.85	|   56.12   |	86.14   |
+
+
+## Constrained Contextual Computation Policy Optimization(C3PO)
+We introduce <u>C</u>onstrained <u>C</u>ontextual <u>C</u>omputation <u>P</u>olicy <u>O</u>ptimization(C3PO), an innovative token-level optimization framework designed to mitigate training instability while enhancing throughput consistency. Different from sampling-level filtering, C3PO operates at the token level by sampling tokens to form a token-level global batch, each training step maintains consistent token input to optimizer, which results in reduced gradient variance and consequently achieving stable optimization.
+<div style="text-align:center;margin: auto; width:500px;">
+  <img src="./assets/C3PO_overview_formal.png" alt="Image description" />
+  <p style="font-size:14px; color:gray;">C3PO</p>
+</div>
+
+## Balancing Token efficiency between Distillation and RL
+While distillation is effective, we find it requires more training tokens to achieve comparable performance compared to RL training. 
+Instead, we observe that varying the number of training epochs of the distilled model significantly influences the trend of entropy loss, thereby determining the exploration scope for RL. Based on our experiments, increasing the number of SFT training epochs leads to a rapid collapse of entropy. However, insufficient SFT training inevitably results in inferior performance. To systematically quantify the choice of optimal SFT epoch, we employ token efficiency to determine the suitable checkpoint for RL scaling.
+
+
+## Training Data
+We follow a stringent data processing pipeline.
+<div style="text-align:center;margin: auto; width: 500px;">
+  <img src="./assets/data-pipeline.png" alt="Image description" />
+  <p style="font-size:14px; color:gray;">Data Pipeline</p>
+</div>
+
+## Training Pipeline
+<div style="text-align:center;margin: auto; width: 500px;">
+  <img src="./assets/0731-pipeline.png" alt="Image description" />
+  <p style="font-size:14px; color:gray;">Training Pipeline</p>
+</div>
+
+### Reasoning RL
+Compared to our Ring-lite, we expand our reasoning dataset by incorporating more chanlleging math, coding and STEM dataset. Sepecifically, we adopted 67K math data, 32K coding data, 9.9K scientific data for reasoning RL training. In addition, we amplify our reasoning dataset by including more than 19K logical games, such as ARC-AGI, Countdown, sudoku, AlphaMaze, etc. For each type of problems, we specifically design the suitable reward function to make sure our training examples are verifiable. We apply RL on various reasoning tasks, including math, stem, code, logical games. 
+
+
+### General RL
+Except for reasoning tasks, our Ring-lite-0731 has significantly expanded the collection of general RL training dataset. Our general RL does not sacrifices performance on reasoning tasks, instead, it imporved the overal text understanding ability across a broad range of general benchmarks. 
+Our general RL training incorporates various sources of general tasks, including instruction following, question answering, text summarizaiton, ect. For open-formed question, we adopt a strong reward model to assign reward scores for the problems. Besides, we also incorporated rule-based verifier to tackle problems which can be easily verified, such as the instruction-following problems. 
+
 
 
 ## Citation
