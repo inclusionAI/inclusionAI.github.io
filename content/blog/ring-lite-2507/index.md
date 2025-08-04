@@ -3,7 +3,7 @@ title: "Introducing Ring-lite-2507"
 date: 2025-08-02T00:00:03+08:00
 weight: 1
 math: true
-draft: true
+#draft: true
 show_reading_time: true
 show_bread_crumbs: true
 show_post_nav_links: false # the prev/next after the content
