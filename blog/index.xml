@@ -9,7 +9,16 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Aug 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducing Ring-lite-2507</title>
+      <link>https://inclusionai.github.io/blog/ring-lite-2507/</link>
+      <pubDate>Sat, 02 Aug 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/blog/ring-lite-2507/</guid>
+      <description>Overview We present Ring-lite-2507, an upgraded version of our previously released lightweight reasoning model, Ring-lite. Building upon 16.8B Mixture-of-Experts (MoE)-based large language model with 2.75B activated parameters, Ring-lite-2507 further pushes its reasoning ability to an advanced level, meanwhile, it demonstrates superior performance on a comprehensive range of LLM benchmarks, including general text understanding, alignment, coding, logical and agentic tasks. Thanks to our innovative and robust reinforcement learning training pipeline, Ring-lite-2507 distinguished itself from latest public dense models under 10B parameters by showing competitive performance across various tasks while activating only 1/3 of their parameter size.</description>
+    </item>
+    
     <item>
       <title>Introducing Ming-Lite-Omni V1.5</title>
       <link>https://inclusionai.github.io/blog/ming-lite-omni-1_5/</link>
