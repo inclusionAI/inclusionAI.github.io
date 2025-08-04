@@ -95,7 +95,7 @@ Instead, we observe that varying the number of training epochs of the distilled 
 
 
 ## Training Data
-We follow a stringent data processing pipeline.
+We follow a stringent data processing pipeline. To ensure a high-quality training dataset for reinforcement learning, we established a comprehensive and meticulous data curation pipeline. This pipeline encompasses key stages such as data cleansing, answer verification, and data annotation, all designed to thoroughly decontaminate the data and ensure it is both suitable and informative for RL training.
 <div style="text-align:center;margin: auto; width: 100%;">
   <img src="./assets/data-pipeline.png" alt="Image description" />
   <p style="font-size:14px; color:gray;">Data Pipeline</p>
