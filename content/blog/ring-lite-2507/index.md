@@ -14,9 +14,9 @@ show_word_count: true
 📖 [Technical Report](https://arxiv.org/abs/2506.14731) | 🤗 [Hugging Face](https://huggingface.co/inclusionAI/Ring-lite-2507)｜ 🤖 [ModelScope](https://modelscope.cn/models/inclusionAI/Ring-lite-2507)
 
 ## Overview
-We present **Ring-lite-2507**, an upgraded version of our previously released lightweight reasoning model, **Ring-lite**. Building upon **16.8B** Mixture-of-Experts (MoE)-based large language model with **2.75B** activated parameters, **Ring-lite-2507** further pushes its reasoning ability to an advanced level, meanwhile, it demonstrates superior performance on a comprehensive range of LLM benchmarks, including general text understanding, alignment, coding, logical and agentic tasks. Thanks to our innovative and robust reinforcement learning training pipeline, **Ring-lite-2507** distinguished itself from latest public dense models under 10B parameters by showing competitive performance across various tasks while activating only **1/3** of their parameter size.  
+We present **Ring-lite-2507**, an upgraded version of our previously released lightweight reasoning model, **Ring-lite** (2506). Built upon a **16.8B** Mixture-of-Experts (MoE) large language model with **2.75B** activated parameters, **Ring-lite-2507** further advances its reasoning capabilities while demonstrating superior performance across a comprehensive range of LLM benchmarks, including general text understanding, alignment, coding, logical, and agentic tasks. Thanks to our innovative and robust reinforcement learning training pipeline, **Ring-lite-2507** distinguishes itself from the latest public dense models under 10B parameters by offering competitive performance across various tasks, despite activating only **1/3** of their parameter size.
 
-To address the optimization instability of MoE RL training, we propose a novel approach, Constrained Contextual Computation Policy Optimization(C3PO), which enhances training stability and improves computational throughput via algorithm-system co-design. Meanwhile, we systematically investigate the dynamic relations between long-chain-of-thought SFT and RL training, surrendering the optimal practice for selecting the suitable fine-tuned model for RL scaling, rather than soley on the validation metrics, yields superior performance-efficiency trade-offs in our RL training pipeline. Finally, we develop a two-stage training paradigm to harmonize multi-domain data integration, enhancing reasoning ability while effectively improving performance across various downstream general tasks.
+To address the optimization instability of MoE RL training, we propose a novel approach, Constrained Contextual Computation Policy Optimization(C3PO), which enhances training stability and improves computational throughput via algorithm-system co-design. Additionally, we systematically investigate the dynamic relationship between long chain-of-thought SFT and RL training. Rather than relying solely on validation metrics, we explore optimal strategies for selecting the suitable fine-tuned model for RL scaling, yielding superior performance-efficiency trade-offs in our RL training pipeline. Last, we develop a two-stage training paradigm to harmonize multi-domain data integration, enhancing reasoning ability while effectively improving performance across various downstream general tasks.
 
 
 **Highlights**
@@ -28,12 +28,11 @@ To address the optimization instability of MoE RL training, we propose a novel a
 
 
 ## Evaluation
-
-We evaluate our models comprehensively across two core domains: reasoning domamin and general domain, using a diverse set of public benchmarks categorized by their primary measured capability.
+We conduct a comprehensive evaluation of our models across two main domains: reasoning and general. We utilize a diverse set of public benchmarks, organized according to the specific aspects they measure.
 
 ### Knowledge Understanding
 
-| **Benchmark**   | **Ring-lite-0731** | **Ring-lite** | **Qwen3-8B-Thinking** 
+| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking** 
 | :-------------: | :---------------: | :-----------: | :-------------------: | 
 | MMLU-Pro (EM)         | 72.50	    | 63.44	    | **72.56** | 
 | GPQA-Diamond (Pass@1) | **69.35**	    | 63.51	    | 62.00 | 
@@ -90,12 +89,10 @@ We introduce <u>C</u>onstrained <u>C</u>ontextual <u>C</u>omputation <u>P</u>oli
 </div>
 
 ## Balancing Token efficiency between Distillation and RL
-While distillation is effective, we find it requires more training tokens to achieve comparable performance compared to RL training. 
-Instead, we observe that varying the number of training epochs of the distilled model significantly influences the trend of entropy loss, thereby determining the exploration scope for RL. Based on our experiments, increasing the number of SFT training epochs leads to a rapid collapse of entropy. However, insufficient SFT training inevitably results in inferior performance. To systematically quantify the choice of optimal SFT epoch, we employ token efficiency to determine the suitable checkpoint for RL scaling.
-
+While distillation is effective, we find that it requires more training tokens to achieve comparable performance than RL training. Furthermore, we observe that varying the number of training epochs for the distilled model significantly influences the trend of entropy loss, thereby affecting the exploration scope for RL. Our experiments show that increasing the number of SFT training epochs leads to a rapid collapse in entropy, whereas insufficient SFT training inevitably results in inferior performance. To systematically quantify the choice of optimal SFT epoch, we employ token efficiency to determine the suitable checkpoint for RL scaling.
 
 ## Training Data
-We follow a stringent data processing pipeline. To ensure a high-quality training dataset for reinforcement learning, we established a comprehensive and meticulous data curation pipeline. This pipeline encompasses key stages such as data cleansing, answer verification, and data annotation, all designed to thoroughly decontaminate the data and ensure it is both suitable and informative for RL training.
+To ensure a high-quality training dataset for reinforcement learning, we established a comprehensive and meticulous data curation pipeline. This pipeline encompasses several key stages, such as data cleansing, answer verification, and data annotation, all designed to thoroughly decontaminate the data and ensure it is both suitable and informative for RL training.
 <div style="text-align:center;margin: auto; width: 100%;">
   <img src="./assets/data-pipeline.png" alt="Image description" />
   <p style="font-size:14px; color:gray;">Data Pipeline</p>
@@ -108,14 +105,13 @@ We follow a stringent data processing pipeline. To ensure a high-quality trainin
 </div>
 
 ### Reasoning RL
-Compared to our Ring-lite, we expand our reasoning dataset by incorporating more chanlleging math, coding and STEM dataset. Sepecifically, we adopted 67K math data, 32K coding data, 9.9K scientific data for reasoning RL training. In addition, we amplify our reasoning dataset by including more than 19K logical games, such as ARC-AGI, Countdown, sudoku, AlphaMaze, etc. For each type of problems, we specifically design the suitable reward function to make sure our training examples are verifiable. We apply RL on various reasoning tasks, including math, stem, code, logical games. 
+Compared to our previously released Ring-lite-2506, we expanded our reasoning dataset by incorporating more challenging math, coding, and STEM data. Specifically, we adopted 67K math problems, 32K coding problems, and 9.9K scientific problems for reasoning RL training. In addition, we amplified our reasoning dataset by including more than 19K logical games, such as ARC-AGI, Countdown, Sudoku, AlphaMaze, etc. For each type of problem, we specifically designed suitable reward functions to ensure our training examples are verifiable. 
 
 
 ### General RL
-Except for reasoning tasks, our Ring-lite-0731 has significantly expanded the collection of general RL training dataset. Our general RL does not sacrifices performance on reasoning tasks, instead, it imporved the overal text understanding ability across a broad range of general benchmarks. 
-Our general RL training incorporates various sources of general tasks, including instruction following, question answering, text summarizaiton, ect. For open-formed question, we adopt a strong reward model to assign reward scores for the problems. Besides, we also incorporated rule-based verifier to tackle problems which can be easily verified, such as the instruction-following problems. 
+Apart from reasoning tasks, our Ring-lite-2507 has significantly expanded the collection of general datasets for RL training. Our general RL training does not compromise performance on reasoning tasks; instead, it enhances overall text understanding across a broad range of general benchmarks.
 
-
+Our general RL training incorporates a variety of tasks, including instruction following, question answering, text summarization, and more. For open-ended questions, we employ a robust reward model to assign appropriate scores. Additionally, we have integrated a rule-based verifier to handle problems that can be easily validated, such as instruction-following tasks.
 
 ## Citation
 
