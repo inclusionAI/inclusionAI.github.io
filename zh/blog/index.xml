@@ -9,7 +9,21 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Jul 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Aug 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>欢迎我们的新成员—Ring-lite！它拥有更强大的推理能力，表现更加均衡，助您探索更深度的智慧体验</title>
+      <link>https://inclusionai.github.io/zh/blog/ring-lite-2507/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/ring-lite-2507/</guid>
+      <description>📖 Technical Report | 🤗 Hugging Face｜ 🤖 ModelScope
+概述 我们推出了Ring-lite-2507，该模型是在我们之前发布的轻量级推理模型Ring-lite（2506）上的一次全面升级！Ring-lite-2507是一个激活参数为2.75B，总参数为16.8B的混合专家（MoE）大语言模型。此次升级，我们的模型不仅进一步提升了在数学、代码和逻辑任务上的推理能力，同时在知识理解、对齐和智能体等多个广泛使用的通用类评测榜单中取得了卓越的表现。通过我们提出的创新性强化学习算法和多阶段强化学习训练流程，Ring-lite-2507相比最新10B参数以下的稠密推理模型，在仅激活其1/3参数规模的情况下，在各项任务中达到了相当或更具竞争力的性能。
+我们提出了一种创新的强化学习训练算法，即Constrained Contextual Computation Policy Optimization（C3PO），旨在解决MoE强化学习训练过程中的不稳定性问题。通过算法-系统协同设计，我们的方法同时提高了训练稳定性和计算吞吐量。此外，我们系统性地研究了长思维链SFT和RL训练之间的动态关系，并提出使用令牌效率指标来帮助我们探索选择更适合RL训练的微调模型，从而实现了RL训练过程中的性能和效率的双平衡。此外，我们还采用了新型两阶段强化学习的训练范式，以平衡多领域融合数据的训练效果，在增强推理能力的同时，更有效地提升各种下游通用任务的表现。
+亮点
+🚀 多项任务中的卓越表现: Ring-lite-2507在推理和通用任务上均表现出卓越的性能； 🔥 仅激活2.75B模型参数: Ring-lite-2507是一个基于混合专家（MoE）的大语言模型，仅激活了2.75B模型参数； ⛓️‍💥 算法-系统协同设计: 我们创新性地提出了C3PO训练方法，并采用令牌效率来平衡RL训练的稳定性和有效性； 🔍 公开可用: 我们的训练数据和模型权重均已公开。 模型评测 我们在两个主要领域对模型进行了全面评估：推理和通用。我们使用了一系列多样性的公开评测榜单，根据不同榜单衡量的大模型能力，我们将评测内容分为：知识理解、数学、代码、推理 &amp;amp; 智能体，以及对齐任务。
+知识理解 Benchmark Ring-lite-2507 Ring-lite-2506 Qwen3-8B-Thinking MMLU-Pro (EM) 72.50 63.44 72.56 GPQA-Diamond (Pass@1) 69.35 63.51 62.00 SuperGPQA (EM) 40.05 13.97 40.36 Phybench (Pass@1) 28.51 29.19 22.14 数学 Benchmark Ring-lite-2507 Ring-lite-2506 Qwen3-8B-Thinking MATH-500 (Pass@1) 97.95 96.80 97.30 CNMO 2024 (Pass@1) 75.</description>
+    </item>
+    
     <item>
       <title>Ming-lite-omni v1.5：全能模型再升级，效果与体验双优化</title>
       <link>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5/</link>
