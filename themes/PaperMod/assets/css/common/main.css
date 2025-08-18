@@ -1,9 +1,9 @@
 .main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--hero-height) - var(--footer-height));
-    max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;
-    padding: var(--gap) var(--gap) var(--gap) var(--gap);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .main.search {

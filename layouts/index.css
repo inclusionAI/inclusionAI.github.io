@@ -1,11 +1,62 @@
+/* 全局重置外边距 - 使用!important确保优先级 */
+* {
+    margin: 0 !important;
+}
+
+/* 重置所有可能的容器元素 */
+html, body, div, section, article, aside, header, footer, nav, main {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 重置主题相关的容器 */
+.main, .content, .nav-container, .hero-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 重置所有可能的margin属性 */
+[style*="margin"] {
+    margin: 0 !important;
+}
+
+/* 重置所有可能的padding属性 */
+[style*="padding"] {
+    padding: 0 !important;
+}
+
+/* 保持content元素的宽度设置 */
+.content {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 重置所有子元素的margin */
+.content * {
+    margin: 0 !important;
+}
+
+/* 强制重置所有可能的margin和padding */
+body, .main, .content, .nav-container, .hero-container, 
+.content .shadow, .content .top-img-container, .content .flower,
+.content .flower-main-text-container, .content .title, .content .subtext,
+.content .mission-list, .content .team-container, .content .bottom {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 @media (min-width: 1024px) {
   .content {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .content .shadow {
     width: 100%;
     height: 80px;
+    margin: 0;
   }
 
   .content .top-img-container {
@@ -13,6 +64,7 @@
     width: 100%;
     height: 44.3vw;
     background-image: linear-gradient(180deg, #FFFFFF 43%, #F9FAFF 100%);
+    margin: 0;
   }
 
   .content .top-img-container > img {
@@ -46,12 +98,12 @@
 
   .content .flower {
     display: block;
-    margin: 100px auto 40px;
+    margin: 0 auto;
     width: 20.3vw;
   }
 
   .content .flower-main-text-container {
-    margin-bottom: 12px;
+    margin: 0;
   }
 
   .content .flower-main-text {
@@ -64,7 +116,7 @@
   }
 
   .content .title {
-    margin: 120px auto 20px;
+    margin: 0 auto;
     font-family: Times-Italic;
     font-weight: 700;
     font-size: 64px;
@@ -84,12 +136,13 @@
     letter-spacing: 0;
     text-align: center;
     line-height: 28px;
+    margin: 0;
   }
 
   .content .mission-list {
     display: flex;
     width: 85vw;
-    margin: 60px auto 0;
+    margin: 0 auto;
   }
 
   .content .mission-item {
@@ -130,10 +183,10 @@
   }
 
   .content .team-container {
-    margin: 36px 9% 0;
+    margin: 0;
     padding: 60px 0 120px;
     background-image: linear-gradient(180deg, #EFF7FF 0%, #FFFFFF 100%);
-    border-radius: 24px;
+    border-radius: 0;
   }
 
   .content .team-img {
@@ -192,7 +245,7 @@
 
   .content .bottom {
     position: relative;
-    margin-top: 120px;
+    margin-top: 0;
     background-color: #fafafa;
   }
 
@@ -257,16 +310,20 @@
 @media (max-width: 1024px) {
   .content {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .content .shadow {
     width: 100%;
+    margin: 0;
   }
 
   .content .top-img-container {
     position: relative;
     width: 100%;
     height: 81.6vw;
+    margin: 0;
   }
 
   .content .top-img-container > img {
@@ -299,13 +356,13 @@
 
   .content .flower {
     display: block;
-    margin: 30px auto 12px;
+    margin: 0 auto;
     width: 135px;
     height: 106px;
   }
 
   .content .flower-main-text-container {
-    margin-bottom: 12px;
+    margin: 0;
   }
 
   .content .flower-main-text {
@@ -319,7 +376,7 @@
 
   .content .subtext {
     font-family: Montserrat-Regular;
-    margin: 0 40px;
+    margin: 0;
     font-size: 12px;
     color: #777B86;
     letter-spacing: 0;
@@ -328,7 +385,7 @@
   }
 
   .content .title {
-    margin: 50px auto 4px;
+    margin: 0 auto;
     font-family: Times-Italic;
     font-size: 24px;
     font-weight: 700;
@@ -341,12 +398,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 12px auto 0;
+    margin: 0 auto;
   }
 
   .content .mission-item {
     width: 90%;
-    margin: 12px auto 0;
+    margin: 0 auto;
     padding: 16px 0 25px;
     border: 1px solid #E0E0E0;
     border-radius: 24px;
@@ -381,10 +438,10 @@
   }
 
   .content .team-container {
-    margin: 16px 18px 0;
+    margin: 0;
     padding-top: 20px;
     background-image: linear-gradient(180deg, #EFF7FF 0%, #FFFFFF 100%);
-    border-radius: 24px;
+    border-radius: 0;
   }
 
   .content .team-img {
@@ -439,7 +496,7 @@
 
   .content .bottom {
     position: relative;
-    margin-top: 60px;
+    margin-top: 0;
     background-color: #fafafa;
   }
 
