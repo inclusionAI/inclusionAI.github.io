@@ -14,7 +14,7 @@
 {{- end -}}
 " id="top">
     {{- partial "header.html" . -}}
-    {{- partial "hero.html" . -}}
+    {{- if not .IsHome }}{{- partial "hero.html" . -}}{{ end }}
     <main class="main {{ if  eq .Layout `search` }} {{ "search" | safeCSS }} {{ end }} {{ if .IsHome }} {{ "home" | safeCSS }} {{ end }}">
         {{- block "main" . }}{{ end }}
     </main>

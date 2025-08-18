@@ -1,0 +1,174 @@
+{{- define "main" }}
+
+<!-- 引入外部样式文件 -->
+<link rel="stylesheet" href="index.css">
+
+<!-- 自定义首页内容 -->
+<div class="content">
+    <!-- 顶部阴影 -->
+    <img
+        class="shadow"
+        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*EBM0QoOQEiEAAAAAXjAAAAgAekZ_AQ/original"
+        alt=""
+    />
+    
+    <!-- 顶部图片容器 -->
+    <div class="top-img-container">
+        <img
+            class="star"
+            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*XqmOTbHN6t8AAAAAQCAAAAgAekZ_AQ/original"
+            alt=""
+        />
+        <img
+            class="text"
+            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*9dbATZ83N2QAAAAAQOAAAAgAekZ_AQ/original"
+            alt=""
+        />
+        <img
+            class="wind"
+            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*44gjSq8U7scAAAAAQDAAAAgAekZ_AQ/original"
+            alt=""
+        />
+        <img
+            class="hand"
+            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*VdtKTbsyY00AAAAAcXAAAAgAekZ_AQ/original"
+            alt=""
+        />
+    </div>
+    
+    <!-- 花朵图片 -->
+    <img
+        class="flower fade-in-element"
+        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*m4f6T64FkHYAAAAAgEAAAAgAekZ_AQ/original"
+        alt=""
+    />
+    
+    <!-- 主要文字区域 -->
+    <div class="fade-in-element">
+        <div class="flower-main-text-container">
+            <div class="flower-main-text">InclusionAI (IAI) envisions AGI as humanity's shared</div>
+            <div class="flower-main-text">milestone, not a privileged asset</div>
+        </div>
+        <div class="subtext">
+            Backed by Ant Group, we're forging a global open platform to accelerate collaborative
+        </div>
+        <div class="subtext">breakthroughs in intelligent civilization</div>
+    </div>
+
+    <!-- Mission 区域 -->
+    <div class="fade-in-element">
+        <div class="title">Mission</div>
+        <div class="subtext">Provide a Sustainable and Responsible Intelligence Option for the Learners and Builders</div>
+        <div class="mission-list">
+            <!-- Mission Item 1 -->
+            <div class="mission-item">
+                <div class="mission-img-container">
+                    <img
+                        class="mission-img"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*MEtLSKQ5fokAAAAAQbAAAAgAekZ_AQ/original"
+                        style="width: 18.5vw"
+                        alt=""
+                    />
+                </div>
+                <div class="mission-item-title">Open by Default</div>
+                <div class="mission-item-text">Open models and systems, build with global talents, get inspired together</div>
+            </div>
+            
+            <!-- Mission Item 2 -->
+            <div class="mission-item">
+                <div class="mission-img-container">
+                    <img
+                        class="mission-img"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*VXl4S7cwJFgAAAAAQVAAAAgAekZ_AQ/original"
+                        style="width: 13.7vw"
+                        alt=""
+                    />
+                </div>
+                <div class="mission-item-title">Ecosystem Oriented</div>
+                <div class="mission-item-text">Work with academia and industrial partners, jointly explore AGI unknowns</div>
+            </div>
+            
+            <!-- Mission Item 3 -->
+            <div class="mission-item">
+                <div class="mission-img-container">
+                    <img
+                        class="mission-img"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*fagKQ7WIf8wAAAAAQVAAAAgAekZ_AQ/original"
+                        style="width: 9.1vw"
+                        alt=""
+                    />
+                </div>
+                <div class="mission-item-title">Start Small</div>
+                <div class="mission-item-text">Take baby steps to test novel architectures, be pragmatic, every flop counts!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About the Team 区域 -->
+    <div class="fade-in-element">
+        <div class="title" style="margin-bottom: 60px;">About the Team</div>
+        <div class="team-container">
+            <img
+                class="team-img"
+                src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*8tsvQ6NQZfEAAAAAUjAAAAgAekZ_AQ/original"
+                alt=""
+            />
+            <div class="team-text">
+                InclusionAI (IAI) is founded by Ant Group with an earnest yet small wish to bring small and usable intelligence to the world. With researchers formerly at OpenAI, Google and FAIR (Meta AI) and a strong engineering team, we take bold moves and understand it would take dedicated effort from researchers, engineers and product builders to work together in a inspirational and supportive team.
+            </div>
+            <div class="button" onclick="window.open('./research')">
+                Our Research
+                <img class="arrow" src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*vvp6R65SgM8AAAAAF6AAAAgAekZ_AQ/original" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Releases 区域 -->
+    <div class="fade-in-element">
+        <div class="title no-margin-top">Releases</div>
+        {{- $pages := where site.RegularPages "Section" "blog" | first 6 }}
+        {{- range $pages }}
+        <div class="releases-article">
+            <div class="releases-title" onclick="window.open('{{ .Permalink }}')">
+                {{ .Title }}
+            </div>
+            <div class="brief">{{ .Section | title }}</div>
+            <div class="brief">{{ .Date.Format "Jan 2, 2006" }}</div>
+        </div>
+        {{- end }}
+    </div>
+
+    <!-- 底部区域 -->
+    <div class="bottom">
+        <div class="icon-list">
+            <img
+                class="icon"
+                src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*YNPuRKYiC6AAAAAAQEAAAAgAekZ_AQ/original"
+                style="width: 60px"
+                onclick="window.open('https://huggingface.co/inclusionAI')"
+                alt=""
+            />
+            <img
+                class="icon"
+                src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*KLhaTqSxjWMAAAAAQBAAAAgAekZ_AQ/original"
+                style="width: 60px"
+                onclick="window.open('https://github.com/inclusionAI')"
+                alt=""
+            />
+            <img
+                class="icon"
+                src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*CMEURKizEMsAAAAAM-AAAAgAekZ_AQ/original"
+                style="width: 60px"
+                onclick="window.open('https://modelscope.cn/organization/inclusionAI')"
+                alt=""
+            />
+        </div>
+        <img
+            class="bottom-img"
+            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*YL0VR4Xi6f4AAAAARhAAAAgAekZ_AQ/original"
+            alt=""
+        />
+    </div>
+</div>
+
+{{- end }}

@@ -1,0 +1,486 @@
+@media (min-width: 1024px) {
+  .content {
+    width: 100%;
+  }
+
+  .content .shadow {
+    width: 100%;
+    height: 80px;
+  }
+
+  .content .top-img-container {
+    position: relative;
+    width: 100%;
+    height: 44.3vw;
+    background-image: linear-gradient(180deg, #FFFFFF 43%, #F9FAFF 100%);
+  }
+
+  .content .top-img-container > img {
+    position: absolute;
+    animation-iteration-count: 1;
+  }
+
+  .content .star {
+    left: 8vw;
+    top: 8.3vw;
+    width: 5vw;
+  }
+
+  .content .text {
+    left: 11.4vw;
+    top: 10.4vw;
+    width: 41.56vw;
+  }
+
+  .content .wind {
+    left: 35.82vw;
+    top: 26.5vw;
+    width: 20.37vw;
+  }
+
+  .content .hand {
+    right: 0;
+    bottom: 0;
+    width: 40.67vw;
+  }
+
+  .content .flower {
+    display: block;
+    margin: 100px auto 40px;
+    width: 20.3vw;
+  }
+
+  .content .flower-main-text-container {
+    margin-bottom: 12px;
+  }
+
+  .content .flower-main-text {
+    font-family: PlantagenetCherokee;
+    font-size: 40px;
+    color: #17191C;
+    letter-spacing: 1.11px;
+    text-align: center;
+    line-height: 48px;
+  }
+
+  .content .title {
+    margin: 120px auto 20px;
+    font-family: Times-Italic;
+    font-weight: 700;
+    font-size: 64px;
+    color: #17191C;
+    letter-spacing: 1.33px;
+    text-align: center;
+  }
+
+  .content .no-margin-top {
+    margin-top: 0;
+  }
+
+  .content .subtext {
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #777B86;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 28px;
+  }
+
+  .content .mission-list {
+    display: flex;
+    width: 85vw;
+    margin: 60px auto 0;
+  }
+
+  .content .mission-item {
+    width: 26.67vw;
+    padding-bottom: 20px;
+    margin-right: 1.6%;
+    border: 1px solid #E0E0E0;
+    border-radius: 24px;
+  }
+
+  .content .mission-img-container {
+    width: 100%;
+    height: 16vw;
+    padding-top: 40px;
+  }
+
+  .content .mission-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .content .mission-item-title {
+    font-family: PlantagenetCherokee;
+    font-size: 32px;
+    color: #17191C;
+    letter-spacing: 0.89px;
+    text-align: center;
+  }
+
+  .content .mission-item-text {
+    font-family: Montserrat-Regular;
+    margin: 16px 32px 0;
+    font-size: 18px;
+    color: #777B86;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .content .team-container {
+    margin: 36px 9% 0;
+    padding: 60px 0 120px;
+    background-image: linear-gradient(180deg, #EFF7FF 0%, #FFFFFF 100%);
+    border-radius: 24px;
+  }
+
+  .content .team-img {
+    display: block;
+    width: 60vw;
+    margin: 0 auto 60px;
+  }
+
+  .content .team-text {
+    font-family: Montserrat-Regular;
+    margin: 0 100px 40px;
+    font-size: 18px;
+    color: #17191C;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .content .button {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 24px;
+    border: 0.3px solid #979797;
+    border-radius: 8px;
+    font-family: Montserrat-Medium;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0.53px;
+    cursor: pointer;
+    background: #000000;
+    box-shadow: 0 5px 8px 0 rgba(178,190,222,0.39);
+    transition: all .6s;
+  }
+
+  .content .button:hover {
+    scale: 1.1;
+  }
+    
+  .content .arrow {
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .content .article {
+    width: calc(100% - 16.6%);
+    padding: 24px 0;
+    margin: 0 8.3%;
+    border-bottom: 1px solid #eee;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    color: #17191C;
+    letter-spacing: 0.38px;
+    cursor: pointer;
+  }
+
+  .content .bottom {
+    position: relative;
+    margin-top: 120px;
+    background-color: #fafafa;
+  }
+
+  .content .icon-list {
+    position: absolute;
+    top: 8.3vw;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .content .icon {
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .content .icon:hover {
+    transform: scale(1.1);
+  }
+
+  .content .bottom-img {
+    width: 100%;
+  }
+
+  .content .releases-article {
+    display: flex;
+    align-items: center;
+    width: 86%;
+    margin: 0 7%;
+    padding: 24px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .content .releases-article .releases-title {
+    flex: 1;
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #17191C;
+    letter-spacing: 0.38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .content .releases-article .releases-title:hover {
+    text-decoration: underline;
+  }
+
+  .content .releases-article .brief {
+    width: 120px;
+    text-align: left;
+    margin-left: 7vw;
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: rgba(50,50,50,0.65);
+    letter-spacing: 0.38px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    width: 100%;
+  }
+
+  .content .shadow {
+    width: 100%;
+  }
+
+  .content .top-img-container {
+    position: relative;
+    width: 100%;
+    height: 81.6vw;
+  }
+
+  .content .top-img-container > img {
+    position: absolute;
+  }
+
+  .content .star {
+    left: 9.5vw;
+    top: 7.1vw;
+    width: 9.42vw;
+  }
+
+  .content .text {
+    left: 16.1vw;
+    top: 12.67vw;
+    width: 79vw;
+  }
+
+  .content .wind {
+    left: 10vw;
+    top: 41.46vw;
+    width: 27.3vw;
+  }
+
+  .content .hand {
+    right: 0;
+    bottom: 0;
+    width: 54.2vw;
+  }
+
+  .content .flower {
+    display: block;
+    margin: 30px auto 12px;
+    width: 135px;
+    height: 106px;
+  }
+
+  .content .flower-main-text-container {
+    margin-bottom: 12px;
+  }
+
+  .content .flower-main-text {
+    font-family: PlantagenetCherokee;
+    font-size: 18px;
+    color: #17191C;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .content .subtext {
+    font-family: Montserrat-Regular;
+    margin: 0 40px;
+    font-size: 12px;
+    color: #777B86;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 16px;
+  }
+
+  .content .title {
+    margin: 50px auto 4px;
+    font-family: Times-Italic;
+    font-size: 24px;
+    font-weight: 700;
+    color: #17191C;
+    letter-spacing: 1.33px;
+    text-align: center;
+  }
+
+  .content .mission-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 12px auto 0;
+  }
+
+  .content .mission-item {
+    width: 90%;
+    margin: 12px auto 0;
+    padding: 16px 0 25px;
+    border: 1px solid #E0E0E0;
+    border-radius: 24px;
+  }
+
+  .content .mission-img-container {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .content .mission-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .content .mission-item-title {
+    font-family: PlantagenetCherokee;
+    font-size: 18px;
+    color: #17191C;
+    letter-spacing: 0.89px;
+    text-align: center;
+  }
+
+  .content .mission-item-text {
+    font-family: Montserrat-Regular;
+    margin: 6px 20px 0;
+    font-size: 12px;
+    color: #777B86;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 16px;
+  }
+
+  .content .team-container {
+    margin: 16px 18px 0;
+    padding-top: 20px;
+    background-image: linear-gradient(180deg, #EFF7FF 0%, #FFFFFF 100%);
+    border-radius: 24px;
+  }
+
+  .content .team-img {
+    display: block;
+    width: 328px;
+    height: 175px;
+    margin: 0 auto 5px;
+  }
+
+  .content .team-text {
+    font-family: Montserrat-Regular;
+    margin: 20px;
+    font-size: 13px;
+    color: #17191C;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  .content .button {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 24px;
+    border: 0.3px solid #979797;
+    border-radius: 8px;
+    font-family: Montserrat-Medium;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0.53px;
+    cursor: pointer;
+    background: #000000;
+    box-shadow: 0 5px 8px 0 rgba(178,190,222,0.39);
+  }
+    
+  .content .arrow {
+    margin-left: 2px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .content .article {
+    width: calc(100% - 16.6%);
+    padding: 24px 0;
+    margin: 0 8.3%;
+    border-bottom: 1px solid #eee;
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    color: #17191C;
+    letter-spacing: 0.38px;
+    cursor: pointer;
+  }
+
+  .content .bottom {
+    position: relative;
+    margin-top: 60px;
+    background-color: #fafafa;
+  }
+
+  .content .icon-list {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .content .icon {
+    margin-right: 12px;
+  }
+
+  .content .bottom-img {
+    width: 100%;
+  }
+
+  .content .releases-article {
+    width: 90%;
+    margin: 0 5%;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+
+  .content .releases-article .releases-title {
+    flex: 1;
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    color: #17191C;
+    letter-spacing: 0.38px;
+  }
+
+  .content .releases-article .brief {
+    display: inline;
+    margin-right: 10px;
+    font-family: Montserrat-Regular;
+    font-size: 10px;
+    color: rgba(50,50,50,0.65);
+    letter-spacing: 0.21px;
+  }
+}
