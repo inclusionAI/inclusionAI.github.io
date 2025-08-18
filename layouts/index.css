@@ -46,11 +46,92 @@ body, .main, .content, .nav-container, .hero-container,
     padding: 0 !important;
 }
 
+/* 让页面内容延伸到滚动条区域 */
+html {
+    overflow-x: overlay !important;
+}
+
+body {
+    overflow-x: overlay !important;
+}
+
+.main {
+    overflow-x: overlay !important;
+}
+
+.content {
+    overflow-x: overlay !important;
+    /* 确保内容可以延伸到滚动条区域 */
+    width: calc(100% + 19px) !important;
+    margin-right: -19px !important;
+}
+
+/* 确保所有子元素也能延伸到滚动条区域 */
+.content > * {
+    width: calc(100% + 19px) !important;
+    margin-right: -19px !important;
+}
+
+/* 处理特定元素的宽度调整 */
+.content .shadow,
+.content .top-img-container,
+.content .bottom,
+.content .bottom-img {
+    width: calc(100% + 19px) !important;
+    margin-right: -19px !important;
+}
+
+/* 确保滚动条始终可见 */
+::-webkit-scrollbar {
+    width: 19px !important;
+    height: 11px !important;
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 10px !important;
+    border: 2px solid transparent !important;
+    background-clip: content-box !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Firefox 滚动条样式 */
+* {
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(0, 0, 0, 0.3) transparent !important;
+}
+
+/* 确保内容在滚动条区域正确显示 */
+.content {
+    box-sizing: border-box !important;
+}
+
+.content > * {
+    box-sizing: border-box !important;
+}
+
+/* 处理可能的溢出问题 */
+.content .shadow,
+.content .top-img-container,
+.content .bottom,
+.content .bottom-img {
+    overflow: visible !important;
+}
+
 @media (min-width: 1024px) {
   .content {
-    width: 100%;
+    width: calc(100% + 19px);
     margin: 0;
     padding: 0;
+    margin-right: -19px;
   }
 
   .content .shadow {
@@ -117,7 +198,7 @@ body, .main, .content, .nav-container, .hero-container,
 
   .content .title {
     margin: 0 auto;
-    font-family: Times-Italic;
+    font-family: Times-Italic, 'Times-Italic-System', 'Times New Roman Italic', Georgia, serif;
     font-weight: 700;
     font-size: 64px;
     color: #17191C;
@@ -130,7 +211,7 @@ body, .main, .content, .nav-container, .hero-container,
   }
 
   .content .subtext {
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, 'Montserrat-Fallback', Arial, sans-serif;
     font-size: 18px;
     color: #777B86;
     letter-spacing: 0;
@@ -173,7 +254,7 @@ body, .main, .content, .nav-container, .hero-container,
   }
 
   .content .mission-item-text {
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, 'Montserrat-Fallback', Arial, sans-serif;
     margin: 16px 32px 0;
     font-size: 18px;
     color: #777B86;
@@ -196,7 +277,7 @@ body, .main, .content, .nav-container, .hero-container,
   }
 
   .content .team-text {
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, 'Montserrat-Fallback', Arial, sans-serif;
     margin: 0 100px 40px;
     font-size: 18px;
     color: #17191C;
@@ -211,7 +292,7 @@ body, .main, .content, .nav-container, .hero-container,
     padding: 8px 24px;
     border: 0.3px solid #979797;
     border-radius: 8px;
-    font-family: Montserrat-Medium;
+    font-family: Montserrat-Medium, 'Montserrat-Fallback', Arial, sans-serif;
     font-size: 24px;
     color: #FFFFFF;
     letter-spacing: 0.53px;
@@ -282,7 +363,7 @@ body, .main, .content, .nav-container, .hero-container,
 
   .content .releases-article .releases-title {
     flex: 1;
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, 'Montserrat-Fallback', Arial, sans-serif;
     font-size: 18px;
     color: #17191C;
     letter-spacing: 0.38px;
@@ -300,7 +381,7 @@ body, .main, .content, .nav-container, .hero-container,
     width: 120px;
     text-align: left;
     margin-left: 7vw;
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, 'Montserrat-Fallback', Arial, sans-serif;
     font-size: 18px;
     color: rgba(50,50,50,0.65);
     letter-spacing: 0.38px;
@@ -309,9 +390,10 @@ body, .main, .content, .nav-container, .hero-container,
 
 @media (max-width: 1024px) {
   .content {
-    width: 100%;
+    width: calc(100% + 19px);
     margin: 0;
     padding: 0;
+    margin-right: -19px;
   }
 
   .content .shadow {
@@ -375,7 +457,7 @@ body, .main, .content, .nav-container, .hero-container,
   }
 
   .content .subtext {
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, 'Montserrat-Fallback', Arial, sans-serif;
     margin: 0;
     font-size: 12px;
     color: #777B86;
@@ -386,7 +468,7 @@ body, .main, .content, .nav-container, .hero-container,
 
   .content .title {
     margin: 0 auto;
-    font-family: Times-Italic;
+    font-family: Times-Italic, 'Times-Italic-System', 'Times New Roman Italic', Georgia, serif;
     font-size: 24px;
     font-weight: 700;
     color: #17191C;
@@ -428,7 +510,7 @@ body, .main, .content, .nav-container, .hero-container,
   }
 
   .content .mission-item-text {
-    font-family: Montserrat-Regular;
+    font-family: Montserrat-Regular, 'Montserrat-Fallback', Arial, sans-serif;
     margin: 6px 20px 0;
     font-size: 12px;
     color: #777B86;

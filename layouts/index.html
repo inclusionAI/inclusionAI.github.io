@@ -117,7 +117,7 @@
                 InclusionAI (IAI) is founded by Ant Group with an earnest yet small wish to bring small and usable intelligence to the world. With researchers formerly at OpenAI, Google and FAIR (Meta AI) and a strong engineering team, we take bold moves and understand it would take dedicated effort from researchers, engineers and product builders to work together in a inspirational and supportive team.
             </div>
             <div class="button" onclick="window.open('./research')">
-                Our Research
+                <span>Our Research</span>
                 <img class="arrow" src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*vvp6R65SgM8AAAAAF6AAAAgAekZ_AQ/original" />
             </div>
         </div>
@@ -132,7 +132,7 @@
             <div class="releases-title" onclick="window.open('{{ .Permalink }}')">
                 {{ .Title }}
             </div>
-            <div class="brief">{{ .Section | title }}</div>
+            <div class="brief">Model</div>
             <div class="brief">{{ .Date.Format "Jan 2, 2006" }}</div>
         </div>
         {{- end }}
