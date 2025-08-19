@@ -199,6 +199,7 @@
   }
 
   .content .icon-list {
+    display: flex;
     position: absolute;
     top: 8.3vw;
     left: 50%;
@@ -626,13 +627,7 @@
 @font-face {
   font-family: Montserrat-Medium;
   src: url('/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
-       url('/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('opentype'),
-       local('Montserrat Medium'),
-       local('Montserrat'),
-       sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+       url('/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('opentype');
 }
 @font-face {
   font-family: Montserrat-MediumItalic;
