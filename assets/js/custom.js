@@ -68,6 +68,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Image switching functionality for top-img-container
+    // Different images switch at different times, text image doesn't switch
+    
+    // Star image switches after 2 seconds
+    const starImg = document.querySelector('.top-img-container .star');
+    if (starImg) {
+        setTimeout(() => {
+            starImg.src = starImg.getAttribute('data-src');
+        }, 1300);
+    }
+    
+    // Wind image switches after 4 seconds
+    const windImg = document.querySelector('.top-img-container .wind');
+    if (windImg) {
+        setTimeout(() => {
+            windImg.src = windImg.getAttribute('data-src');
+        }, 2300);
+    }
+    
+    // Hand image switches after 6 seconds
+    const handImg = document.querySelector('.top-img-container .hand');
+    if (handImg) {
+        setTimeout(() => {
+            handImg.src = handImg.getAttribute('data-src');
+        }, 12300);
+    }
+
     // Active link highlighting
     const navLinks = document.querySelectorAll('.nav-link');
     const currentPath = window.location.pathname;
