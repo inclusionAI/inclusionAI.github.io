@@ -6,57 +6,565 @@
     <title>Model - InclusionAI</title>
     <link rel="stylesheet" href="/themes/PaperMod/assets/css/common/header.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat-Regular', sans-serif;
-            background: #f8f9fa;
+        .big-content {
+            padding-top: 145px;
         }
-        
-        .page-container {
-            padding-top: 80px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .big-content .top-img {
+            display: block;
+            margin: 0 8.3% 120px;
+            width: 83.4%;
         }
-        
-        .content {
-            text-align: center;
-            padding: 40px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .title {
-            font-size: 48px;
-            font-weight: 700;
+        .big-content .big-content-title {
+            font-family: Times-Roman;
+            font-size: 32px;
             color: #17191C;
-            margin-bottom: 20px;
+            letter-spacing: 0.89px;
+            text-align: center;
         }
-        
-        .subtitle {
+        .big-content .big-content-text {
+            padding: 0 20px;
+            margin-top: 10px;
+            font-family: Montserrat-Regular;
             font-size: 18px;
             color: #777B86;
-            margin-bottom: 30px;
+            text-align: center;
         }
-        
-        .description {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-            max-width: 600px;
+        .big-content .big-content-container {
+            margin: 0 8.3% 24px;
+            width: 83.4%;
+            padding: 60px 0 25px;
+            background: #EFF7FF;
+            border-radius: 24px;
+        }
+        .big-content .big-content-img {
+            display: block;
+            width: 66.25%;
+            margin: 37px auto 52px;
+        }
+        .big-content .card-container {
+            display: flex;
+            margin: 0 8.3% 200px;
+            width: 83.4%;
+        }
+        .big-content .ming,
+        .big-content .ring {
+            position: relative;
+            flex: 1;
+            display: flex;
+            flex-direction: column-reverse;
+            background: #FAFAFB;
+            border-radius: 24px;
+        }
+        .big-content .ming .small-content-title,
+        .big-content .ring .small-content-title {
+            font-family: Times-Roman;
+            font-size: 32px;
+            color: #17191c;
+            letter-spacing: .89px;
+            text-align: center;
+            margin-top: 88px;
+        }
+        .big-content .ming .small-content-text,
+        .big-content .ring .small-content-text {
+            margin-bottom: 35px;
+            padding: 0 20px;
+            margin-top: 10px;
+            font-family: Montserrat-Regular;
+            font-size: 18px;
+            color: #777b86;
+            text-align: center;
+
+        }
+        .big-content .ring {
+            margin-right: 24px;
+            padding: 103px 0 25px;
+        }
+        .big-content .ring-img {
+            display: block;
+            width: 100%;
+        }
+        .big-content .ming {
+            padding: 80px 0 25px;
+        }
+        .big-content .ming-img {
+            display: block;
             margin: 0 auto;
+            width: 60%;
+        }
+        .big-content .text-container {
+            display: none;
+        }
+        .big-content .big-content-container:hover,
+        .big-content .ring:hover,
+        .big-content .ming:hover {
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 2px 30px 0 rgba(176,176,176,0.46);
+        }
+        .big-content .big-content-container:hover .text-container,
+        .big-content .ring:hover .text-container,
+        .big-content .ming:hover .text-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 73%;
+            padding: 0 13.5%;
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 24px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            box-sizing: content-box;
+        }
+        .big-content .ling,
+        .big-content .ming,
+        .big-content .ring {
+            transition: box-shadow .2s;
+        }
+        .big-content .big-content-container .article,
+        .big-content .ming .article,
+        .big-content .ring .article {
+            position: relative;
+            font-family: Montserrat-Regular;
+            font-size: 20px;
+            text-align: center;
+            color: #333;
+            letter-spacing: 0;
+            line-height: 32px;
+        }
+        .big-content .big-content-container .start-text,
+        .big-content .ming .start-text,
+        .big-content .ring .start-text {
+            color: #06f;
+        }
+        .big-content .big-content-container:hover .text-container {
+            display: flex;
+            align-items: center;
+            height: calc(100% - 75px);
+        }
+        .big-content .big-content-container:hover .left-img {
+            position: absolute;
+            top: -60px;
+            left: -80px;
+            width: 80px;
+            height: 95px;
+        }
+        .big-content .big-content-container:hover .right-img {
+            position: absolute;
+            bottom: -85px;
+            right: -50px;
+            width: 46px;
+            height: 50px;
+        }
+        .big-content .ring:hover .text-container {
+            display: flex;
+            align-items: center;
+            height: calc(100% - 64px);
+        }
+        .big-content .ring:hover .right-img {
+            position: absolute;
+            top: -42px;
+            right: -27px;
+            width: 56px;
+            height: 42px;
+        }
+        .big-content .ming:hover .text-container {
+            display: flex;
+            align-items: center;
+            height: calc(100% - 64px);
+        }
+        .big-content .ming:hover .left-img {
+            position: absolute;
+            top: -53px;
+            left: -39px;
+            width: 71.68px;
+            height: 70px;
+        }
+        .big-content .ming:hover .right-img {
+            position: absolute;
+            bottom: -20%;
+            right: 5%;
+            width: 46px;
+            height: 50px;
+        }
+        .small-content {
+            padding: 100px 0 44px;
+        }
+        .small-content .top-img {
+            display: block;
+            margin: 0 8.3% 50px;
+            width: 83.4%;
+        }
+        .small-content .card {
+            overflow: hidden;
+            position: relative;
+            margin: 0 18px 16px;
+            border: 1px solid #E0E0E0;
+            border-radius: 16px;
+            background-color: #FAFAFB;
+        }
+        .small-content .card:first-child {
+            background: #EFF7FF;
+        }
+        .small-content .card-inner {
+            height: 257.5px;
+            padding-top: 30px;
+            box-sizing: border-box;
+        }
+        .small-content .title {
+            margin-bottom: 4px;
+            font-family: PlantagenetCherokee;
+            font-size: 18px;
+            line-height: 18px;
+            color: #17191C;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .small-content .text {
+            margin-bottom: 18px;
+            font-family: Montserrat-Regular;
+            font-size: 12px;
+            color: #777B86;
+            letter-spacing: 0;
+            text-align: center;
+        }
+        .small-content .img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .small-content .text-container {
+            height: 257.5px;
+            display: flex;
+            align-items: center;
+            border-radius: 16px;
+            background-color: #fff;
+        }
+        .small-content .article {
+            position: relative;
+            top: -19px;
+            padding: 0 30px;
+            font-family: Montserrat-Regular;
+            text-align: center;
+            font-size: 11px;
+            color: #333;
+            letter-spacing: 0;
+            line-height: 16px;
+        }
+        .small-content .start-text {
+            color: #06f;
+        }
+        .small-content .icon {
+            position: absolute;
+        }
+        .content-icon-list {
+            display: flex;
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        .content-icon {
+            display: block;
+            transition: all .4s;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            border: 1px solid #E0E0E0;
+            padding: 12px;
+            box-sizing: content-box;
+        }
+        .content-icon:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+            transform: scale(1.1);
+        }
+
+        /* Tooltip 样式 */
+        .custom-tooltip {
+          position: absolute;
+          background: #222;
+          color: #fff;
+          padding: 6px 12px;
+          border-radius: 4px;
+          font-size: 14px;
+          white-space: nowrap;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 0.2s;
+          z-index: 9999;
+        }
+        .custom-tooltip.show {
+          opacity: 1;
+          pointer-events: auto;
         }
     </style>
 </head>
 <body>
     <!-- Header will be included here -->
-    <div class="page-container">
-        123
+    <div class="big-content">
+        <div class="fade-in-element">
+            <img
+                src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*N5tuR4VpIcYAAAAAT_AAAAgAekZ_AQ/original"
+                alt=""
+                class="top-img"
+            />
+        </div>
+        <div class="fade-in-element">
+            <div class="big-content-container">
+                <div class="big-content-title">Ling</div>
+                <div class="big-content-text">The Foundation Language Model</div>
+                <img
+                    class="big-content-img"
+                    src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*qau_QaPAUAkAAAAARaAAAAgAekZ_AQ/original"
+                    alt=""
+                />
+                <div class="content-icon-list">
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0 32px 0 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*YNPuRKYiC6AAAAAAQEAAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://huggingface.co/inclusionAI"
+                        data-tooltip="https://huggingface.co/inclusionAI"
+                    >
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0 32px 0 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*KLhaTqSxjWMAAAAAQBAAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://github.com/inclusionAI/Ling"
+                        data-tooltip="https://github.com/inclusionAI/Ling"
+                    >
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*CMEURKizEMsAAAAAM-AAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://modelscope.cn/organization/inclusionAI"
+                        data-tooltip="https://modelscope.cn/organization/inclusionAI"
+                    >
+                </div>
+                <div class="text-container">
+                    <div class="article">
+                        <span class="start-text">
+                            Ling&nbsp;
+                        </span>
+                        <span>
+                            is a MoE LLM model provided and open-sourced by InclusionAI. We introduce two models of different sizes, Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters, of which 2.75 billion are activation parameters; while Ling-plus has 290 billion parameters, of which 28.8 billion are activation parameters. Both models show impressive performance compared to existing models in the industry
+                        </span>
+                        <img
+                            class="left-img"
+                            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*THunQ5shD5QAAAAAQCAAAAgAekZ_AQ/original"
+                            alt=""
+                        />
+                        <img
+                            class="right-img"
+                            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*sYQqQqyWyVkAAAAAQBAAAAgAekZ_AQ/original"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fade-in-element">
+            <div class="card-container">
+              <div class="ring">
+                <div class="content-icon-list">
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0 32px 0 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*YNPuRKYiC6AAAAAAQEAAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://huggingface.co/inclusionAI"
+                        data-tooltip="https://huggingface.co/inclusionAI"
+                    >
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0 32px 0 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*KLhaTqSxjWMAAAAAQBAAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://github.com/inclusionAI/Ring"
+                        data-tooltip="https://github.com/inclusionAI/Ring"
+                    >
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*CMEURKizEMsAAAAAM-AAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://modelscope.cn/organization/inclusionAI"
+                        data-tooltip="https://modelscope.cn/organization/inclusionAI"
+                    >
+                </div>
+              <div class="small-content-text">Reasoning Derivation of the Foundation Model</div>
+              <div class="small-content-title">Ring</div>
+              <img
+              class="ring-img"
+              src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*FV8XQa2sJGwAAAAAQbAAAAgAekZ_AQ/original"
+              alt=""
+            />
+              <div class="text-container">
+                <div class="article">
+                  <span class="start-text">
+                    Ring&nbsp;
+                  </span>
+                  <span>
+                    is an inference MoE LLM derived from Ling, provided and open sourced by InclusionAI. We use a joint training process combining knowledge distillation and reinforcement learning to achieve comparable performance to the state-of-the-art (SOTA) baseline small inference model on the challenge with only one-third of the parameters activated
+                  </span>
+                  <img
+                    class="right-img"
+                    src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*ajFuQZKT2vEAAAAAQBAAAAgAekZ_AQ/original"
+                    alt=""
+                  />
+                </div>
+              </div>
+              </div>
+              <!-- ----------------------------------------------- -->
+              <div class="ming">
+                <div class="content-icon-list">
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0 32px 0 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*YNPuRKYiC6AAAAAAQEAAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://huggingface.co/inclusionAI"
+                        data-tooltip="https://huggingface.co/inclusionAI"
+                    >
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0 32px 0 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*KLhaTqSxjWMAAAAAQBAAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://github.com/inclusionAI/Ming"
+                        data-tooltip="https://github.com/inclusionAI/Ming"
+                    >
+                    <img
+                        class="content-icon"
+                        style="width: 36px; border-radius: 36px; margin: 0;"
+                        src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*CMEURKizEMsAAAAAM-AAAAgAekZ_AQ/original"
+                        alt=""
+                        data-link="https://modelscope.cn/organization/inclusionAI"
+                        data-tooltip="https://modelscope.cn/organization/inclusionAI"
+                    >
+                </div>
+                <div class="small-content-text">Multi-Modal Understanding and Generation</div>
+                <div class="small-content-title">Ming</div>
+                <img
+                  class="ming-img"
+                  src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*0MeFRZuElDwAAAAAQbAAAAgAekZ_AQ/original"
+                  alt=""
+                />
+                <div class="text-container">
+                  <div class="article">
+                    <span class="start-text">
+                      Ming-Omni&nbsp;
+                    </span>
+                    <span>
+                      is a unified multimodal model that can process images, text, audio, and video. More importantly, Ming-lite-omni goes beyond traditional multimodal models and supports audio and image generation. Ming-lite-omni uses a dedicated encoder to extract tokens from different modalities, which are then processed  by Ling
+                    </span>
+                    <img
+                      class="left-img"
+                      src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*TTI3Q4XJCJMAAAAAQBAAAAgAekZ_AQ/original"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
+    <div class="small-content">
+        <img
+            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*U-8ySoeffn0AAAAARPAAAAgAekZ_AQ/original"
+            alt=""
+            class="top-img"
+        />
+
+        <div class="card-container">
+            <div class="card fade-in-element">
+                <div class="carousel">
+                  <div class="card-inner">
+                    <div class="title">Ling</div>
+                    <div class="text">The Foundation Language Model</div>
+                    <img
+                      class="img"
+                      src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*EUHrR4h4TcgAAAAAQQAAAAgAekZ_AQ/original"
+                      style="width: 260px;height: 113px;"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="text-container">
+                      <div class="article">
+                        <span class="start-text">Ling&nbsp;</span>
+                        <span>is a MoE LLM model provided and open-sourced by InclusionAI. We introduce two models of different sizes, Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters, of which 2.75 billion are activation parameters; while Ling-plus has 290 billion parameters, of which 28.8 billion are activation parameters. Both models show impressive performance compared to existing models in the industry</span>
+                          <img
+                            class="icon"
+                            src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*g06iT5108Q8AAAAAFeAAAAgAekZ_AQ/original"
+                            style="width: 11px;height: 13px;left: 9.5px;top: 5px;"
+                            alt=""
+                          />
+                          <img
+                            class="icon"
+                            src="替换为你的右侧图片地址"
+                            style="width: 17px;height: 18px;right: 16.44px;bottom: -5px"
+                            alt=""
+                          />
+                      </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="/assets/js/custom.js"></script>
 </body>
+
+<script>
+    const list = document.querySelectorAll('.content-icon');
+    document.querySelectorAll('.content-icon').forEach(function(img) {
+        img.onclick = function() {
+            const link = img.getAttribute('data-link');
+            if (link) window.open(link, '_blank');
+        };
+
+        // Tooltip
+        let tooltip;
+        img.addEventListener('mouseenter', function(e) {
+            tooltip = document.createElement('div');
+            tooltip.class = 'custom-tooltip show';
+            tooltip.innerText = img.getAttribute('data-tooltip');
+            document.body.appendChild(tooltip);
+            const rect = img.getBoundingClientRect();
+            tooltip.style.top = (rect.top + window.scrollY - tooltip.offsetHeight - 8) + 'px';
+            tooltip.style.left = (rect.left + window.scrollX + rect.width/2 - tooltip.offsetWidth/2) + 'px';
+        });
+        img.addEventListener('mouseleave', function() {
+            if (tooltip) {
+                tooltip.remove();
+                tooltip = null;
+            }
+        });
+    });
+
+    function toggleContentByWidth() {
+        const bigContent = document.querySelector('.big-content');
+        const smallContent = document.querySelector('.small-content');
+        if (window.innerWidth > 750) {
+            bigContent.style.display = '';
+            smallContent.style.display = 'none';
+        } else {
+            bigContent.style.display = 'none';
+            smallContent.style.display = '';
+        }
+    }
+
+    // 初始判断
+    toggleContentByWidth();
+    // 监听窗口尺寸变化
+    window.addEventListener('resize', toggleContentByWidth);
+</script>
 </html>
