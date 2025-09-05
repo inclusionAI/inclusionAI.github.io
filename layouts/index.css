@@ -72,66 +72,13 @@ body {
     margin-right: -19px !important;
 }
 
-/* 处理特定元素的宽度调整 */
-.content .shadow,
-.content .top-img-container,
-.content .bottom,
-.content .bottom-img {
-    width: calc(100% + 19px) !important;
-    margin-right: -19px !important;
-}
-
-/* 确保滚动条始终可见 */
-::-webkit-scrollbar {
-    width: 19px !important;
-    height: 11px !important;
-    background: transparent !important;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent !important;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 10px !important;
-    border: 2px solid transparent !important;
-    background-clip: content-box !important;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.5) !important;
-}
-
-/* Firefox 滚动条样式 */
-* {
-    scrollbar-width: thin !important;
-    scrollbar-color: rgba(0, 0, 0, 0.3) transparent !important;
-}
-
-/* 确保内容在滚动条区域正确显示 */
-.content {
-    box-sizing: border-box !important;
-}
-
-.content > * {
-    box-sizing: border-box !important;
-}
-
-/* 处理可能的溢出问题 */
-.content .shadow,
-.content .top-img-container,
-.content .bottom,
-.content .bottom-img {
-    overflow: visible !important;
-}
+/* 滚动条样式已移除 */
 
 @media (min-width: 1024px) {
   .content {
-    width: calc(100% + 19px);
+    width: 100%;
     margin: 0;
     padding: 0;
-    margin-right: -19px;
   }
 
   .content .shadow {

@@ -1,151 +1,97 @@
 {{- if not (.Param "hide_footer") }}
-<footer class="footer">
-    {{- if site.Copyright }}
-    <span>{{ site.Copyright | markdownify }}</span>
-    {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
-    {{- end }}
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a>
-    </span>
+<!-- 桌面端Footer -->
+<footer class="footer-container" id="desktop-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img
+          src="https://mdn.alipayobjects.com/huamei_u4gqjv/afts/img/7uHaQIkuaScAAAAAAAAAAAAADjNIAQFr/original"
+          alt="Logo"
+        />
+      </div>
+    </div>
+    <div class="footer-text">© 2025 IAI</div>
+    <div class="footer-right">
+      <div class="footer-nav">
+        <div class="icon-links-wrapper">
+          <div class="icon-links">
+            <a
+              href="https://github.com/inclusionAI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://mdn.alipayobjects.com/huamei_u4gqjv/afts/img/zdrXTIVL48IAAAAAAAAAAAAADjNIAQFr/original"
+                alt="Github"
+              />
+            </a>
+          </div>
+          <div class="icon-links">
+            <a
+              href="https://www.modelscope.cn/organization/inclusionAI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="inclusion"
+                src="https://mdn.alipayobjects.com/huamei_u4gqjv/afts/img/Vp8GRaFti38AAAAAAAAAAAAADjNIAQFr/original"
+                alt="modelscope"
+              />
+            </a>
+          </div>
+          <div class="icon-links">
+            <a
+              href="https://huggingface.co/inclusionAI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://mdn.alipayobjects.com/huamei_u4gqjv/afts/img/CljuTr0byUAAAAAAAAAAAAAADjNIAQFr/original"
+                alt="huggingface"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
-{{- end }}
 
-{{- if (not site.Params.disable_scroll_to_top) }}
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg> -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 8" fill="currentColor">
-        <path d="M 12 8 H 0 l 6 -8 z" />
-    </svg>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-        <path d="m 1.65 5.65 l 0.71 0.71 L 5.5 3.21 V 10 h 1 V 3.21 l 3.15 3.15 l 0.71 -0.71 L 6 1.29 l -4.35 4.35 z" />
-    </svg> -->
-</a>
+<!-- 移动端Footer -->
+<div class="footer-container-mobile" id="mobile-footer">
+  <div class="footer-mobile">
+    <img class="footer-icon" src="https://mdn.alipayobjects.com/huamei_u4gqjv/afts/img/7uHaQIkuaScAAAAAAAAAAAAADjNIAQFr/original" alt="" />
+    <div class="footer-text-mobile">© 2025 IAI</div>
+  </div>
+</div>
 {{- end }}
-
-{{- partial "extend_footer.html" . }}
 
 <script>
-    let menu = document.getElementById('menu');
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        };
-    }
+// Footer响应式显示逻辑
+function updateFooterVisibility() {
+  const desktopFooter = document.getElementById('desktop-footer');
+  const mobileFooter = document.getElementById('mobile-footer');
+  
+  if (window.innerWidth >= 750) {
+    if (desktopFooter) desktopFooter.style.display = 'block';
+    if (mobileFooter) mobileFooter.style.display = 'none';
+  } else {
+    if (desktopFooter) desktopFooter.style.display = 'none';
+    if (mobileFooter) mobileFooter.style.display = 'block';
+  }
+}
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
+// 页面加载时执行
+document.addEventListener('DOMContentLoaded', updateFooterVisibility);
 
+// 窗口大小改变时执行
+window.addEventListener('resize', updateFooterVisibility);
+
+// 防抖处理
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(updateFooterVisibility, 250);
+});
 </script>
 
-{{- if (not site.Params.disable_scroll_to_top) }}
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-    mybutton.oncontextmenu = (e) => {
-        // right click to show all examples
-        e.preventDefault();
-        document.querySelectorAll(".example-container").forEach((e) => { e.style.backgroundColor = "unset"; });
-        document.querySelectorAll(".example-content").forEach((e) => {
-            e.style.display = "block";
-            e.style.backgroundColor = "var(--code-bg)";
-            e.style.marginBottom = "var(--modal-gap)";
-            e.classList.remove("scroll")
-        });
-        document.querySelectorAll(".next-button").forEach((e) => { e.style.display = "none"; });
-    };
-</script>
-{{- end }}
-
-{{- if (not site.Params.disable_theme_toggle) }}
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-{{- end }}
-
-{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "show_code_copy_buttons")) }}
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
-
-        function copyingDone() {
-            copybutton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
-            setTimeout(() => {
-                copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            // td containing LineNos
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            // table containing LineNos and code
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            // code blocks not having highlight as parent class
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
-{{- end }}

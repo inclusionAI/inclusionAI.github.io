@@ -1,0 +1,385 @@
+/* 如果你需要全局覆盖三方库的样式，请写在这里 */
+
+/* 比如： */
+
+/*
+.ant-pro-core-label-tip-icon {
+  opacity: 0.45;
+}
+*/
+@font-face {
+  font-family: Montserrat-Black;
+  src: url('/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-BlackItalic;
+  src: url('/fonts/Montserrat/Montserrat-BlackItalic.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-BlackItalic.ttf') format('opentype'),
+       local('Montserrat Black Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-Bold.ttf') format('opentype'),
+       local('Montserrat Bold'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-BoldItalic;
+  src: url('/fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-BoldItalic.ttf') format('opentype'),
+       local('Montserrat Bold Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url('/fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-ExtraBold.ttf') format('opentype'),
+       local('Montserrat ExtraBold'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-ExtraBoldItalic;
+  src: url('/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf')
+    format('truetype'),
+       url('/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf') format('opentype'),
+       local('Montserrat ExtraBold Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-ExtraLight;
+  src: url('/fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-ExtraLight.ttf') format('opentype'),
+       local('Montserrat ExtraLight'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-ExtraLightItalic;
+  src: url('/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf')
+    format('truetype'),
+       url('/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf') format('opentype'),
+       local('Montserrat ExtraLight Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url('/fonts/Montserrat/Montserrat-Light.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-Light.ttf') format('opentype'),
+       local('Montserrat Light'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-LightItalic;
+  src: url('/fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-LightItalic.ttf') format('opentype'),
+       local('Montserrat Light Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url('/fonts/Montserrat/Montserrat-Italic.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-Italic.ttf') format('opentype'),
+       local('Montserrat Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-MediumItalic;
+  src: url('/fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-MediumItalic.ttf') format('opentype'),
+       local('Montserrat Medium Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-SemiBold.ttf') format('opentype'),
+       local('Montserrat SemiBold'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat-SemiBoldItalic;
+  src: url('/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf')
+    format('truetype'),
+       url('/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf') format('opentype'),
+       local('Montserrat SemiBold Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url('/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-Thin.ttf') format('opentype'),
+       local('Montserrat Thin'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-ThinItalic;
+  src: url('/fonts/Montserrat/Montserrat-ThinItalic.ttf') format('truetype'),
+       url('/fonts/Montserrat/Montserrat-ThinItalic.ttf') format('opentype'),
+       local('Montserrat Thin Italic'),
+       local('Montserrat'),
+       sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: PlantagenetCherokee;
+  src: url('/fonts/PlantagenetCherokee.ttf') format('truetype'),
+       url('/fonts/PlantagenetCherokee.ttf') format('opentype'),
+       local('Plantagenet Cherokee'),
+       local('Georgia'),
+       serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Times-Italic;
+  src: url('/fonts/Times-New-Roman-Italic.ttf') format('truetype'),
+       url('/fonts/Times-New-Roman-Italic.ttf') format('opentype'),
+       local('Times New Roman Italic'),
+       local('Times-Italic'),
+       local('Times New Roman'),
+       serif;
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* 添加字体回退测试 */
+@font-face {
+  font-family: 'Times-Italic-Fallback';
+  src: local('Times New Roman Italic'),
+       local('Times-Italic'),
+       local('Times New Roman'),
+       serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* 备用字体定义 - 使用系统字体 */
+@font-face {
+  font-family: 'Times-Italic-System';
+  src: local('Georgia Italic'),
+       local('Times New Roman Italic'),
+       local('Times Italic'),
+       serif;
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* 字体回退链定义 */
+@font-face {
+  font-family: 'Montserrat-Fallback';
+  src: local('Montserrat'),
+       local('Arial'),
+       local('Helvetica'),
+       sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 增强的Montserrat字体回退系统 */
+@font-face {
+  font-family: 'Montserrat-Regular-Fallback';
+  src: local('Montserrat'),
+       local('Arial'),
+       local('Helvetica'),
+       sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium-Fallback';
+  src: local('Montserrat'),
+       local('Arial'),
+       local('Helvetica'),
+       sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold-Fallback';
+  src: local('Montserrat'),
+       local('Arial'),
+       local('Helvetica'),
+       sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold-Fallback';
+  src: local('Montserrat'),
+       local('Arial'),
+       local('Helvetica'),
+       sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PlantagenetCherokee-Fallback';
+  src: local('Georgia'),
+       local('Times New Roman'),
+       local('Times'),
+       serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Times-Roman-Fallback';
+  src: local('Times New Roman'),
+       local('Times'),
+       local('Georgia'),
+       serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 字体加载测试和调试 */
+.font-test {
+  font-family: Times-Italic, 'Times-Italic-System', 'Times New Roman Italic', Georgia, serif !important;
+}
+
+/* 强制使用系统字体作为测试 */
+.font-test-system {
+  font-family: 'Times New Roman Italic', Georgia, serif !important;
+  font-style: italic !important;
+}
+
+/* Montserrat字体测试 */
+.font-test-montserrat {
+  font-family: Montserrat-Regular, 'Montserrat-Regular-Fallback', 'Montserrat-Fallback', Arial, sans-serif !important;
+}
+
+/* 强制使用系统字体作为Montserrat回退测试 */
+.font-test-montserrat-fallback {
+  font-family: 'Montserrat-Fallback', Arial, sans-serif !important;
+}
+
+@font-face {
+  font-family: Times-Roman;
+  src: url('/fonts/Times\ New\ Roman.ttf') format('truetype'),
+       url('/fonts/Times\ New\ Roman.ttf') format('opentype'),
+       local('Times New Roman'),
+       local('Times-Roman'),
+       local('Times'),
+       serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Times;
+  src: url('/fonts/Times.ttc') format('truetype-collection'),
+       url('/fonts/Times.ttc') format('truetype'),
+       local('Times'),
+       local('Times New Roman'),
+       serif;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* .fade-in-element {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-element.visible {
+  opacity: 1;
+  transform: translateY(0);
+} */
