@@ -29,6 +29,8 @@ show_word_count: true
 
 在找到这个方法之前，我们的统一模型在一个关键任务上举步维艰：**生成式分割**。我们希望模型能根据指令（如“分割出右上角那只香蕉”），直接“画”出分割掩码图。
 
+![图示说明：根据指令进行分割。](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*acrPSp-7qM8AAAAAgCAAAAgAevzJAQ/original)
+
 结果是，模型在 RefCOCO-val 上的推理分割指标（cIoU）顽固地停留在 **16%** 上下。
 
 我们分析，根本原因在于**数据分布的巨大鸿沟**。生成模型习惯了处理自然、连续的图像数据。而分割任务的目标（黑白掩码图）是一种极度抽象、非自然的数据分布。强迫一个“画家”去画黑白掩码图，无异于缘木求鱼。
@@ -47,7 +49,7 @@ show_word_count: true
 
 例如，对于“分割右上角的香蕉”这个指令，我们不再要求模型输出掩码，而是要求它直接在原图上执行一个新的指令：“把右上角的香蕉涂成紫色”、“把右上角的香蕉涂成红色”等等。
 
-![图示说明：左侧为原图香蕉，从生成抽象的黑白掩-码（中），到直接在原图上进行色彩编辑（右三）。这个转换让任务的数据分布回归到了自然图像领域。](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*acrPSp-7qM8AAAAAgCAAAAgAevzJAQ/original)
+![图示说明：左侧为原图香蕉，从生成抽象的黑白掩-码（中），到直接在原图上进行色彩编辑（右三）。这个转换让任务的数据分布回归到了自然图像领域。](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*-_O6RLOxXKcAAAAAgBAAAAgAevzJAQ/original)
 
 这个看似微小的改动，却是那个我们梦寐以求的“催化剂”。
 
@@ -68,15 +70,15 @@ show_word_count: true
 
 指标的背后，是肉眼可见的质变。在处理复杂的推理分割任务时，我们的模型展现出超越竞品的准确性和场景理解力。
 
-![图示说明：我们的模型（右）精准定位并分割了目标主体，Qwen-Image（左二）未能准确定位要分割的目标，Nano-banana（左三）则未能准确分割男士的头部，以及分割的边缘线不够贴合。](占位符：请在这里替换为您的图示链接)
+![图示说明：我们的模型（右）精准定位并分割了目标主体，Qwen-Image（左二）未能准确定位要分割的目标，Nano-banana（左三）则未能准确分割男士的头部，以及分割的边缘线不够贴合。](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*koynTZD5vO8AAAAAgDAAAAgAevzJAQ/original)
 
-![图示说明：这个case的指令“please segment the girl with red mask”, 我们的模型（右）精准定位并分割了目标主体，Qwen-Image（左二）未能分割脚部，Nano-banana（左三）则改变了主体尺寸。](占位符：请在这里替换为您的图示链接)
+![图示说明：这个case的指令“please segment the girl with red mask”, 我们的模型（右）精准定位并分割了目标主体，Qwen-Image（左二）未能分割脚部，Nano-banana（左三）则改变了主体尺寸。](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*5C7KTbk2WZ0AAAAAgBAAAAgAevzJAQ/original)
 
 在“分割女孩”的案例中，Qwen没有包含脚部，而Nano-banana改变了主体尺寸。在“分割拿雨伞的女人”这类需要推理的案例中，我们的模型能准确找到目标，而竞品则出现了主体识别错误或指令理解偏差。这证明，通过“上色”训练，模型的语义理解与视觉定位能力被深度绑定并共同强化了。
 
 在推理分割指标评估过程中，依托于我们模型在非编辑区域的高度一致性，我们直接通过将涂色编辑结果与原图进行差分计算，获得分割掩码，示例如下：
 
-![Ming-Lite-Omni1.5 vs Qwen-Image-Edit 差分对比](占位符：请在这里替换为您的图示链接)
+<!-- ![Ming-Lite-Omni1.5 vs Qwen-Image-Edit 差分对比](占位符：请在这里替换为您的图示链接) -->
 
 评估结果显示，我们的模型在分割任务中的表现已达到与专为分割设计的专业模型相当的水平。其中，Qwen-Image-Edit因评估指标明显较低，仅在每个测试子集上随机采样500个样本进行评估。
 
@@ -97,7 +99,7 @@ show_word_count: true
 
 因为模型在成千上万次“精确上色”的练习中，学会了对边界前所未有的尊重。这种对细粒度控制的“肌肉记忆”迁移到了所有编辑任务中。我们的编辑精度可控性指标，在背景改变、颜色修改和材质修改等子项上，均分从7.69提升到8.12。
 
-![图示说明：指令为“消除图中最右侧男士的领结”。我们的模型（右）精准地移除了目标领结，同时保持了背景马匹等元素的一致性。Qwen（左二）错误地移除了多个领结，且马匹和老虎出现了不一致。Nano-banana（左三）同样在衣服款式的一致性和老虎斑纹的一致性上表现不佳。](占位符：请在这里替换为您的图示链接)
+![图示说明：指令为“消除图中最右侧男士的领结”。我们的模型（右）精准地移除了目标领结，同时保持了背景马匹等元素的一致性。Qwen（左二）错误地移除了多个领结，且马匹和老虎出现了不一致。Nano-banana（左三）同样在衣服款式的一致性和老虎斑纹的一致性上表现不佳。](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*7PgiRpiJyScAAAAAgCAAAAgAevzJAQ/original)
 
 ### 3. 身份的一致性保持
 
@@ -118,10 +120,13 @@ show_word_count: true
 - Nano-banana（中）人物ID保持的不错，但画面结构产生了较大差异。
 - 我们的模型（右）在准确地更换背景的同时，很好地保持了ID、外表的一致性。
 
-![ID一致性对比图](占位符：请在这里替换为您的图示链接)
+![ID一致性对比图](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*19ULQZrBWIAAAAAAd5AAAAgAevzJAQ/original)
 
-**更多一致性 Case：**
-![更多一致性案例](占位符：请在这里替换为您的图示链接)
+<!-- **更多一致性 Case：**
+
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" width="540px" height="800px" controls></video> -->
+
+<!-- ![更多一致性案例](占位符：请在这里替换为您的图示链接) -->
 
 ---
 
