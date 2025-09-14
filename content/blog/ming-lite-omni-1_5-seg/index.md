@@ -63,7 +63,7 @@ Given an instruction like “*segment the banana in the upper-right corner*”, 
 
 The results were painful.
 
-![Struggling with Segmentation](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*acrPSp-7qM8AAAAAgCAAAAgAevzJAQ/original)
+![Struggling with Segmentation](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*2BAkRZ9WGTcAAAAAgCAAAAgAevzJAQ/original)
 
 On RefCOCO-val, our cIoU plateaued at **~16%**.
 
@@ -124,10 +124,10 @@ Against Qwen-Image and Nano Banana, our model:
 - Located small or occluded targets more reliably.
 - Produced boundaries that were visually and semantically aligned with instructions.
 
-![Segmentation Comparison 1](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*koynTZD5vO8AAAAAgDAAAAgAevzJAQ/original)
+![Segmentation Comparison 1](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*DwJpSZyoW-YAAAAAgJAAAAgAevzJAQ/original)
 *Our model (right) accurately locates and segments the target subject. Qwen-Image (second from left) fails to locate the correct target, while Nano-banana (third from left) fails to accurately segment the man's head and has loose boundary lines.*
 
-![Segmentation Comparison 2](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*5C7KTbk2WZ0AAAAAgBAAAAgAevzJAQ/original)
+![Segmentation Comparison 2](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*yL2MR7vLQdEAAAAAgEAAAAgAevzJAQ/original)
 *For the prompt "please segment the girl with red mask," our model (right) is precise. Qwen-Image (second from left) misses the feet, and Nano-banana (third from left) alters the subject's proportions.*
 
 During evaluation, thanks to the high consistency of non-edited regions in our model, we can directly derive the segmentation mask by calculating the difference between the edited result and the original image. The results show that our model's performance on segmentation is now on par with specialized vision models.
@@ -150,18 +150,18 @@ The beauty of this method is that it not only fixed the segmentation weakness bu
 
 Because the model has learned an unprecedented "respect for boundaries" through thousands of "precise coloring" exercises, this "muscle memory" for fine-grained control has transferred to all editing tasks. Our edit controllability score saw a significant jump from **7.69 to 8.12** across sub-tasks like background, color, and material changes.
 
-![Editing Controllability Comparison](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*7PgiRpiJyScAAAAAgCAAAAgAevzJAQ/original)
+![Editing Controllability Comparison](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*szjcQqQkC80AAAAAgIAAAAgAevzJAQ/original)
 *Prompt: "remove the bow tie of the man on the far right." Our model (right) precisely removes only the target bow tie while maintaining background consistency. Qwen (second from left) incorrectly removes multiple bow ties and introduces inconsistencies. Nano-banana (third from left) also struggles with consistency.*
 
 #### 3. Stronger ID Consistency
 
 A core challenge in portrait editing is maintaining identity. Our model excels here as well. Whether changing a hairstyle or adjusting an expression, the model skillfully preserves the person's core features.
 
-![ID Consistency Comparison](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*19ULQZrBWIAAAAAAd5AAAAgAevzJAQ/original)
+![ID Consistency Comparison](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*Tc2-RoAHys8AAAAAd9AAAAgAevzJAQ/original)
 *Top Row (Turn head): Our model (right) maintains ID and background consistency, unlike competitors. Middle Row (Smile): Our model (right) correctly follows the prompt while preserving ID, avoiding distortions seen in others. Bottom Row (Change background): Our model (right) excels at preserving the subject's ID and appearance during a background swap.*
 
-<!-- **See More Editing Consistency in Action:**
-![More Consistency Examples](占位符：请在这里替换为您的图示链接) -->
+**See More Editing Consistency in Action:**
+<video src="https://gw.alipayobjects.com/v/huamei_wp0xz6/afts/video/A*CcqdTbafkt8AAAAAgEAAAAgAevzJAQ" width="704px" height="740px" controls></video>
 
 ---
 
@@ -189,6 +189,9 @@ We suspect 3D understanding, video generation, and other domains have their own 
 **At last, AI’s left and right hands have learned to high-five.**
 
 **And this is only the overture.**
+
+Try out our open-source model **Ming-lite-omni 1.5** on our [**GitHub Page / Demo Page**](https://github.com/inclusionAI/Ming/blob/main/cookbook.ipynb). Please star our repo if you like it!
+
 
 <!-- ---
 

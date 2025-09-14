@@ -122,11 +122,8 @@ show_word_count: true
 
 ![ID一致性对比图](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*19ULQZrBWIAAAAAAd5AAAAgAevzJAQ/original)
 
-<!-- **更多一致性 Case：**
-
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/TptZRJDixVUAAAAAhqAAAAgADkliAQFr" width="540px" height="800px" controls></video> -->
-
-<!-- ![更多一致性案例](占位符：请在这里替换为您的图示链接) -->
+**更多一致性 Case：**
+<video src="https://gw.alipayobjects.com/v/huamei_wp0xz6/afts/video/A*CcqdTbafkt8AAAAAgEAAAAgAevzJAQ" width="704px" height="740px" controls></video>
 
 ---
 
@@ -149,3 +146,5 @@ show_word_count: true
 “分割即编辑”只是第一个成功的尝试。我们相信，在3D理解、视频生成等更广阔的领域，还隐藏着更多这样的“催化剂”等待我们去发现。
 
 **AI的“左手”与“右手”，终于学会了如何优雅地击掌。而这，仅仅是交响乐的序章。**
+
+欢迎使用开源的 **Ming-lite-omni 1.5** [**GitHub Page / Demo Page**](https://github.com/inclusionAI/Ming/blob/main/cookbook.ipynb)。
