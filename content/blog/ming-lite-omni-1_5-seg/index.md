@@ -130,7 +130,12 @@ Against Qwen-Image and Nano Banana, our model:
 ![Segmentation Comparison 2](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*yL2MR7vLQdEAAAAAgEAAAAgAevzJAQ/original)
 *For the prompt "please segment the girl with red mask," our model (right) is precise. Qwen-Image (second from left) misses the feet, and Nano-banana (third from left) alters the subject's proportions.*
 
-During evaluation, thanks to the high consistency of non-edited regions in our model, we can directly derive the segmentation mask by calculating the difference between the edited result and the original image. The results show that our model's performance on segmentation is now on par with specialized vision models.
+During evaluation, thanks to the high consistency of non-edited regions in our model, we can directly derive the segmentation mask by calculating the difference between the edited result and the original image. 
+
+![Calculating difference on Ming-Lite-Omni1.5, Qwen-Image-Edit, Nano-banana](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*UJX1RJJpu3cAAAAASyAAAAgAevzJAQ/original)
+
+
+The results show that our model's performance on segmentation is now on par with specialized vision models.
 
 | Model Category | Model Name | RefCOCO (val) | RefCOCO+ (val) | RefCOCOg (val) |
 | :--- | :--- | :---: | :---: | :---: |
@@ -140,9 +145,11 @@ During evaluation, thanks to the high consistency of non-edited regions in our m
 | | PolyFormer-B | 74.8 | 67.6 | 67.8 |
 | **MLLM + Specialist (SAM)** | LISA-7B | 74.1 | 62.4 | 66.4 |
 | | PixelLM-7B | 73.0 | 66.3 | 69.3 |
-| **Generative Models** | Qwen-Image-Edit* | 30.3 | 28.8 | 34.0 |
-| | **Ming-Lite-Omni1.5 (Ours)** | **72.4** | **62.8** | **64.3** |
-*<small>Due to its lower metrics, Qwen-Image-Edit was evaluated on a random sample of 500 images per test subset.</small>*
+| **Generative Models** | Nano-banana* | 15.7 | 13.9 | 14.9 |
+| | Qwen-Image-Edit* | 30.3 | 28.8 | 34.0 |
+| | **Ming-Lite-Omni1.5** | **72.4** | **62.8** | **64.3** |
+
+*<small>For each test set, Nano-banana and Qwen-Image-Edit was evaluated on a randomly sampled subset of 500 images, to reduce computational cost while preserving the key statistical trends. We observed that Nano-banana frequently fails to accurately grasp the image segmentation intent during inference, leading to its comparatively lower evaluation metrics. This may be attributed to differences in training objectives and data emphasis.</small>*
 
 #### 2. Sharper, More Controllable Editing
 

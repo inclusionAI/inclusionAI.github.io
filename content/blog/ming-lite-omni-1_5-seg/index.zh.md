@@ -78,9 +78,9 @@ show_word_count: true
 
 在推理分割指标评估过程中，依托于我们模型在非编辑区域的高度一致性，我们直接通过将涂色编辑结果与原图进行差分计算，获得分割掩码，示例如下：
 
-<!-- ![Ming-Lite-Omni1.5 vs Qwen-Image-Edit 差分对比](占位符：请在这里替换为您的图示链接) -->
+![Ming-Lite-Omni1.5, Qwen-Image-Edit, Nano-banana 差分对比](https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*UJX1RJJpu3cAAAAASyAAAAgAevzJAQ/original)
 
-评估结果显示，我们的模型在分割任务中的表现已达到与专为分割设计的专业模型相当的水平。其中，Qwen-Image-Edit因评估指标明显较低，仅在每个测试子集上随机采样500个样本进行评估。
+
 
 | 模型类别 | 模型名称 | RefCOCO (val) | RefCOCO+ (val) | RefCOCOg (val) |
 | :--- | :--- | :---: | :---: | :---: |
@@ -90,8 +90,11 @@ show_word_count: true
 | | PolyFormer-B | 74.8 | 67.6 | 67.8 |
 | **MLLM + SAM**<br>(专用的分割模型) | LISA-7B | 74.1 | 62.4 | 66.4 |
 | | PixelLM-7B | 73.0 | 66.3 | 69.3 |
-| **MLLM + DiT**<br>(生成式模型做分割) | Qwen-Image-Edit* | 30.3 | 28.8 | 34.0 |
+| **MLLM + DiT**<br>(生成式模型做分割) | Nano-banana* | 15.7 | 13.9 | 14.9 |
+| | Qwen-Image-Edit* | 30.3 | 28.8 | 34.0 |
 | | **Ming-Lite-Omni1.5** | **72.4** | **62.8** | **64.3** |
+
+评估结果表明，我们的模型在分割任务中的表现已接近专为分割设计的专业模型。在评估过程中，Qwen-Image-Edit 和Nano-banana 在每个测试子集上随机采样 500 个样本进行测试，以降低计算开销，同时保证结果的统计趋势稳定。评估过程中我们发现，Nano-banana 在推理中经常无法准确把握图像分割的意图，因此评价指标相对较低，这可能与训练目标和数据侧重差异有关。
 
 ### 2. 更精准、更可控的编辑能力
 
