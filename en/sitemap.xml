@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://inclusionai.github.io/blog/ming-lite-omni-1_5-seg/</loc>
+    <lastmod>2025-09-13T00:00:03+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5-seg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://inclusionai.github.io/blog/ming-lite-omni-1_5-seg/"
+                />
+  </url><url>
     <loc>https://inclusionai.github.io/blog/ring-lite-2507/</loc>
     <lastmod>2025-08-05T00:00:03+08:00</lastmod>
     <xhtml:link
@@ -112,7 +125,7 @@
     <lastmod>2025-04-01T00:00:03+08:00</lastmod>
   </url><url>
     <loc>https://inclusionai.github.io/blog/</loc>
-    <lastmod>2025-08-05T00:00:03+08:00</lastmod>
+    <lastmod>2025-09-13T00:00:03+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -125,7 +138,7 @@
                 />
   </url><url>
     <loc>https://inclusionai.github.io/</loc>
-    <lastmod>2025-08-05T00:00:03+08:00</lastmod>
+    <lastmod>2025-09-13T00:00:03+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"

@@ -9,7 +9,20 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Aug 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Segmentation-as-Editing for Unified Multimodal AI</title>
+      <link>https://inclusionai.github.io/blog/ming-lite-omni-1_5-seg/</link>
+      <pubDate>Sat, 13 Sep 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/blog/ming-lite-omni-1_5-seg/</guid>
+      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
+Ming-lite-omni 1.5: Segmentation-as-Editing for Unified Multimodal AI The Hype and the Hidden Question The multimodal AI world has been thriving.
+From the debut of Qwen-Image to the interactive editing hype sparked by Nano Banana, image editing has rapidly become the next battlefield for generative AI.
+Editing fundamentally requires two distinct skill sets:
+Know where, what, and how to change (understanding the image) Produce the change with high visual quality (generating the image) Its rich gameplay and strong interactivity have pulled in users, developers, and creators alike.</description>
+    </item>
+    
     <item>
       <title>Introducing Ring-lite-2507</title>
       <link>https://inclusionai.github.io/blog/ring-lite-2507/</link>
