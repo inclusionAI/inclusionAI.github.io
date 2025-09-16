@@ -29,7 +29,7 @@ Its rich gameplay and strong interactivity have pulled in users, developers, and
 
 But behind the noise, few are asking:
 
-> **Beneath this prosperity, how close are we to a truly unified “understanding + generation” AI?**
+**Beneath this prosperity, how close are we to a truly unified “understanding + generation” AI?**
 
 ### Understanding and Generation: Two Hands, Often Out of Sync
 
@@ -39,7 +39,7 @@ Build a unified multimodal model that understands the world like a scientist (e.
 
 In theory, these abilities should be mutually reinforcing:
 
-> *“The deeper the understanding, the better the creation; the more the creation, the deeper the understanding.”*
+*“The deeper the understanding, the better the creation; the more the creation, the deeper the understanding.”*
 
 Reality is messier.
 
@@ -83,7 +83,7 @@ We needed a new task that:
 
 Here’s the analogy that unlocked it for us:
 
-> *If you want a child to mark an object, is it easier to have them draw a tight outline with a pencil, or fill it in with bright colors?*
+*If you want a child to mark an object, is it easier to have them draw a tight outline with a pencil, or fill it in with bright colors?*
 
 Obviously, the latter.
 
