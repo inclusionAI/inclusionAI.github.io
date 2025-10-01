@@ -9,7 +9,24 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Sep 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ming-UniVision：在连续的视觉世界里，统一理解与生成</title>
+      <link>https://inclusionai.github.io/zh/blog/mingtok/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/mingtok/</guid>
+      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
+Ming-UniVision：在连续的视觉世界里，统一理解与生成 🚀 技术亮点 业界首个连续统一的视觉令牌化器： MingTok 在单一连续潜空间内无缝支持图像理解与生成，彻底消除了量化过程，并有效打通了不同模态。 首个采用连续视觉 Token 的 NTP 式自回归 MLLM： 基于 MingTok，Ming-UniVision 在一个共享的“下一词元预测 (NTP)”框架下统一了视觉与语言，实现了对多种视觉任务的端到端自回归建模。 缓解表征竞争 → 实现 3.5 倍收敛加速： 统一的连续表征协同了语义理解与生成的目标，在不牺牲性能的前提下，显著加速了模型的联合训练过程。 单一特征空间内的多轮上下文学习： 所有操作（理解、生成、编辑）均在同一个连续空间内完成，彻底避免了代价高昂的跨空间转换，使得训练与推理过程更简洁、更高效。 挑战：‘看’与‘画’的逆向天性 自回归（Autoregression），这种通过“预测下一个 token”来建模世界的强大范式，已经成功统一了语言、音频等多种模态。下一个前沿领域，是将视觉理解（看懂图像）与视觉生成（画出图像）也纳入这个统一的序列预测框架。
+然而，这一宏伟目标面临一个深层的挑战：在很多方面，理解与生成是互为逆向的任务。
+理解： 像素 → 高维、抽象的语义概念 生成： 概念 → 精细、高保真的像素细节 这两种任务对底层视觉表征有着截然不同，甚至是相互竞争的偏好。
+为何现有方案存在不足 现有模型尝试通过两种有限的策略来统一它们：
+非对称设计： 为每个任务使用不同的、异构的特征空间。这导致在多轮交互中，模型必须在不同空间之间进行低效的“往返”，从而引入延迟和工程复杂性。 共享离散令牌： 统一了令牌空间，但引入了量化误差。这既损害了生成图像的保真度，也削弱了其理解能力。 我们的解决方案：Ming-UniVision 与 MingTok 为了打破这一僵局，我们推出了 Ming-UniVision，一个构建于颠覆性创新 MingTok 之上的新一代自回归视觉语言模型。
+MingTok 是首个基于连续潜空间的视觉令牌化器。它提供了一个真正统一且高效的表征，构成了 Ming-UniVision 统一“下一词元预测 (NTP)”框架的基石——在一个统一的上下文学习多模态闭环中，将图像理解、生成和编辑融为一体。
+核心设计：三段式架构，调和表征竞争 Ming-UniVision 的核心是 MingTok 令牌化器，它是一个三段式序列架构，旨在优雅地调和理解与生成对表征的竞争性需求。
+图1：(a) 现有模型使用分离的视觉表征。(b) MingTok 使用统一方案生成语义与生成表征。(c) 这种统一方法带来了超过 3.</description>
+    </item>
+    
     <item>
       <title>编辑式图像分割：Ming-lite-omni 1.5 破解AI“左右互搏”的隐藏催化剂</title>
       <link>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5-seg/</link>
@@ -38,23 +55,6 @@
 在推理分割指标评估过程中，依托于我们模型在非编辑区域的高度一致性，我们直接通过将涂色编辑结果与原图进行差分计算，获得分割掩码，示例如下：
 模型类别 模型名称 RefCOCO (val) RefCOCO+ (val) RefCOCOg (val) Vision Specialist
 (专用视觉分割模型) VLT 67.5 56.3 55.0 CRIS 70.5 62.3 59.9 LAVT 72.7 62.1 61.2 PolyFormer-B 74.8 67.</description>
-    </item>
-    
-    <item>
-      <title>编辑式图像分割：Ming-lite-omni 1.5 破解AI“左右互搏”的隐藏催化剂</title>
-      <link>https://inclusionai.github.io/zh/blog/mingtok/</link>
-      <pubDate>Sat, 13 Sep 2025 00:00:03 +0800</pubDate>
-      
-      <guid>https://inclusionai.github.io/zh/blog/mingtok/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-Ming-UniVision：基于共享连续表征的统一图像理解与生成 🚀 技术亮点 业界首个连续统一的视觉令牌化器： MingTok 在单一连续潜空间内无缝支持图像理解与生成，彻底消除了量化过程，并有效打通了不同模态。 首个采用连续视觉 Token 的 NTP 式自回归 MLLM： 基于 MingTok，Ming-UniVision 在一个共享的“下一词元预测 (NTP)”框架下统一了视觉与语言，实现了对多种视觉任务的端到端自回归建模。 缓解表征竞争 → 实现 3.5 倍收敛加速： 统一的连续表征协同了语义理解与生成的目标，在不牺牲性能的前提下，显著加速了模型的联合训练过程。 单一特征空间内的多轮上下文学习： 所有操作（理解、生成、编辑）均在同一个连续空间内完成，彻底避免了代价高昂的跨空间转换，使得训练与推理过程更简洁、更高效。 挑战：‘看’与‘画’的逆向天性 自回归（Autoregression），这种通过“预测下一个 token”来建模世界的强大范式，已经成功统一了语言、音频等多种模态。下一个前沿领域，是将视觉理解（看懂图像）与视觉生成（画出图像）也纳入这个统一的序列预测框架。
-然而，这一宏伟目标面临一个深层的挑战：在很多方面，理解与生成是互为逆向的任务。
-理解： 像素 → 高维、抽象的语义概念 生成： 概念 → 精细、高保真的像素细节 这两种任务对底层视觉表征有着截然不同，甚至是相互竞争的偏好。
-为何现有方案存在不足 现有模型尝试通过两种有限的策略来统一它们：
-非对称设计： 为每个任务使用不同的、异构的特征空间。这导致在多轮交互中，模型必须在不同空间之间进行低效的“往返”，从而引入延迟和工程复杂性。 共享离散令牌： 统一了令牌空间，但引入了量化误差。这既损害了生成图像的保真度，也削弱了其理解能力。 我们的解决方案：Ming-UniVision 与 MingTok 为了打破这一僵局，我们推出了 Ming-UniVision，一个构建于颠覆性创新 MingTok 之上的新一代自回归视觉语言模型。
-MingTok 是首个基于连续潜空间的视觉令牌化器。它提供了一个真正统一且高效的表征，构成了 Ming-UniVision 统一“下一词元预测 (NTP)”框架的基石——在一个统一的上下文学习多模态闭环中，将图像理解、生成和编辑融为一体。
-核心设计：三段式架构，调和表征竞争 Ming-UniVision 的核心是 MingTok 令牌化器，它是一个三段式序列架构，旨在优雅地调和理解与生成对表征的竞争性需求。
-图1：(a) 现有模型使用分离的视觉表征。(b) MingTok 使用统一方案生成语义与生成表征。(c) 这种统一方法带来了超过 3.</description>
     </item>
     
     <item>
