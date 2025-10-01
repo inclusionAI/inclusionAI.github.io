@@ -9,7 +9,17 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Sep 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer</title>
+      <link>https://inclusionai.github.io/blog/mingtok/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/blog/mingtok/</guid>
+      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
+Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer 🚀 Technical Highlights First Continuous Unified Tokenizer for Vision: MingTok seamlessly supports both image understanding and generation within a single continuous latent space—eliminating quantization and bridging modalities. First NTP-style Autoregressive MLLM with Unified Continuous Visual Tokens: By building on MingTok, Ming-UniVision unifies vision and language under a shared next-token prediction framework, enabling end-to-end autoregressive modeling of diverse vision tasks.</description>
+    </item>
+    
     <item>
       <title>Segmentation-as-Editing for Unified Multimodal AI</title>
       <link>https://inclusionai.github.io/blog/ming-lite-omni-1_5-seg/</link>
