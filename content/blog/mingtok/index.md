@@ -12,9 +12,11 @@ show_word_count: true
 ---
 
 {{< button href="https://github.com/inclusionAI/Ming" label="GITHUB" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-UniVision">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-UniVision">ModelScope</a>
+
+
 <video src="https://gw.alipayobjects.com/v/huamei_qlf8jc/afts/video/A*ZBkgTruOxA4AAAAAgyAAAAgAehi-AQ" width="1024px" height="660px" controls autoplay muted playsinline></video>
 
-# Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer
+<!-- # Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer -->
 
 ## 🚀 Technical Highlights
 
