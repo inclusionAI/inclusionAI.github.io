@@ -16,7 +16,8 @@
       <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/mingtok/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer 🚀 Technical Highlights First Continuous Unified Tokenizer for Vision: MingTok seamlessly supports both image understanding and generation within a single continuous latent space—eliminating quantization and bridging modalities. First NTP-style Autoregressive MLLM with Unified Continuous Visual Tokens: By building on MingTok, Ming-UniVision unifies vision and language under a shared next-token prediction framework, enabling end-to-end autoregressive modeling of diverse vision tasks.</description>
+      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
+🚀 Technical Highlights First Continuous Unified Tokenizer for Vision: MingTok seamlessly supports both image understanding and generation within a single continuous latent space—eliminating quantization and bridging modalities. First NTP-style Autoregressive MLLM with Unified Continuous Visual Tokens: By building on MingTok, Ming-UniVision unifies vision and language under a shared next-token prediction framework, enabling end-to-end autoregressive modeling of diverse vision tasks. Reduced Representational Competition → 3.5× Faster Convergence: The unified continuous representation aligns semantic understanding and generative dynamics, significantly accelerating joint training without performance trade-offs.</description>
     </item>
     
     <item>
