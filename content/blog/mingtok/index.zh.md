@@ -1,6 +1,6 @@
 ---
-title: "编辑式图像分割：Ming-lite-omni 1.5 破解AI“左右互搏”的隐藏催化剂"
-date: 2025-09-13T00:00:03+08:00
+title: "Ming-UniVision：在连续的视觉世界里，统一理解与生成"
+date: 2025-10-01T00:00:03+08:00
 weight: 1
 math: true
 # draft: true
@@ -12,10 +12,10 @@ show_word_count: true
 ---
 
 {{< button href="https://github.com/inclusionAI/Ming" label="GITHUB" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-UniVision">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-UniVision">ModelScope</a>
-# Ming-UniVision：基于共享连续表征的统一图像理解与生成
+# Ming-UniVision：在连续的视觉世界里，统一理解与生成
 <video src="https://gw.alipayobjects.com/v/huamei_qlf8jc/afts/video/A*ZBkgTruOxA4AAAAAgyAAAAgAehi-AQ" width="768px" height="580px" controls></video>
 ---
-### 🚀 技术亮点
+## 🚀 技术亮点
 
 1.  **业界首个连续统一的视觉令牌化器：**
     **MingTok** 在单一连续潜空间内无缝支持图像理解与生成，彻底消除了量化过程，并有效打通了不同模态。
