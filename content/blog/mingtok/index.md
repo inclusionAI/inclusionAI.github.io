@@ -11,7 +11,7 @@ show_code_copy_buttons: true
 show_word_count: true
 ---
 
-{{< button href="https://github.com/inclusionAI/Ming-UniVision" label="GITHUB" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-UniVision">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-UniVision">ModelScope</a>
+{{< button href="https://github.com/inclusionAI/Ming-UniVision" label="GITHUB" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-UniVision-16B-A3B">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-UniVision-16B-A3B">ModelScope</a>
 
 
 <video src="https://gw.alipayobjects.com/v/huamei_qlf8jc/afts/video/A*ZBkgTruOxA4AAAAAgyAAAAgAehi-AQ" width="1024px" height="660px" controls autoplay muted playsinline></video>
