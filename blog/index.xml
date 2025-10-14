@@ -11,6 +11,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation</title>
+      <link>https://inclusionai.github.io/blog/ming-uniaudio/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/blog/ming-uniaudio/</guid>
+      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
+The Introduction Video of Ming-UniAudio Audio Edit Demo Editing Tasks Video demos 🚀 Technical Highlights First unified continuous speech tokenizer for both understanding and generation tasks: MingTok-Audio is a unified continuous speech tokenizer MingTok-Audio based on a VAE framework with a causal Transformer architecture, the first continuous speech tokenizer to effectively integrate semantic and acoustic features, and enables a closed-loop system with LLMs through hierarchical feature representations, makes it suitable for both understanding and generation tasks.</description>
+    </item>
+    
+    <item>
       <title>Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer</title>
       <link>https://inclusionai.github.io/blog/mingtok/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>

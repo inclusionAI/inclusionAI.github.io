@@ -11,6 +11,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Ming-UniAudio: 用于统一表征的联合理解、生成和编辑的语音语言大模型</title>
+      <link>https://inclusionai.github.io/zh/blog/ming-uniaudio/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/ming-uniaudio/</guid>
+      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
+Ming-UniAudio的视频介绍 语音编辑的视频展示 编辑任务的视频demo展示 🚀 技术亮点 首个面向理解与生成任务的统一连续语音分词器: MingTok-Audio 是一种基于 VAE 框架与因果 Transformer 架构的统一连续语音分词器，首个有效融合语义与声学特征的连续语音分词器，通过层次化特征表示与 LLM 形成闭环系统，同时适用于理解与生成任务。 首个采用统一连续分词器、同时支持理解与生成的语音大模型: Ming-UniAudio 是端到端的统一语音语言模型，仅用一个 LLM 主干即可同时完成理解与生成，并配备扩散头以保证高保真语音合成。 首个无需时序约束、支持语义与声学任务的通用自由形式语音编辑模型: 我们提出了首个指令引导的自由形式语音编辑框架，无需显式指定编辑区域即可实现全面的语义与声学编辑；同时发布 Ming-Freeform-Audio-Edit，首个面向该任务的开源评测集。 首个自由形式语音编辑基准: 我们推出 Audio-Edit-Benchmark，首个开源自由形式评测集，涵盖四类语义与五类声学编辑任务，用于系统评估模型的编辑能力。 多项指令引导的自由形式语音编辑的任务展示 语义编辑 - 插入 Instruction Transcription Target Transcription Before Edit Speechedit Result insert &amp;lsquo;简直&amp;rsquo; after the character or word at index 8. 真是个浪漫的邂逅可以说是英雄救美了 真是个浪漫的邂逅简直可以说是英雄救美了 insert &amp;lsquo;真正&amp;rsquo; before the character or word &amp;lsquo;好&amp;rsquo;. 就有道而正焉可谓好学也已 就有道而正焉可谓真正好学也已 insert &amp;lsquo;clearly&amp;rsquo; before the character or word at index 8.</description>
+    </item>
+    
+    <item>
       <title>Ming-UniVision：在连续的视觉世界里，统一理解与生成</title>
       <link>https://inclusionai.github.io/zh/blog/mingtok/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
