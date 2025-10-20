@@ -113,8 +113,8 @@ We know this is just one step in a long journey. We have open-sourced our code a
 ### Get Involved
 
 *   **GitHub:** (https://github.com/inclusionAI/Ming-UniVision)
-*   **Technical Report:** [Link to your paper]
-*   **Online Demo:** [Link to your demo]
+*   **Technical Report:** (https://arxiv.org/pdf/2510.06590)
+*   **Model link:** <a href="https://huggingface.co/inclusionAI/Ming-UniVision-16B-A3B">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-UniVision-16B-A3B">ModelScope</a>
 
 Try out our open-source model **Ming-UniVision and MingTok-Vision** on our [**GitHub Page / Demo Page**](https://github.com/inclusionAI/Ming/blob/main/cookbook.ipynb). Please star our repo if you like it!
 

@@ -112,5 +112,7 @@ Ming-UniVision 的核心是 **MingTok** 令牌化器，它是一个三段式序�
 ### 项目链接
 
 *   **GitHub:** (https://github.com/inclusionAI/Ming-UniVision)
-*   **技术报告:** [链接地址]
-*   **在线 Demo:** [链接地址]
+*   **技术报告:** (https://arxiv.org/pdf/2510.06590)
+*   **模型链接:** <a href="https://huggingface.co/inclusionAI/Ming-UniVision-16B-A3B">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-UniVision-16B-A3B">ModelScope</a>
+
+
