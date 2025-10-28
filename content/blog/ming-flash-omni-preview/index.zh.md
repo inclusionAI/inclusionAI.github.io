@@ -21,19 +21,19 @@ show_word_count: true
 ## 能力一览
 ### 可控图像生成
 针对图像生成这个常见的场景，Ming-flash-omni-Preview 首创生成式分割范式 ，将 “图像分割” 重构为语义保持的编辑任务 (Generative Segmentation-as-Editing)，实现了细粒度的空间语义控制。Ming-flash-omni-Preview 在 GenEval 基准上评测达到 0.90 分，超越所有非强化学习的生成方法，展现出卓越的可控性。
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/cb4mSp1jTwQAAAAAgIAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/cb4mSp1jTwQAAAAAgIAAAAgAfoeUAQBr" width="704px"  controls></video>
 
 ### 流式视频理解
 用户常有一种想跟 AI 基于现实场景持续对话，并通过 AI 来理解现实场景的需求。Ming-flash-omni-Preview 可以有效实现相关需求。如下图视频所示，Ming-flash-omni-Preview 可实现对流式视频的细粒度理解，看懂视频中的物体和交互，并实时提供相关理解和说明，帮助用户在实际场景中获得支持。
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/n6k6SqtCCqMAAAAAgJAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/n6k6SqtCCqMAAAAAgJAAAAgAfoeUAQBr" width="704px"  controls></video>
 
 ### 语音及方言理解
 Ming-flash-omni-Preview 可实现上下文感知语音理解 (ContextASR) 和方言识别，在所有 12 个 ContextASR 子任务上全面 SOTA，对湖南话、闽南话、粤语等 15 种中国方言的理解能力大幅增强，对于在听不懂的方言中迷失的用户，能有效的提供翻译和实时理解支持。
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/iEf7QK3W3m4AAAAAgBAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/iEf7QK3W3m4AAAAAgBAAAAgAfoeUAQBr" width="704px"  controls></video>
 
 ### 音色克隆
 Ming-flash-omni-Preview 的语音生成从离散 tokenizer 升级为连续 tokenizer，显著提升了音色克隆能力，中英文混合发音能力稳定性高，能够有效克隆原本对话的音色到新产生的对话中，seed-tts-zh WER 指标为 0.99，超过 qwen3 omni 和 seed-tts。
-<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/Ru5dTrMPb30AAAAAgBAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
+<video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/Ru5dTrMPb30AAAAAgBAAAAgAfoeUAQBr" width="704px"  controls></video>
 
 ## 模型架构及能力简介
 Ming-flash-omni-Preview 的模型结构图:
