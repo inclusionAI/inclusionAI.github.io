@@ -22,22 +22,18 @@ Omnimodal Ming-omni series update! **Ming-flash-omni-Preview** is the **first op
 ## Capability Overview
 ### Controllable Image Generation
 For image generation, Ming-flash-omni-Preview pioneers the **Generative Segmentation Paradigm**, reframing "image segmentation" as a **semantic-preserving editing task (Generative Segmentation-as-Editing)**, achieving fine-grained spatial semantic control. Ming-flash-omni-Preview achieved a score of **0.90** on the GenEval benchmark, surpassing all non-reinforcement learning generation methods and demonstrating exceptional controllability.
-
 <video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/cb4mSp1jTwQAAAAAgIAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
 
 ### Streaming Video Understanding
 Users often have a need to engage in continuous dialogue with AI based on real-world scenarios and to use AI to understand those scenarios. Ming-flash-omni-Preview can effectively fulfill these needs. As shown in the video below, Ming-flash-omni-Preview can achieve **fine-grained understanding of streaming video**, recognizing objects and interactions within the video, and providing relevant understanding and explanations in real-time to support users in practical scenarios.
-
 <video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/n6k6SqtCCqMAAAAAgJAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
 
 ### Speech and Dialect Understanding
 Ming-flash-omni-Preview can achieve **Context-Aware Speech Recognition (ContextASR)** and **dialect recognition**, achieving **SOTA** across all 12 ContextASR subtasks. Its understanding ability for **15 Chinese dialects**, including Hunanese, Minnanese, and Cantonese, is significantly enhanced, effectively providing translation and real-time understanding support for users who might be lost in an unfamiliar dialect.
-
 <video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/iEf7QK3W3m4AAAAAgBAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
 
 ### Voice Cloning
 Ming-flash-omni-Preview's speech generation has been upgraded from discrete tokenizers to **continuous tokenizers**, significantly enhancing voice cloning capabilities. It exhibits high stability in **mixed Chinese-English pronunciation**, and can effectively clone the voice from the original conversation into newly generated dialogue. The seed-tts-zh WER metric is **0.99**, surpassing Qwen3-omni and seed-tts.
-
 <video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/Ru5dTrMPb30AAAAAgBAAAAgAfoeUAQBr" width="704px" height="740px" controls></video>
 
 ## Model Architecture and Capability Introduction
