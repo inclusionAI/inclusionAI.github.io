@@ -1,5 +1,5 @@
 ---
-title: "Ming-flash-omni-Preview: The Hundred Billion-Scale MoE Unifying Perception and Generation"
+title: "Ming-flash-omni-Preview: A Sparse, Unified Architecture for Multimodal Perception and Generation"
 date: 2025-10-28T00:00:03+08:00
 weight: 1
 math: true
@@ -21,6 +21,7 @@ Omnimodal Ming-omni series update! **Ming-flash-omni-Preview** is the **first op
 ## Capability Overview
 ### Controllable Image Generation
 For image generation, Ming-flash-omni-Preview pioneers the **Generative Segmentation Paradigm**, reframing "image segmentation" as a **semantic-preserving editing task (Generative Segmentation-as-Editing)**, achieving fine-grained spatial semantic control. Ming-flash-omni-Preview achieved a score of **0.90** on the GenEval benchmark, surpassing all non-reinforcement learning generation methods and demonstrating exceptional controllability.
+
 <video src="https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/cb4mSp1jTwQAAAAAgIAAAAgAfoeUAQBr" width="704px" controls></video>
 
 ### Streaming Video Understanding
@@ -49,8 +50,10 @@ Ming-flash-omni-Preview extends the **Ling-Flash-2.0 sparse MoE architecture** t
 
 ### Unified Generative Segmentation and Editing
 The core challenge in building a unified multimodal model lies in how to efficiently integrate image understanding and generation capabilities. Our Ming-lite-omni-1.5 achieved this by freezing the language pathway and injecting hierarchical semantics using multi-scale QueryTokens, thereby allowing the generation objective to better integrate with the understanding task while preserving understanding performance. Although this training strategy improved stability, the fundamental differences between the learning objectives of understanding and generation mean that even with the introduction of hierarchical semantics, fine-grained visual knowledge (such as object attributes and spatial relationships) remains difficult to efficiently transfer to high-precision generation and editing tasks, thus limiting the improvement in model generation quality and controllability.
+
 To overcome this bottleneck, Ming-flash-omni-Preview proposes the **"Generative Segmentation-as-Editing" collaborative training paradigm**. This paradigm reframes image segmentation as a semantic-preserving editing task (e.g., "paint the banana purple"). The key assistance provided by this design is: **It forcibly unifies the understanding and generation objectives** — successful editing must rely on precise understanding of the object's outline, and the editing quality directly provides supervision signals for understanding. This paradigm directly enhances the model's fine-grained spatiotemporal semantic control ability and indirectly solves the compositionality problem in pure text-to-image generation.
-In the GenEval benchmark, Ming-flash-omni-Preview achieved a score of **0.90**, surpassing all leading non-reinforcement learning (non-RL) methods; in the GEdit benchmark, the average score for precise editing tasks such as object deletion and object replacement improved from **6.9 to 7.9**. These two results collectively prove that the fine-grained spatiotemporal semantic control capability gained through the "Generative Segmentation-as-Editing" training not only significantly improves performance in precise editing tasks but can also effectively generalize to pure text-driven image generation tasks.
+
+On the GenEval benchmark, Ming-flash-omni-Preview achieved a score of **0.90**, surpassing all leading non-reinforcement learning (non-RL) methods; On the GEdit benchmark, the average score for precise editing tasks such as object deletion and object replacement improved from **6.9 to 7.9**. These two results collectively prove that the fine-grained spatiotemporal semantic control capability gained through the "Generative Segmentation-as-Editing" training not only significantly improves performance in precise editing tasks but can also effectively generalize to pure text-driven image generation tasks.
 
 ### Efficient Omnimodal Training Architecture
 Training omnimodal foundation models faces two major challenges: data heterogeneity (varied shapes of multi-modal inputs) and model heterogeneity (difficulty in parallelizing modality-specific encoders). These issues lead to load imbalance, memory fragmentation, and pipeline bubbles, severely slowing down the training speed.
