@@ -10,9 +10,8 @@ show_post_nav_links: false # the prev/next after the content
 show_code_copy_buttons: true
 show_word_count: true
 ---
+{{< button href="https://github.com/inclusionAI/Ming" label="GITHUB" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-flash-omni-Preview">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-flash-omni-Preview">ModelScope</a>
 
-
-# Ming-flash-omni-Preview，千亿参数 MoE，洞察与创造一体的全模态
 
 全模态 Ming-omni 系列更新！Ming-flash-omni-Preview 是首个参数规模达到千亿的开源全模态大模型。基于 Ling 2.0 的稀疏 MoE 架构，Ming-flash-omni-Preview 总参数 103B， 激活 9B。相比之前很受欢迎的 Ming-lite-omni-1.5，Ming-flash-omni-Preview 在全模态理解和生成能力上均有提升，各模态总体效果达到开源全模态模型的领先水平,  尤其在可控图像生成、流式视频理解、以及语音识别等领域性能表现尤为突出。
 
