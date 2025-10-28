@@ -14,7 +14,7 @@ show_word_count: true
 
 # Ming-flash-omni-Preview，千亿参数 MoE，洞察与创造一体的全模态
 
-全模态Ming-omni系列更新！Ming-flash-omni是首个参数规模达到千亿的开源全模态大模型。基于Ling 2.0的稀疏MoE架构，Ming-flash-omni总参数103B， 激活9B。相比Ming-lite-omni，Ming-flash-omni 在全模态理解和生成能力上均有提升，各模态总体效果达到开源全模态模型的领先水平,  尤其在可控图像生成、流式视频理解、以及语音识别 等领域性能表现尤为突出。
+全模态 Ming-omni 系列更新！Ming-flash-omni-Preview 是首个参数规模达到千亿的开源全模态大模型。基于 Ling 2.0 的稀疏 MoE 架构，Ming-flash-omni-Preview 总参数 103B， 激活 9B。相比之前很受欢迎的 Ming-lite-omni-1.5，Ming-flash-omni-Preview 在全模态理解和生成能力上均有提升，各模态总体效果达到开源全模态模型的领先水平,  尤其在可控图像生成、流式视频理解、以及语音识别等领域性能表现尤为突出。
 
 ![performance](https://mdn.alipayobjects.com/huamei_drbxn1/afts/img/5hflRY595xwAAAAAgBAAAAgADkliAQFr/original)
 
