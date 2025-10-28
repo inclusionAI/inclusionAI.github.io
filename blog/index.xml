@@ -9,7 +9,16 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Segmentation-as-Editing for Unified Multimodal AI</title>
+      <link>https://inclusionai.github.io/blog/ming-flash-omni-preview/</link>
+      <pubDate>Tue, 28 Oct 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/blog/ming-flash-omni-preview/</guid>
+      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope</description>
+    </item>
+    
     <item>
       <title>Ming-UniAudio: Speech LLM for Joint Understanding, Generation and Editing with Unified Representation</title>
       <link>https://inclusionai.github.io/blog/ming-uniaudio/</link>

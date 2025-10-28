@@ -9,7 +9,22 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ming-flash-omni-Preview，千亿参数 MoE，洞察与创造一体的全模态</title>
+      <link>https://inclusionai.github.io/zh/blog/ming-flash-omni-preview/</link>
+      <pubDate>Tue, 28 Oct 2025 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/zh/blog/ming-flash-omni-preview/</guid>
+      <description>Ming-flash-omni-Preview，千亿参数 MoE，洞察与创造一体的全模态 全模态 Ming-omni 系列更新！Ming-flash-omni-Preview 是首个参数规模达到千亿的开源全模态大模型。基于 Ling 2.0 的稀疏 MoE 架构，Ming-flash-omni-Preview 总参数 103B， 激活 9B。相比之前很受欢迎的 Ming-lite-omni-1.5，Ming-flash-omni-Preview 在全模态理解和生成能力上均有提升，各模态总体效果达到开源全模态模型的领先水平, 尤其在可控图像生成、流式视频理解、以及语音识别等领域性能表现尤为突出。
+能力一览 可控图像生成 针对图像生成这个常见的场景，Ming-flash-omni-Preview 首创生成式分割范式 ，将 “图像分割” 重构为语义保持的编辑任务 (Generative Segmentation-as-Editing)，实现了细粒度的空间语义控制。Ming-flash-omni-Preview 在 GenEval 基准上评测达到 0.90 分，超越所有非强化学习的生成方法，展现出卓越的可控性。
+流式视频理解 用户常有一种想跟 AI 基于现实场景持续对话，并通过 AI 来理解现实场景的需求。Ming-flash-omni-Preview 可以有效实现相关需求。如下图视频所示，Ming-flash-omni-Preview 可实现对流式视频的细粒度理解，看懂视频中的物体和交互，并实时提供相关理解和说明，帮助用户在实际场景中获得支持。
+语音及方言理解 Ming-flash-omni-Preview 可实现上下文感知语音理解 (ContextASR) 和方言识别，在所有 12 个 ContextASR 子任务上全面 SOTA，对湖南话、闽南话、粤语等 15 种中国方言的理解能力大幅增强，对于在听不懂的方言中迷失的用户，能有效的提供翻译和实时理解支持。
+音色克隆 Ming-flash-omni-Preview 的语音生成从离散 tokenizer 升级为连续 tokenizer，显著提升了音色克隆能力，中英文混合发音能力稳定性高，能够有效克隆原本对话的音色到新产生的对话中，seed-tts-zh WER 指标为 0.99，超过 qwen3 omni 和 seed-tts。
+模型架构及能力简介 Ming-flash-omni-Preview 的模型结构图:
+相比 Ming-lite-omni-1.5, Ming-flash-omni-Preview 主要有以下方面的技术优化:</description>
+    </item>
+    
     <item>
       <title>Ming-UniAudio: 用于统一表征的联合理解、生成和编辑的语音语言大模型</title>
       <link>https://inclusionai.github.io/zh/blog/ming-uniaudio/</link>
