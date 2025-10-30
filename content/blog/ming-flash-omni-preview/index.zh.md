@@ -10,7 +10,7 @@ show_post_nav_links: false # the prev/next after the content
 show_code_copy_buttons: true
 show_word_count: true
 ---
-{{< button href="https://github.com/inclusionAI/Ming" label="GITHUB" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-flash-omni-Preview">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-flash-omni-Preview">ModelScope</a> |  {{< button href="https://arxiv.org/abs/2510.24821" label="ARXIV" external=true >}}
+{{< button href="https://github.com/inclusionAI/Ming" label="GITHUB" external=true >}}   {{< button href="https://arxiv.org/abs/2510.24821" label="ARXIV" external=true >}}  🤗 <a href="https://huggingface.co/inclusionAI/Ming-flash-omni-Preview">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-flash-omni-Preview">ModelScope</a> 
 
 
 
