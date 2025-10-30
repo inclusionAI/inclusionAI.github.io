@@ -11,7 +11,7 @@ show_code_copy_buttons: true
 show_word_count: true
 ---
 
-{{< button href="https://github.com/inclusionAI/Ming" label="GITHUB" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-flash-omni-Preview">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-flash-omni-Preview">ModelScope</a>
+{{< button href="https://github.com/inclusionAI/Ming" label="GITHUB" external=true >}}  {{< button href="https://arxiv.org/abs/2510.24821" label="ARXIV" external=true >}} 🤗 <a href="https://huggingface.co/inclusionAI/Ming-flash-omni-Preview">Hugging Face</a>｜ 🤖 <a href="https://www.modelscope.cn/models/inclusionAI/Ming-flash-omni-Preview">ModelScope</a>
 
 
 Omnimodal Ming-omni series update! **Ming-flash-omni-Preview** is the **first open-source omnimodal large model** with a parameter scale reaching the hundred billion-Scale level. Based on Ling 2.0's sparse MoE architecture, Ming-flash-omni-Preview has a total of **103B parameters** with **9B activated**. Compared to the previous version Ming-lite-omni-1.5, Ming-flash-omni-Preview has improved in both omnimodal understanding and generation capabilities. The overall performance across various modalities has reached a **leading level among open-source omnimodal models**, with particularly outstanding performance in **controllable image generation, streaming video understanding, and speech recognition**.
