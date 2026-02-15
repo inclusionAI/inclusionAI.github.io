@@ -1,5 +1,6 @@
 {{- $isHome := .IsHome -}}
-{{- $isMinimal := or (eq .Title "404 Page not found") (eq .Layout "search") }}
+{{- $isMinimal := or (eq .Title "404 Page not found") (eq .Layout "search") (eq .Layout "single") (eq .Section "blog")
+}}
 
 {{- if not $isMinimal }}
 <div class="hero-container" {{- if $isHome }}
@@ -50,7 +51,7 @@
             {{ partial "social_icons.html" .Params.social_icons }}
         </div>
         {{- else if eq .Layout "search" }}
-        {{- else if eq .Kind "page" }} {{/* single pages */}}
+        {{- else if and (eq .Kind "page") (ne .Layout "single") }} {{/* single pages excluding single.html layout */}}
         {{/* {{ partial "breadcrumbs.html" . }} */}}
         <h1 class="post-title">
             {{ .Title }}

@@ -12,7 +12,7 @@
 
 .post-description {
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .post-meta,
@@ -21,13 +21,37 @@
     font-size: 14px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+        gap: 0;
+    }
+    
+    .post-meta {
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .post-meta>* {
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .post-meta>*:not(:last-child)::after {
+        content: '·';
+        margin: 0 8px;
+        color: var(--secondary);
 }
 
 .post-meta .i18n_list li {
     display: inline-flex;
     list-style: none;
-    margin: auto 3px;
-    box-shadow: 0 1px 0 var(--secondary);
+    margin: 0;
+        padding: 0 2px;
+        align-items: center;
+    }
+    
+    .post-meta .i18n_list li:not(:last-child)::after {
+        content: '';
+        margin: 0;
 }
 
 .breadcrumbs a {

@@ -1,7 +1,7 @@
 {{- define "main" }}
 
 <article class="post-single">
-  {{/*  <header class="post-header">
+  <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title">
       {{ .Title }}
@@ -14,13 +14,13 @@
     {{- end }}
     {{- if not (.Param "hide_meta") }}
     <div class="post-meta">
-      {{- partial "post_meta.html" . -}}
-      {{- partial "translation_list.html" . -}}
-      {{- partial "edit_post.html" . -}}
-      {{- partial "post_canonical.html" . -}}
+      {{- partial "post_meta.html" . }}
+      {{- partial "translation_list.html" . }}
+      {{- partial "edit_post.html" . }}
+      {{- partial "post_canonical.html" . }}
     </div>
     {{- end }}
-  </header>  */}}
+  </header>
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hidden_in_single | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   {{- if (.Param "show_toc") }}

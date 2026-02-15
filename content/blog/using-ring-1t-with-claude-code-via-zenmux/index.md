@@ -11,7 +11,7 @@ show_code_copy_buttons: true
 show_word_count: true
 ---
 
-# Using Ring 1T with Claude Code via ZenMux
+<!-- # Using Ring 1T with Claude Code via ZenMux -->
 
 ## What is Ring 1T?
 
