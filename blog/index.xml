@@ -9,15 +9,34 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Feb 2026 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Ring 1T with Claude Code via ZenMux</title>
+      <link>https://inclusionai.github.io/blog/using-ring-1t-with-claude-code-via-zenmux/</link>
+      <pubDate>Sun, 15 Feb 2026 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/blog/using-ring-1t-with-claude-code-via-zenmux/</guid>
+      <description>&lt;h1 id=&#34;using-ring-1t-with-claude-code-via-zenmux&#34;&gt;Using Ring 1T with Claude Code via ZenMux&lt;/h1&gt;
+&lt;h2 id=&#34;what-is-ring-1t&#34;&gt;What is Ring 1T?&lt;/h2&gt;
+&lt;p&gt;Ring 1T is a powerful open-source reasoning model designed for complex problem-solving and advanced coding tasks. It&amp;rsquo;s built on the Ling 2.0 architecture with impressive capabilities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scale&lt;/strong&gt;: 1 trillion total parameters with 50 billion activated parameters&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Context&lt;/strong&gt;: Supports up to 128K tokens context window&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Training&lt;/strong&gt;: Enhanced through large-scale verifiable reward reinforcement learning (RLVR)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: Excels at deep reasoning, natural language inference, and sophisticated code generation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ring 1T represents the latest advancement in MoE (Mixture of Experts) architecture scaling, leveraging the icepop reinforcement learning stabilization method and the ASystem framework to deliver exceptional reasoning performance.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Ming-flash-omni-Preview: A Sparse, Unified Architecture for Multimodal Perception and Generation</title>
       <link>https://inclusionai.github.io/blog/ming-flash-omni-preview/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ming-flash-omni-preview/</guid>
-      <description>GITHUB ARXIV 🤗 Hugging Face｜ 🤖 ModelScope
-Omnimodal Ming-omni series update! Ming-flash-omni-Preview is the first open-source omnimodal large model with a parameter scale reaching the hundred billion-Scale level. Based on Ling 2.0&amp;rsquo;s sparse MoE architecture, Ming-flash-omni-Preview has a total of 103B parameters with 9B activated. Compared to the previous version Ming-lite-omni-1.5, Ming-flash-omni-Preview has improved in both omnimodal understanding and generation capabilities. The overall performance across various modalities has reached a leading level among open-source omnimodal models, with particularly outstanding performance in controllable image generation, streaming video understanding, and speech recognition.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt;  &lt;a href=&#34;https://arxiv.org/abs/2510.24821&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;ARXIV&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-flash-omni-Preview&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-flash-omni-Preview&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Omnimodal Ming-omni series update! &lt;strong&gt;Ming-flash-omni-Preview&lt;/strong&gt; is the &lt;strong&gt;first open-source omnimodal large model&lt;/strong&gt; with a parameter scale reaching the hundred billion-Scale level. Based on Ling 2.0&amp;rsquo;s sparse MoE architecture, Ming-flash-omni-Preview has a total of &lt;strong&gt;103B parameters&lt;/strong&gt; with &lt;strong&gt;9B activated&lt;/strong&gt;. Compared to the previous version Ming-lite-omni-1.5, Ming-flash-omni-Preview has improved in both omnimodal understanding and generation capabilities. The overall performance across various modalities has reached a &lt;strong&gt;leading level among open-source omnimodal models&lt;/strong&gt;, with particularly outstanding performance in &lt;strong&gt;controllable image generation, streaming video understanding, and speech recognition&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,8 +45,566 @@ Omnimodal Ming-omni series update! Ming-flash-omni-Preview is the first open-sou
       <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ming-uniaudio/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-The Introduction Video of Ming-UniAudio Audio Edit Demo Editing Tasks Video demos 🚀 Technical Highlights First unified continuous speech tokenizer for both understanding and generation tasks: MingTok-Audio is a unified continuous speech tokenizer MingTok-Audio based on a VAE framework with a causal Transformer architecture, the first continuous speech tokenizer to effectively integrate semantic and acoustic features, and enables a closed-loop system with LLMs through hierarchical feature representations, makes it suitable for both understanding and generation tasks.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming-UniAudio&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-UniAudio-16B-A3B&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://modelscope.cn/models/inclusionAI/Ming-UniAudio-16B-A3B&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-introduction-video-of-ming-uniaudio&#34;&gt;The Introduction Video of Ming-UniAudio&lt;/h2&gt;
+&lt;p&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/oVK9TY4AEBwAAAAAgWAAAAgADmiGAQFr&#34; width=&#34;1024px&#34; height=&#34;660px&#34; controls autoplay muted playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h2 id=&#34;audio-edit-demo&#34;&gt;Audio Edit Demo&lt;/h2&gt;
+&lt;p&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/-FcPSYBMkDMAAAAAgoAAAAgADmiGAQFr&#34; width=&#34;1024px&#34; height=&#34;660px&#34; controls autoplay muted playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h2 id=&#34;editing-tasks-video-demos&#34;&gt;Editing Tasks Video demos&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/xGZ4R5Tg09MAAAAAgGAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/QORqR68bUPYAAAAAgHAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/MHIuTbHoLVoAAAAAgGAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/k6NERayHTS8AAAAAgGAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- # Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer --&gt;
+&lt;h2 id=&#34;-technical-highlights&#34;&gt;🚀 Technical Highlights&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;First unified continuous speech tokenizer for both understanding and generation tasks:&lt;/strong&gt; &lt;strong&gt;MingTok-Audio&lt;/strong&gt; is a unified continuous speech tokenizer MingTok-Audio based on a VAE framework with a causal Transformer architecture, the first continuous speech tokenizer to effectively integrate semantic and acoustic features, and enables a closed-loop system with LLMs through hierarchical feature representations, makes it suitable for both understanding and generation tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;First Speech LLM with unifed continuous tokenizer for both understanding and generation:&lt;/strong&gt; &lt;strong&gt;Ming-UniAudio&lt;/strong&gt; is an end-to-end unified speech language model with a single LLM backbone for both understanding and generation tasks, enhanced with a Diffusion Head to ensure high-fidelity speech synthesis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;First universal free-form speech editing model for semantic and acoustic tasks without temporal regime:&lt;/strong&gt; We introduce the first instruction-guided, free-form speech editing framework that supports comprehensive semantic and acoustic edits without requiring explicit edit regions, along with Ming-Freeform-Audio-Edit, the first open-source evaluation set for such tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;First benchmark for free-form speech editing:&lt;/strong&gt; We propose Audio-Edit-Benchmark, the first open-source free-form evaluation set comprising editing tasks of four semantic and five acoustic types, to evaluate the model&amp;rsquo;s editing performance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;instruction-guided-free-form-speech-editing&#34;&gt;Instruction-Guided Free-Form Speech Editing&lt;/h2&gt;
+&lt;h3 id=&#34;semantic-editing---insert&#34;&gt;Semantic Editing - Insert&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Target Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;简直&amp;rsquo; after the character or word at index 8.&lt;/td&gt;
+          &lt;td&gt;真是个浪漫的邂逅可以说是英雄救美了&lt;/td&gt;
+          &lt;td&gt;真是个浪漫的邂逅简直可以说是英雄救美了&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/JdKpT5F_JtcAAAAASHAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/WfvQQKsB4dQAAAAAScAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;真正&amp;rsquo; before the character or word &amp;lsquo;好&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;就有道而正焉可谓好学也已&lt;/td&gt;
+          &lt;td&gt;就有道而正焉可谓真正好学也已&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/EQA0RrEZEy4AAAAASSAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/afDpSI_C_P0AAAAASmAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;clearly&amp;rsquo; before the character or word at index 8.&lt;/td&gt;
+          &lt;td&gt;Its legal status in Trinidad was insufficient to preserve its ecological status.&lt;/td&gt;
+          &lt;td&gt;Its legal status in Trinidad was insufficient clearly to preserve its ecological status.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/pNLORqb9lUcAAAAASLAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/UtbRRY_BLdgAAAAASTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;successfully&amp;rsquo; after the character or word &amp;lsquo;profession&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;Previously an attorney Korona left the profession to pursue a career in music.&lt;/td&gt;
+          &lt;td&gt;Previously an attorney Korona left the profession successfully to pursue a career in music.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/HJoKS4foKaQAAAAASYAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/H7YbQr6zTyEAAAAASpAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;semantic-editing---substitute&#34;&gt;Semantic Editing - Substitute&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Target Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute &amp;lsquo;妈妈&amp;rsquo; with &amp;lsquo;爸爸&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;我想对于妈妈来说会比任何礼物都要温暖&lt;/td&gt;
+          &lt;td&gt;我想对于爸爸来说会比任何礼物都要温暖&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/8CQiSIZebqAAAAAATdAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/CtYrQq7gmmkAAAAAUgAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute the characters or words from index 8 to index 10 with &amp;lsquo;五万元&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;当时我想等筹齐两万元聘礼就送她妈回家&lt;/td&gt;
+          &lt;td&gt;当时我想等筹齐五万元聘礼就送她妈回家&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/9N09RL4k5AoAAAAASEAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/-63tQ5FSxWoAAAAASAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute &amp;lsquo;get pictures off&amp;rsquo; with &amp;rsquo;transfer photos from&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;I&amp;rsquo;m trying to explain to my mother how to get pictures off her phone.&lt;/td&gt;
+          &lt;td&gt;I&amp;rsquo;m trying to explain to my mother how to transfer photos from her phone.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Wur_RKhjsTkAAAAASGAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/x-PGQIC1dJsAAAAASTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute the words from index 8 to index 9 with &amp;lsquo;could become&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;Considering the growth of human population insects might be the food of the future.&lt;/td&gt;
+          &lt;td&gt;Considering the growth of human population insects could become the food of the future.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Pu-_TY8088EAAAAASxAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/aVQ9SoLVfM0AAAAAS4AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;semantic-editing---delete&#34;&gt;Semantic Editing - Delete&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Target Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete &amp;lsquo;比普通的茶叶要&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;花草茶的口味一般比普通的茶叶要苦一些&lt;/td&gt;
+          &lt;td&gt;花草茶的口味一般苦一些&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/C1jQTKJCUSgAAAAASJAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Pl2CR4QVw2EAAAAARYAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete the characters or words from index 11 to index 15.&lt;/td&gt;
+          &lt;td&gt;我吃了点燕麦片煎鸡蛋还喝了点橙汁&lt;/td&gt;
+          &lt;td&gt;我吃了点燕麦片煎鸡蛋汁&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/txKrRLpnBH4AAAAASIAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/C5LvS67ATOEAAAAARjAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete &amp;rsquo;times&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;The classification of this gibbon has changed several times in the past few years.&lt;/td&gt;
+          &lt;td&gt;The classification of this gibbon has changed several in the past few years.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/M5h2TbiN37wAAAAATAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/PxcTTrVjcrAAAAAAS4AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete the characters or words from index 2 to index 6.&lt;/td&gt;
+          &lt;td&gt;On the second day the boy climbed to the top of a cliff near the camp&lt;/td&gt;
+          &lt;td&gt;On climbed to the top of a cliff near the camp&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/yHJ3Q54WNY4AAAAASCAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/EKtETaHIfPUAAAAARhAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;acoustic-editing---dialect-conversion&#34;&gt;Acoustic Editing - Dialect Conversion&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Dongbei.&lt;/td&gt;
+          &lt;td&gt;之后，他考取导游证，成为拱北口岸中旅的导游。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/RmuPT4u48BIAAAAATAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/GcUzTLgBYYQAAAAAUTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Chengdu.&lt;/td&gt;
+          &lt;td&gt;只有当科技为本地社群创造价值的时候，才能真正有意义。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Cd0GRauyLh8AAAAAUMAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/wGu6Q7fB96EAAAAAUyAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Chengdu.&lt;/td&gt;
+          &lt;td&gt;我得用回想与幻想补充我所缺少的饮食，安慰我所得到的痛苦。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/jnf2RKh_lskAAAAAURAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/N90aR4CNHy4AAAAAVSAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Guangxi.&lt;/td&gt;
+          &lt;td&gt;全国恶性肿瘤发病，及死亡第一位的是肺癌。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/-X4eSpyIon4AAAAAVRAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/8CDxQq717cUAAAAAWKAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;acoustic-editing---speed&#34;&gt;Acoustic Editing - Speed&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 0.5.&lt;/td&gt;
+          &lt;td&gt;我用胸抵住车把，掌握方向，速度一点也不比别人慢。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/R9HrRKU4XJgAAAAAVPAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Z7rBRKF0VcoAAAAAc_AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 0.7.&lt;/td&gt;
+          &lt;td&gt;There is a growing body of case law on Bayh-Dole.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/MBcXTKBliGMAAAAASgAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/oh3UTIJzHysAAAAAUgAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 1.3.&lt;/td&gt;
+          &lt;td&gt;Cribb was born near Bristol but moved to London before starting professional fighting.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/D9lDQo0Zjz8AAAAAUBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Kc2kTZ-Wh5IAAAAAT0AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 2.&lt;/td&gt;
+          &lt;td&gt;切实帮助困难群众解决生产生活中，遇到的困难和问题。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/PHbSSJZGnjEAAAAAUDAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/KmPERIhGVTIAAAAASjAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;acoustic-editing---pitch&#34;&gt;Acoustic Editing - Pitch&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by 3 steps.&lt;/td&gt;
+          &lt;td&gt;因为外面有战争，家里又有战争带来的悲伤和匮乏。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/sA5dRL1s_pkAAAAAURAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/wMaHQaX_gZ4AAAAAVrAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by 5 steps.&lt;/td&gt;
+          &lt;td&gt;自动驾驶将大幅提升出行安全，效率。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/q2-QTp1S49QAAAAATzAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ar7qRrxbA-0AAAAAU_AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by -1 steps.&lt;/td&gt;
+          &lt;td&gt;The heart of the campus has a number of historic buildings.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/_2E0Q6STH2YAAAAASiAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/fwtWQaSWCeoAAAAATVAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by -1 steps.&lt;/td&gt;
+          &lt;td&gt;Stevenson is also the director of music ministries at Angeles Mesa Presbyterian Church.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/qFzmT7Q_LGIAAAAAVAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/3lSvSLJcx9oAAAAAWjAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;acoustic-editing---volume&#34;&gt;Acoustic Editing - Volume&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 1.4.&lt;/td&gt;
+          &lt;td&gt;A woman sits as she shows the designs she has made in the floor.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/IKI3Sq9VfrUAAAAAS7AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ZipySrVXlRsAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 1.6.&lt;/td&gt;
+          &lt;td&gt;For example, they both consist of predominately older, hence redder, stars.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/-STIR7ZWR4cAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/YStPSoQ1o_MAAAAAVLAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 0.9.&lt;/td&gt;
+          &lt;td&gt;伏羲的儿孙们看见伏羲捉来了鱼，也都欢欢喜喜跑来问长问短。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/n1qOS4vXT44AAAAAUnAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/DuTPR5fSJrwAAAAAWKAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 0.3.&lt;/td&gt;
+          &lt;td&gt;他们还告诉巨人，那座城市里群英荟萃。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/3DgxTLQAwaQAAAAATuAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/qA3JSqPKPRkAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;acoustic-editing---denoise&#34;&gt;Acoustic Editing - Denoise&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;Be shape of example,before deriving this formula we explained what we mean by problems of this kind we now generalize these ideas for general binomial experiments.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/1OAFTqgJIwcAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/0EAKT6Mi0KkAAAAAZ3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;Summoned to himself with firmness no surrender his superiors had also preached this saying it was the way of eternal honor his comrades were old.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/DfUMTKdSXL8AAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/89QhSLDv0-oAAAAAZrAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;There are people who travel long distances to assure my continued existence we have also seen the power of faith at work among us it was muscular but it wasn&amp;rsquo;t symmetrical.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ROrmQJzxSHgAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/niWWSLMGNeIAAAAAZxAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;Theory eventually proved inexact the heavens refused to give up their weeping but what has been happening recently might be described as creeping mannerism clever.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/DJ-YR6aHUYIAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/woakSZCLjzMAAAAAZxAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;acoustic-editing---background-music&#34;&gt;Acoustic Editing - Background Music&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add rain to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/74mRQJBHEDsAAAAASkAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/RxFHSZGgWgsAAAAAU_AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add car sound to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/37sbT4bQ95sAAAAARsAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/bUK1Qo4QxhwAAAAATbAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add carefree music to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/SYorQ6L3vSwAAAAAUMAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/c1rCSpdBOUYAAAAAYTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add groovy music to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/LNqDTKx-eq4AAAAARWAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/NfMfTaa1aDIAAAAASpAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;acoustic-editing---emotion-conversion&#34;&gt;Acoustic Editing - Emotion Conversion&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;比尔想再看小主人一眼然后走进森林安静地死去。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/EodrRIWu_ucAAAAASuAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/dO35RbVvSTIAAAAAVFAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;世界爱眼日是每年十月的第二个星期四。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Yf78Q7yF5YoAAAAASMAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/nlUUS5Jv3zcAAAAATVAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;我会玩很多游戏呢听说多喝水能治百病。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/5bCPTJ9cRswAAAAASWAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/LH_vTb1udC0AAAAAUZAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;建议戴口罩空气质量轻度污染。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/x1h0RpWyfooAAAAAR9AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/P1CQSpx5x_8AAAAATIAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;audio-understanding&#34;&gt;Audio Understanding&lt;/h2&gt;
+&lt;h3 id=&#34;chinese-and-english-asr&#34;&gt;Chinese and English ASR&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/HgRPQI-yCT0AAAAASQAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;呃很久没有看到看过如此不带价值判断的电影&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/jPUNTKLTwwMAAAAAaBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;桃花庄人塔俱乐部是位于杭州市德清县的一个俱乐部&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/lfRkQp3qH68AAAAAbDAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;he was excited and at the same time uneasy maybe the girl had already forgotten him&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ROdTTobjQk4AAAAAaYAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;it&amp;rsquo;s true that everything has its destiny but one day that destiny will be realized&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;dialect-understanding&#34;&gt;Dialect Understanding&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/VMJDRb-I-poAAAAASkAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-粤语] 你做乜嘢啊系咪唔想倾偈啊。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/kd0sRqfBceUAAAAARfAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-上海话] 阿拉考试还没定下来唻。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/6JfkSJqSF5YAAAAARyAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-闽南语] 宝贝较早休困晚安。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/VY5oTKxs3LgAAAAASTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-川渝方言] 我难受得很别个都睡了。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;context-asr&#34;&gt;Context ASR&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input&lt;/th&gt;
+          &lt;th&gt;Prompt&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/kPmlSarKaTgAAAAAgBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about Banking. This audio may contains the following words or phrases:Zelle,daily A C H transfer limit,cashier&amp;rsquo;s checks,transaction memos,F D I C regulations,cryptocurrency wallet,K Y C requirements.&lt;/td&gt;
+          &lt;td&gt;Hey Chris, you won&amp;rsquo;t believe what happened when I tried sending rent through Zelle yesterday. I hit some daily ACH transfer limit! My landlord&amp;rsquo;s insisting on cashier&amp;rsquo;s checks now. Remember how Sarah&amp;rsquo;s Venmo payment got flagged last month? The bank&amp;rsquo;s fraud detection system kept asking about transaction memos and &amp;lsquo;source of funds&amp;rsquo; verification. Honestly, these FDIC regulations around peer-to-peer payments are getting ridiculous. I had to provide three months of bank statements just to increase my wire transfer threshold. Oh, and don&amp;rsquo;t even get me started on cryptocurrency wallet KYC requirements.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/A-j2QKPsWvAAAAAAgCAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about Banking. This audio may contains the following words or phrases:Priority Pass lounges,T S A Pre Check,rewards structure,bonus miles,Citibank&amp;rsquo;s Prestige Card,Visa Infinite,E M V chip security protocols,dynamic currency conversion.&lt;/td&gt;
+          &lt;td&gt;So listen, I finally canceled my Chase Sapphire Reserve last week. Remember how they touted those Priority Pass lounges and Luxury Hotel Collection benefits? Turns out I only used the T S A Pre Check credit once this whole year! The annual fee jumped to five hundred fifty dollars, plus they started requiring eighteen thousand points to waive it. My Amex Platinum isn&amp;rsquo;t any better that seven hundred dollar fee just hit, and their new rewards structure requires thirty thousand in annual spending for bonus miles. Oh, and get this Citibank&amp;rsquo;s Prestige Card now charges two hundred bucks for authorized users! Honestly, these Visa Infinite perks like concierge services and purchase protection sound fancy, but when do regular people actually use E M V chip security protocols or dynamic currency conversion?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/6L8lRpfRvhoAAAAAgBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about 酒店常旅客计划. This audio may contains the following words or phrases:至悦大使,重庆来福士洲际,酒廊待遇,万豪旅享家,钛金会员.&lt;/td&gt;
+          &lt;td&gt;诶？小李，我最近在研究IHG的会员体系，这个‘至悦大使’的达标条件也太苛刻了吧！‘三百权益’里，洲际的认可房晚才给三十晚。你说，他们家的‘先行者任务’算不算‘里程碑奖励’啊？对了，我之前用积分兑换重庆来福士洲际的行政套房，礼宾部居然没给酒廊待遇，反而现金订房的客人能拿到双早。万豪旅享家的‘钛金会员’都能自动匹配套房升级券，IHG这个动态定价系统真是让人头大！&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/bwa5Trrt_8AAAAAAgBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about 汽车行业. This audio may contains the following words or phrases:汽车之家曹雷,矩阵式 L E D 大灯,四十八伏轻混系统,可变气门升程技术,M B U X 超联屏,Sportback,Allroad.&lt;/td&gt;
+          &lt;td&gt;嘿，老李，你看到‘汽车之家’曹雷发的文章没？说新款奥迪A3加长到四米六了。昨儿我去4S店试驾，销售说这车配了啥矩阵式LED大灯，还有四十八伏轻混系统。不过，宝马1系那个B48发动机也改了‘可变气门升程技术’，奔驰A级更夸张，直接把MBUX超联屏塞进紧凑车里！要我说啊，现在车企搞细分市场真够拼的！听说奥迪还要出Sportback、Allroad等四个版本呢，连自适应巡航都标配了！&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;audio-generation&#34;&gt;Audio Generation&lt;/h2&gt;
+&lt;h3 id=&#34;voice-clone&#34;&gt;Voice Clone&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input Prompt&lt;/th&gt;
+          &lt;th&gt;Target Text&lt;/th&gt;
+          &lt;th&gt;TTS Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/FjxTQqU_YwkAAAAATuAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;全球每年有超过一百三十五万人，因交通事故而死亡。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/2vMrQpm1ok8AAAAATEAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/wmxOR52zO5kAAAAAS3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;The stained glass offered a hypnotic atmosphere.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Wu73RaH8UfsAAAAAR3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;multi-lingual-synthesis&#34;&gt;Multi-lingual Synthesis&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input Prompt Text&lt;/th&gt;
+          &lt;th&gt;Input Prompt audio&lt;/th&gt;
+          &lt;th&gt;Target Text&lt;/th&gt;
+          &lt;th&gt;TTS Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;We asked over twenty different people, and they all said it was his.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/J5M7R7mrCIoAAAAAS3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;The stained glass offered a hypnotic atmosphere.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Pr_3Tqem6_gAAAAATbAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;The wedding was photographed by celebrity wedding photographer Kid Chan.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/jOIAQrN4ZOsAAAAAUIAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Bender also conducted extensive research on autism.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/kPl1TY7Mcz8AAAAAUmAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;关于不少万达广场的注册资本金更改。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Exe3SJb_Xk8AAAAATFAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;哎，这些情况在北京这样的大都市，是无法避免的。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/xOqOSoogXqcAAAAAVLAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;长春周二之前晴天多云五月七日是晴天。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/pmrSSLsTKMoAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;两人一直对婚变封口，使传闻闹得热烘烘。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Wrd3Rpb6PnUAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
     <item>
@@ -36,8 +613,18 @@ The Introduction Video of Ming-UniAudio Audio Edit Demo Editing Tasks Video demo
       <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/mingtok/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-🚀 Technical Highlights First Continuous Unified Tokenizer for Vision: MingTok seamlessly supports both image understanding and generation within a single continuous latent space—eliminating quantization and bridging modalities. First NTP-style Autoregressive MLLM with Unified Continuous Visual Tokens: By building on MingTok, Ming-UniVision unifies vision and language under a shared next-token prediction framework, enabling end-to-end autoregressive modeling of diverse vision tasks. Reduced Representational Competition → 3.5× Faster Convergence: The unified continuous representation aligns semantic understanding and generative dynamics, significantly accelerating joint training without performance trade-offs.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming-UniVision&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-UniVision-16B-A3B&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-UniVision-16B-A3B&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_qlf8jc/afts/video/A*ZBkgTruOxA4AAAAAgyAAAAgAehi-AQ&#34; width=&#34;1024px&#34; height=&#34;660px&#34; controls autoplay muted playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;!-- # Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer --&gt;
+&lt;h2 id=&#34;-technical-highlights&#34;&gt;🚀 Technical Highlights&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;First Continuous Unified Tokenizer for Vision:&lt;/strong&gt; &lt;strong&gt;MingTok&lt;/strong&gt; seamlessly supports both image understanding and generation within a single continuous latent space—eliminating quantization and bridging modalities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;First NTP-style Autoregressive MLLM with Unified Continuous Visual Tokens:&lt;/strong&gt; By building on MingTok, &lt;strong&gt;Ming-UniVision&lt;/strong&gt; unifies vision and language under a shared next-token prediction framework, enabling end-to-end autoregressive modeling of diverse vision tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reduced Representational Competition → 3.5× Faster Convergence:&lt;/strong&gt; The unified continuous representation aligns semantic understanding and generative dynamics, significantly accelerating joint training without performance trade-offs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-Round In-Context Learning in a Single Feature Space:&lt;/strong&gt; All operations—understanding, generation, and editing—occur in the same continuous space, eliminating costly cross-space conversions and enabling simpler, more efficient training and inference.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;the-challenge-the-inverse-nature-of-seeing-and-drawing&#34;&gt;The Challenge: The Inverse Nature of Seeing and Drawing&lt;/h2&gt;
+&lt;p&gt;Autoregression—the powerful paradigm of modeling the world by “predicting the next token”—has already unified diverse modalities like language and audio. The next frontier is to bring visual understanding (seeing) and visual generation (drawing) into this unified sequence‑to‑sequence framework.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,11 +633,17 @@ The Introduction Video of Ming-UniAudio Audio Edit Demo Editing Tasks Video demo
       <pubDate>Sat, 13 Sep 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ming-lite-omni-1_5-seg/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-Ming-lite-omni 1.5: Segmentation-as-Editing for Unified Multimodal AI The Hype and the Hidden Question The multimodal AI world has been thriving.
-From the debut of Qwen-Image to the interactive editing hype sparked by Nano Banana, image editing has rapidly become the next battlefield for generative AI.
-Editing fundamentally requires two distinct skill sets:
-Know where, what, and how to change (understanding the image) Produce the change with high visual quality (generating the image) Its rich gameplay and strong interactivity have pulled in users, developers, and creators alike.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-Lite-Omni-1.5&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-Lite-Omni-1.5&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ming-lite-omni-15-segmentation-as-editing-for-unified-multimodal-ai&#34;&gt;Ming-lite-omni 1.5: Segmentation-as-Editing for Unified Multimodal AI&lt;/h1&gt;
+&lt;h3 id=&#34;the-hype-and-the-hidden-question&#34;&gt;The Hype and the Hidden Question&lt;/h3&gt;
+&lt;p&gt;The multimodal AI world has been thriving.&lt;/p&gt;
+&lt;p&gt;From the debut of Qwen-Image to the interactive editing hype sparked by Nano Banana, image editing has rapidly become the next battlefield for generative AI.&lt;/p&gt;
+&lt;p&gt;Editing fundamentally requires two distinct skill sets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Know &lt;em&gt;where&lt;/em&gt;, &lt;em&gt;what&lt;/em&gt;, and &lt;em&gt;how&lt;/em&gt; to change&lt;/strong&gt; (understanding the image)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Produce the change with high visual quality&lt;/strong&gt; (generating the image)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Its rich gameplay and strong interactivity have pulled in users, developers, and creators alike.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,8 +652,9 @@ Know where, what, and how to change (understanding the image) Produce the change
       <pubDate>Tue, 05 Aug 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ring-lite-2507/</guid>
-      <description>📖 Technical Report | 🤗 Hugging Face｜ 🤖 ModelScope
-Overview We present Ring-lite-2507, an upgraded version of our previously released lightweight reasoning model, Ring-lite (2506). Built upon a 16.8B Mixture-of-Experts (MoE) large language model with 2.75B activated parameters, Ring-lite-2507 further advances its reasoning capabilities while demonstrating superior performance across a comprehensive range of LLM benchmarks, including general text understanding, alignment, coding, logical, and agentic tasks. Thanks to our innovative and robust reinforcement learning training pipeline, Ring-lite-2507 distinguishes itself from the latest public dense models under 10B parameters by offering competitive performance across various tasks, despite activating only 1/3 of their parameter size.</description>
+      <description>&lt;p&gt;📖 &lt;a href=&#34;https://arxiv.org/abs/2506.14731&#34;&gt;Technical Report&lt;/a&gt; | 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ring-lite-2507&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://modelscope.cn/models/inclusionAI/Ring-lite-2507&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;We present &lt;strong&gt;Ring-lite-2507&lt;/strong&gt;, an upgraded version of our previously released lightweight reasoning model, &lt;strong&gt;Ring-lite&lt;/strong&gt; (2506). Built upon a &lt;strong&gt;16.8B&lt;/strong&gt; Mixture-of-Experts (MoE) large language model with &lt;strong&gt;2.75B&lt;/strong&gt; activated parameters, &lt;strong&gt;Ring-lite-2507&lt;/strong&gt; further advances its reasoning capabilities while demonstrating superior performance across a comprehensive range of LLM benchmarks, including general text understanding, alignment, coding, logical, and agentic tasks. Thanks to our innovative and robust reinforcement learning training pipeline, &lt;strong&gt;Ring-lite-2507&lt;/strong&gt; distinguishes itself from the latest public dense models under 10B parameters by offering competitive performance across various tasks, despite activating only &lt;strong&gt;1/3&lt;/strong&gt; of their parameter size.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,8 +663,9 @@ Overview We present Ring-lite-2507, an upgraded version of our previously releas
       <pubDate>Mon, 21 Jul 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ming-lite-omni-1_5/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-Overview Ming-lite-omni v1.5 is a comprehensive upgrade to the full-modal capabilities of Ming-lite-omni(Github). It significantly improves performance across tasks including image-text understanding, document understanding, video understanding, speech understanding and synthesis, and image generation and editing. Built upon Ling-lite-1.5, Ming-lite-omni v1.5 has a total of 20.3 billion parameters, with 3 billion active parameters in its MoE (Mixture-of-Experts) section. It demonstrates highly competitive results in various modal benchmarks compared to industry-leading models.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-Lite-Omni-1.5&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-Lite-Omni-1.5&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Ming-lite-omni v1.5 is a comprehensive upgrade to the full-modal capabilities of Ming-lite-omni(&lt;a href=&#34;https://github.com/inclusionAI/Ming/tree/v1.0&#34;&gt;Github&lt;/a&gt;). It significantly improves performance across tasks including image-text understanding, document understanding, video understanding, speech understanding and synthesis, and image generation and editing. Built upon Ling-lite-1.5, Ming-lite-omni v1.5 has a total of 20.3 billion parameters, with 3 billion active parameters in its MoE (Mixture-of-Experts) section. It demonstrates highly competitive results in various modal benchmarks compared to industry-leading models.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,8 +674,11 @@ Overview Ming-lite-omni v1.5 is a comprehensive upgrade to the full-modal capabi
       <pubDate>Fri, 11 Jul 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/m2-reasoning/</guid>
-      <description>📖 Technical Report | 🤗 Hugging Face｜ 🤖 ModelScope
-Introduction We introduce M2-Reasoning-7B, a model designed to excel in both general and spatial reasoning. Our approach integrates two key innovations: (1) a novel data pipeline that generates 294.2K high-quality data samples (168K for cold-start fine-tuning and 126.2K for RLVR), which feature logically coherent reasoning trajectories and have undergone comprehensive assessment; and (2) a dynamic multi-task training strategy with step-wise optimization to mitigate conflicts between data, and task-specific rewards for delivering tailored incentive signals.</description>
+      <description>&lt;p&gt;📖 &lt;a href=&#34;https://arxiv.org/abs/2507.08306&#34;&gt;Technical Report&lt;/a&gt; | 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/M2-Reasoning&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/M2-Reasoning&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;We introduce M2-Reasoning-7B, a model designed to excel in both general and spatial reasoning. Our approach integrates two key innovations: (1) a novel data pipeline that generates 294.2K high-quality data samples (168K for cold-start fine-tuning and 126.2K for RLVR), which feature logically coherent reasoning trajectories and have undergone comprehensive assessment; and (2) a dynamic multi-task training strategy with step-wise optimization to mitigate conflicts between data, and task-specific rewards for delivering tailored incentive signals. This combination of curated data and advanced training allows M2-Reasoning-7B to set a new state-of-the-art (SOTA) across 8 benchmarks, showcasing superior performance in both general and spatial reasoning domains.
+&lt;img loading=&#34;lazy&#34; src=&#34;assets/teaser.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,8 +687,52 @@ Introduction We introduce M2-Reasoning-7B, a model designed to excel in both gen
       <pubDate>Tue, 08 Jul 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/abench/</guid>
-      <description>GITHUB 🌟 Overview ABench is an evolving open-source benchmark suite designed to rigorously evaluate and enhance Large Language Models (LLMs) on complex cross-domain tasks. By targeting current model weaknesses, ABench provides systematic challenges in high-difficulty specialized domains, including physics, actuarial science, logical reasoning, law, and psychology.
-🎯 Core Objectives Address Evaluation Gaps: Design high-differentiation assessment tasks targeting underperforming question types Establish Unified Standards: Create reliable, comparable benchmarks for multi-domain LLM evaluation Expand Capability Boundaries: Drive continuous optimization of knowledge systems and reasoning mechanisms through challenging innovative problems 📊 Dataset Release Status Domain Description Status Physics 500 university/competition-level physics problems (400 static + 100 dynamic parametric variants) covering 10+ fields from classical mechanics to modern physics ✅ Released Actuary Curated actuarial exam problems covering core topics: probability statistics, financial mathematics, life/non-life insurance, actuarial models, and risk management ✅ Released Logic High-differentiation logical reasoning problems from authoritative tests (LSAT/GMAT/GRE/SBI/Chinese Civil Service Exam) 🔄 In Preparation Psychology Psychological case studies and research questions (objective/subjective) evaluating understanding of human behavior and theories 🔄 In Preparation Law Authoritative judicial exam materials covering core legal domains: criminal/civil/administrative/procedural/international law 🔄 In Preparation </description>
+      <description>&lt;a href=&#34;https://github.com/inclusionAI/ABench&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt;
+&lt;h2 id=&#34;-overview&#34;&gt;🌟 Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;ABench&lt;/strong&gt; is an evolving open-source benchmark suite designed to rigorously evaluate and enhance Large Language Models (LLMs) on &lt;strong&gt;complex cross-domain tasks&lt;/strong&gt;. By targeting current model weaknesses, ABench provides systematic challenges in &lt;strong&gt;high-difficulty specialized domains&lt;/strong&gt;, including physics, actuarial science, logical reasoning, law, and psychology.&lt;/p&gt;
+&lt;h2 id=&#34;-core-objectives&#34;&gt;🎯 Core Objectives&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Address Evaluation Gaps&lt;/strong&gt;: Design high-differentiation assessment tasks targeting &lt;strong&gt;underperforming question types&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Establish Unified Standards&lt;/strong&gt;: Create &lt;strong&gt;reliable, comparable benchmarks&lt;/strong&gt; for multi-domain LLM evaluation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Expand Capability Boundaries&lt;/strong&gt;: Drive continuous optimization of knowledge systems and reasoning mechanisms through challenging innovative problems&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;-dataset-release-status&#34;&gt;📊 Dataset Release Status&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Domain&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Status&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Physics&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;500 university/competition-level physics problems (400 static + 100 dynamic parametric variants) covering 10+ fields from classical mechanics to modern physics&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/inclusionAI/ABench/blob/main/Physics/README.md&#34;&gt;✅ Released&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Actuary&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Curated actuarial exam problems covering core topics: probability statistics, financial mathematics, life/non-life insurance, actuarial models, and risk management&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://github.com/inclusionAI/ABench/blob/main/Actuary/README.md&#34;&gt;✅ Released&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Logic&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;High-differentiation logical reasoning problems from authoritative tests (LSAT/GMAT/GRE/SBI/Chinese Civil Service Exam)&lt;/td&gt;
+          &lt;td&gt;🔄 In Preparation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Psychology&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Psychological case studies and research questions (objective/subjective) evaluating understanding of human behavior and theories&lt;/td&gt;
+          &lt;td&gt;🔄 In Preparation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Law&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Authoritative judicial exam materials covering core legal domains: criminal/civil/administrative/procedural/international law&lt;/td&gt;
+          &lt;td&gt;🔄 In Preparation&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
     <item>
@@ -99,7 +741,39 @@ Introduction We introduce M2-Reasoning-7B, a model designed to excel in both gen
       <pubDate>Mon, 07 Jul 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/aworld/</guid>
-      <description>&amp;ldquo;Self-awareness: the hardest problem isn&amp;rsquo;t solving within limits, it&amp;rsquo;s discovering the own limitations&amp;rdquo; Table of Contents News — Latest updates and announcements. Introduction — Overview and purpose of the project. Installation — Step-by-step setup instructions. Quick Start — Get started with usage examples. Architecture — Explore the multi-agent system design. Demo — See the project in action with demonstrations. Contributing — How to get involved and contribute. License — Project licensing details.</description>
+      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;Self-awareness: the hardest problem isn&amp;rsquo;t solving within limits, it&amp;rsquo;s discovering the own limitations&amp;rdquo;&lt;/em&gt;
+&lt;a href=&#34;https://x.com/InclusionAI666&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/twitter/follow/AWorld_AI?style=social&#34; alt=&#34;Twitter Follow&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://raw.githubusercontent.com/inclusionAI/AWorld/main/readme_assets/aworld_wechat_qr.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/WeChat-Add%20us-green?logo=wechat&amp;amp;logoColor=white&#34; alt=&#34;WeChat QR Code&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://discord.gg/b4Asj2ynMw&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/Discord-Join%20us-blue?logo=discord&amp;amp;logoColor=white&#34; alt=&#34;Discord&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://opensource.org/licenses/MIT&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;License: MIT&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://deepwiki.com/inclusionAI/AWorld&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/DeepWiki-Explore-blueviolet?logo=wikipedia&amp;amp;logoColor=white&#34; alt=&#34;DeepWiki&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;!-- [![arXiv](https://img.shields.io/badge/arXiv-xxxx.xxxxx-b31b1b.svg)](https://arxiv.org/abs/xxxx.xxxxx) --&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#news&#34;&gt;News&lt;/a&gt; — Latest updates and announcements.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#introduction&#34;&gt;Introduction&lt;/a&gt; — Overview and purpose of the project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#installation&#34;&gt;Installation&lt;/a&gt; — Step-by-step setup instructions.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#quick-start&#34;&gt;Quick Start&lt;/a&gt; — Get started with usage examples.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#architecture&#34;&gt;Architecture&lt;/a&gt; — Explore the multi-agent system design.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#demo&#34;&gt;Demo&lt;/a&gt; — See the project in action with demonstrations.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#contributing&#34;&gt;Contributing&lt;/a&gt; — How to get involved and contribute.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#license&#34;&gt;License&lt;/a&gt; — Project licensing details.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🦤 [2025/07/07] AWorld, as a runtime, is now ready for agentic training. See &lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#self-improvement-with-diverse-runtimes&#34;&gt;Self-Improvement section&lt;/a&gt; for details. We have updated our score to 77.08 on the GAIA test. Learn how to construct a GAIA runtime in the &lt;a href=&#34;https://inclusionai.github.io/blog/aworld/#demo-of-gaia-agent-runtime&#34;&gt;Demo section&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;🦩 [2025/06/19] We have updated our score to 72.43 on the GAIA test. Additionally, we have introduced a new local running mode. See &lt;code&gt;./README-local.md&lt;/code&gt; for detailed instructions.&lt;/li&gt;
+&lt;li&gt;🐳 [2025/05/22] For quick GAIA evaluation, MCP tools, AWorld, and models are now available in a single Docker image. See &lt;code&gt;./README-docker.md&lt;/code&gt; for instructions and &lt;a href=&#34;https://www.youtube.com/watch?v=kkYWeVvJKrg&#34;&gt;youtube video&lt;/a&gt; for demo.&lt;/li&gt;
+&lt;li&gt;🥳 [2025/05/13] AWorld has updated its state management for browser use and enhanced the video processing MCP server, achieving a score of 77.58 on GAIA validation (Pass@1 = 61.8) and maintaining its position as the top-ranked open-source framework. Learn more: &lt;a href=&#34;https://huggingface.co/spaces/gaia-benchmark/leaderboard&#34;&gt;GAIA leaderboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;✨ [2025/04/23] AWorld ranks 3rd on GAIA benchmark (69.7 avg) with impressive Pass@1 = 58.8, 1st among open-source frameworks. Reproduce with &lt;code&gt;python examples/gaia/run.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;AWorld (Agent World) is a multi-agent playground that enables agents to collaborate and self-improve. The framework supports a wide range of applications, including but not limited to product prototype verification, foundation model training and Multi-Agent System (MAS) design meta-learning.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -108,8 +782,11 @@ Introduction We introduce M2-Reasoning-7B, a model designed to excel in both gen
       <pubDate>Wed, 11 Jun 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ming-omni/</guid>
-      <description>GITHUB 📑 Technical Report｜📖Project Page ｜🤗 Hugging Face｜ 🤖 ModelScope
-Introduction Ming-lite-omni, a light version of Ming-omni, which is derived from Ling-lite and features 2.8 billion activated parameter. Ming-lite-omni is a unified multimodal model capable of processing images, text, audio, and video, while demonstrating strong proficiency in both speech and image generation. Ming-lite-omni employs dedicated encoders to extract tokens from different modalities, which are then processed by Ling, an MoE architecture equipped with newly proposed modality-specific routers.</description>
+      <description>&lt;!-- # Ming-Lite-Omni --&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming/tree/Ming-Lite-Omni-Preview/Ming-unify&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 📑 &lt;a href=&#34;https://arxiv.org/abs/2506.09344&#34;&gt;Technical Report&lt;/a&gt;｜📖&lt;a href=&#34;https://lucaria-academy.github.io/Ming-Omni/&#34;&gt;Project Page&lt;/a&gt; ｜🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-Lite-Omni&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-Lite-Omni&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ming-lite-omni, a light version of Ming-omni, which is derived from &lt;a href=&#34;https://github.com/inclusionAI/Ling&#34;&gt;Ling-lite&lt;/a&gt; and features 2.8 billion activated parameter. Ming-lite-omni is a unified multimodal model capable of processing images, text, audio, and video, while demonstrating strong proficiency in both speech and image generation. Ming-lite-omni employs dedicated encoders to extract tokens from different modalities, which are then processed by Ling, an MoE architecture equipped with newly proposed modality-specific routers. This design enables a single model to efficiently process and fuse multimodal inputs within a unified framework, thereby facilitating diverse tasks without requiring separate models, task-specific fine-tuning, or structural redesign. Importantly, Ming-lite-omni extends beyond conventional multimodal models by supporting audio and image generation. This is achieved through the integration of an advanced audio decoder for natural-sounding speech and Ming-Lite-Uni for high-quality image generation, which also allow the model to engage in context-aware chatting, perform text-to-speech conversion, and conduct versatile image editing. Our experimental results showcase Ming-lite-omni offers a powerful solution for unified perception and generation across all modalities.
+Notably, Ming-lite-omni is the first open-source model we are aware of to match GPT-4o in modality support, and we release all code and model weights to encourage further research and development in the community.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,9 +795,10 @@ Introduction Ming-lite-omni, a light version of Ming-omni, which is derived from
       <pubDate>Thu, 08 May 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ling/</guid>
-      <description>🤗 Hugging Face&amp;nbsp&amp;nbsp | &amp;nbsp&amp;nbsp🤖 ModelScope
-Introduction Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry.
-Their structure makes it easy to scale up and down and adapt to different tasks, so users can use these models for a wide range of tasks, from processing natural language to solving complex problems.</description>
+      <description>&lt;p align=&#34;center&#34;&gt;🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI&#34;&gt;Hugging Face&lt;/a&gt;&amp;nbsp&amp;nbsp | &amp;nbsp&amp;nbsp🤖 &lt;a href=&#34;https://modelscope.cn/organization/inclusionAI&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry.&lt;/p&gt;
+&lt;p&gt;Their structure makes it easy to scale up and down and adapt to different tasks, so users can use these models for a wide range of tasks, from processing natural language to solving complex problems. Furthermore, the open-source nature of Ling promotes collaboration and innovation within the AI community, fostering a diverse range of use cases and enhancements.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -129,8 +807,13 @@ Their structure makes it easy to scale up and down and adapt to different tasks,
       <pubDate>Wed, 07 May 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ming-lite-uni/</guid>
-      <description>GITHUB 📑 Paper｜🤗 Hugging Face｜🤖 ModelScope Introduction Ming-Lite-Uni is an open-source multimodal framework that includes a newly developed unified visual generator, and a native multimodal autoregressive model meant to integrate vision and language.
-This project offers an open-source implementation of the integrated MetaQueries and M2-omni framework, while offering the innovative multi-scale learnable tokens and multi-scale representation alignment strategy. Ming-Lite-Uni utilizes a fixed MLLM and a learnable diffusion model, allowing native multimodal AR models to execute text-to-image production and instruction-based image editing tasks, hence enhancing their functionalities beyond mere visual comprehension.</description>
+      <description>&lt;!-- &lt;h1 align=&#34;center&#34;&gt;Ming-Lite-Uni: Advancements in Unified Architecture for Natural Multimodal Interaction&lt;/h1&gt; --&gt;
+&lt;p align=&#34;left&#34;&gt;
+        &lt;a href=&#34;https://github.com/inclusionAI/Ming/tree/Ming-Lite-Omni-Preview/Ming-unify&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 📑 &lt;a href=&#34;https://arxiv.org/pdf/2505.02471&#34;&gt;Paper&lt;/a&gt;｜🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-Lite-Uni&#34;&gt;Hugging Face&lt;/a&gt;｜🤖 &lt;a href=&#34;https://modelscope.cn/models/inclusionAI/Ming-Lite-Uni&#34;&gt;ModelScope&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Ming-Lite-Uni&lt;/code&gt; is an open-source multimodal framework that includes a newly developed unified visual generator, and a native multimodal autoregressive model meant to integrate vision and language.&lt;/p&gt;
+&lt;p&gt;This project offers an open-source implementation of the integrated MetaQueries and M2-omni framework, while offering the innovative &lt;strong&gt;multi-scale learnable tokens&lt;/strong&gt; and &lt;strong&gt;multi-scale representation alignment strategy&lt;/strong&gt;. Ming-Lite-Uni utilizes a fixed MLLM and a learnable diffusion model, allowing native multimodal AR models to execute text-to-image production and instruction-based image editing tasks, hence enhancing their functionalities beyond mere visual comprehension. Our experimental findings demonstrate the robust efficacy of Ming-Lite-Uni and highlight the remarkable fluidity of its interactive process. Ming-Lite-Uni is now in the alpha phase and will soon undergo additional refinement.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -139,8 +822,9 @@ This project offers an open-source implementation of the integrated MetaQueries 
       <pubDate>Mon, 05 May 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ming-lite-omni-preview/</guid>
-      <description>GITHUB 🤗 Hugging Face | 🤖 ModelScope
-Introduction Ming-Lite-Omni-Preview is built upon Ling-Lite, which is a MoE model designed to perceive a wide range of modalities, including text, images, audio, and video, while generating text and natural speech in a streaming manner. To naturely handle the diverse modalities, we have enhanced Ling-Lite by incorporating modality-specific routers for each modality. As a result, Ming-Omni excels at handling information from diverse modalities and is highly scalable.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI&#34;&gt;Hugging Face&lt;/a&gt; | 🤖 &lt;a href=&#34;https://modelscope.cn/organization/inclusionAI&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ming-Lite-Omni-Preview is built upon &lt;a href=&#34;https://github.com/inclusionAI/Ling&#34;&gt;Ling-Lite&lt;/a&gt;, which is a MoE model designed to perceive a wide range of modalities, including text, images, audio, and video, while generating text and natural speech in a streaming manner. To naturely handle the diverse modalities, we have enhanced Ling-Lite by incorporating modality-specific routers for each modality. As a result, Ming-Omni excels at handling information from diverse modalities and is highly scalable.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -149,8 +833,10 @@ Introduction Ming-Lite-Omni-Preview is built upon Ling-Lite, which is a MoE mode
       <pubDate>Tue, 01 Apr 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/agenticlearning/</guid>
-      <description>Introduction Agent exhibits powerful capabilities by interacting with the external environment and making decisions based on the feedback it receives from the environment. For complex problems, it is often necessary for an agent to have multi-turn interactions with the environment to reach a solution. The complexity and dynamism of environments, coupled with the necessity for multi-turn interactions, pose numerous challenges in training agents.
-We introduce AgenticLearning, an open-source agent training paradigm designed to empower researchers to train and evaluate autonomous agents effectively.</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Agent exhibits powerful capabilities by interacting with the external environment and making decisions based on the feedback it receives from the environment.
+For complex problems, it is often necessary for an agent to have multi-turn interactions with the environment to reach a solution. The complexity and dynamism of environments, coupled with the necessity for multi-turn interactions, pose numerous challenges in training agents.&lt;/p&gt;
+&lt;p&gt;We introduce &lt;strong&gt;AgenticLearning&lt;/strong&gt;, an open-source agent training paradigm designed to empower researchers to train and evaluate autonomous agents effectively. AgenticLearning offers a framework for multi-turn interactions with the environment, enabling models to learn how to interact with the environment and make decisions based on its feedback, thereby enhancing the models&amp;rsquo; ability to leverage the environment to solve complex problems.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -159,7 +845,11 @@ We introduce AgenticLearning, an open-source agent training paradigm designed to
       <pubDate>Tue, 01 Apr 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/areal/</guid>
-      <description>| Paper | Documentation | Ask DeepWiki | 🤗 Models &amp; Data | WeChat Group | AReaL (Ant Reasoning RL) is an open-source fully asynchronous reinforcement learning training system for large reasoning models developed at the RL Lab, Ant Research. Built upon the open-source project RealHF, we are fully committed to open-source by providing training details, data, and infrastructure required to reproduce results along with the model itself. AReaL aims to help everyone build their own AI agents easily and affordably.</description>
+      <description>&lt;p align=&#34;center&#34;&gt;
+| &lt;a href=&#34;https://arxiv.org/pdf/2505.24298&#34;&gt;&lt;b&gt;Paper&lt;/b&gt;&lt;/a&gt; | &lt;a href=&#34;https://inclusionai.github.io/AReaL/&#34;&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/a&gt; | &lt;a href=&#34;https://deepwiki.com/inclusionAI/AReaL&#34;&gt;&lt;b&gt;Ask DeepWiki&lt;/b&gt;&lt;/a&gt; | &lt;a href=&#34;https://huggingface.co/collections/inclusionAI/areal-boba-2-683f0e819ccb7bb2e1b2f2d5&#34;&gt;&lt;b&gt;🤗 Models &amp; Data&lt;/b&gt;&lt;/a&gt; |
+&lt;a href=&#34;https://github.com/inclusionAI/AReaL/blob/main/assets/wechat_qrcode.png&#34; target=&#34;_blank&#34;&gt;&lt;b&gt;WeChat Group&lt;/b&gt;&lt;/a&gt; |
+&lt;/p&gt;
+&lt;p&gt;AReaL (Ant Reasoning RL) is an open-source &lt;strong&gt;fully asynchronous reinforcement learning training system&lt;/strong&gt; for large reasoning models developed at &lt;strong&gt;the RL Lab, Ant Research&lt;/strong&gt;. Built upon the open-source project &lt;a href=&#34;https://github.com/openpsi-project/ReaLHF&#34;&gt;RealHF&lt;/a&gt;, we are fully committed to open-source by providing training details, data, and infrastructure required to reproduce results along with the model itself. AReaL aims to help everyone build their own AI agents easily and affordably. Our team loves milk tea because it&amp;rsquo;s delicious, customizable, and affordable. We hope you enjoy our project just like how you enjoy real-world milk tea (cheers).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -168,7 +858,14 @@ We introduce AgenticLearning, an open-source agent training paradigm designed to
       <pubDate>Tue, 01 Apr 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/promptcot/</guid>
-      <description>News May 30, 2025: PromptCoT-Mamba released! Introducing an attention-free foundation model for reasoning tasks. Apr 11, 2025: PromptCoT-QwQ-32B model and its training data released, achieving new state-of-the-art results. Mar 7, 2025: PromptCoT project launched, including the problem generation model, distilled models (PromptCoT-DS series), and associated datasets. Overview This repository unifies two synergistic projects aimed at advancing the frontiers of mathematical and code reasoning in Large Language Models (LLMs): PromptCoT and PromptCoT-Mamba.</description>
+      <description>&lt;h2 id=&#34;news&#34;&gt;&lt;strong&gt;News&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;May 30, 2025&lt;/strong&gt;: PromptCoT-Mamba released! Introducing an attention-free foundation model for reasoning tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Apr 11, 2025&lt;/strong&gt;: PromptCoT-QwQ-32B model and its training data released, achieving new state-of-the-art results.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mar 7, 2025&lt;/strong&gt;: PromptCoT project launched, including the problem generation model, distilled models (PromptCoT-DS series), and associated datasets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;overview&#34;&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;This repository unifies two synergistic projects aimed at advancing the frontiers of mathematical and code reasoning in Large Language Models (LLMs): &lt;strong&gt;PromptCoT&lt;/strong&gt; and &lt;strong&gt;PromptCoT-Mamba&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -177,8 +874,17 @@ We introduce AgenticLearning, an open-source agent training paradigm designed to
       <pubDate>Tue, 01 Apr 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/ring/</guid>
-      <description>🤗 Hugging Face&amp;nbsp&amp;nbsp | &amp;nbsp&amp;nbsp🤖 ModelScope News [2025-06]:🎉 Add Ring-lite Model [2025-04]:🎉 Add Ring-lite-linear-preview Model Introduction Ring is a reasoning MoE LLM provided and open-sourced by InclusionAI, derived from Ling. We introduce Ring-lite-distill-preview, which has 16.8 billion parameters with 2.75 billion activated parameters. This model demonstrates impressive reasoning performance compared to existing models in the industry.
-Model Downloads You can download the following table to see the various parameters for your use case.</description>
+      <description>&lt;p align=&#34;center&#34;&gt;
+          🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI&#34;&gt;Hugging Face&lt;/a&gt;&amp;nbsp&amp;nbsp | &amp;nbsp&amp;nbsp🤖 &lt;a href=&#34;https://modelscope.cn/organization/inclusionAI&#34;&gt;ModelScope&lt;/a&gt;
+&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[2025-06]:🎉 Add &lt;a href=&#34;https://huggingface.co/inclusionAI/Ring-lite&#34;&gt;Ring-lite&lt;/a&gt; Model&lt;/li&gt;
+&lt;li&gt;[2025-04]:🎉 Add &lt;a href=&#34;hybrid_linear&#34;&gt;Ring-lite-linear-preview&lt;/a&gt; Model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ring is a reasoning MoE LLM provided and open-sourced by InclusionAI, derived from &lt;a href=&#34;https://github.com/inclusionAI/Ling&#34;&gt;Ling&lt;/a&gt;. We introduce Ring-lite-distill-preview, which has 16.8 billion parameters with 2.75 billion activated parameters. This model demonstrates impressive reasoning performance compared to existing models in the industry.&lt;/p&gt;
+&lt;h2 id=&#34;model-downloads&#34;&gt;Model Downloads&lt;/h2&gt;
+&lt;p&gt;You can download the following table to see the various parameters for your use case. If you are located in mainland China, we also provide the model on ModelScope.cn to speed up the download process.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -9,6 +9,7 @@
       <link>https://inclusionai.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
     <lastBuildDate>Tue, 28 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/zh/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ming-flash-omni-Preview，千亿参数 MoE，洞察与创造一体的全模态</title>
@@ -16,9 +17,23 @@
       <pubDate>Tue, 28 Oct 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ming-flash-omni-preview/</guid>
-      <description>GITHUB ARXIV 🤗 Hugging Face｜ 🤖 ModelScope
-全模态 Ming-omni 系列更新！Ming-flash-omni-Preview 是首个参数规模达到千亿的开源全模态大模型。基于 Ling 2.0 的稀疏 MoE 架构，Ming-flash-omni-Preview 总参数 103B， 激活 9B。相比之前很受欢迎的 Ming-lite-omni-1.5，Ming-flash-omni-Preview 在全模态理解和生成能力上均有提升，各模态总体效果达到开源全模态模型的领先水平, 尤其在可控图像生成、流式视频理解、以及语音识别等领域性能表现尤为突出。
-能力一览 可控图像生成 针对图像生成这个常见的场景，Ming-flash-omni-Preview 首创生成式分割范式 ，将 “图像分割” 重构为语义保持的编辑任务 (Generative Segmentation-as-Editing)，实现了细粒度的空间语义控制。Ming-flash-omni-Preview 在 GenEval 基准上评测达到 0.90 分，超越所有非强化学习的生成方法，展现出卓越的可控性。 流式视频理解 用户常有一种想跟 AI 基于现实场景持续对话，并通过 AI 来理解现实场景的需求。Ming-flash-omni-Preview 可以有效实现相关需求。如下图视频所示，Ming-flash-omni-Preview 可实现对流式视频的细粒度理解，看懂视频中的物体和交互，并实时提供相关理解和说明，帮助用户在实际场景中获得支持。 语音及方言理解 Ming-flash-omni-Preview 可实现上下文感知语音理解 (ContextASR) 和方言识别，在所有 12 个 ContextASR 子任务上全面 SOTA，对湖南话、闽南话、粤语等 15 种中国方言的理解能力大幅增强，对于在听不懂的方言中迷失的用户，能有效的提供翻译和实时理解支持。 音色克隆 Ming-flash-omni-Preview 的语音生成从离散 tokenizer 升级为连续 tokenizer，显著提升了音色克隆能力，中英文混合发音能力稳定性高，能够有效克隆原本对话的音色到新产生的对话中，seed-tts-zh WER 指标为 0.99，超过 qwen3 omni 和 seed-tts。 模型架构及能力简介 Ming-flash-omni-Preview 的模型结构图:</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt;   &lt;a href=&#34;https://arxiv.org/abs/2510.24821&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;ARXIV&lt;/a&gt;  🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-flash-omni-Preview&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-flash-omni-Preview&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;全模态 Ming-omni 系列更新！Ming-flash-omni-Preview 是首个参数规模达到千亿的开源全模态大模型。基于 Ling 2.0 的稀疏 MoE 架构，Ming-flash-omni-Preview 总参数 103B， 激活 9B。相比之前很受欢迎的 Ming-lite-omni-1.5，Ming-flash-omni-Preview 在全模态理解和生成能力上均有提升，各模态总体效果达到开源全模态模型的领先水平,  尤其在可控图像生成、流式视频理解、以及语音识别等领域性能表现尤为突出。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mdn.alipayobjects.com/huamei_drbxn1/afts/img/5hflRY595xwAAAAAgBAAAAgADkliAQFr/original&#34; alt=&#34;performance&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;能力一览&#34;&gt;能力一览&lt;/h2&gt;
+&lt;h3 id=&#34;可控图像生成&#34;&gt;可控图像生成&lt;/h3&gt;
+&lt;p&gt;针对图像生成这个常见的场景，Ming-flash-omni-Preview 首创生成式分割范式 ，将 “图像分割” 重构为语义保持的编辑任务 (Generative Segmentation-as-Editing)，实现了细粒度的空间语义控制。Ming-flash-omni-Preview 在 GenEval 基准上评测达到 0.90 分，超越所有非强化学习的生成方法，展现出卓越的可控性。
+&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/cb4mSp1jTwQAAAAAgIAAAAgAfoeUAQBr&#34; width=&#34;704px&#34;  controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h3 id=&#34;流式视频理解&#34;&gt;流式视频理解&lt;/h3&gt;
+&lt;p&gt;用户常有一种想跟 AI 基于现实场景持续对话，并通过 AI 来理解现实场景的需求。Ming-flash-omni-Preview 可以有效实现相关需求。如下图视频所示，Ming-flash-omni-Preview 可实现对流式视频的细粒度理解，看懂视频中的物体和交互，并实时提供相关理解和说明，帮助用户在实际场景中获得支持。
+&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/n6k6SqtCCqMAAAAAgJAAAAgAfoeUAQBr&#34; width=&#34;704px&#34;  controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h3 id=&#34;语音及方言理解&#34;&gt;语音及方言理解&lt;/h3&gt;
+&lt;p&gt;Ming-flash-omni-Preview 可实现上下文感知语音理解 (ContextASR) 和方言识别，在所有 12 个 ContextASR 子任务上全面 SOTA，对湖南话、闽南话、粤语等 15 种中国方言的理解能力大幅增强，对于在听不懂的方言中迷失的用户，能有效的提供翻译和实时理解支持。
+&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/iEf7QK3W3m4AAAAAgBAAAAgAfoeUAQBr&#34; width=&#34;704px&#34;  controls&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h3 id=&#34;音色克隆&#34;&gt;音色克隆&lt;/h3&gt;
+&lt;p&gt;Ming-flash-omni-Preview 的语音生成从离散 tokenizer 升级为连续 tokenizer，显著提升了音色克隆能力，中英文混合发音能力稳定性高，能够有效克隆原本对话的音色到新产生的对话中，seed-tts-zh WER 指标为 0.99，超过 qwen3 omni 和 seed-tts。
+&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_drbxn1/afts/video/Ru5dTrMPb30AAAAAgBAAAAgAfoeUAQBr&#34; width=&#34;704px&#34;  controls&gt;&lt;/video&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,8 +42,566 @@
       <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ming-uniaudio/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-Ming-UniAudio的视频介绍 语音编辑的视频展示 编辑任务的视频demo展示 🚀 技术亮点 首个面向理解与生成任务的统一连续语音分词器: MingTok-Audio 是一种基于 VAE 框架与因果 Transformer 架构的统一连续语音分词器，首个有效融合语义与声学特征的连续语音分词器，通过层次化特征表示与 LLM 形成闭环系统，同时适用于理解与生成任务。 首个采用统一连续分词器、同时支持理解与生成的语音大模型: Ming-UniAudio 是端到端的统一语音语言模型，仅用一个 LLM 主干即可同时完成理解与生成，并配备扩散头以保证高保真语音合成。 首个无需时序约束、支持语义与声学任务的通用自由形式语音编辑模型: 我们提出了首个指令引导的自由形式语音编辑框架，无需显式指定编辑区域即可实现全面的语义与声学编辑；同时发布 Ming-Freeform-Audio-Edit，首个面向该任务的开源评测集。 首个自由形式语音编辑基准: 我们推出 Audio-Edit-Benchmark，首个开源自由形式评测集，涵盖四类语义与五类声学编辑任务，用于系统评估模型的编辑能力。 多项指令引导的自由形式语音编辑的任务展示 语义编辑 - 插入 Instruction Transcription Target Transcription Before Edit Speechedit Result insert &amp;lsquo;简直&amp;rsquo; after the character or word at index 8. 真是个浪漫的邂逅可以说是英雄救美了 真是个浪漫的邂逅简直可以说是英雄救美了 insert &amp;lsquo;真正&amp;rsquo; before the character or word &amp;lsquo;好&amp;rsquo;. 就有道而正焉可谓好学也已 就有道而正焉可谓真正好学也已 insert &amp;lsquo;clearly&amp;rsquo; before the character or word at index 8.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming-UniAudio&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-UniAudio-16B-A3B&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://modelscope.cn/models/inclusionAI/Ming-UniAudio-16B-A3B&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ming-uniaudio的视频介绍&#34;&gt;Ming-UniAudio的视频介绍&lt;/h2&gt;
+&lt;p&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/oVK9TY4AEBwAAAAAgWAAAAgADmiGAQFr&#34; width=&#34;1024px&#34; height=&#34;660px&#34; controls autoplay muted playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h2 id=&#34;语音编辑的视频展示&#34;&gt;语音编辑的视频展示&lt;/h2&gt;
+&lt;p&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/-FcPSYBMkDMAAAAAgoAAAAgADmiGAQFr&#34; width=&#34;1024px&#34; height=&#34;660px&#34; controls autoplay muted playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h2 id=&#34;编辑任务的视频demo展示&#34;&gt;编辑任务的视频demo展示&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/xGZ4R5Tg09MAAAAAgGAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/QORqR68bUPYAAAAAgHAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/MHIuTbHoLVoAAAAAgGAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_xb4oy7/afts/video/k6NERayHTS8AAAAAgGAAAAgADmiGAQFr&#34; controls width=&#34;100%&#34;&gt;&lt;/video&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- # Ming-UniVision: Joint Image Understanding and Generation via a Unified Continuous Tokenizer --&gt;
+&lt;h2 id=&#34;-技术亮点&#34;&gt;🚀 技术亮点&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;首个面向理解与生成任务的统一连续语音分词器:&lt;/strong&gt; &lt;strong&gt;MingTok-Audio&lt;/strong&gt; 是一种基于 VAE 框架与因果 Transformer 架构的统一连续语音分词器，首个有效融合语义与声学特征的连续语音分词器，通过层次化特征表示与 LLM 形成闭环系统，同时适用于理解与生成任务。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;首个采用统一连续分词器、同时支持理解与生成的语音大模型:&lt;/strong&gt; &lt;strong&gt;Ming-UniAudio&lt;/strong&gt; 是端到端的统一语音语言模型，仅用一个 LLM 主干即可同时完成理解与生成，并配备扩散头以保证高保真语音合成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;首个无需时序约束、支持语义与声学任务的通用自由形式语音编辑模型:&lt;/strong&gt; 我们提出了首个指令引导的自由形式语音编辑框架，无需显式指定编辑区域即可实现全面的语义与声学编辑；同时发布 Ming-Freeform-Audio-Edit，首个面向该任务的开源评测集。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;首个自由形式语音编辑基准:&lt;/strong&gt; 我们推出 Audio-Edit-Benchmark，首个开源自由形式评测集，涵盖四类语义与五类声学编辑任务，用于系统评估模型的编辑能力。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;多项指令引导的自由形式语音编辑的任务展示&#34;&gt;多项指令引导的自由形式语音编辑的任务展示&lt;/h2&gt;
+&lt;h3 id=&#34;语义编辑---插入&#34;&gt;语义编辑 - 插入&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Target Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;简直&amp;rsquo; after the character or word at index 8.&lt;/td&gt;
+          &lt;td&gt;真是个浪漫的邂逅可以说是英雄救美了&lt;/td&gt;
+          &lt;td&gt;真是个浪漫的邂逅简直可以说是英雄救美了&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/JdKpT5F_JtcAAAAASHAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/WfvQQKsB4dQAAAAAScAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;真正&amp;rsquo; before the character or word &amp;lsquo;好&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;就有道而正焉可谓好学也已&lt;/td&gt;
+          &lt;td&gt;就有道而正焉可谓真正好学也已&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/EQA0RrEZEy4AAAAASSAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/afDpSI_C_P0AAAAASmAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;clearly&amp;rsquo; before the character or word at index 8.&lt;/td&gt;
+          &lt;td&gt;Its legal status in Trinidad was insufficient to preserve its ecological status.&lt;/td&gt;
+          &lt;td&gt;Its legal status in Trinidad was insufficient clearly to preserve its ecological status.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/pNLORqb9lUcAAAAASLAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/UtbRRY_BLdgAAAAASTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;insert &amp;lsquo;successfully&amp;rsquo; after the character or word &amp;lsquo;profession&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;Previously an attorney Korona left the profession to pursue a career in music.&lt;/td&gt;
+          &lt;td&gt;Previously an attorney Korona left the profession successfully to pursue a career in music.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/HJoKS4foKaQAAAAASYAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/H7YbQr6zTyEAAAAASpAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;语义编辑---替换&#34;&gt;语义编辑 - 替换&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Target Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute &amp;lsquo;妈妈&amp;rsquo; with &amp;lsquo;爸爸&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;我想对于妈妈来说会比任何礼物都要温暖&lt;/td&gt;
+          &lt;td&gt;我想对于爸爸来说会比任何礼物都要温暖&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/8CQiSIZebqAAAAAATdAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/CtYrQq7gmmkAAAAAUgAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute the characters or words from index 8 to index 10 with &amp;lsquo;五万元&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;当时我想等筹齐两万元聘礼就送她妈回家&lt;/td&gt;
+          &lt;td&gt;当时我想等筹齐五万元聘礼就送她妈回家&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/9N09RL4k5AoAAAAASEAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/-63tQ5FSxWoAAAAASAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute &amp;lsquo;get pictures off&amp;rsquo; with &amp;rsquo;transfer photos from&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;I&amp;rsquo;m trying to explain to my mother how to get pictures off her phone.&lt;/td&gt;
+          &lt;td&gt;I&amp;rsquo;m trying to explain to my mother how to transfer photos from her phone.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Wur_RKhjsTkAAAAASGAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/x-PGQIC1dJsAAAAASTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;substitute the words from index 8 to index 9 with &amp;lsquo;could become&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;Considering the growth of human population insects might be the food of the future.&lt;/td&gt;
+          &lt;td&gt;Considering the growth of human population insects could become the food of the future.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Pu-_TY8088EAAAAASxAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/aVQ9SoLVfM0AAAAAS4AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;语义编辑---删除&#34;&gt;语义编辑 - 删除&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Target Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete &amp;lsquo;比普通的茶叶要&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;花草茶的口味一般比普通的茶叶要苦一些&lt;/td&gt;
+          &lt;td&gt;花草茶的口味一般苦一些&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/C1jQTKJCUSgAAAAASJAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Pl2CR4QVw2EAAAAARYAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete the characters or words from index 11 to index 15.&lt;/td&gt;
+          &lt;td&gt;我吃了点燕麦片煎鸡蛋还喝了点橙汁&lt;/td&gt;
+          &lt;td&gt;我吃了点燕麦片煎鸡蛋汁&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/txKrRLpnBH4AAAAASIAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/C5LvS67ATOEAAAAARjAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete &amp;rsquo;times&amp;rsquo;.&lt;/td&gt;
+          &lt;td&gt;The classification of this gibbon has changed several times in the past few years.&lt;/td&gt;
+          &lt;td&gt;The classification of this gibbon has changed several in the past few years.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/M5h2TbiN37wAAAAATAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/PxcTTrVjcrAAAAAAS4AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;delete the characters or words from index 2 to index 6.&lt;/td&gt;
+          &lt;td&gt;On the second day the boy climbed to the top of a cliff near the camp&lt;/td&gt;
+          &lt;td&gt;On climbed to the top of a cliff near the camp&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/yHJ3Q54WNY4AAAAASCAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/EKtETaHIfPUAAAAARhAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;声学编辑---方言转换&#34;&gt;声学编辑 - 方言转换&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Dongbei.&lt;/td&gt;
+          &lt;td&gt;之后，他考取导游证，成为拱北口岸中旅的导游。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/RmuPT4u48BIAAAAATAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/GcUzTLgBYYQAAAAAUTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Chengdu.&lt;/td&gt;
+          &lt;td&gt;只有当科技为本地社群创造价值的时候，才能真正有意义。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Cd0GRauyLh8AAAAAUMAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/wGu6Q7fB96EAAAAAUyAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Chengdu.&lt;/td&gt;
+          &lt;td&gt;我得用回想与幻想补充我所缺少的饮食，安慰我所得到的痛苦。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/jnf2RKh_lskAAAAAURAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/N90aR4CNHy4AAAAAVSAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Change the accent of the speech to Guangxi.&lt;/td&gt;
+          &lt;td&gt;全国恶性肿瘤发病，及死亡第一位的是肺癌。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/-X4eSpyIon4AAAAAVRAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/8CDxQq717cUAAAAAWKAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;声学编辑---变速&#34;&gt;声学编辑 - 变速&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 0.5.&lt;/td&gt;
+          &lt;td&gt;我用胸抵住车把，掌握方向，速度一点也不比别人慢。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/R9HrRKU4XJgAAAAAVPAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Z7rBRKF0VcoAAAAAc_AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 0.7.&lt;/td&gt;
+          &lt;td&gt;There is a growing body of case law on Bayh-Dole.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/MBcXTKBliGMAAAAASgAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/oh3UTIJzHysAAAAAUgAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 1.3.&lt;/td&gt;
+          &lt;td&gt;Cribb was born near Bristol but moved to London before starting professional fighting.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/D9lDQo0Zjz8AAAAAUBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Kc2kTZ-Wh5IAAAAAT0AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the speed to 2.&lt;/td&gt;
+          &lt;td&gt;切实帮助困难群众解决生产生活中，遇到的困难和问题。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/PHbSSJZGnjEAAAAAUDAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/KmPERIhGVTIAAAAASjAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;声学编辑---变调&#34;&gt;声学编辑 - 变调&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by 3 steps.&lt;/td&gt;
+          &lt;td&gt;因为外面有战争，家里又有战争带来的悲伤和匮乏。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/sA5dRL1s_pkAAAAAURAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/wMaHQaX_gZ4AAAAAVrAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by 5 steps.&lt;/td&gt;
+          &lt;td&gt;自动驾驶将大幅提升出行安全，效率。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/q2-QTp1S49QAAAAATzAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ar7qRrxbA-0AAAAAU_AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by -1 steps.&lt;/td&gt;
+          &lt;td&gt;The heart of the campus has a number of historic buildings.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/_2E0Q6STH2YAAAAASiAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/fwtWQaSWCeoAAAAATVAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;shifts the pitch by -1 steps.&lt;/td&gt;
+          &lt;td&gt;Stevenson is also the director of music ministries at Angeles Mesa Presbyterian Church.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/qFzmT7Q_LGIAAAAAVAAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/3lSvSLJcx9oAAAAAWjAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;声学编辑---变音量&#34;&gt;声学编辑 - 变音量&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 1.4.&lt;/td&gt;
+          &lt;td&gt;A woman sits as she shows the designs she has made in the floor.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/IKI3Sq9VfrUAAAAAS7AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ZipySrVXlRsAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 1.6.&lt;/td&gt;
+          &lt;td&gt;For example, they both consist of predominately older, hence redder, stars.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/-STIR7ZWR4cAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/YStPSoQ1o_MAAAAAVLAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 0.9.&lt;/td&gt;
+          &lt;td&gt;伏羲的儿孙们看见伏羲捉来了鱼，也都欢欢喜喜跑来问长问短。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/n1qOS4vXT44AAAAAUnAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/DuTPR5fSJrwAAAAAWKAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;adjusts the volume to 0.3.&lt;/td&gt;
+          &lt;td&gt;他们还告诉巨人，那座城市里群英荟萃。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/3DgxTLQAwaQAAAAATuAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/qA3JSqPKPRkAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;声学编辑---降噪&#34;&gt;声学编辑 - 降噪&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;Be shape of example,before deriving this formula we explained what we mean by problems of this kind we now generalize these ideas for general binomial experiments.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/1OAFTqgJIwcAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/0EAKT6Mi0KkAAAAAZ3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;Summoned to himself with firmness no surrender his superiors had also preached this saying it was the way of eternal honor his comrades were old.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/DfUMTKdSXL8AAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/89QhSLDv0-oAAAAAZrAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;There are people who travel long distances to assure my continued existence we have also seen the power of faith at work among us it was muscular but it wasn&amp;rsquo;t symmetrical.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ROrmQJzxSHgAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/niWWSLMGNeIAAAAAZxAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;denoise the audio.&lt;/td&gt;
+          &lt;td&gt;Theory eventually proved inexact the heavens refused to give up their weeping but what has been happening recently might be described as creeping mannerism clever.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/DJ-YR6aHUYIAAAAAU5AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/woakSZCLjzMAAAAAZxAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;声学编辑---加背景音&#34;&gt;声学编辑 - 加背景音&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add rain to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/74mRQJBHEDsAAAAASkAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/RxFHSZGgWgsAAAAAU_AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add car sound to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/37sbT4bQ95sAAAAARsAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/bUK1Qo4QxhwAAAAATbAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add carefree music to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/SYorQ6L3vSwAAAAAUMAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/c1rCSpdBOUYAAAAAYTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;add groovy music to audio.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/LNqDTKx-eq4AAAAARWAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/NfMfTaa1aDIAAAAASpAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;声学编辑---情感转换&#34;&gt;声学编辑 - 情感转换&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Instruction&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+          &lt;th&gt;Before Edit&lt;/th&gt;
+          &lt;th&gt;Speechedit Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;比尔想再看小主人一眼然后走进森林安静地死去。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/EodrRIWu_ucAAAAASuAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/dO35RbVvSTIAAAAAVFAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;世界爱眼日是每年十月的第二个星期四。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Yf78Q7yF5YoAAAAASMAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/nlUUS5Jv3zcAAAAATVAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;我会玩很多游戏呢听说多喝水能治百病。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/5bCPTJ9cRswAAAAASWAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/LH_vTb1udC0AAAAAUZAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;change the emotion to happy mood.&lt;/td&gt;
+          &lt;td&gt;建议戴口罩空气质量轻度污染。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/x1h0RpWyfooAAAAAR9AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/P1CQSpx5x_8AAAAATIAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;语音理解任务展示&#34;&gt;语音理解任务展示&lt;/h2&gt;
+&lt;h3 id=&#34;中英文语音识别&#34;&gt;中英文语音识别&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/HgRPQI-yCT0AAAAASQAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;呃很久没有看到看过如此不带价值判断的电影&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/jPUNTKLTwwMAAAAAaBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;桃花庄人塔俱乐部是位于杭州市德清县的一个俱乐部&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/lfRkQp3qH68AAAAAbDAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;he was excited and at the same time uneasy maybe the girl had already forgotten him&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/ROdTTobjQk4AAAAAaYAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;it&amp;rsquo;s true that everything has its destiny but one day that destiny will be realized&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;方言理解&#34;&gt;方言理解&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/VMJDRb-I-poAAAAASkAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-粤语] 你做乜嘢啊系咪唔想倾偈啊。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/kd0sRqfBceUAAAAARfAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-上海话] 阿拉考试还没定下来唻。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/6JfkSJqSF5YAAAAARyAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-闽南语] 宝贝较早休困晚安。&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/VY5oTKxs3LgAAAAASTAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;[方言-川渝方言] 我难受得很别个都睡了。&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;上下文语音识别&#34;&gt;上下文语音识别&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input&lt;/th&gt;
+          &lt;th&gt;Prompt&lt;/th&gt;
+          &lt;th&gt;Transcription&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/kPmlSarKaTgAAAAAgBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about Banking. This audio may contains the following words or phrases:Zelle,daily A C H transfer limit,cashier&amp;rsquo;s checks,transaction memos,F D I C regulations,cryptocurrency wallet,K Y C requirements.&lt;/td&gt;
+          &lt;td&gt;Hey Chris, you won&amp;rsquo;t believe what happened when I tried sending rent through Zelle yesterday. I hit some daily ACH transfer limit! My landlord&amp;rsquo;s insisting on cashier&amp;rsquo;s checks now. Remember how Sarah&amp;rsquo;s Venmo payment got flagged last month? The bank&amp;rsquo;s fraud detection system kept asking about transaction memos and &amp;lsquo;source of funds&amp;rsquo; verification. Honestly, these FDIC regulations around peer-to-peer payments are getting ridiculous. I had to provide three months of bank statements just to increase my wire transfer threshold. Oh, and don&amp;rsquo;t even get me started on cryptocurrency wallet KYC requirements.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/A-j2QKPsWvAAAAAAgCAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about Banking. This audio may contains the following words or phrases:Priority Pass lounges,T S A Pre Check,rewards structure,bonus miles,Citibank&amp;rsquo;s Prestige Card,Visa Infinite,E M V chip security protocols,dynamic currency conversion.&lt;/td&gt;
+          &lt;td&gt;So listen, I finally canceled my Chase Sapphire Reserve last week. Remember how they touted those Priority Pass lounges and Luxury Hotel Collection benefits? Turns out I only used the T S A Pre Check credit once this whole year! The annual fee jumped to five hundred fifty dollars, plus they started requiring eighteen thousand points to waive it. My Amex Platinum isn&amp;rsquo;t any better that seven hundred dollar fee just hit, and their new rewards structure requires thirty thousand in annual spending for bonus miles. Oh, and get this Citibank&amp;rsquo;s Prestige Card now charges two hundred bucks for authorized users! Honestly, these Visa Infinite perks like concierge services and purchase protection sound fancy, but when do regular people actually use E M V chip security protocols or dynamic currency conversion?&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/6L8lRpfRvhoAAAAAgBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about 酒店常旅客计划. This audio may contains the following words or phrases:至悦大使,重庆来福士洲际,酒廊待遇,万豪旅享家,钛金会员.&lt;/td&gt;
+          &lt;td&gt;诶？小李，我最近在研究IHG的会员体系，这个‘至悦大使’的达标条件也太苛刻了吧！‘三百权益’里，洲际的认可房晚才给三十晚。你说，他们家的‘先行者任务’算不算‘里程碑奖励’啊？对了，我之前用积分兑换重庆来福士洲际的行政套房，礼宾部居然没给酒廊待遇，反而现金订房的客人能拿到双早。万豪旅享家的‘钛金会员’都能自动匹配套房升级券，IHG这个动态定价系统真是让人头大！&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/bwa5Trrt_8AAAAAAgBAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Please recognize the language of this speech and transcribe it. Format: oral. This is an audio about 汽车行业. This audio may contains the following words or phrases:汽车之家曹雷,矩阵式 L E D 大灯,四十八伏轻混系统,可变气门升程技术,M B U X 超联屏,Sportback,Allroad.&lt;/td&gt;
+          &lt;td&gt;嘿，老李，你看到‘汽车之家’曹雷发的文章没？说新款奥迪A3加长到四米六了。昨儿我去4S店试驾，销售说这车配了啥矩阵式LED大灯，还有四十八伏轻混系统。不过，宝马1系那个B48发动机也改了‘可变气门升程技术’，奔驰A级更夸张，直接把MBUX超联屏塞进紧凑车里！要我说啊，现在车企搞细分市场真够拼的！听说奥迪还要出Sportback、Allroad等四个版本呢，连自适应巡航都标配了！&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;语音生成&#34;&gt;语音生成&lt;/h2&gt;
+&lt;h3 id=&#34;一句话音色克隆&#34;&gt;一句话音色克隆&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input Prompt&lt;/th&gt;
+          &lt;th&gt;Target Text&lt;/th&gt;
+          &lt;th&gt;TTS Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/FjxTQqU_YwkAAAAATuAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;全球每年有超过一百三十五万人，因交通事故而死亡。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/2vMrQpm1ok8AAAAATEAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/wmxOR52zO5kAAAAAS3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;The stained glass offered a hypnotic atmosphere.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Wu73RaH8UfsAAAAAR3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;多语种语音生成&#34;&gt;多语种语音生成&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Input Prompt Text&lt;/th&gt;
+          &lt;th&gt;Input Prompt audio&lt;/th&gt;
+          &lt;th&gt;Target Text&lt;/th&gt;
+          &lt;th&gt;TTS Result&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;We asked over twenty different people, and they all said it was his.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/J5M7R7mrCIoAAAAAS3AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;The stained glass offered a hypnotic atmosphere.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Pr_3Tqem6_gAAAAATbAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;The wedding was photographed by celebrity wedding photographer Kid Chan.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/jOIAQrN4ZOsAAAAAUIAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;Bender also conducted extensive research on autism.&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/kPl1TY7Mcz8AAAAAUmAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;关于不少万达广场的注册资本金更改。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Exe3SJb_Xk8AAAAATFAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;哎，这些情况在北京这样的大都市，是无法避免的。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/xOqOSoogXqcAAAAAVLAAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;长春周二之前晴天多云五月七日是晴天。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/pmrSSLsTKMoAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+          &lt;td&gt;两人一直对婚变封口，使传闻闹得热烘烘。&lt;/td&gt;
+          &lt;td&gt;&lt;audio controls src=&#34;https://mdn.alipayobjects.com/huamei_xb4oy7/afts/file/Wrd3Rpb6PnUAAAAAT6AAAAgADmiGAQFr&#34;&gt;&lt;/audio&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
     <item>
@@ -37,15 +610,42 @@ Ming-UniAudio的视频介绍 语音编辑的视频展示 编辑任务的视频de
       <pubDate>Wed, 01 Oct 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/mingtok/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-Ming-UniVision：在连续的视觉世界里，统一理解与生成 🚀 技术亮点 业界首个连续统一的视觉令牌化器： MingTok 在单一连续潜空间内无缝支持图像理解与生成，彻底消除了量化过程，并有效打通了不同模态。 首个采用连续视觉 Token 的 NTP 式自回归 MLLM： 基于 MingTok，Ming-UniVision 在一个共享的“下一词元预测 (NTP)”框架下统一了视觉与语言，实现了对多种视觉任务的端到端自回归建模。 缓解表征竞争 → 实现 3.5 倍收敛加速： 统一的连续表征协同了语义理解与生成的目标，在不牺牲性能的前提下，显著加速了模型的联合训练过程。 单一特征空间内的多轮上下文学习： 所有操作（理解、生成、编辑）均在同一个连续空间内完成，彻底避免了代价高昂的跨空间转换，使得训练与推理过程更简洁、更高效。 挑战：‘看’与‘画’的逆向天性 自回归（Autoregression），这种通过“预测下一个 token”来建模世界的强大范式，已经成功统一了语言、音频等多种模态。下一个前沿领域，是将视觉理解（看懂图像）与视觉生成（画出图像）也纳入这个统一的序列预测框架。
-然而，这一宏伟目标面临一个深层的挑战：在很多方面，理解与生成是互为逆向的任务。
-理解： 像素 → 高维、抽象的语义概念 生成： 概念 → 精细、高保真的像素细节 这两种任务对底层视觉表征有着截然不同，甚至是相互竞争的偏好。
-为何现有方案存在不足 现有模型尝试通过两种有限的策略来统一它们：
-非对称设计： 为每个任务使用不同的、异构的特征空间。这导致在多轮交互中，模型必须在不同空间之间进行低效的“往返”，从而引入延迟和工程复杂性。 共享离散令牌： 统一了令牌空间，但引入了量化误差。这既损害了生成图像的保真度，也削弱了其理解能力。 我们的解决方案：Ming-UniVision 与 MingTok 为了打破这一僵局，我们推出了 Ming-UniVision，一个构建于颠覆性创新 MingTok 之上的新一代自回归视觉语言模型。
-MingTok 是首个基于连续潜空间的视觉令牌化器。它提供了一个真正统一且高效的表征，构成了 Ming-UniVision 统一“下一词元预测 (NTP)”框架的基石——在一个统一的上下文学习多模态闭环中，将图像理解、生成和编辑融为一体。
-核心设计：三段式架构，调和表征竞争 Ming-UniVision 的核心是 MingTok 令牌化器，它是一个三段式序列架构，旨在优雅地调和理解与生成对表征的竞争性需求。
-图1：(a) 现有模型使用分离的视觉表征。(b) MingTok 使用统一方案生成语义与生成表征。(c) 这种统一方法带来了超过 3.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming-UniVision&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-UniVision-16B-A3B&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-UniVision-16B-A3B&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ming-univision在连续的视觉世界里统一理解与生成&#34;&gt;Ming-UniVision：在连续的视觉世界里，统一理解与生成&lt;/h1&gt;
+&lt;h2&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_qlf8jc/afts/video/A*ZBkgTruOxA4AAAAAgyAAAAgAehi-AQ&#34; width=&#34;768px&#34; height=&#34;580px&#34; controls&gt;&lt;/video&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;-技术亮点&#34;&gt;🚀 技术亮点&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;业界首个连续统一的视觉令牌化器：&lt;/strong&gt;
+&lt;strong&gt;MingTok&lt;/strong&gt; 在单一连续潜空间内无缝支持图像理解与生成，彻底消除了量化过程，并有效打通了不同模态。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;首个采用连续视觉 Token 的 NTP 式自回归 MLLM：&lt;/strong&gt;
+基于 MingTok，&lt;strong&gt;Ming-UniVision&lt;/strong&gt; 在一个共享的“下一词元预测 (NTP)”框架下统一了视觉与语言，实现了对多种视觉任务的端到端自回归建模。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;缓解表征竞争 → 实现 3.5 倍收敛加速：&lt;/strong&gt;
+统一的连续表征协同了语义理解与生成的目标，在不牺牲性能的前提下，显著加速了模型的联合训练过程。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;单一特征空间内的多轮上下文学习：&lt;/strong&gt;
+所有操作（理解、生成、编辑）均在同一个连续空间内完成，彻底避免了代价高昂的跨空间转换，使得训练与推理过程更简洁、更高效。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;挑战看与画的逆向天性&#34;&gt;挑战：‘看’与‘画’的逆向天性&lt;/h2&gt;
+&lt;p&gt;自回归（Autoregression），这种通过“预测下一个 token”来建模世界的强大范式，已经成功统一了语言、音频等多种模态。下一个前沿领域，是将视觉&lt;strong&gt;理解&lt;/strong&gt;（看懂图像）与视觉&lt;strong&gt;生成&lt;/strong&gt;（画出图像）也纳入这个统一的序列预测框架。&lt;/p&gt;
+&lt;p&gt;然而，这一宏伟目标面临一个深层的挑战：在很多方面，理解与生成是互为逆向的任务。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;理解：&lt;/strong&gt; 像素 → 高维、抽象的语义概念&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;生成：&lt;/strong&gt; 概念 → 精细、高保真的像素细节&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这两种任务对底层视觉表征有着截然不同，甚至是相互竞争的偏好。&lt;/p&gt;
+&lt;h3 id=&#34;为何现有方案存在不足&#34;&gt;为何现有方案存在不足&lt;/h3&gt;
+&lt;p&gt;现有模型尝试通过两种有限的策略来统一它们：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;非对称设计：&lt;/strong&gt; 为每个任务使用不同的、异构的特征空间。这导致在多轮交互中，模型必须在不同空间之间进行低效的“往返”，从而引入延迟和工程复杂性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;共享离散令牌：&lt;/strong&gt; 统一了令牌空间，但引入了量化误差。这既损害了生成图像的保真度，也削弱了其理解能力。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;我们的解决方案ming-univision-与-mingtok&#34;&gt;我们的解决方案：Ming-UniVision 与 MingTok&lt;/h3&gt;
+&lt;p&gt;为了打破这一僵局，我们推出了 &lt;strong&gt;Ming-UniVision&lt;/strong&gt;，一个构建于颠覆性创新 &lt;strong&gt;MingTok&lt;/strong&gt; 之上的新一代自回归视觉语言模型。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MingTok&lt;/strong&gt; 是首个基于连续潜空间的视觉令牌化器。它提供了一个真正统一且高效的表征，构成了 Ming-UniVision 统一“下一词元预测 (NTP)”框架的基石——在一个统一的上下文学习多模态闭环中，将图像理解、生成和编辑融为一体。&lt;/p&gt;
+&lt;h2 id=&#34;核心设计三段式架构调和表征竞争&#34;&gt;核心设计：三段式架构，调和表征竞争&lt;/h2&gt;
+&lt;p&gt;Ming-UniVision 的核心是 &lt;strong&gt;MingTok&lt;/strong&gt; 令牌化器，它是一个三段式序列架构，旨在优雅地调和理解与生成对表征的竞争性需求。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mdn.alipayobjects.com/huamei_qlf8jc/afts/img/A*VVx0SJQR5K4AAAAARBAAAAgAehi-AQ/original&#34; alt=&#34;Figure 1: Architecture Comparison&#34;  /&gt;
+
+&lt;em&gt;图1：(a) 现有模型使用分离的视觉表征。(b) MingTok 使用统一方案生成语义与生成表征。(c) 这种统一方法带来了超过 3.5 倍的训练收敛加速。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -54,28 +654,125 @@ MingTok 是首个基于连续潜空间的视觉令牌化器。它提供了一个
       <pubDate>Sat, 13 Sep 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5-seg/</guid>
-      <description>编辑式图像分割：Ming-lite-omni 1.5 破解AI“左右互搏”的隐藏催化剂 最近，多模态AI领域风起云涌。从 Qwen-Image 的亮相到 Nano Banana 引发的交互式编辑热潮，图像编辑俨然已是下一个“兵家必争之地”。编辑既要明白“在哪里、是什么、怎么变”（理解图像），又要高质量地创造出结果（生成图像），其丰富的玩法和强交互性，吸引了大量用户和开发者参与讨论。然而，图像编辑除了好玩之外，还有被行业忽略的重要基础价值。
-长久以来，我们追求着一个宏大目标：构建一个统一的多模态模型，它既能像科学家一样深刻理解世界（理解能力，如图像分割），又能像艺术家一样自由创造世界（生成能力，如图像编辑）。理想中，这两种能力应相辅相成，形成“理解越深，创造越好；创造越多，理解越透”的良性循环。
-但现实却不尽人意。理解与生成，如同AI体内的“左手”和“右手”，往往无法协同工作。 训练模型识别一万张猫的图片，并不会直接提升它画猫的能力，反之亦然。更糟糕的是，在统一模型的训练中，两种任务常常因优化目标不同而陷入“左右互搏”的零和博弈：一次针对理解能力的优化，可能无意中损害了模型的生成质量。
-这意味着，我们缺少一个关键的“催化剂”——一种能够促进“左手”与“右手”协同进化的任务机制。
-今天，我们想分享一个令人兴奋的发现。我们找到了这样一种催化剂，一个简单而极其有效的任务转换，它不仅打破了僵局，还使模型的两项核心能力均实现了质的飞跃。这个秘诀就是：在统一模型的训练框架中，将经典的分割任务，重新定义为一次图像编辑，不仅让生成式分割能力达到 SOTA，还使编辑一致性实现了飞跃。
-困局：16%的分割得分与失控的生成 在找到这个方法之前，我们的统一模型在一个关键任务上举步维艰：生成式分割。我们希望模型能根据指令（如“分割出右上角那只香蕉”），直接“画”出分割掩码图。
-结果是，模型在 RefCOCO-val 上的推理分割指标（cIoU）顽固地停留在 16% 上下。
-我们分析，根本原因在于数据分布的巨大鸿沟。生成模型习惯了处理自然、连续的图像数据。而分割任务的目标（黑白掩码图）是一种极度抽象、非自然的数据分布。强迫一个“画家”去画黑白掩码图，无异于缘木求鱼。
-我们意识到，必须找到一个任务，它既能满足“理解之手”对边界精度的要求，又能让“创造之手”在自己熟悉的领域内大展拳脚。
-灵感迸发：让分割“穿上色彩的外衣” 我们的“Ah‑ha moment”来源于一个简单的类比：如果想让孩子准确地圈出一个物体，是让他用铅笔画一个生硬的轮廓更容易，还是让他用彩笔把那个物体涂满颜色更容易？
-答案显然是后者。
-我们将这个想法应用到AI训练中。我们不再让模型生成抽象的黑白掩码，而是将分割任务转换成一个色彩编辑任务。
-例如，对于“分割右上角的香蕉”这个指令，我们不再要求模型输出掩码，而是要求它直接在原图上执行一个新的指令：“把右上角的香蕉涂成紫色”、“把右上角的香蕉涂成红色”等等。
-这个看似微小的改动，却是那个我们梦寐以求的“催化剂”。
-对“理解”的促进：为了准确地只给目标香蕉上色而不溢出，模型必须在内部先完成一次完美的、像素级的分割。分割能力从最终目标，变成了完成任务的必要前提。 对“创造”的释放：模型不再处理奇怪的掩码图，而是在做它最擅长的事——图像到图像的编辑。它所有的生成能力，如光影、纹理、边缘融合，都能用来把颜色“涂”得更逼真、更准确。 “左手”和“右手”终于有了一个共同的目标，它们的每一次努力都在互相加强。
-效果惊人：从16%到72.4%，以及更可控的编辑能力 当我们用这种新方法重新训练模型后，结果超出了所有人的预期。
-1. SoTA级别的分割能力 首先，最直观的变化来自于分割指标。它从之前惨淡的16%，一跃飙升至 72.4%！这是一个超过 350% 的相对提升。
-指标的背后，是肉眼可见的质变。在处理复杂的推理分割任务时，我们的模型展现出超越竞品的准确性和场景理解力。
-在“分割女孩”的案例中，Qwen没有包含脚部，而Nano-banana改变了主体尺寸。在“分割拿雨伞的女人”这类需要推理的案例中，我们的模型能准确找到目标，而竞品则出现了主体识别错误或指令理解偏差。这证明，通过“上色”训练，模型的语义理解与视觉定位能力被深度绑定并共同强化了。
-在推理分割指标评估过程中，依托于我们模型在非编辑区域的高度一致性，我们直接通过将涂色编辑结果与原图进行差分计算，获得分割掩码，示例如下：
-模型类别 模型名称 RefCOCO (val) RefCOCO+ (val) RefCOCOg (val) Vision Specialist
-(专用视觉分割模型) VLT 67.5 56.3 55.0 CRIS 70.5 62.3 59.9 LAVT 72.7 62.1 61.2 PolyFormer-B 74.8 67.</description>
+      <description>&lt;h1 id=&#34;编辑式图像分割ming-lite-omni-15-破解ai左右互搏的隐藏催化剂&#34;&gt;编辑式图像分割：Ming-lite-omni 1.5 破解AI“左右互搏”的隐藏催化剂&lt;/h1&gt;
+&lt;p&gt;最近，多模态AI领域风起云涌。从 Qwen-Image 的亮相到 Nano Banana 引发的交互式编辑热潮，图像编辑俨然已是下一个“兵家必争之地”。编辑既要明白“在哪里、是什么、怎么变”（理解图像），又要高质量地创造出结果（生成图像），其丰富的玩法和强交互性，吸引了大量用户和开发者参与讨论。然而，图像编辑除了好玩之外，还有被行业忽略的重要基础价值。&lt;/p&gt;
+&lt;p&gt;长久以来，我们追求着一个宏大目标：构建一个&lt;strong&gt;统一的多模态模型&lt;/strong&gt;，它既能像科学家一样深刻理解世界（理解能力，如图像分割），又能像艺术家一样自由创造世界（生成能力，如图像编辑）。理想中，这两种能力应相辅相成，形成“理解越深，创造越好；创造越多，理解越透”的良性循环。&lt;/p&gt;
+&lt;p&gt;但现实却不尽人意。&lt;strong&gt;理解与生成，如同AI体内的“左手”和“右手”，往往无法协同工作。&lt;/strong&gt; 训练模型识别一万张猫的图片，并不会直接提升它画猫的能力，反之亦然。更糟糕的是，在统一模型的训练中，两种任务常常因优化目标不同而陷入“左右互搏”的零和博弈：一次针对理解能力的优化，可能无意中损害了模型的生成质量。&lt;/p&gt;
+&lt;p&gt;这意味着，我们缺少一个关键的“催化剂”——一种能够促进“左手”与“右手”协同进化的任务机制。&lt;/p&gt;
+&lt;p&gt;今天，我们想分享一个令人兴奋的发现。&lt;strong&gt;我们找到了这样一种催化剂&lt;/strong&gt;，一个简单而极其有效的任务转换，它不仅打破了僵局，还使模型的两项核心能力均实现了质的飞跃。这个秘诀就是：在统一模型的训练框架中，&lt;strong&gt;将经典的分割任务，重新定义为一次图像编辑&lt;/strong&gt;，不仅让生成式分割能力达到 SOTA，还使编辑一致性实现了飞跃。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;困局16的分割得分与失控的生成&#34;&gt;困局：16%的分割得分与失控的生成&lt;/h2&gt;
+&lt;p&gt;在找到这个方法之前，我们的统一模型在一个关键任务上举步维艰：&lt;strong&gt;生成式分割&lt;/strong&gt;。我们希望模型能根据指令（如“分割出右上角那只香蕉”），直接“画”出分割掩码图。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*acrPSp-7qM8AAAAAgCAAAAgAevzJAQ/original&#34; alt=&#34;图示说明：根据指令进行分割。&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;结果是，模型在 RefCOCO-val 上的推理分割指标（cIoU）顽固地停留在 &lt;strong&gt;16%&lt;/strong&gt; 上下。&lt;/p&gt;
+&lt;p&gt;我们分析，根本原因在于&lt;strong&gt;数据分布的巨大鸿沟&lt;/strong&gt;。生成模型习惯了处理自然、连续的图像数据。而分割任务的目标（黑白掩码图）是一种极度抽象、非自然的数据分布。强迫一个“画家”去画黑白掩码图，无异于缘木求鱼。&lt;/p&gt;
+&lt;p&gt;我们意识到，必须找到一个任务，它既能满足“理解之手”对边界精度的要求，又能让“创造之手”在自己熟悉的领域内大展拳脚。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;灵感迸发让分割穿上色彩的外衣&#34;&gt;灵感迸发：让分割“穿上色彩的外衣”&lt;/h2&gt;
+&lt;p&gt;我们的“Ah‑ha moment”来源于一个简单的类比：如果想让孩子准确地圈出一个物体，是让他用铅笔画一个生硬的轮廓更容易，还是让他用彩笔把那个物体涂满颜色更容易？&lt;/p&gt;
+&lt;p&gt;答案显然是后者。&lt;/p&gt;
+&lt;p&gt;我们将这个想法应用到AI训练中。我们不再让模型生成抽象的黑白掩码，而是&lt;strong&gt;将分割任务转换成一个色彩编辑任务&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;例如，对于“分割右上角的香蕉”这个指令，我们不再要求模型输出掩码，而是要求它直接在原图上执行一个新的指令：“把右上角的香蕉涂成紫色”、“把右上角的香蕉涂成红色”等等。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*-_O6RLOxXKcAAAAAgBAAAAgAevzJAQ/original&#34; alt=&#34;图示说明：左侧为原图香蕉，从生成抽象的黑白掩-码（中），到直接在原图上进行色彩编辑（右三）。这个转换让任务的数据分布回归到了自然图像领域。&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;这个看似微小的改动，却是那个我们梦寐以求的“催化剂”。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;对“理解”的促进&lt;/strong&gt;：为了准确地只给目标香蕉上色而不溢出，模型必须在内部先完成一次完美的、像素级的分割。分割能力从最终目标，变成了完成任务的必要前提。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;对“创造”的释放&lt;/strong&gt;：模型不再处理奇怪的掩码图，而是在做它最擅长的事——图像到图像的编辑。它所有的生成能力，如光影、纹理、边缘融合，都能用来把颜色“涂”得更逼真、更准确。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;“左手”和“右手”终于有了一个共同的目标，它们的每一次努力都在互相加强。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;效果惊人从16到724以及更可控的编辑能力&#34;&gt;效果惊人：从16%到72.4%，以及更可控的编辑能力&lt;/h2&gt;
+&lt;p&gt;当我们用这种新方法重新训练模型后，结果超出了所有人的预期。&lt;/p&gt;
+&lt;h3 id=&#34;1-sota级别的分割能力&#34;&gt;1. SoTA级别的分割能力&lt;/h3&gt;
+&lt;p&gt;首先，最直观的变化来自于分割指标。它从之前惨淡的16%，一跃飙升至 &lt;strong&gt;72.4%&lt;/strong&gt;！这是一个超过 &lt;strong&gt;350%&lt;/strong&gt; 的相对提升。&lt;/p&gt;
+&lt;p&gt;指标的背后，是肉眼可见的质变。在处理复杂的推理分割任务时，我们的模型展现出超越竞品的准确性和场景理解力。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*koynTZD5vO8AAAAAgDAAAAgAevzJAQ/original&#34; alt=&#34;图示说明：我们的模型（右）精准定位并分割了目标主体，Qwen-Image（左二）未能准确定位要分割的目标，Nano-banana（左三）则未能准确分割男士的头部，以及分割的边缘线不够贴合。&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*5C7KTbk2WZ0AAAAAgBAAAAgAevzJAQ/original&#34; alt=&#34;图示说明：这个case的指令“please segment the girl with red mask”, 我们的模型（右）精准定位并分割了目标主体，Qwen-Image（左二）未能分割脚部，Nano-banana（左三）则改变了主体尺寸。&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;在“分割女孩”的案例中，Qwen没有包含脚部，而Nano-banana改变了主体尺寸。在“分割拿雨伞的女人”这类需要推理的案例中，我们的模型能准确找到目标，而竞品则出现了主体识别错误或指令理解偏差。这证明，通过“上色”训练，模型的语义理解与视觉定位能力被深度绑定并共同强化了。&lt;/p&gt;
+&lt;p&gt;在推理分割指标评估过程中，依托于我们模型在非编辑区域的高度一致性，我们直接通过将涂色编辑结果与原图进行差分计算，获得分割掩码，示例如下：&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://mdn.alipayobjects.com/huamei_wp0xz6/afts/img/A*UJX1RJJpu3cAAAAASyAAAAgAevzJAQ/original&#34; alt=&#34;Ming-Lite-Omni1.5, Qwen-Image-Edit, Nano-banana 差分对比&#34;  /&gt;
+&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;模型类别&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;模型名称&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;RefCOCO (val)&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;RefCOCO+ (val)&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;RefCOCOg (val)&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Vision Specialist&lt;/strong&gt;&lt;br&gt;(专用视觉分割模型)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;VLT&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;56.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;55.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;CRIS&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;70.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;62.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;59.9&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;LAVT&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;72.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;62.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;61.2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;PolyFormer-B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;MLLM + SAM&lt;/strong&gt;&lt;br&gt;(专用的分割模型)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;LISA-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;62.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;66.4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;PixelLM-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;73.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;66.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;69.3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;MLLM + DiT&lt;/strong&gt;&lt;br&gt;(生成式模型做分割)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Nano-banana*&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;15.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;13.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;14.9&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Qwen-Image-Edit*&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;30.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;28.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;34.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Ming-Lite-Omni1.5&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;72.4&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;62.8&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;64.3&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;评估结果表明，我们的模型在分割任务中的表现已接近专为分割设计的专业模型。在评估过程中，Qwen-Image-Edit 和Nano-banana 在每个测试子集上随机采样 500 个样本进行测试，以降低计算开销，同时保证结果的统计趋势稳定。评估过程中我们发现，Nano-banana 在推理中经常无法准确把握图像分割的意图，因此评价指标相对较低，这可能与训练目标和数据侧重差异有关。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -84,12 +781,224 @@ MingTok 是首个基于连续潜空间的视觉令牌化器。它提供了一个
       <pubDate>Tue, 05 Aug 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ring-lite-2507/</guid>
-      <description>📖 Technical Report | 🤗 Hugging Face｜ 🤖 ModelScope
-概述 我们推出了Ring-lite-2507，该模型是在我们之前发布的轻量级推理模型Ring-lite-2506上的一次全面升级！Ring-lite-2507是一个激活参数为2.75B，总参数为16.8B的MoE大语言模型。此次升级，我们的模型不仅进一步提升了在数学、代码和逻辑任务上的推理能力，同时在知识理解、对齐和智能体等多个广泛使用的通用类评测榜单中取得了卓越的表现。通过我们提出的创新性强化学习算法和多阶段强化学习训练流程，Ring-lite-2507相比最新10B参数以下的Dense推理模型，在仅激活其1/3参数规模的情况下，在各项任务中达到了相当或更具竞争力的性能。
-我们提出了一种创新的强化学习训练算法，即Constrained Contextual Computation Policy Optimization（C3PO），旨在解决MoE强化学习训练过程中的不稳定性问题。通过算法-系统协同设计，我们的方法同时提高了训练稳定性和计算吞吐量。此外，我们系统性地研究了长思维链SFT和RL训练之间的动态关系，并提出使用token效率指标来帮助我们探索选择更适合RL训练的微调模型，从而实现了RL训练过程中的性能和效率的双平衡。此外，我们还采用了新型两阶段强化学习的训练范式，以平衡多领域融合数据的训练效果，在增强推理能力的同时，更有效地提升各种下游通用任务的表现。
-亮点
-🚀 多项任务中的卓越表现: Ring-lite-2507在推理和通用任务上均表现出卓越的性能； 🔥 仅激活2.75B模型参数: Ring-lite-2507是一个基于MoE的大语言模型，仅激活了2.75B模型参数； ⛓️‍💥 算法-系统协同设计: 我们创新性地提出了C3PO训练方法，并采用token效率来平衡RL训练的稳定性和有效性； 🔍 公开可用: 我们的训练数据和模型权重均已公开。 模型评测 我们在两个主要领域对模型进行了全面评估：推理和通用。我们使用了一系列公开评测榜单来衡量模型能力，包括：知识理解、数学、代码、推理 &amp;amp; 智能体，以及对齐任务。
-知识理解 Benchmark Ring-lite-2507 Ring-lite-2506 Qwen3-8B-Thinking MMLU-Pro (EM) 72.50 63.44 72.56 GPQA-Diamond (Pass@1) 69.35 63.51 62.00 SuperGPQA (EM) 40.05 13.97 40.36 Phybench (Pass@1) 28.51 29.19 22.14 数学 Benchmark Ring-lite-2507 Ring-lite-2506 Qwen3-8B-Thinking MATH-500 (Pass@1) 97.95 96.80 97.30 CNMO 2024 (Pass@1) 75.</description>
+      <description>&lt;p&gt;📖 &lt;a href=&#34;https://arxiv.org/abs/2506.14731&#34;&gt;Technical Report&lt;/a&gt; | 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ring-lite-2507&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://modelscope.cn/models/inclusionAI/Ring-lite-2507&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;概述&#34;&gt;概述&lt;/h2&gt;
+&lt;p&gt;我们推出了&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;，该模型是在我们之前发布的轻量级推理模型&lt;strong&gt;Ring-lite-2506&lt;/strong&gt;上的一次全面升级！&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;是一个激活参数为&lt;strong&gt;2.75B&lt;/strong&gt;，总参数为&lt;strong&gt;16.8B&lt;/strong&gt;的MoE大语言模型。此次升级，我们的模型不仅进一步提升了在数学、代码和逻辑任务上的推理能力，同时在知识理解、对齐和智能体等多个广泛使用的通用类评测榜单中取得了卓越的表现。通过我们提出的创新性强化学习算法和多阶段强化学习训练流程，&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;相比最新10B参数以下的Dense推理模型，在仅激活其1/3参数规模的情况下，在各项任务中达到了相当或更具竞争力的性能。&lt;/p&gt;
+&lt;p&gt;我们提出了一种创新的强化学习训练算法，即Constrained Contextual Computation Policy Optimization（C3PO），旨在解决MoE强化学习训练过程中的不稳定性问题。通过算法-系统协同设计，我们的方法同时提高了训练稳定性和计算吞吐量。此外，我们系统性地研究了长思维链SFT和RL训练之间的动态关系，并提出使用token效率指标来帮助我们探索选择更适合RL训练的微调模型，从而实现了RL训练过程中的性能和效率的双平衡。此外，我们还采用了新型两阶段强化学习的训练范式，以平衡多领域融合数据的训练效果，在增强推理能力的同时，更有效地提升各种下游通用任务的表现。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;亮点&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🚀 &lt;strong&gt;多项任务中的卓越表现&lt;/strong&gt;: Ring-lite-2507在推理和通用任务上均表现出卓越的性能；&lt;/li&gt;
+&lt;li&gt;🔥 &lt;strong&gt;仅激活2.75B模型参数&lt;/strong&gt;: Ring-lite-2507是一个基于MoE的大语言模型，仅激活了2.75B模型参数；&lt;/li&gt;
+&lt;li&gt;⛓️‍💥 &lt;strong&gt;算法-系统协同设计&lt;/strong&gt;: 我们创新性地提出了C3PO训练方法，并采用token效率来平衡RL训练的稳定性和有效性；&lt;/li&gt;
+&lt;li&gt;🔍 &lt;strong&gt;公开可用&lt;/strong&gt;: 我们的训练数据和模型权重均已公开。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;模型评测&#34;&gt;模型评测&lt;/h2&gt;
+&lt;p&gt;我们在两个主要领域对模型进行了全面评估：推理和通用。我们使用了一系列公开评测榜单来衡量模型能力，包括：知识理解、数学、代码、推理 &amp;amp; 智能体，以及对齐任务。&lt;/p&gt;
+&lt;h3 id=&#34;知识理解&#34;&gt;知识理解&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Benchmark&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2506&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Qwen3-8B-Thinking&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;MMLU-Pro (EM)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;72.50&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;63.44&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;72.56&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;GPQA-Diamond (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;69.35&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;63.51&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;62.00&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;SuperGPQA (EM)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;40.05&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;13.97&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;40.36&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Phybench (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;28.51&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;29.19&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;22.14&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;数学&#34;&gt;数学&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Benchmark&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2506&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Qwen3-8B-Thinking&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;MATH-500 (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;97.95&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;96.80&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;97.30&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;CNMO 2024 (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;75.09&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;77.26&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.57&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;AIME 2024 (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;79.79&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;79.00&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.90&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;AIME 2025 (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;72.92&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;69.50&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.19&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;LiveMathBench (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;83.37&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;85.08&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;81.90&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;TheoremQA (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;70.00&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;70.19&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;68.81&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;OlympiadBench (math) (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;80.64&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;82.86&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;80.20&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Benchmark&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2506&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Qwen3-8B-Thinking&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;LiveCodeBench(2408-2505) (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;60.35&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;59.53&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;55.12&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Codeforces(Percentile) (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;1830&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1673&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1580&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Codeforces(Rating)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;92.16&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;88.00&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;79.44&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;推理--智能体&#34;&gt;推理 &amp;amp; 智能体&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Benchmark&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2506&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Qwen3-8B-Thinking&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;DROP (zero-shot F1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;89.27&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;60.21&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;87.13&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;BBH (EM)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;88.65&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;50.84&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;87.30&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ARCPrize (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;19.00&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.12&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.88&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;MuSR (EM)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;77.19&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;66.77&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;76.92&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;BFCL_Live (Pass@1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.81&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;66.76&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;75.99&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;对齐&#34;&gt;对齐&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Benchmark&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2507&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Ring-lite-2506&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Qwen3-8B-Thinking&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;IFEval (Prompt Strict)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;84.66&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;54.34&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;85.40&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;AlignBench v1.1(gpt-4.1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;80.90&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;69.60&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.70&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;FoFo (gpt-4-turbo)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;85.02&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.81&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;81.93&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;ArenaHard (gpt-4.1)&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;88.85&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;56.12&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;86.14&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;constrained-contextual-computation-policy-optimizationc3po&#34;&gt;Constrained Contextual Computation Policy Optimization(C3PO)&lt;/h2&gt;
+&lt;p&gt;我们提出了一个创新性的token级强化学习训练算法，&lt;u&gt;C&lt;/u&gt;onstrained &lt;u&gt;C&lt;/u&gt;ontextual &lt;u&gt;C&lt;/u&gt;omputation &lt;u&gt;P&lt;/u&gt;olicy &lt;u&gt;O&lt;/u&gt;ptimization（C3PO），该算法旨在通过稳定训练过程中token的吞吐量，从而提升强化学习训练的鲁棒性。与样本级的筛选不同，C3PO在token级别通过采样来形成一个全局固定的token批次，每个训练步骤都保证输入给优化器的token数量一致，从而降低了梯度方差，使得训练更加稳定。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,11 +1007,92 @@ MingTok 是首个基于连续潜空间的视觉令牌化器。它提供了一个
       <pubDate>Mon, 21 Jul 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ming-lite-omni-1_5/</guid>
-      <description>GITHUB 🤗 Hugging Face｜ 🤖 ModelScope
-概述 本次发布的 Ming-lite-omni V1.5 是对 Ming-lite-omni(Github) 全模态能力的一次全面升级， 在包括图文理解、文档理解、视频理解、语音理解和合成、图像生成和编辑等任务上均有明显提升。Ming-lite-omni V1.5 基于Ling-lite-1.5 构建，总参数20.3B, MoE部分激活参数为3B。与各领域同等规模的业界领先模型相比，在各模态基准测试中展现出极具竞争力的结果：
-性能对比图
-Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双提升！ 可控图像生成：像素级掌控，创意无限 Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。
-生成式图像分割 Next User Given the following instructions: little girl, pink, your monitors colors off friend p pink shirt girl; please perform referring segmentation on this image. Ming-lite-omni v1.5 User Please segment different classes in this image.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-Lite-Omni-1.5&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-Lite-Omni-1.5&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;概述&#34;&gt;概述&lt;/h1&gt;
+&lt;p&gt;本次发布的 Ming-lite-omni V1.5 是对 Ming-lite-omni(&lt;a href=&#34;https://github.com/inclusionAI/Ming/tree/v1.0&#34;&gt;Github&lt;/a&gt;)  全模态能力的一次全面升级， 在包括图文理解、文档理解、视频理解、语音理解和合成、图像生成和编辑等任务上均有明显提升。Ming-lite-omni V1.5 基于Ling-lite-1.5 构建，总参数20.3B, MoE部分激活参数为3B。与各领域同等规模的业界领先模型相比，在各模态基准测试中展现出极具竞争力的结果：&lt;/p&gt;
+&lt;div style=&#34;text-align:center;margin: auto; width: 100%;&#34;&gt;
+  &lt;img src=&#34;https://mdn.alipayobjects.com/huamei_drbxn1/afts/img/tXyrSrRR09UAAAAAgCAAAAgADkliAQFr/original&#34; alt=&#34;Image description&#34; /&gt;
+  &lt;p style=&#34;font-size:14px; color:gray;&#34;&gt;性能对比图&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;ming-lite-omni-v15能力介绍三大维度全面优化效果与体验双提升&#34;&gt;Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双提升！&lt;/h2&gt;
+&lt;h3 id=&#34;可控图像生成像素级掌控创意无限&#34;&gt;可控图像生成：像素级掌控，创意无限&lt;/h3&gt;
+&lt;p&gt;Ming-lite-omni v1.5 重点优化了图像编辑的 场景一致性（Scene Consistency）、ID 一致性（Character / Style Consistency），在人物图像编辑时，在场景和人物ID 保持上展现出明显的优势，同时拓展了对生成式分割、深度预测、目标检测 以及 边缘轮廓生成 等感知任务的支持。&lt;/p&gt;
+&lt;div style=&#34;text-align:center&#34;&gt;
+&lt;img src=&#34;https://mdn.alipayobjects.com/huamei_aukff7/afts/img/n66PSYmtwHcAAAAAY_AAAAgAeuUHAQFr/fmt.webp&#34; alt=&#34;Image description&#34; /&gt;
+&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_aukff7/afts/video/UoqbRYQnZYEAAAAAgCAAAAgAeuUHAQFr&#34; controls&gt;&lt;/video&gt;
+&lt;/div&gt;
+&lt;div class=&#34;full-width-container example-container&#34;&gt;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  &lt;div class=&#34;example-content&#34;&gt;
+  
+  
+  
+  &lt;div class=&#34;title&#34;&gt;
+    &lt;span&gt;生成式图像分割&lt;/span&gt;
+    
+       &lt;a class=&#34;next-button&#34;&gt;Next&lt;/a&gt;
+    
+  &lt;/div&gt;
+  
+  
+  &lt;div class=&#34;grid-layout scroll&#34;&gt;
+    
+    &lt;div class=&#34;role&#34;&gt;User&lt;/div&gt;
+    &lt;div class=&#34;content&#34;&gt;&lt;figure&gt;&lt;img src=&#34;https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752115158022-12254e69-e8c0-43fb-a725-f6730cda22d8.webp&#34; height=&#34;256px&#34;&gt;
+&lt;/figure&gt;
+
+Given the following instructions: little girl, pink, your monitors colors off friend p pink shirt girl; please perform referring segmentation on this image.&lt;/div&gt;
+    
+    &lt;div class=&#34;role&#34;&gt;Ming-lite-omni v1.5&lt;/div&gt;
+    &lt;div class=&#34;content&#34;&gt;&lt;figure&gt;&lt;img src=&#34;https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752115142775-3975827c-4110-445b-af53-e20201d1043a.webp&#34; height=&#34;256px&#34;&gt;
+&lt;/figure&gt;
+
+&lt;/div&gt;
+    
+    &lt;div class=&#34;role&#34;&gt;User&lt;/div&gt;
+    &lt;div class=&#34;content&#34;&gt;Please segment different classes in this image.&lt;/div&gt;
+    
+    &lt;div class=&#34;role&#34;&gt;Ming-lite-omni v1.5&lt;/div&gt;
+    &lt;div class=&#34;content&#34;&gt;&lt;figure&gt;&lt;img src=&#34;https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752116495974-7708ba3a-5909-46df-82f5-a1bfa1519d4d.webp&#34; height=&#34;256px&#34;&gt;
+&lt;/figure&gt;
+
+&lt;/div&gt;
+    
+    &lt;div class=&#34;role&#34;&gt;User&lt;/div&gt;
+    &lt;div class=&#34;content&#34;&gt;Please segment different instances in this image.&lt;/div&gt;
+    
+    &lt;div class=&#34;role&#34;&gt;Ming-lite-omni v1.5&lt;/div&gt;
+    &lt;div class=&#34;content&#34;&gt;&lt;figure&gt;&lt;img src=&#34;https://gcore.jsdelivr.net/gh/biao-gong/static@main/gen/1752115151406-c4780a97-5f1c-46cd-9a45-d4ef600d0897.webp&#34; height=&#34;256px&#34;&gt;
+&lt;/figure&gt;
+
+&lt;/div&gt;
+    
+  &lt;/div&gt;
+  
+  &lt;/div&gt;
+  
+
+
+
+
+
+
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;深度及边缘检测&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -111,9 +1101,206 @@ Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双�
       <pubDate>Fri, 11 Jul 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/m2-reasoning/</guid>
-      <description>📖 Technical Report | 🤗 Hugging Face｜ 🤖 ModelScope
-介绍 我们推出了 M2-Reasoning-7B，一个在通用与空间推理方面都表现卓越的模型。我们的方法融合了两项关键创新：(1) 一个全新的数据管道，生成了29.42万个高质量数据样本（其中16.8万用于冷启动微调，12.62万用于RLVR）。这些数据具有逻辑连贯的推理轨迹，并经过了全面评估。(2) 一种动态多任务训练策略，通过逐步优化来缓解数据间的冲突，并利用针对特定任务的奖励机制来提供定制化的激励信号。通过这种精心筛选的数据与先进训练方法的结合，M2-Reasoning-7B 在8个基准测试中创造了新的业界最佳水平（SOTA），在通用和空间推理领域均展现出卓越的性能。 📌 更新 [2025.07.14] 🔥 我们的技术报告已公开发布于 arxiv。 [2025.07.11] 🔥 M2-Reasoning模型开源: 🤗 Hugging Face、🤖 ModelScope。 主要特性 高质量的数据构建流程：我们设计并实现了一个多阶段的数据合成与筛选流程，能够生成大量的推理数据。 动态多任务训练策略：我们提出了一种高效的训练策略，能够有效应对数据异构性问题。该策略包括逐步动态优化，以缓解不同数据源之间的冲突，以及任务特定的奖励机制，提供定制化的激励信号。 统一的通用与空间推理模型：我们提出了 M2-Reasoning-7B，这是一款专为通用推理与空间推理任务而设计的多模态大语言模型（MLLM）。在8个不同的基准测试中进行的广泛评估表明，借助我们定制的数据和训练流程，M2-Reasoning在通用推理和空间推理领域均取得了新的SOTA成果。 评测 我们在通用推理和空间推理对模型进行了全面评估。我们的评估使用了一组多样化的公开基准测试，这些测试根据它们主要衡量的能力进行分类：
-通用推理（数学与逻辑）：为了评估这一能力，我们采用了六项基准测试：MathVista、MathVision、MathVerse、DynaMath、WeMath 和 LogicVista。 Models MathVista MathVision MathVerse DynaMath WeMath LogicVista Avg. (Δ) 基础规模通用模型 InternVL3-8B 70.5 30.0 38.5 25.7 39.5 44.5 41.4 InternVL3-9B 69.0 29.3 37.9 25.1 34.8 49.0 40.8 Qwen2.5-VL-7B 68.1 25.4 41.1 21.8 36.2 47.</description>
+      <description>&lt;p&gt;📖 &lt;a href=&#34;https://arxiv.org/abs/2507.08306&#34;&gt;Technical Report&lt;/a&gt; | 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/M2-Reasoning&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/M2-Reasoning&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;我们推出了 M2-Reasoning-7B，一个在通用与空间推理方面都表现卓越的模型。我们的方法融合了两项关键创新：(1) 一个全新的数据管道，生成了29.42万个高质量数据样本（其中16.8万用于冷启动微调，12.62万用于RLVR）。这些数据具有逻辑连贯的推理轨迹，并经过了全面评估。(2) 一种动态多任务训练策略，通过逐步优化来缓解数据间的冲突，并利用针对特定任务的奖励机制来提供定制化的激励信号。通过这种精心筛选的数据与先进训练方法的结合，M2-Reasoning-7B 在8个基准测试中创造了新的业界最佳水平（SOTA），在通用和空间推理领域均展现出卓越的性能。
+&lt;img loading=&#34;lazy&#34; src=&#34;assets/teaser.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;-更新&#34;&gt;📌 更新&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[2025.07.14] 🔥 我们的&lt;a href=&#34;https://arxiv.org/abs/2507.08306&#34;&gt;技术报告&lt;/a&gt;已公开发布于 arxiv。&lt;/li&gt;
+&lt;li&gt;[2025.07.11] 🔥 M2-Reasoning模型开源: 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/M2-Reasoning&#34;&gt;Hugging Face&lt;/a&gt;、🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/M2-Reasoning&#34;&gt;ModelScope&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;主要特性&#34;&gt;主要特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;高质量的数据构建流程：我们设计并实现了一个多阶段的数据合成与筛选流程，能够生成大量的推理数据。&lt;/li&gt;
+&lt;li&gt;动态多任务训练策略：我们提出了一种高效的训练策略，能够有效应对数据异构性问题。该策略包括逐步动态优化，以缓解不同数据源之间的冲突，以及任务特定的奖励机制，提供定制化的激励信号。&lt;/li&gt;
+&lt;li&gt;统一的通用与空间推理模型：我们提出了 M2-Reasoning-7B，这是一款专为通用推理与空间推理任务而设计的多模态大语言模型（MLLM）。在8个不同的基准测试中进行的广泛评估表明，借助我们定制的数据和训练流程，M2-Reasoning在通用推理和空间推理领域均取得了新的SOTA成果。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;评测&#34;&gt;评测&lt;/h2&gt;
+&lt;p&gt;我们在通用推理和空间推理对模型进行了全面评估。我们的评估使用了一组多样化的公开基准测试，这些测试根据它们主要衡量的能力进行分类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通用推理（数学与逻辑）：为了评估这一能力，我们采用了六项基准测试：MathVista、MathVision、MathVerse、DynaMath、WeMath 和 LogicVista。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Models&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;MathVista&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;MathVision&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;MathVerse&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;DynaMath&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;WeMath&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;LogicVista&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Avg. (Δ)&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;&lt;strong&gt;基础规模通用模型&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;InternVL3-8B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;70.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;30.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;38.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;39.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;44.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;InternVL3-9B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;69.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;29.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;37.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;34.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;49.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;40.8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Qwen2.5-VL-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;68.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;21.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;36.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;47.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;40.1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;MUG-U-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;26.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;35.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;17.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;26.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;39.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;36.6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;SAIL-VL-1.6-8B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;74.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;23.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;33.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;14.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;29.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;36.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;&lt;strong&gt;基础规模推理模型&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;WeThink-VL-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;71.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;26.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;44.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;48.0&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;51.2&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;44.3 (+4.2)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Taichu-VLR-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;72.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;27.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;46.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;23.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;44.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;48.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;43.6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;VLAA-Thinker-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;68.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;26.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;48.2&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;22.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;48.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;42.5 (+2.4)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;URSA-8B-PS-GRPO&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;31.8&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;22.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;38.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;44.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.1 (+8.2)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Ovis2-8B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;71.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;42.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;20.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;27.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;39.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;37.8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;&lt;strong&gt;本文模型&lt;/strong&gt;&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;Base Model&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;70.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;30.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;20.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;27.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;37.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;35.5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;M2-Reasoning-CI-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;71.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;29.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;42.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;42.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;46.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;42.9 (+7.4)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;M2-Reasoning-7B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;75.0&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;31.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;44.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;26.8&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;50.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;strong&gt;45.0 (+9.5)&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;空间推理：我们使用两项基准来评估这一能力：CV Bench和VSI Bench&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -122,7 +1309,39 @@ Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双�
       <pubDate>Mon, 07 Jul 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/aworld/</guid>
-      <description>&amp;ldquo;自我认知：最难的问题不是在有局限的情况下解决问题，而是发现自己的局限性&amp;rdquo; 目录 最新动态 — 项目最新更新与公告。 简介 — 项目概述与目标。 安装 — 步骤详尽的安装指南。 快速开始 — 使用示例，快速上手。 架构 — 多智能体系统设计解析。 演示 — 项目实际运行演示。 贡献 — 如何参与和贡献代码。 许可证 — 项目授权信息。 最新动态 🦤 [2025/07/07] AWorld 作为运行时现已准备好进行智能体训练。详情请参见自我改进部分。我们在 GAIA 测试中的得分已更新至 77.08。在演示部分了解如何构建 GAIA 运行时。 🦩 [2025/06/19] GAIA 测试分数提升至 72.43，新增本地运行模式，详见 ./README-local.md。 🐳 [2025/05/22] GAIA 评测、MCP 工具、AWorld 及模型现已集成于单一 Docker 镜像，详见 ./README-docker.md，演示视频。 🥳 [2025/05/13] 浏览器场景状态管理升级，视频处理 MCP server 增强，GAIA 验证分数 77.58（Pass@1 = 61.8），继续保持开源框架第一。详见 GAIA 排行榜。 ✨ [2025/04/23] GAIA 基准测试排名第三（69.7 分），Pass@1 = 58.8，开源框架第一。可用 python examples/gaia/run.</description>
+      <description>&lt;p&gt;&lt;em&gt;&amp;ldquo;自我认知：最难的问题不是在有局限的情况下解决问题，而是发现自己的局限性&amp;rdquo;&lt;/em&gt;
+&lt;a href=&#34;https://x.com/InclusionAI666&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/twitter/follow/AWorld_AI?style=social&#34; alt=&#34;Twitter 关注&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://raw.githubusercontent.com/inclusionAI/AWorld/main/readme_assets/aworld_wechat_qr.jpg&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/WeChat-Add%20us-green?logo=wechat&amp;amp;logoColor=white&#34; alt=&#34;微信二维码&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://discord.gg/b4Asj2ynMw&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/Discord-Join%20us-blue?logo=discord&amp;amp;logoColor=white&#34; alt=&#34;Discord&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://opensource.org/licenses/MIT&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/License-MIT-yellow.svg&#34; alt=&#34;许可证: MIT&#34;  /&gt;
+&lt;/a&gt;
+&lt;a href=&#34;https://deepwiki.com/inclusionAI/AWorld&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/DeepWiki-Explore-blueviolet?logo=wikipedia&amp;amp;logoColor=white&#34; alt=&#34;DeepWiki&#34;  /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;!-- [![arXiv](https://img.shields.io/badge/arXiv-xxxx.xxxxx-b31b1b.svg)](https://arxiv.org/abs/xxxx.xxxxx) --&gt;
+&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e6%9c%80%e6%96%b0%e5%8a%a8%e6%80%81&#34;&gt;最新动态&lt;/a&gt; — 项目最新更新与公告。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e7%ae%80%e4%bb%8b&#34;&gt;简介&lt;/a&gt; — 项目概述与目标。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e5%ae%89%e8%a3%85&#34;&gt;安装&lt;/a&gt; — 步骤详尽的安装指南。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e5%bf%ab%e9%80%9f%e5%bc%80%e5%a7%8b&#34;&gt;快速开始&lt;/a&gt; — 使用示例，快速上手。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e6%9e%b6%e6%9e%84&#34;&gt;架构&lt;/a&gt; — 多智能体系统设计解析。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e6%bc%94%e7%a4%ba&#34;&gt;演示&lt;/a&gt; — 项目实际运行演示。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e8%b4%a1%e7%8c%ae&#34;&gt;贡献&lt;/a&gt; — 如何参与和贡献代码。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#%e8%ae%b8%e5%8f%af%e8%af%81&#34;&gt;许可证&lt;/a&gt; — 项目授权信息。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;最新动态&#34;&gt;最新动态&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;🦤 [2025/07/07] AWorld 作为运行时现已准备好进行智能体训练。详情请参见&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#self-improvement-with-diverse-runtimes&#34;&gt;自我改进部分&lt;/a&gt;。我们在 GAIA 测试中的得分已更新至 77.08。在&lt;a href=&#34;https://inclusionai.github.io/zh/blog/aworld/#demo-of-gaia-agent-runtime&#34;&gt;演示部分&lt;/a&gt;了解如何构建 GAIA 运行时。&lt;/li&gt;
+&lt;li&gt;🦩 [2025/06/19] GAIA 测试分数提升至 72.43，新增本地运行模式，详见 &lt;code&gt;./README-local.md&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;🐳 [2025/05/22] GAIA 评测、MCP 工具、AWorld 及模型现已集成于单一 Docker 镜像，详见 &lt;code&gt;./README-docker.md&lt;/code&gt;，&lt;a href=&#34;https://www.youtube.com/watch?v=kkYWeVvJKrg&#34;&gt;演示视频&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;🥳 [2025/05/13] 浏览器场景状态管理升级，视频处理 MCP server 增强，GAIA 验证分数 77.58（Pass@1 = 61.8），继续保持开源框架第一。详见 &lt;a href=&#34;https://huggingface.co/spaces/gaia-benchmark/leaderboard&#34;&gt;GAIA 排行榜&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;✨ [2025/04/23] GAIA 基准测试排名第三（69.7 分），Pass@1 = 58.8，开源框架第一。可用 &lt;code&gt;python examples/gaia/run.py&lt;/code&gt; 复现。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;AWorld（Agent World）是一个多智能体 playground，支持智能体协作与自我提升。该框架适用于产品原型验证、基础模型训练、多智能体系统（MAS）设计元学习等多种场景。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,12 +1350,30 @@ Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双�
       <pubDate>Wed, 11 Jun 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ming-omni/</guid>
-      <description>GITHUB 📑 Technical Report｜📖Project Page ｜🤗 Hugging Face｜ 🤖 ModelScope
-介绍 Ming-lite-omni 是 Ming-omni 的轻量版，源自 Ling-lite，拥有 28 亿激活参数。Ming-lite-omni 是一个统一的多模态模型，能够处理图像、文本、音频和视频，并在语音和图像生成方面表现出较强能力。Ming-lite-omni 使用专用编码器从不同模态提取 token，然后由 Ling 处理，Ling 是一个 MoE 架构，配备了新提出的模态专用路由器。该设计使单一模型能在统一框架内高效处理和融合多模态输入，从而支持多样化任务，无需使用多个模型、任务专用微调或结构改动。重要的是，Ming-lite-omni 超越传统多模态模型，支持音频和图像生成。通过集成先进的音频解码器实现自然语音，以及利用 Ming-Lite-Uni 实现高质量图像生成，模型还能进行上下文感知聊天、文本转语音及多功能图像编辑。我们的实验结果表明，Ming-lite-omni 在所有模态上的统一感知与生成方面提供了强大解决方案。值得注意的是，Ming-lite-omni 是我们所知首个模态支持与 GPT-4o 匹配的开源模型，且我们发布了全部代码和模型权重，以促进社区进一步研究和发展。
-📌 更新 [2025.06.12] 🔥 我们的技术报告已公开发布于 arxiv。 [2025.05.28] 🔥 Ming-lite-omni 官方版本发布，性能更佳并支持图像生成。 [2025.05.04] 🔥 发布 Ming-lite-omni 测试版本：Ming-lite-omni-Preview。 主要特性 统一全模态感知：Ming-lite-omni 基于 Ling（一个 MoE 架构的大语言模型），通过模态专用路由器解决任务冲突，确保来自不同模态的 token 的连贯融合。
-统一感知与生成：Ming-lite-omni 实现统一的理解与生成，使模型在生成过程中能解读多模态指令和用户意图，从而提升生成质量并增强多任务使用便利性。
-创新的生成能力：Ming-lite-omni 能感知所有模态，同时生成高质量文本、实时语音和生动图像，展现出卓越的跨模态表现，涵盖图像感知、视听交互和图像生成等多样任务。
-评测 Ming-lite-omni 在图像感知、视听交互及图像生成任务中均展现出优异的跨模态性能。具体来说，在图像感知任务中，Ming-lite-omni 仅激活 28 亿参数，性能已可与 Qwen2.5-VL-7B 相媲美。它在端到端语音理解和指令执行上表现优于 Qwen2.5-Omni 和 Kimi-Audio。同时支持原生分辨率的图像生成、编辑及风格迁移，GenEval 得分达 0.</description>
+      <description>&lt;!-- # Ming-Lite-Omni --&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming/tree/Ming-Lite-Omni-Preview/Ming-unify&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 📑 &lt;a href=&#34;https://arxiv.org/abs/2506.09344&#34;&gt;Technical Report&lt;/a&gt;｜📖&lt;a href=&#34;https://lucaria-academy.github.io/Ming-Omni/&#34;&gt;Project Page&lt;/a&gt; ｜🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-Lite-Omni&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://www.modelscope.cn/models/inclusionAI/Ming-Lite-Omni&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+&lt;p&gt;Ming-lite-omni 是 Ming-omni 的轻量版，源自 &lt;a href=&#34;https://github.com/inclusionAI/Ling&#34;&gt;Ling-lite&lt;/a&gt;，拥有 28 亿激活参数。Ming-lite-omni 是一个统一的多模态模型，能够处理图像、文本、音频和视频，并在语音和图像生成方面表现出较强能力。Ming-lite-omni 使用专用编码器从不同模态提取 token，然后由 Ling 处理，Ling 是一个 MoE 架构，配备了新提出的模态专用路由器。该设计使单一模型能在统一框架内高效处理和融合多模态输入，从而支持多样化任务，无需使用多个模型、任务专用微调或结构改动。重要的是，Ming-lite-omni 超越传统多模态模型，支持音频和图像生成。通过集成先进的音频解码器实现自然语音，以及利用 Ming-Lite-Uni 实现高质量图像生成，模型还能进行上下文感知聊天、文本转语音及多功能图像编辑。我们的实验结果表明，Ming-lite-omni 在所有模态上的统一感知与生成方面提供了强大解决方案。值得注意的是，Ming-lite-omni 是我们所知首个模态支持与 GPT-4o 匹配的开源模型，且我们发布了全部代码和模型权重，以促进社区进一步研究和发展。&lt;/p&gt;
+&lt;h2 id=&#34;-更新&#34;&gt;📌 更新&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[2025.06.12] 🔥 我们的&lt;a href=&#34;https://arxiv.org/abs/2506.09344&#34;&gt;技术报告&lt;/a&gt;已公开发布于 arxiv。&lt;/li&gt;
+&lt;li&gt;[2025.05.28] 🔥 Ming-lite-omni 官方版本发布，性能更佳并支持图像生成。&lt;/li&gt;
+&lt;li&gt;[2025.05.04] 🔥 发布 Ming-lite-omni 测试版本：&lt;a href=&#34;https://github.com/inclusionAI/Ming/tree/Ming-Lite-Omni-Preview&#34;&gt;Ming-lite-omni-Preview&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;主要特性&#34;&gt;主要特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;统一全模态感知&lt;/strong&gt;：Ming-lite-omni 基于 &lt;a href=&#34;https://github.com/inclusionAI/Ling&#34;&gt;Ling&lt;/a&gt;（一个 MoE 架构的大语言模型），通过模态专用路由器解决任务冲突，确保来自不同模态的 token 的连贯融合。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;统一感知与生成&lt;/strong&gt;：Ming-lite-omni 实现统一的理解与生成，使模型在生成过程中能解读多模态指令和用户意图，从而提升生成质量并增强多任务使用便利性。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;创新的生成能力&lt;/strong&gt;：Ming-lite-omni 能感知所有模态，同时生成高质量文本、实时语音和生动图像，展现出卓越的跨模态表现，涵盖图像感知、视听交互和图像生成等多样任务。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;评测&#34;&gt;评测&lt;/h2&gt;
+&lt;p&gt;Ming-lite-omni 在图像感知、视听交互及图像生成任务中均展现出优异的跨模态性能。具体来说，在图像感知任务中，Ming-lite-omni 仅激活 28 亿参数，性能已可与 Qwen2.5-VL-7B 相媲美。它在端到端语音理解和指令执行上表现优于 Qwen2.5-Omni 和 Kimi-Audio。同时支持原生分辨率的图像生成、编辑及风格迁移，GenEval 得分达 0.64，优于主流模型如 SDXL。在 FID 指标上，Ming-lite-omni 达到 4.85，刷新了现有方法的最佳水平。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -145,21 +1382,59 @@ Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双�
       <pubDate>Wed, 07 May 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ming-lite-uni/</guid>
-      <description>GITHUB 📑 Technical Report｜🤗 Hugging Face｜🤖 ModelScope 简介 Ming-Lite-Uni 是一个开源的多模态框架，包含一个全新设计的统一视觉生成器，以及一个原生多模态自回归模型，用于整合视觉与语言能力。
-本项目提供了集成 MetaQueries 与 M2-omni 框架的开源实现，并引入了创新性的多尺度可学习Token机制与多尺度表示对齐策略。Ming-Lite-Uni 利用固定的MLLM与可训练的扩散模型，使原生多模态AR模型不仅支持文本生成图像（text-to-image），还支持基于指令的图像编辑，从而扩展其功能，不再局限于视觉理解。实验结果表明，Ming-Lite-Uni 具备强大的性能表现，并在交互体验上展现出高度流畅性。目前该项目处于alpha阶段，将持续优化中。
-感谢大家的支持与关注！我们正在稳步推进项目，并取得了良好进展，更多更新即将到来，敬请期待！
-📌 更新日志 [2025.05.03] 🔥 我们的 技术报告 已在 arXiv 发布 [2025.05.03] 🔥 Ming-Lite-Uni 首个版本正式开源 为什么重要？ Ming-Lite-Uni 的统一架构克服了传统方法的根本性局限：
-传统方法 Ming-Lite-Uni 的优势 模块化流程
-（如 CLIP/SigLIP + 扩散模型） 端到端统一模型
-理解与生成无缝融合 离散Token自回归
-（视觉定位能力有限） 连续Token空间
-原生支持细粒度视觉概念 固定分辨率处理
-（上采样会产生伪影） 多尺度自适应
-各分辨率下均保持一致的画质 编辑流程分离
-（需要手动对齐） 对话驱动控制
-自然语言指导像素级编辑 理解瓶颈
-（视觉语义错位） 联合表示学习
-理解与生成能力相互增强 核心增强点 统一的视觉理解与生成架构：Ming-Lite-Uni 在 OpenCompass 榜单中理解得分达 69.7，优于 DeepSeek-VL2 (66.4)；同时在 GenEval 图像生成基准上取得 0.</description>
+      <description>&lt;p align=&#34;left&#34;&gt;
+        &lt;a href=&#34;https://github.com/inclusionAI/Ming/tree/Ming-Lite-Omni-Preview/Ming-unify&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 📑 &lt;a href=&#34;https://arxiv.org/abs/2505.02471&#34;&gt;Technical Report&lt;/a&gt;｜🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-Lite-Uni&#34;&gt;Hugging Face&lt;/a&gt;｜🤖 &lt;a href=&#34;https://modelscope.cn/models/inclusionAI/Ming-Lite-Uni&#34;&gt;ModelScope&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Ming-Lite-Uni&lt;/code&gt; 是一个开源的多模态框架，包含一个全新设计的统一视觉生成器，以及一个原生多模态自回归模型，用于整合视觉与语言能力。&lt;/p&gt;
+&lt;p&gt;本项目提供了集成 MetaQueries 与 M2-omni 框架的开源实现，并引入了创新性的&lt;strong&gt;多尺度可学习Token机制&lt;/strong&gt;与&lt;strong&gt;多尺度表示对齐策略&lt;/strong&gt;。Ming-Lite-Uni 利用固定的MLLM与可训练的扩散模型，使原生多模态AR模型不仅支持文本生成图像（text-to-image），还支持基于指令的图像编辑，从而扩展其功能，不再局限于视觉理解。实验结果表明，Ming-Lite-Uni 具备强大的性能表现，并在交互体验上展现出高度流畅性。目前该项目处于alpha阶段，将持续优化中。&lt;/p&gt;
+&lt;p&gt;感谢大家的支持与关注！我们正在稳步推进项目，并取得了良好进展，更多更新即将到来，敬请期待！&lt;/p&gt;
+&lt;h2 id=&#34;-更新日志&#34;&gt;📌 更新日志&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[2025.05.03] 🔥 我们的 &lt;a href=&#34;https://arxiv.org/abs/2505.02471&#34;&gt;技术报告&lt;/a&gt; 已在 arXiv 发布&lt;/li&gt;
+&lt;li&gt;[2025.05.03] 🔥 &lt;a href=&#34;https://github.com/inclusionAI/Ming&#34;&gt;Ming-Lite-Uni&lt;/a&gt; 首个版本正式开源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;为什么重要&#34;&gt;为什么重要？&lt;/h2&gt;
+&lt;p&gt;Ming-Lite-Uni 的统一架构克服了传统方法的根本性局限：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;传统方法&lt;/th&gt;
+          &lt;th&gt;Ming-Lite-Uni 的优势&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;模块化流程&lt;/strong&gt;&lt;br&gt;（如 CLIP/SigLIP + 扩散模型）&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;端到端统一模型&lt;/strong&gt;&lt;br&gt;理解与生成无缝融合&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;离散Token自回归&lt;/strong&gt;&lt;br&gt;（视觉定位能力有限）&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;连续Token空间&lt;/strong&gt;&lt;br&gt;原生支持细粒度视觉概念&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;固定分辨率处理&lt;/strong&gt;&lt;br&gt;（上采样会产生伪影）&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;多尺度自适应&lt;/strong&gt;&lt;br&gt;各分辨率下均保持一致的画质&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;编辑流程分离&lt;/strong&gt;&lt;br&gt;（需要手动对齐）&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;对话驱动控制&lt;/strong&gt;&lt;br&gt;自然语言指导像素级编辑&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;理解瓶颈&lt;/strong&gt;&lt;br&gt;（视觉语义错位）&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;联合表示学习&lt;/strong&gt;&lt;br&gt;理解与生成能力相互增强&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;核心增强点&#34;&gt;核心增强点&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;统一的视觉理解与生成架构&lt;/strong&gt;：Ming-Lite-Uni 在 OpenCompass 榜单中理解得分达 69.7，优于 DeepSeek-VL2 (66.4)；同时在 GenEval 图像生成基准上取得 0.62 的得分，超过 SDXL (0.55)。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多尺度可学习Token&lt;/strong&gt;：引入4×/8×/16×多尺度的分层Token，分别捕捉图像的整体布局（低分辨率）、物体结构（中分辨率）和细节纹理（高分辨率），GenEval得分提升3.5%。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多尺度表示对齐&lt;/strong&gt;：设计了&lt;strong&gt;尺度一致性损失&lt;/strong&gt;，通过原生分辨率优化确保各层级表示与最终结果的一致性，图像重建质量提升超过2dB PSNR，GenEval得分提升1.5%。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;具备AGI能力的系统&lt;/strong&gt;：支持“生成城堡 → 添加日落 → 调整视角”等链式指令，响应时间&amp;lt;1秒（RTX 4090测试）。系统支持指令驱动的生成与编辑，并已对齐 GPT-4o（2025年3月行业标杆）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;赋能多模态交互&#34;&gt;赋能多模态交互&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Ming-Lite-Uni&lt;/strong&gt; 是统一的多模态理解模型，突破传统NLP与视觉理解范畴，进一步支持图像生成、图像编辑与风格迁移等交互式生成任务。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -168,12 +1443,425 @@ Ming-lite-omni v1.5能力介绍：三大维度全面优化，效果与体验双�
       <pubDate>Mon, 05 May 2025 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/zh/blog/ming-lite-omni-preview/</guid>
-      <description>GITHUB 🤗 Hugging Face | 🤖 ModelScope
-简介 Ming-Lite-Omni-Preview 构建自 Ling-Lite，它是一个 MoE（专家混合）模型，能够感知文本、图像、音频和视频等多种模态，并以流式方式生成文本和自然语音。 为了更自然地处理多模态输入，我们对 Ling-Lite 进行了增强，为每种模态引入了专用路由模块。 因此，Ming-Omni 在处理多模态信息方面表现优异，并具有很强的可扩展性。
-主要特性 Omni and Novel MoE Architecture: 一种基于专家混合（MoE）的创新型 Omni 架构，在多个多模态评测中取得了领先性能。
-Video understanding: 支持视觉 Token 的 KV-Cache 动态压缩机制，既能理解数小时的长视频，也能对几秒钟的短视频进行精细分析。
-Natural Speech Generation and Fine-grained Voice Dialogue: 支持端到端对话中的方言理解与生成，具备一次性语音克隆能力，并通过音频分词器压缩提升语调表现力。
-评测结果 Image benchmark Benchmarks Ming-Lite-Omni-Preview Qwen2.5-VL-7B-Instruct InternVL2.5-8B-MPO AI2D 83.84 83.9 84.5 HallusionBench 54.68 51.9 51.7 MMBench_TEST_V11 79.63 84.3 82.0 MMMU 57.0 58.6 54.8 MMStar 62.0 63.9 65.2 MMVet 73.6 67.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI&#34;&gt;Hugging Face&lt;/a&gt; | 🤖 &lt;a href=&#34;https://modelscope.cn/organization/inclusionAI&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;Ming-Lite-Omni-Preview 构建自 &lt;a href=&#34;https://github.com/inclusionAI/Ling&#34;&gt;Ling-Lite&lt;/a&gt;，它是一个 MoE（专家混合）模型，能够感知文本、图像、音频和视频等多种模态，并以流式方式生成文本和自然语音。 为了更自然地处理多模态输入，我们对 Ling-Lite 进行了增强，为每种模态引入了专用路由模块。 因此，Ming-Omni 在处理多模态信息方面表现优异，并具有很强的可扩展性。&lt;/p&gt;
+&lt;h2 id=&#34;主要特性&#34;&gt;主要特性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Omni and Novel MoE Architecture&lt;/strong&gt;: 一种基于专家混合（MoE）的创新型 Omni 架构，在多个多模态评测中取得了领先性能。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Video understanding&lt;/strong&gt;: 支持视觉 Token 的 KV-Cache 动态压缩机制，既能理解数小时的长视频，也能对几秒钟的短视频进行精细分析。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Natural Speech Generation and Fine-grained Voice Dialogue&lt;/strong&gt;: 支持端到端对话中的方言理解与生成，具备一次性语音克隆能力，并通过音频分词器压缩提升语调表现力。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;评测结果&#34;&gt;评测结果&lt;/h2&gt;
+&lt;h3 id=&#34;image-benchmark&#34;&gt;Image benchmark&lt;/h3&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Benchmarks&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Ming-Lite-Omni-Preview&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Qwen2.5-VL-7B-Instruct&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;InternVL2.5-8B-MPO&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;AI2D&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;83.84&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;83.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;84.5&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;HallusionBench&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;54.68&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;51.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;51.7&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MMBench_TEST_V11&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;79.63&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;84.3&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;82.0&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MMMU&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;57.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;58.6&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;54.8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MMStar&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;62.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;63.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;65.2&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MMVet&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;73.6&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;68.1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MathVista&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;69.0&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;68.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.9&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;OCRBench&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;87.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;86.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;88.2&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Average&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;70.96&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;70.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;70.3&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;object-recognition&#34;&gt;Object Recognition&lt;/h4&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Object Recognition&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Ming-Lite-Omni-Preview&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Qwen2.5-VL-7B&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;InternVL-2.5-8B&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Plants&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;52.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;55.3&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;32.8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Animals&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;52.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;54.8&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;36.5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Home appliances &amp;amp; furniture&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;93.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;97.4&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;90.9&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Personal Electronics&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;96.1&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;95.1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;93.2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Food &amp;amp; Ingredients&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;57.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;60.0&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;48.7&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Tableware&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;96.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;94.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;88.1&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Vehicles&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;31.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;40.9&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;31.9&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Average&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;68.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;71.2&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;60.3&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;video-benchmark&#34;&gt;Video benchmark&lt;/h3&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Benchmarks&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Ming-Lite-Omni-Preview&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Qwen2.5VL-7B&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;VideoMME wo/w sub.&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;63.9/67.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;65.1/71.6&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MVBench&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;67.0&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;72.0&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Video-MMMU&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;45.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;47.44&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;LongVideoBench&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;53.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;60.0&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;audio-benchmark&#34;&gt;Audio benchmark&lt;/h3&gt;
+&lt;h4 id=&#34;speechqa&#34;&gt;SpeechQA&lt;/h4&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Model&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;AlpacaEval&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;CommonEval&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;SD-QA&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;MMSU&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;OpenBookQA&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;IFEval&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;AdvBench&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Qwen2-Audio-chat&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.69&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.40&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;35.35&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;35.43&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;49.01&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;22.57&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;98.85&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Baichuan-Audio&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.00&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.39&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;49.64&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;48.80&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;63.30&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;41.32&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;86.73&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GLM-4-Voice&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.06&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.48&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;43.31&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;40.11&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;52.97&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;24.91&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;88.08&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Kimi-Audio&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.46&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;3.97&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;63.12&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;62.17&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;83.52&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;61.10&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;100.00&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Qwen2.5-Omni&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;4.49&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.93&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;55.71&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;61.32&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;81.10&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;52.87&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;99.42&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ming-Lite-Omni-Preview&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.25&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.88&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;58.95&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;46.06&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;60.00&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;46.71&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;96.53&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;asr&#34;&gt;ASR&lt;/h4&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Model&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Aishell-1&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Aishell-2 ios&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Wenetspeech test-net&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Wenet test-meeting&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Librispeech test-clean&lt;/strong&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;strong&gt;Librispeech test-other&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Whisper Large-v3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.14&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.76&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;9.68&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;18.54&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.65&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Qwen2-Audio&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1.53&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.06&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;7.72&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;1.6&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.6&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GLM-4-voice Base&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2.46&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2.82&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;7.66&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Baichuan-Omni-1.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8.4&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Qwen2.5-Omni&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;1.18&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;2.36&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;5.9&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;7.7&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1.8&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;3.4&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ming-Lite-Omni-Preview&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;1.62&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2.82&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.23&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;6.9&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;2.34&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.74&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;knowledge&#34;&gt;Knowledge&lt;/h3&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Model&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;InfoSeek_H-mean&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;InfoSeek_unseen_question&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;InfoSeek_unseen_entity&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GPT-4o&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;36.05&lt;/b&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;-&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;PaLI-X&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;22.06&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;23.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;20.8&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Qwen2.5-vl-32B&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;19.35&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;20.55&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;18.28&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Ming-Lite-Omni-Preview&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;27.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;28.9&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;25.9&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;ocrgui&#34;&gt;OCR&amp;amp;GUI&lt;/h3&gt;
+&lt;div align=&#34;center&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Model&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Ming-Lite-Omni-Preview&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Qwen2.5-VL-7B-Instruct&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ChartQA_TEST&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;85.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;87.3&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;DocVQA_TEST&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;93.2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;95.7&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;OCRBenchV2_en/zh&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;52.2/51.6&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;56.3/57.2&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;OmniDocBench↓&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;34.7/34.5&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;30.8/39.8&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;TextVQA_VAL&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;82.36&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;84.9&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;ScreenSpot&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;79.3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;b&gt;84.7&lt;/b&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;模型下载&#34;&gt;模型下载&lt;/h2&gt;
+&lt;p&gt;你可以从 Huggingface 和 ModelScope 两个平台下载本模型。&lt;/p&gt;</description>
     </item>
     
   </channel>
