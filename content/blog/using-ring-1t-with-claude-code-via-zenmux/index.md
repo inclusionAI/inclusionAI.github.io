@@ -578,9 +578,9 @@ This usually happens because old config files cached prior authentication info, 
    export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC="1"
    export API_TIMEOUT_MS="30000000"
    export ANTHROPIC_API_KEY=""  # Clear to avoid conflicts
-   export ANTHROPIC_DEFAULT_HAIKU_MODEL="anthropic/claude-haiku-4.5"
-   export ANTHROPIC_DEFAULT_SONNET_MODEL="anthropic/claude-sonnet-4.5"
-   export ANTHROPIC_DEFAULT_OPUS_MODEL="anthropic/claude-opus-4.5"
+   export ANTHROPIC_DEFAULT_HAIKU_MODEL="inclusionai/ring-1t"
+   export ANTHROPIC_DEFAULT_SONNET_MODEL="inclusionai/ring-1t"
+   export ANTHROPIC_DEFAULT_OPUS_MODEL="inclusionai/ring-1t"
    ```
 
 3. **Reload environment variables**:
