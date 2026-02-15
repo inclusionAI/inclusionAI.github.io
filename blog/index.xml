@@ -17,7 +17,7 @@
       <pubDate>Sun, 15 Feb 2026 00:00:03 +0800</pubDate>
       
       <guid>https://inclusionai.github.io/blog/using-ring-1t-with-claude-code-via-zenmux/</guid>
-      <description>&lt;h1 id=&#34;using-ring-1t-with-claude-code-via-zenmux&#34;&gt;Using Ring 1T with Claude Code via ZenMux&lt;/h1&gt;
+      <description>&lt;!-- # Using Ring 1T with Claude Code via ZenMux --&gt;
 &lt;h2 id=&#34;what-is-ring-1t&#34;&gt;What is Ring 1T?&lt;/h2&gt;
 &lt;p&gt;Ring 1T is a powerful open-source reasoning model designed for complex problem-solving and advanced coding tasks. It&amp;rsquo;s built on the Ling 2.0 architecture with impressive capabilities:&lt;/p&gt;
 &lt;ul&gt;
