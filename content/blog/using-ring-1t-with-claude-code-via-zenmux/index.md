@@ -570,7 +570,7 @@ This usually happens because old config files cached prior authentication info, 
 
 2. **Confirm your shell environment variables are configured correctly**:
 
-   Check whether your shell config file (`~/.zshrc` or `~/.bashrc`) contains the full ZenMux configuration. Refer to [Step 1: Configure Shell Environment Variables](#step-1-configure-shell-environment-variables) above, and ensure it includes these key variables:
+   Check whether your shell config file (`~/.zshrc` or `~/.bashrc`) contains the full ZenMux configuration. Refer to [the shell profile configuration instructions](#option-1-shell-profile-configuration-recommended) above, and ensure it includes these key variables:
 
    ```bash
    export ANTHROPIC_BASE_URL="https://zenmux.ai/api/anthropic"
