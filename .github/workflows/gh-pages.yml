@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main  # Set a branch that will trigger a deployment 
+      - main # Set a branch that will trigger a deployment
   pull_request:
 
 jobs:
@@ -14,13 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: false  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: false # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.155.3'  # Set a Hugo version to build your site
+          hugo-version: "0.15.3"
           extended: true
 
       - name: Build
