@@ -1,6 +1,7 @@
 baseURL: "https://inclusionai.github.io/"
 title: INCLUSION AI
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true

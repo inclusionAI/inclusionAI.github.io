@@ -140,7 +140,7 @@ const hasHeaderBg = {{ $hasHeaderBg }};
             {{- range site.Menus.main }}
             {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) }}
             {{- $page_url:= $currentPage.RelPermalink }}
-            {{- $is_search := eq ($sites.First.GetPage .KeyName).Layout `search` }}
+            {{- $is_search := eq ($sites.Default.GetPage .KeyName).Layout `search` }}
             <li>
                 <a href="{{ .URL }}" title="{{ .Title | default .Name }} {{- cond $is_search (" (Alt + /)" | safeHTMLAttr) ("" | safeHTMLAttr ) }}"
                 {{- cond $is_search ("accesskey='/'" | safeHTMLAttr) ("" | safeHTMLAttr ) }}>
