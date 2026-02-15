@@ -3,6 +3,7 @@ title: "Using Ring 1T with Claude Code via ZenMux"
 date: 2026-02-15T00:00:03+08:00
 weight: 1
 math: true
+draft: true
 # search_hidden: false # to hide from search page
 show_reading_time: true
 show_bread_crumbs: true
