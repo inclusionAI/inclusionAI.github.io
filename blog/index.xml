@@ -10,25 +10,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Feb 2026 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Using Ring 1T with Claude Code via ZenMux</title>
-      <link>https://inclusionai.github.io/blog/using-ring-1t-with-claude-code-via-zenmux/</link>
-      <pubDate>Sun, 15 Feb 2026 00:00:03 +0800</pubDate>
-      
-      <guid>https://inclusionai.github.io/blog/using-ring-1t-with-claude-code-via-zenmux/</guid>
-      <description>&lt;!-- # Using Ring 1T with Claude Code via ZenMux --&gt;
-&lt;h2 id=&#34;what-is-ring-1t&#34;&gt;What is Ring 1T?&lt;/h2&gt;
-&lt;p&gt;Ring 1T is a powerful open-source reasoning model designed for complex problem-solving and advanced coding tasks. It&amp;rsquo;s built on the Ling 2.0 architecture with impressive capabilities:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Scale&lt;/strong&gt;: 1 trillion total parameters with 50 billion activated parameters&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Context&lt;/strong&gt;: Supports up to 128K tokens context window&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Training&lt;/strong&gt;: Enhanced through large-scale verifiable reward reinforcement learning (RLVR)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Strengths&lt;/strong&gt;: Excels at deep reasoning, natural language inference, and sophisticated code generation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ring 1T represents the latest advancement in MoE (Mixture of Experts) architecture scaling, leveraging the icepop reinforcement learning stabilization method and the ASystem framework to deliver exceptional reasoning performance.&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Tue, 28 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ming-flash-omni-Preview: A Sparse, Unified Architecture for Multimodal Perception and Generation</title>
       <link>https://inclusionai.github.io/blog/ming-flash-omni-preview/</link>
