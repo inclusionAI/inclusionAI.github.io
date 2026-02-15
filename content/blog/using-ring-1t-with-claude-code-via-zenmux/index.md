@@ -680,7 +680,7 @@ This usually happens because old config files cached prior authentication info, 
 
 2. **Check the model configuration**:
    - Search for "claude-code.selectedModel" in Settings
-   - Confirm it's set to `ring/ring-1t`
+   - Confirm it's set to `inclusionai/ring-1t`
    - Verify the model name format is correct
 
 3. **Resolve environment variable conflicts**:
