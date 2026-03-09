@@ -31,13 +31,13 @@ show_word_count: true
 **Ming-omni-tts** is a unified audio language model for the generation of speech, music, and sound, based on a unified continuous audio tokenizer.
 
 ### Unified Continuous Audio Tokenizer.
-<img width="1034" alt="结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/W3RqRLQx8DEAAAAAUDAAAAgADvHDAQFr/original" />
+<img width="1034" alt="Diagram of the Unified Continuous Audio Tokenizer architecture." src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/W3RqRLQx8DEAAAAAUDAAAAgADvHDAQFr/original" />
 
 ### Unified Audio Language Model for Speech, Music and Sound Generation.
-<img width="1034" alt="结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/oop7QJpDNdIAAAAAV1AAAAgADvHDAQFr/original" />
+<img width="1034" alt="Diagram of the Unified Audio Language Model for Speech, Music and Sound Generation architecture." src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/oop7QJpDNdIAAAAAV1AAAAgADvHDAQFr/original" />
 
 ## Benchmark Evaluations
-<img width="1034" alt="结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/GBiVQ7tR2I4AAAAAdhAAAAgADvHDAQFr/original" />
+<img width="1034" alt="Table showing benchmark evaluation results." src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/GBiVQ7tR2I4AAAAAdhAAAAgADvHDAQFr/original" />
 
 ## Voice Control – Support Structured and Natural Command Control
 

@@ -31,13 +31,13 @@ show_word_count: true
 **Ming-omni-tts** 基于统一连续音频分词器，用于语音、音乐和声音生成的统一音频语言模型。
 
 ### 统一连续音频分词器模型结构图
-<img width="1034" alt="结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/W3RqRLQx8DEAAAAAUDAAAAgADvHDAQFr/original" />
+<img width="1034" alt="统一连续音频分词器模型结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/W3RqRLQx8DEAAAAAUDAAAAgADvHDAQFr/original" />
 
 ### 统一音频语言模型结构图
-<img width="1034" alt="结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/oop7QJpDNdIAAAAAV1AAAAgADvHDAQFr/original" />
+<img width="1034" alt="统一音频语言模型结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/oop7QJpDNdIAAAAAV1AAAAgADvHDAQFr/original" />
 
 ## Benchmark 评测结果
-<img width="1034" alt="结构图" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/GBiVQ7tR2I4AAAAAdhAAAAgADvHDAQFr/original" />
+<img width="1034" alt="Benchmark评测结果表" src="https://mdn.alipayobjects.com/huamei_7mmngh/afts/img/GBiVQ7tR2I4AAAAAdhAAAAgADvHDAQFr/original" />
 
 ## 语音控制 – 支持结构化和自然指令控制
 
