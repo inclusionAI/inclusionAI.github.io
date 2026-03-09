@@ -10,7 +10,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:03 +0800</lastBuildDate><atom:link href="https://inclusionai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ming-Omni-TTS: Simple and Efficient Unified Generation of Speech, Music, and Sound with Precise Control</title>
+      <link>https://inclusionai.github.io/blog/ming-omni-tts/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:03 +0800</pubDate>
+      
+      <guid>https://inclusionai.github.io/blog/ming-omni-tts/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/inclusionAI/Ming-omni-tts&#34; class=&#34;btn external&#34; target=&#34;_blank&#34;&gt;GITHUB&lt;/a&gt; 🤗 &lt;a href=&#34;https://huggingface.co/inclusionAI/Ming-omni-tts-0.5B&#34;&gt;Hugging Face&lt;/a&gt;｜ 🤖 &lt;a href=&#34;https://modelscope.cn/models/inclusionAI/Ming-omni-tts-0.5B&#34;&gt;ModelScope&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-introduction-video-of-ming-omni-tts&#34;&gt;The Introduction Video of Ming-Omni-TTS&lt;/h2&gt;
+&lt;p&gt;&lt;video src=&#34;https://gw.alipayobjects.com/v/huamei_7mmngh/afts/video/lRycTZ2_PFMAAAAAhbAAAAgADvHDAQFr&#34; width=&#34;1024px&#34; height=&#34;660px&#34; controls autoplay muted playsinline&gt;&lt;/video&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-featured-abilities&#34;&gt;🚀 Featured Abilities&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Ming-omni-tts is a high-performance unified audio generation model that achieves precise control over speech attributes and enables single-channel synthesis of speech, environmental sounds, and music. Powered by a custom 12.5Hz continuous tokenizer and Patch-by-Patch compression, it delivers competitive inference efficiency (3.1Hz). Additionally, the model features robust text normalization capabilities for the accurate and natural narration of complex mathematical and chemical expressions.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Ming-flash-omni-Preview: A Sparse, Unified Architecture for Multimodal Perception and Generation</title>
       <link>https://inclusionai.github.io/blog/ming-flash-omni-preview/</link>
