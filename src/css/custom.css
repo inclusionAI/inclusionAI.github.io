@@ -1,0 +1,248 @@
+/* Custom fonts */
+@font-face {
+  font-family: "PlantagenetCherokee";
+  src: url("/fonts/PlantagenetCherokee.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Theme color variables - inclusionAI brand */
+:root {
+  --ifm-color-primary: #615ced;
+  --ifm-color-primary-dark: #4d47e8;
+  --ifm-color-primary-darker: #3e38e5;
+  --ifm-color-primary-darkest: #2620d6;
+  --ifm-color-primary-light: #7571f2;
+  --ifm-color-primary-lighter: #8480f4;
+  --ifm-color-primary-lightest: #a8a5f7;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base:
+    Montserrat-Regular, "Montserrat-Fallback", system-ui, -apple-system, Arial,
+    sans-serif;
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-footer-background-color: #fafafa;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #8480f4;
+  --ifm-color-primary-dark: #6d69f1;
+  --ifm-color-primary-darker: #615ced;
+  --ifm-color-primary-darkest: #4d47e8;
+  --ifm-color-primary-light: #9b98f7;
+  --ifm-color-primary-lighter: #a8a5f7;
+  --ifm-color-primary-lightest: #c4c2fa;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.navbar__brand {
+  font-family: PlantagenetCherokee, serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.navbar__logo {
+  height: 36px !important;
+  width: auto;
+}
+
+/* Blog post styles */
+.blog-post-content img {
+  max-width: 100%;
+}
+
+/* Button shortcode replacement */
+.btn-link {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #17191c;
+  color: #ffffff !important;
+  border-radius: 8px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none !important;
+  margin-right: 8px;
+  margin-bottom: 4px;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-link:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+  color: #ffffff !important;
+}
+
+/* Example gallery (fullwidth/example shortcode) */
+.example-container {
+  width: 100%;
+  margin: 24px 0;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.example-content {
+  padding: 16px;
+}
+
+.example-content .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Montserrat-SemiBold, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.example-content .next-button {
+  cursor: pointer;
+  padding: 4px 12px;
+  background: #615ced;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.example-content .next-button:hover {
+  background: #4d47e8;
+}
+
+.example-content .grid-layout {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 8px 16px;
+  padding: 16px;
+}
+
+.example-content .grid-layout.scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.example-content .role {
+  font-weight: 600;
+  color: #615ced;
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.example-content .content {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Syntax highlighting (VS light theme) */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #008000;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  color: #098658;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  color: #a31515;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #001080;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #0000ff;
+}
+
+.token.function,
+.token.class-name {
+  color: #795e26;
+}
+
+.token.regex,
+.token.important {
+  color: #ee0000;
+}
+
+/* Blog post general styles */
+article.margin-bottom--xl {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Responsive images in blog */
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Video containers */
+.markdown video {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Math display */
+.math-display {
+  overflow-x: auto;
+  padding: 8px 0;
+}

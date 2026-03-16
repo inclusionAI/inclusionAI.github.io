@@ -1,0 +1,372 @@
+/* Reset for homepage */
+.homePage {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Shadow bar */
+.shadow {
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+
+/* Hero image area */
+.topImgContainer {
+  position: relative;
+  width: 100%;
+  height: 44.3vw;
+  background-image: linear-gradient(180deg, #ffffff 43%, #f9faff 100%);
+  overflow: hidden;
+}
+
+.topImgContainer img {
+  position: absolute;
+}
+
+.imgStar {
+  left: 8vw;
+  top: 8.3vw;
+  width: 5vw;
+}
+
+.imgText {
+  left: 11.4vw;
+  top: 10.4vw;
+  width: 41.56vw;
+}
+
+.imgWind {
+  left: 35.82vw;
+  top: 26.5vw;
+  width: 20.37vw;
+}
+
+.imgHand {
+  right: 0;
+  bottom: 0;
+  width: 40.67vw;
+}
+
+/* Flower decoration */
+.flower {
+  display: block;
+  margin: 0 auto;
+  width: 20.3vw;
+  margin-top: 40px;
+}
+
+/* Mission text */
+.flowerSection {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.flowerMainText {
+  font-family: PlantagenetCherokee, "Times New Roman", Georgia, serif;
+  font-size: 40px;
+  color: #17191c;
+  letter-spacing: 1.11px;
+  line-height: 48px;
+}
+
+.subtext {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 18px;
+  color: #777b86;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 8px;
+}
+
+/* Section title */
+.sectionTitle {
+  font-family: "Times New Roman Italic", Times, Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 64px;
+  color: #17191c;
+  letter-spacing: 1.33px;
+  text-align: center;
+  margin: 80px 0 40px;
+}
+
+/* Mission cards */
+.missionSection {
+  padding: 0 7.5vw 80px;
+}
+
+.missionList {
+  display: flex;
+  gap: 1.6%;
+  justify-content: center;
+}
+
+.missionItem {
+  flex: 1;
+  max-width: 26.67vw;
+  padding-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+}
+
+.missionImgContainer {
+  width: 100%;
+  height: 16vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.missionImg {
+  max-height: 14vw;
+  width: auto;
+}
+
+.missionItemTitle {
+  font-family: PlantagenetCherokee, "Times New Roman", Georgia, serif;
+  font-size: 32px;
+  color: #17191c;
+  letter-spacing: 0.89px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.missionItemText {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  margin: 16px 32px 0;
+  font-size: 18px;
+  color: #777b86;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* Team section */
+.teamSection {
+  padding: 60px 0 120px;
+  background-image: linear-gradient(180deg, #eff7ff 0%, #ffffff 100%);
+}
+
+.teamImg {
+  display: block;
+  width: 60vw;
+  margin: 0 auto 60px;
+}
+
+.teamText {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  margin: 0 100px 40px;
+  font-size: 18px;
+  color: #17191c;
+  text-align: center;
+  line-height: 24px;
+}
+
+.teamButton {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 24px;
+  border: 0.3px solid #979797;
+  border-radius: 8px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: 0 5px 8px 0 rgba(178, 190, 222, 0.39);
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.teamButton:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Releases section */
+.releasesSection {
+  padding: 0 7% 60px;
+}
+
+.releaseItem {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  gap: 7vw;
+}
+
+.releaseTitle {
+  flex: 1;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 18px;
+  color: #17191c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.releaseTitle:hover {
+  text-decoration: underline;
+  color: #615ced;
+}
+
+.releaseTag {
+  width: 80px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(50, 50, 50, 0.65);
+  flex-shrink: 0;
+}
+
+.releaseDate {
+  width: 120px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(50, 50, 50, 0.65);
+  flex-shrink: 0;
+}
+
+/* Footer icons */
+.bottomSection {
+  position: relative;
+  background-color: #fafafa;
+}
+
+.iconList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0 40px;
+}
+
+.socialIcon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
+.bottomImg {
+  width: 100%;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .topImgContainer {
+    height: 81.6vw;
+  }
+
+  .imgStar {
+    left: 9.5vw;
+    top: 7.1vw;
+    width: 9.42vw;
+  }
+
+  .imgText {
+    left: 16.1vw;
+    top: 12.67vw;
+    width: 79vw;
+  }
+
+  .imgWind {
+    left: 10vw;
+    top: 41.46vw;
+    width: 27.3vw;
+  }
+
+  .imgHand {
+    width: 54.2vw;
+  }
+
+  .flower {
+    width: 135px;
+    margin-top: 24px;
+  }
+
+  .flowerMainText {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .subtext {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+    margin: 40px 0 20px;
+  }
+
+  .missionList {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .missionItem {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .missionImgContainer {
+    height: 140px;
+  }
+
+  .missionImg {
+    max-height: 100px;
+  }
+
+  .missionItemTitle {
+    font-size: 20px;
+  }
+
+  .missionItemText {
+    font-size: 14px;
+    margin: 8px 16px 0;
+  }
+
+  .teamImg {
+    width: 90%;
+  }
+
+  .teamText {
+    margin: 8px 20px 24px;
+    font-size: 14px;
+  }
+
+  .teamButton {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+
+  .releasesSection {
+    padding: 0 4% 40px;
+  }
+
+  .releaseTitle {
+    font-size: 15px;
+  }
+
+  .releaseTag,
+  .releaseDate {
+    font-size: 12px;
+    width: auto;
+  }
+}
