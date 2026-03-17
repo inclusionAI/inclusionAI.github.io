@@ -31,11 +31,14 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}
+      className={`navbar ${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}
       style={{
-        boxShadow: opacity > 0.5 ? "0 2px 10px rgba(0,0,0,0.1)" : "none",
-        backdropFilter: isScrolled ? "blur(12px)" : "none",
-        WebkitBackdropFilter: isScrolled ? "blur(12px)" : "none",
+        background: isScrolled
+          ? `rgba(255, 255, 255, ${Math.min(opacity * 0.85, 0.85)})`
+          : "transparent",
+        backdropFilter: isScrolled ? "blur(14px) saturate(160%)" : "none",
+        WebkitBackdropFilter: isScrolled ? "blur(14px) saturate(160%)" : "none",
+        boxShadow: opacity > 0.5 ? "0 2px 10px rgba(0,0,0,0.08)" : "none",
       }}
     >
       <div className={styles.navbarContent}>

@@ -10,18 +10,37 @@
 }
 
 .navbarContent {
+  width: 100%;
   margin: 0 auto;
   padding: 0 90px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   height: 100%;
+}
+
+/* logo occupies left column */
+.logo {
+  grid-column: 1;
+  justify-self: start;
+}
+
+/* navLinks occupies center column */
+.navLinks {
+  grid-column: 2;
+}
+
+/* iconLinksWrapper occupies right column */
+.iconLinksWrapper {
+  grid-column: 3;
+  justify-self: end;
 }
 
 .logo {
   display: flex;
   align-items: center;
   text-decoration: none !important;
+  /* grid placement set in navbarContent block above */
 }
 
 .logo img {
@@ -39,6 +58,7 @@
 .navLinks {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -88,7 +108,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-left: 60px;
+  /* grid placement set in navbarContent block above */
 }
 
 .iconLink {
@@ -150,15 +170,15 @@
   .navbarContent {
     padding: 0 15px;
     position: relative;
+    /* revert to flex for mobile so hamburger/logo/icons stack correctly */
+    display: flex;
+    justify-content: center;
   }
 
   .logo {
     margin: 0 auto;
-  }
-
-  .logo img {
-    width: 35vw;
-    max-width: 207px;
+    grid-column: unset;
+    justify-self: unset;
   }
 
   .menuButton {
@@ -174,11 +194,15 @@
     top: 80px;
     left: 0;
     right: 0;
-    background: #fafcff;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     padding: 0;
     gap: 0;
+    grid-column: unset;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -209,6 +233,8 @@
   }
 
   .iconLinksWrapper {
+    grid-column: unset;
+    justify-self: unset;
     margin-left: 0;
     position: absolute;
     right: 40px;
