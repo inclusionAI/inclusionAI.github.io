@@ -45,17 +45,6 @@
   --ifm-footer-background-color: #fafafa;
 }
 
-[data-theme="dark"] {
-  --ifm-color-primary: #8480f4;
-  --ifm-color-primary-dark: #6d69f1;
-  --ifm-color-primary-darker: #615ced;
-  --ifm-color-primary-darkest: #4d47e8;
-  --ifm-color-primary-light: #9b98f7;
-  --ifm-color-primary-lighter: #a8a5f7;
-  --ifm-color-primary-lightest: #c4c2fa;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
-
 /* Navbar */
 .navbar {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
