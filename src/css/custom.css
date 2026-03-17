@@ -30,7 +30,7 @@
 /* Body background */
 body {
   background-image: url("/img/body_background.png");
-  background-size: 10% auto;
+  background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -99,6 +99,10 @@ body {
   opacity: 0.85;
   transform: translateY(-1px);
   color: #ffffff !important;
+}
+
+.main-wrapper {
+  padding-top: 80px;
 }
 
 /* Example gallery (fullwidth/example shortcode) */
