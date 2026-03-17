@@ -27,6 +27,15 @@
   font-style: normal;
 }
 
+/* Body background */
+body {
+  background-image: url("/img/body_background.png");
+  background-size: 10% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
 /* Theme color variables - inclusionAI brand */
 :root {
   --ifm-color-primary: #615ced;
@@ -46,7 +55,7 @@
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
@@ -59,7 +68,7 @@
 .navbar__logo {
   height: 36px !important;
   width: auto;
-}
+} */
 
 /* Blog post styles */
 .blog-post-content img {
