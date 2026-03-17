@@ -1,0 +1,196 @@
+/* ------------------------------------------------------------------ */
+/* Hero                                                                  */
+/* ------------------------------------------------------------------ */
+.hero {
+  padding: 140px 24px 16px;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: Times, serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #17191c;
+  letter-spacing: 1.5px;
+  margin: 0 0 16px;
+}
+
+.heroText {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 18px;
+  color: #777b86;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------------------------------------------------------------ */
+/* Filter tabs                                                           */
+/* ------------------------------------------------------------------ */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 40px 24px 0;
+}
+
+.filterBtn {
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filterBtn:hover {
+  border-color: #999;
+  color: #333;
+}
+
+.filterBtnActive {
+  background: #17191c;
+  border-color: #17191c;
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------ */
+/* Card grid                                                             */
+/* ------------------------------------------------------------------ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1260px;
+  margin: 40px auto 120px;
+  padding: 0 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 1px 4px rgba(208, 208, 208, 0.6);
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-decoration: none !important;
+  color: inherit;
+  transition:
+    box-shadow 0.25s,
+    transform 0.25s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cardTitle {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #17191c;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.categoryBadge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* Category colours */
+.catFoundation {
+  background: #f0f4ff;
+  color: #3355cc;
+}
+.catReasoning {
+  background: #fff7e6;
+  color: #b36b00;
+}
+.catMultiModal {
+  background: #f0faf0;
+  color: #2a7a2a;
+}
+.catRL {
+  background: #fff0f6;
+  color: #b5006b;
+}
+.catAgentic {
+  background: #e8f7ff;
+  color: #006899;
+}
+.catBenchmarks {
+  background: #f5f0ff;
+  color: #6a00cc;
+}
+
+.cardDescription {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #787680;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.cardFooter {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: auto;
+}
+
+/* ------------------------------------------------------------------ */
+/* Responsive                                                            */
+/* ------------------------------------------------------------------ */
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 996px) {
+  .heroTitle {
+    font-size: 40px;
+  }
+
+  .heroText {
+    font-size: 15px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+    padding: 0 24px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 100px;
+  }
+
+  .heroTitle {
+    font-size: 32px;
+  }
+}

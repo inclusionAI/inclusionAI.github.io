@@ -1,0 +1,295 @@
+/* ------------------------------------------------------------------ */
+/* Hero                                                                  */
+/* ------------------------------------------------------------------ */
+.hero {
+  padding: 140px 24px 16px;
+  text-align: center;
+}
+
+.heroTitle {
+  font-family: Times, serif;
+  font-size: 72px;
+  font-weight: 700;
+  color: #17191c;
+  letter-spacing: 1.5px;
+  margin: 0 0 12px;
+}
+
+.heroText {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 18px;
+  color: #777b86;
+  letter-spacing: 0.4px;
+  line-height: 32px;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Papers list                                                           */
+/* ------------------------------------------------------------------ */
+.papersList {
+  margin: 40px 7% 0;
+}
+
+.paperRow {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  gap: 24px;
+}
+
+.paperRow:hover .paperTitle {
+  text-decoration: underline;
+}
+
+.paperTitle {
+  flex: 1;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 18px;
+  color: #17191c;
+  letter-spacing: 0.38px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.paperMeta {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  flex-shrink: 0;
+}
+
+.paperType {
+  width: 80px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.typeModel {
+  background: #f0faf0;
+  color: #2a7a2a;
+}
+
+.typeSystem {
+  background: #fff7e6;
+  color: #b36b00;
+}
+
+.typeResearch {
+  background: #f0f4ff;
+  color: #3355cc;
+}
+
+.paperDate {
+  width: 110px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(50, 50, 50, 0.65);
+  letter-spacing: 0.38px;
+  text-align: right;
+}
+
+/* ------------------------------------------------------------------ */
+/* Pagination                                                            */
+/* ------------------------------------------------------------------ */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 32px 0 100px;
+}
+
+.pageArrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.pageArrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.pageArrow svg {
+  width: 12px;
+  height: 12px;
+}
+
+.pageNum {
+  min-width: 32px;
+  height: 32px;
+  padding: 0 6px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.pageNum:hover {
+  color: #17191c;
+  border-color: #ccc;
+}
+
+.pageNumActive {
+  color: #17191c !important;
+  border-color: #17191c !important;
+  cursor: default;
+}
+
+/* ------------------------------------------------------------------ */
+/* Releases section                                                      */
+/* ------------------------------------------------------------------ */
+.releasesSection {
+  padding: 0 7% 180px;
+}
+
+.releasesTitle {
+  display: block;
+  width: 351px;
+  max-width: 100%;
+  margin: 0 auto 47px;
+}
+
+.articleGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.articleCard {
+  position: relative;
+  width: calc(33.333% - 16px);
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(208, 208, 208, 0.5);
+  border-radius: 24px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.articleCard:hover {
+  box-shadow:
+    0 2px 15px 0 rgba(154, 154, 154, 0.36),
+    0 1px 4px 0 rgba(208, 208, 208, 0.5);
+}
+
+.articleCover {
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  display: block;
+}
+
+.articleTypeBadge {
+  margin: 24px 24px 8px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.articleCardTitle {
+  margin: 0 24px 64px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 17px;
+  color: #17191c;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.articleTime {
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+  color: #777b86;
+}
+
+/* ------------------------------------------------------------------ */
+/* Responsive                                                            */
+/* ------------------------------------------------------------------ */
+@media (max-width: 996px) {
+  .heroTitle {
+    padding-top: 0;
+    font-size: 36px;
+  }
+
+  .heroText {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .papersList {
+    margin: 24px 5% 0;
+  }
+
+  .paperTitle {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .paperMeta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .paperDate {
+    font-size: 11px;
+    width: auto;
+    text-align: left;
+  }
+
+  .paperType {
+    font-size: 11px;
+    width: auto;
+  }
+
+  .articleGrid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .articleCard {
+    width: 100%;
+  }
+
+  .releasesSection {
+    padding: 0 5% 80px;
+  }
+
+  .releasesTitle {
+    width: 200px;
+  }
+}

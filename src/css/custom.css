@@ -71,6 +71,22 @@ body {
 } */
 
 /* Blog post styles */
+
+/* Title size override — single post page only (main.col--7) */
+main.col--7 article header h1 {
+  font-size: 1.5em !important;
+}
+@media (max-width: 576px) {
+  main.col--7 article header h1 {
+    font-size: 1.5em !important;
+  }
+}
+
+/* Hide author row — single post page only */
+main.col--7 article header .row {
+  display: none !important;
+}
+
 .blog-post-content img {
   max-width: 100%;
 }

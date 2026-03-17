@@ -22,12 +22,11 @@ export default function Home(): ReactNode {
     >
       <div className={styles.homePage}>
         {/* Top shadow bar */}
-        <img
+        {/* <img
           className={styles.shadow}
           src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*EBM0QoOQEiEAAAAAXjAAAAgAekZ_AQ/original"
           alt=""
-        />
-
+        /> */}
         {/* Hero layered images */}
         <div className={styles.topImgContainer}>
           <img
@@ -150,7 +149,7 @@ export default function Home(): ReactNode {
             take dedicated effort from researchers, engineers and product
             builders to work together in an inspirational and supportive team.
           </div>
-          <Link className={styles.teamButton} to="/about">
+          <Link className={styles.teamButton} to="/research">
             Our Research
             <img
               src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*vvp6R65SgM8AAAAAF6AAAAgAekZ_AQ/original"
