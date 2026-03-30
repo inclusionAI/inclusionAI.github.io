@@ -14,7 +14,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://inclusionai.github.io",
+  url: "https://www.inclusion-ai.org/",
   baseUrl: "/",
 
   organizationName: "inclusionAI",
