@@ -43,7 +43,7 @@ blog/<post-slug>/index.mdx
 title: "Your Post Title"
 date: 2025-01-01
 authors: [inclusionai]
-tags: [model, release]
+tags: [Release, Insights]
 ---
 ```
 
@@ -54,9 +54,33 @@ tags: [model, release]
 | `title`           | Yes      | Post title (shown in listings and page `<title>`) |
 | `date`            | Yes      | Publication date (`YYYY-MM-DD`)                   |
 | `authors`         | Yes      | Author key(s) from `blog/authors.yml`             |
-| `tags`            | No       | Tag list for filtering                            |
+| `tags`            | No       | Tag list — certain tags control which site sections the post appears in (see below) |
 | `draft`           | No       | Set `true` to hide from build output              |
 | `custom_edit_url` | No       | Set `null` to hide the "Edit this page" link      |
+
+### Tag Reference
+
+Tags serve two purposes: they render as colored badges in the Blog listing and they route posts into dedicated sections on the [Research page](/research).
+
+**Special routing tags** (case-insensitive):
+
+| Tag         | Effect                                                                                |
+| ----------- | ------------------------------------------------------------------------------------- |
+| `Release`   | Post appears in the **Releases** section of the Research page (up to 5 most recent)   |
+| `Landscape` | Post appears in the **Landscapes** section of the Research page (up to 5 most recent) |
+
+**Badge color palette:**
+
+| Tag               | Color  |
+| ----------------- | ------ |
+| `Release`         | Blue   |
+| `Community`       | Green  |
+| `Insights`        | Purple |
+| `Tutorials`       | Amber  |
+| `Best Practice`   | Amber  |
+| *(anything else)* | Grey   |
+
+> Tags are matched case-insensitively for routing. Use title-case (`Release`, `Landscape`) by convention to match the badge display.
 
 ### 3. Add a Chinese translation (optional)
 

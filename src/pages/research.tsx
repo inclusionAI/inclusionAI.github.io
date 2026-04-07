@@ -22,10 +22,6 @@ const LANDSCAPE_IMAGES = [
     src: "https://raw.githubusercontent.com/antgroup/llm-oss-landscape/main/reports/250913_llm_landscape/figures/llm_development_landscape.png",
     alt: "LLM Development Landscape",
   },
-  {
-    src: "https://raw.githubusercontent.com/antgroup/llm-oss-landscape/main/reports/250913_llm_landscape/figures/llm_development_landscape.png",
-    alt: "LLM Development Landscape",
-  },
 ];
 
 function LandscapeSlider() {
@@ -240,32 +236,18 @@ export default function Research(): ReactNode {
       </div>
 
       {/* Landscapes */}
-      {/* <div className={styles.hero}> */}
-        {/* <h2 className={styles.heroTitle}>Landscapes</h2>
+      <div className={styles.hero}>
+        <h2 className={styles.heroTitle}>Landscapes</h2>
         <p className={styles.heroText}>
           AI Infrastructure Landscapes and Insights Produced by InclusionAI,{" "}
           <br /> a comprehensive collection of AI infra projects, categorized
-          and analyzed to illuminate the evolving AI ecosystem. <br />
+          and analyzed to illuminate the evolving AI ecosystem.
         </p>
-        <p className={styles.heroText}>
-          These landscapes serve as a valuable resource for researchers,
-          practitioners, and enthusiasts to navigate the complex world of AI
-          infrastructure, fostering collaboration and innovation across the
-          field.
-        </p>
-        <LandscapeSlider />
-        <p className={styles.heroText}>
-          For more details, please visit the original repository:
-          <a
-            href="https://github.com/antgroup/llm-oss-landscape"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub Repository
-          </a>
-        </p> */}
 
-        {/* <div className={styles.papersList} id="landscape-news-list">
+        {/* Landscape slider */}
+        <LandscapeSlider />
+
+        <div className={styles.papersList} id="landscape-news-list">
           {landscapePosts.map((post) => (
             <Link
               key={post.permalink}
@@ -278,8 +260,19 @@ export default function Research(): ReactNode {
               </span>
             </Link>
           ))}
-        </div> */}
-      {/* </div> */}
+        </div>
+
+        <p className={styles.heroText}>
+          For more details, please visit the original &nbsp;
+          <a
+            href="https://github.com/antgroup/llm-oss-landscape"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Repository
+          </a>
+        </p>
+      </div>
     </Layout>
   );
 }
