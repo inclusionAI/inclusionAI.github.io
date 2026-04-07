@@ -1,0 +1,152 @@
+---
+title: "Open Source LLM Development 2025: Landscape, Trends and Insights"
+date: 2025-06-11
+authors: [inclusionai]
+tags: [Landscape, Insights]
+custom_edit_url: null
+---
+
+> Originally published on [Medium](https://medium.com/@ant-oss/open-source-llm-development-2025-landscape-trends-and-insights-4e821bceba68) by Ant Open Source.
+
+**「AI Surpasses Cloud Native as the Most Influential Tech Domain」**
+
+According to [OpenRank](https://open-digger.cn/docs/user_docs/metrics/global_openrank) data from [OpenDigger](https://github.com/X-lab2017/open-digger), AI surpassed Cloud Native in 2023 to become the most influential technology domain in terms of community collaboration on GitHub. AI's total influence score overtook Frontend technologies in 2017, accelerated post-2022, and surpassed the declining Cloud Native in 2023 to claim the top spot.
+
+![AI surpasses Cloud Native](https://miro.medium.com/v2/resize:fit:1400/0*tj8ORLVViWg-PIda.png)
+
+## The LLM Development Ecosystem: A Snapshot
+
+![LLM Development Landscape](https://miro.medium.com/v2/resize:fit:1400/0*SO1BJccf--QanEGY.png)
+
+*[https://antoss-landscape.my.canva.site](https://antoss-landscape.my.canva.site)*
+
+In February 2025, DeepSeek sparked a surge in the LLM development ecosystem. GitHub's Weekly Trending List reached a peak where **94% of the listed repositories were AI-related**. This ecosystem is incredibly new and evolving fast — over the past three months, 60% of LLM-related projects that appeared on GitHub Trending were emerged after 2024, and nearly 21% were created in just the last six months.
+
+We build the landscape by first selecting well-known AI projects (e.g., PyTorch, LangChain, vLLM) as seed nodes. By analyzing developer collaboration relationships across "related" GitHub projects, we explored multiple facets of the ecosystem. We rely on the **OpenRank influence metric** developed by X-lab at East China Normal University — only projects with an **average monthly OpenRank score exceeding 10 in year 2025** are included.
+
+As of May 2025, the Open Source LLM Development Landscape 2025 includes **135 projects across 19 technical domains**, spanning both Agent application layers and model infrastructure layers.
+
+Below are the details of projects ranked in the Top 20 of OpenRank:
+
+![Top 20 by OpenRank](https://miro.medium.com/v2/resize:fit:1400/0*-ohKAIcFTyBYHR-z.png)
+
+By stack ranking the year-over-year absolute changes in OpenRank between 2024 and 2025, we converged on 3 key observations:
+
+- **Model Training Frameworks**: PyTorch remains the undisputed leader. Baidu's PaddlePaddle saw a 41% drop in OpenRank compared to the previous year.
+- **Efficient Inference Engines**: The high-performance inference engines vLLM and SGLang have undergone rapid iterations, ranking first and third in OpenRank value growth. Their superior GPU inference performance made them the most popular choices for enterprise-level LLM deployment.
+- **Low-Code Application (Agent) Development Frameworks**: Agent platforms like Dify and RAGFlow, which integrate RAG-based knowledge retrieval, are experiencing rapid growth as they meet the red-hot demand for quickly building AI applications. Notably, both platforms are strong projects emerging from China's developer community.
+
+After observing over 100 open-source projects, we've reached a pivotal point to make a bold claim: **the LLM development ecosystem operates like a real-world Hackathon** — developers, empowered by AI, now operate as "super individuals" to rapidly build open-source projects around trending topics, with cycles of rapid creation and dissolution driven by speed and iteration.
+
+### Key hackathon observations:
+
+**1. Developers keep building OSS clones for rapid adoption**
+
+When closed-source projects like Devin, Perplexity, and Manus brought shockwaves to the industry, developers quickly replicated open-source versions:
+
+- **Devin & OpenDevin**: In March 2024, Xingyao Wang (PhD candidate at UIUC) launched OpenDevin. Within a month, its OpenRank skyrocketed to 190. The project was rebranded as OpenHands and evolved into All Hands AI.
+- **Perplexity & Perplexica**: Independent developer *ItzCrazyKns* created Perplexica in 2024 as an open-source alternative. It amassed 22K GitHub stars but OpenRank plateaued around 25.
+- **Manus & OpenManus**: In March 2025, as Manus went viral, DeepWisdom pulled off a "3-hour replication" with OpenManus, garnering 8K stars on its first day.
+
+**2. Ephemeral technical experiments often end up in the AI graveyard**
+
+Out of 5,079 AI tools recorded by Dang AI, 1,232 have been archived/abandoned. Dang AI even created an "[AI Graveyard](https://dang.ai/ai-graveyard)." We've curated an "Open-Source AI Graveyard" for projects that gained massive attention upon launch but became inactive — including BabyAGI (April 2023) and Swarm (OpenAI, formally discontinued March 2025).
+
+**3. Model capabilities are reshaping application scenarios**
+
+- **The decline of AI Search projects**: The generalization of model capabilities (GPT-4, Gemini 2.0) is squeezing the market for specialized search tools like Morphic.sh and Scira.
+- **The rise of AI Coding projects**: Claude 3.7 Sonnet's prowess in coding ushered in "Vibe Coding." IDE plugins like Continue and Cline are thriving open-source options, each with over 3,000 community contributors and steadily rising OpenRank scores.
+
+**4. Dynamic competition across ecosystem niches**
+
+- **Divergent trajectories of Agent Frameworks**: Application platforms like Dify diverged sharply from development frameworks like LangChain. Special mention: [DB-GPT](https://github.com/eosphoros-ai/DB-GPT), an open-source project initiated by Ant Group, integrates AI application development into big data application scopes.
+- **The rise of Reinforcement Learning**: DeepSeek-R1's "Aha Moment" demonstrated RL's effectiveness as a post-training approach. Frameworks like Verl and OpenRLHF have seen remarkable growth. In February, [inclusionAI](https://github.com/inclusionAI/AReaL) fully open-sourced their RL framework [AReaL](https://github.com/inclusionAI/AReaL), designed to train large inference models that anyone can reproduce.
+- **The blurring of Technical Boundaries**: Vector databases, once standalone, now compete with traditional big data systems (e.g., OceanBase adding vector storage support) while maintaining a delicate ecological equilibrium.
+
+## Now, the Technical Trends in LLM Open-Source Development Ecosystems
+
+We observed and summarized **7 relatively clear technical trends** including emerging paradigms such as **Agent Frameworks**, AI-native communication protocols like **MCP**, and **Coding Agents** at the application layer.
+
+![7 Technical Trends](https://miro.medium.com/v2/resize:fit:1400/0*YHWcizFBaWdzuTpP.png)
+
+### 1. The Agent Frameworks Boom Diverged in 2025
+
+From 2023 to 2024, "all-in-one" frameworks like LangChain dominated with their pioneering task orchestration capabilities. A huge number of new Agent development frameworks emerged, many focusing on specific features such as tool calling, RAG integration, long-context memory, or ReAct planning.
+
+By the second half of 2024, only a few new frameworks entered the ecosystem. As the initial hype faded, early market leaders like LangChain were gradually declining due to steep learning curves.
+
+Entering 2025, the market showed signs of divergence: platforms like Dify and RAGFlow became extremely popular by offering low-code workflows and enterprise-grade service deployments. In contrast, development frameworks like LangChain and LlamaIndex have been steadily losing ground.
+
+Dify has accurately captured enterprise user needs — offering intuitive visual workflow orchestration, comprehensive enterprise-grade security, and significantly lowering the technical barrier for amateur users.
+
+### 2. Standard Protocol Layer: The Strategic Battleground
+
+- **2022**: Wild West Era — ad-hoc prompt engineering for tool interaction.
+- **2023**: OpenAI's GPT4-0613 introduced Function Calling with standardized API.
+- **2024**: Anthropic's **Model Context Protocol (MCP)**, open-sourced November 2024, standardized agent-tool communication. By Q1 2025, MCP became the de facto standard.
+- **2025**: Protocol "War" begins:
+  - April: Google open-sourced the **Agent2Agent (A2A)** protocol for communication between multiple agents.
+  - May: CopilotKit launched the **Agent-User Interaction (AG-UI)** protocol with 2.2K GitHub stars in its first week.
+
+The emergence of MCP, A2A, and AG-UI signals LLM applications evolving toward a microservices architecture. The open-source ecosystem will become the battlefield of both standards and their reference designs.
+
+### 3. The Irresistible Vibe Coding Software Development Paradigm
+
+When Andrej Karpathy introduced the term "vibe coding," it seemed to capture "The Trend" in the upcoming productivity domain. Our research reveals a market pattern:
+
+**Major tech companies** have rapidly entered AI coding primarily with closed-source offerings: GitHub Copilot, Amazon Q Developer, Huawei's CodeArts Snap, Alibaba's Tongyi Lingma, ByteDance's Trae, and Ant Group's CodeFuse.
+
+**Startup ventures and small teams** have demonstrated remarkable agility. A prime example is Continue's "continuedev," which gained substantial attention through lean operations and flexible innovation. The sector's potential was endorsed by OpenAI's reported $3 billion acquisition offer for Windsurf.
+
+AI coding tools are advancing beyond basic snippet generation to tackle full-scale development workflows, though substantial challenges remain in semantic validation, multi-language coordination, and security-sensitive code generation.
+
+### 4. The Shifting Boundaries of Vector Indexing and Storage
+
+The evolution of vector databases can be described as a journey **"from explosive hype to rational consolidation."** Around February 2023, projects like Qdrant and Chroma saw an unprecedented surge, amassing over 5,000 GitHub stars. However, this initial frenzy **failed to sustain long-term momentum.**
+
+Several factors contributed to equilibrium:
+1. Closed-source commercial competitors like Pinecone demonstrated strong product capabilities.
+2. Traditional databases (PostgreSQL, MongoDB Atlas, ElasticSearch) introduced vectorization via plugins like pgvector.
+3. The OpenCore model prioritizes ecosystem expansion over community metrics.
+
+Despite these pressures, large-scale enterprise demands for cloud-native scalability and compliance still favor specialized vector databases. MilVus, under neutral LF AI & Data stewardship, has consistently maintained a stable leading position.
+
+### 5. The Evolution of Multimodal Data Governance in the Age of LLMs
+
+In data lake table formats, **Apache Iceberg, Apache Hudi, Apache Paimon**, and **Delta Lake** have formed a "quadropoly." Iceberg has solidified its position as the universal framework, while Hudi and Paimon excel in real-time incremental processing.
+
+The metadata governance and data catalog space sees **OpenMetadata** and **DataHub** maintaining leadership, with newcomers like **Apache Gravitino** and **Unity Catalog** emerging as potential disruptors. These tools are expanding to include unstructured data and AI assets.
+
+### 6. The Ongoing Horse Racing in Model Serving and Inference
+
+Three critical factors have emerged as core deal-makers or deal-breakers: **inference efficiency, resource utilization, and deployment flexibility.** The Top 10 ranking list reshuffles constantly, with contenders like Tsinghua University's KTransformers and NVIDIA's Dynamo continually challenging the status quo.
+
+A potential duopoly is forming: **vLLM and SGLang, currently the two most prominent inference engines in the LLM space.** In Q1 2025, vLLM's OpenRank grew at 17%, while SGLang surged to 31%.
+
+This duel carries notable academic pedigree: UC Berkeley, birthplace of Spark and Ray, again demonstrates its open-source alchemy. vLLM originated from Berkeley's SkyLab; SGLang from LMSYS, the multi-university research consortium that created Chatbot Arena.
+
+Other notable engines:
+- **Ollama & llama.cpp**: The lightweight powerhouses for edge inference and on-premise deployment
+- **KTransformers**: Enabled running full 671B parameter models (DeepSeek-R1/V3) on consumer hardware with 3–28x speedups, triggering a 34x OpenRank spike
+
+### 7. The PyTorch-Centric Training Ecosystem
+
+PyTorch has undeniably become the dominant force and de facto standard in LLM development. Its modular, lightweight design propelled it past TensorFlow in 2020, while TensorFlow, MXNet, and Caffe faded into obsolescence.
+
+In September 2022, Meta transferred PyTorch's governance to the Linux Foundation, establishing the PyTorch Foundation. Through PyTorch's nearly overwhelming ecosystem gravitational pull, this sub-foundation has grown into a powerful umbrella organization:
+- March 2025: Inference engine **SGLang** joined the PyTorch ecosystem
+- May 2025: **vLLM** and distributed training platform **DeepSpeed** joined the PyTorch Foundation
+
+Community data still reveals Meta's substantial behind-the-scenes influence: the repository's top contributors are all identifiable Meta staff, and over 9,000 pull requests (9% of all PRs) carry the "fb-exported" label.
+
+## Conclusion
+
+Ant Group's Open Source team initiated this landscape project to understand the full picture of the LLM development ecosystem, including emerging trends and cutting-edge popular projects. One of our missions is to leverage insights from the open-source community to guide Ant Group's architectural and technological decisions.
+
+This report reflects Ant Group's perspective as a technology enterprise, utilizing X-lab's OpenRank evaluation metrics alongside extensive consultations with technical experts and open-source community developers.
+
+> Full Author List:
+> Xiaoya Xia, Sikang Bian, Chao Dong, Xu Wang (AntOSS)
+> Shengyu Zhao, Fanyu Han, Jiaheng Peng, Zhen Zhang, Wei Wang (X-lab)
+
+More on GitHub: [https://github.com/antgroup/llm-oss-landscape](https://github.com/antgroup/llm-oss-landscape)

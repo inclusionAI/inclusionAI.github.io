@@ -1,0 +1,140 @@
+---
+title: "Open Source LLM Development Landscape 2.0: 2025 Revisited"
+date: 2025-10-11
+authors: [inclusionai]
+tags: [Landscape, Insights]
+custom_edit_url: null
+---
+
+> Originally published on [Medium](https://medium.com/@ant-oss/open-source-llm-development-landscape-2-0-2025-revisited-d18cbf0a49c2) by Ant Open Source.
+
+Just over three months ago, Ant Open Source and InclusionAI jointly released the very [first Open Source LLM Development Landscape](https://medium.com/@ant-oss/open-source-llm-development-2025-landscape-trends-and-insights-4e821bceba68), along with a trend insights report. Our goal was simple: to highlight which projects in this fast-moving ecosystem are most worth tracking, using, and contributing to.
+
+That's why we're excited to unveil the **2.0 release of our Landscape** — a refreshed view of the ecosystem, built with even more insights and context. With the 2.0 release, we also refreshed our methodology for mapping the ecosystem, surfacing a wave of previously overlooked projects while removing others that didn't make the cut.
+
+![Open Source LLM Development Landscape 2.0](https://miro.medium.com/v2/resize:fit:1400/0*mdYvRumEN9k-oT7i.png)
+
+*Open Source LLM Development Landscape 2.0: [https://antoss-landscape.my.canva.site/](https://antoss-landscape.my.canva.site/)*
+
+The updated landscape is organized into two major directions: **AI Infra** and **AI Agents**. Drawing on community data, we identified and included **114 of the most prominent open source projects**, spanning **22 distinct technical domains**.
+
+For **2.0**, we shifted to using the global **GitHub OpenRank rankings** directly. From the top down, we filtered projects by their descriptions and tags to identify those belonging to the LLM ecosystem, and gradually refined the scope. Only projects with an **OpenRank score of 50 or higher** are included.
+
+> Note: By installing the [HyperCRX](https://github.com/hypertrons/hypertrons-crx) browser extension, you can view an open-source project's OpenRank trend in the bottom-right corner of its GitHub repository page.
+
+Compared with the 1.0 release, this new 2.0 Landscape brings in **39 fresh projects** — about **35% of the total list**. On the other hand, **60 projects from the first version have been dropped**, mostly because they fell below the new bar. Even if we include the dropped projects, the **median "age"** of all projects is just **30 months** — barely two and a half years old. **62% of these projects were launched after the "GPT moment"** (October 2022).
+
+These projects have drawn participation from 366,521 developers worldwide. Among those with identifiable locations, about **24%** are based in the United States, **18%** in China, followed by India (8%), Germany (6%), and the United Kingdom (5%).
+
+## Global Developer Contribution
+
+Across the **170+ open source projects** covered in both Landscape versions, we observed over **360K GitHub** accounts engaging through issues or pull requests. Among these, we identified **124,351 developers** with parseable location data.
+
+Overall, U.S. accounts for **37.4%** of contributions, with China at **18.7%**, putting their combined share above 55%. Germany drops sharply to 6.5% in third place.
+
+![Top 10 Countries by Contribution](https://miro.medium.com/v2/resize:fit:1400/1*oEypNq8CfLjbfNuqVX0hsA.png)
+
+*Top 10 Countries by Contribution in Open-Source LLM Ecosystem*
+
+Looking across technical fields:
+- In **AI Infra**, U.S. and China account for **over 60%** of contributions
+- In **AI Data**, participation is more globally distributed, with several European countries ranking in the global top 10
+- In **AI Agents**, U.S. and Chinese developers contribute **24.6%** and **21.5%** respectively
+
+## Large Models Landscape 2025
+
+Outside of the open source development ecosystem, large models themselves are being released at a rapid pace. A few interesting observations:
+
+- **MoE Takes Center Stage**: Flagship models like DeepSeek, Qwen, and Kimi have all adopted Mixture of Experts (MoE) architecture — sparse activation enabling trillion-parameter giants like K2, Claude Opus, and o3.
+- **Reinforcement Learning Boosts Reasoning**: DeepSeek R1 combines large-scale pretraining with RL-based post-training, making reasoning the signature feature for flagship model releases in 2025. Series like Qwen, Claude, and Gemini have begun integrating "hybrid reasoning" modes.
+- **Multimodality Goes Mainstream**: Most 2025 releases focus on language, image, and speech interaction, though specialized vision-only and speech-only models have also emerged.
+
+## From Landscape to Tech Trends
+
+### Large Models Development Keywords
+
+We extracted keywords from the GitHub descriptions and topics of every open-source project in the Landscape. The most frequent keywords are: **AI (126), LLM (98), Agent (81), Data (79), Learning (44), Search (36), Model (36), OpenAI (35), Framework (32), Python (30), MCP (29).**
+
+![Keyword cloud](https://miro.medium.com/v2/resize:fit:1400/0*339JsW-VXN2jj7Ck.png)
+
+### Top 10 Open Source Projects
+
+The top 10 projects by OpenRank span nearly the entire chain: from foundational compute and frameworks like **PyTorch** and **Ray**, to training data pipelines such as **Airflow**, to high-performance serving engines like **vLLM**, **SGLang**, and **TensorRT-LLM**. On the application side: **Dify**, **n8n**, **Gemini CLI**, and **Cherry Studio**.
+
+![Top 10 by OpenRank](https://miro.medium.com/v2/resize:fit:1400/0*y-AVRRV3E60y5JPH.png)
+
+> Note: All data is as of August 1, 2025
+
+Looking at the forces behind these projects:
+- **Academia**: Projects like vLLM, SGLang, and Ray emerged from UC Berkeley's labs under Ion Stoica
+- **Tech giants**: Meta, Google, NVIDIA hold or shape critical positions in the stack
+- **Indie teams**: Smaller teams like Dify and Cherry Studio are innovating rapidly near the application layer
+
+### Redefining Open Source in the LLM Era
+
+Veterans familiar with open source licensing might feel alarm when looking at licenses adopted by today's top projects. While most projects still rely on permissive licenses like **Apache 2.0 or MIT**, several high-profile cases stand out:
+
+- **Dify's "Open Source License"**: Based on Apache 2.0 but restricts unauthorized multi-tenant operation and prohibits removing logos/copyright notices.
+- **n8n's "Sustainable Use License"**: Allows free use and modification but restricts commercial redistribution.
+- **Cherry Studio's "User-Segmented Dual Licensing"**: AGPLv3 for ≤10-person orgs; commercial license required for larger orgs.
+
+At the same time, **GitHub has evolved into a stage for product operations**. Many products with closed-source codebases — like Cursor and Claude Code — still maintain GitHub presences primarily for **collecting user feedback**, often accumulating huge numbers of stars despite providing little or no actual source code.
+
+### Shifting Trends Across Technical Domains
+
+**AI Coding, Model Serving, and LLMOps** are all on an upward trajectory. **AI Coding stands out with a steep growth curve** — once again confirming that boosting R&D efficiency with AI is the application scenario truly taking root in 2025.
+
+On the other hand, **Agent Frameworks and AI Data** have shown noticeable declines. The drop in Agent Frameworks is closely tied to reduced community investment from once-dominant projects like **LangChain, LlamaIndex, and AutoGen**.
+
+### Projects on The Brink List
+
+Some projects didn't make it into this version but still show strong potential. Among the projects that dropped out, many appear to be heading toward the "AI graveyard":
+
+- **Manus** briefly exploded in popularity, inspiring open-source forks like OpenManus and OWL, but the hype proved short-lived.
+- **NextChat**, one of the earliest popular LLM client apps, lost ground to newer entrants like **Cherry Studio** and **LobeChat**.
+- **Bolt.new**, once a trendy full-stack web dev tool, was open-sourced as template repos with little external contribution.
+- **MLC-LLM** and **GPT4All** were once widely used for on-device deployment, but **Ollama emerged as the clear winner** in this niche.
+- **FastChat** evolved into the more successful **SGLang** and **LMArena** platforms.
+- **Text Generation Inference (TGI)** was gradually abandoned by Hugging Face as performance fell behind vLLM and SGLang.
+
+## 100 Days of Change and Continuity
+
+Beyond project reshuffling, the jump from 1.0 to 2.0 brought refinements to how we define and describe the ecosystem. The broad categories of "Infrastructure" and "Application" were restructured into three clearer domains: **AI Infra, AI Agent, and AI Data**.
+
+### New Fields and Projects Entering the Spotlight
+
+The most notable shifts are happening in the **Agent layer**, with high-profile projects emerging across **AI Coding, chatbots, and development frameworks**. Two projects stand out for their connection to **embodied intelligence**: [AI XiaoZhi](https://github.com/78/xiaozhi-esp32) (ESP32-based AI voice interaction device) and [Genesis](https://github.com/Genesis-Embodied-AI/Genesis) (robotics and embodied simulation platform).
+
+On the **Infra side**, the biggest change is the integration of "model operations" into a more holistic concept: **LLMOps** — spanning Observability (Langfuse, Phoenix), Evaluation & Benchmarking (Promptfoo), and Agentic Workflow Runtime Management (1Panel, Dagger).
+
+**Top 10 Active Newcomers**: Notably, **Gemini CLI** ranked 3rd and **Cherry Studio** ranked 7th across all projects in the Landscape — a remarkable showing for first-time entrants.
+
+![Top 10 new projects](https://miro.medium.com/v2/resize:fit:1400/0*vWMk5jSQTO7VDlQT.png)
+
+> Note: All data is as of August 1, 2025
+
+### What Hasn't Changed: Rise, Fall, and the Cycle of Momentum
+
+Among the new wave, **OpenCode** was positioned from day one as a **100% open-source alternative to Claude Code**. Other newcomers highlight how major players are laying out strategies across model serving, agent toolchains, and AI coding:
+
+- **Dynamo** supports vLLM, SGLang, and TensorRT-LLM while being optimized for NVIDIA GPUs
+- **adk-python** and **openai-agents-python** are agent builders packaged for Gemini and OpenAI models
+- **Gemini CLI** and **Codex CLI** bring autonomous code understanding directly into the command line
+
+The projects showing the most noticeable growth include **TensorRT-LLM**, **verl** (RL framework from ByteDance), **OpenCode**, and **Mastra** (TypeScript/JavaScript Agent framework). In contrast, the sharpest declines include **Eliza, LangChain, LlamaIndex**, and **AutoGen**.
+
+## Core Tech Trends: Serving, Coding, and Agents
+
+### Serving: Making Models Truly Usable
+
+Model serving is about running a trained model in a way that applications can reliably call — not just "can it run?" but "can it run efficiently, controllably, and at scale?" Since 2023, rapid progress has made serving the **critical middleware layer** connecting AI infrastructure with applications.
+
+### Coding: The New Developer Vibe
+
+AI Coding has evolved far beyond basic code completion, now encompassing multimodal support, contextual awareness, and collaborative workflows. **CLI tools** like Gemini CLI and OpenCode leverage large models to transform developer intent into faster coding. **Plugin-based tools** such as Cline and Continue integrate into existing development platforms.
+
+### Agent: Building Toward AGI
+
+2025 is widely considered the year AI applications truly land. The open-source ecosystem has expanded with projects specializing in different components: **Mem0** (memory), **Browser-Use** (tool use), **Dify** (workflow execution), and LobeChat (interaction interface) — together shaping a more complete foundation for building autonomous AI systems.
+
+More on GitHub: [https://github.com/antgroup/llm-oss-landscape](https://github.com/antgroup/llm-oss-landscape)
