@@ -2,7 +2,7 @@
 title: "Introducing Ring-lite-2507"
 date: 2025-08-05
 authors: [inclusionai]
-tags: []
+tags: [Release, Insights]
 custom_edit_url: null
 ---
 
@@ -27,18 +27,18 @@ We conduct a comprehensive evaluation of our models across two main domains: rea
 
 ### Knowledge Understanding
 
-| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking** 
-| :-------------: | :---------------: | :-----------: | :-------------------: | 
-| MMLU-Pro (EM)         | 72.50	    | 63.44	    | **72.56** | 
-| GPQA-Diamond (Pass@1) | **69.35**	    | 63.51	    | 62.00 | 
-| SuperGPQA (EM)        | 40.05	    | 13.97	    | **40.36** | 
-| Phybench (Pass@1)     | 28.51	    | **29.19**    | 22.14 |    
+| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking**
+| :-------------: | :---------------: | :-----------: | :-------------------: |
+| MMLU-Pro (EM)         | 72.50	    | 63.44	    | **72.56** |
+| GPQA-Diamond (Pass@1) | **69.35**	    | 63.51	    | 62.00 |
+| SuperGPQA (EM)        | 40.05	    | 13.97	    | **40.36** |
+| Phybench (Pass@1)     | 28.51	    | **29.19**    | 22.14 |
 
 
 ### Math
 
-| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking** 
-| :-------------: | :---------------: | :-----------: | :-------------------: | 
+| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking**
+| :-------------: | :---------------: | :-----------: | :-------------------: |
 | MATH-500 (Pass@1)             |   **97.95**	|   96.80	|   97.30       |
 | CNMO 2024 (Pass@1)            |   75.09	|   **77.26**	|   74.57       |
 | AIME 2024 (Pass@1)            |   **79.79**	|   79.00	|   74.90       |
@@ -47,9 +47,9 @@ We conduct a comprehensive evaluation of our models across two main domains: rea
 | TheoremQA (Pass@1)            |   70.00	|   **70.19**	|   68.81       |
 | OlympiadBench (math) (Pass@1) |   80.64	|   **82.86**	|   80.20       |
 
-### Coding 
+### Coding
 
-| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking** 
+| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking**
 | :-------------: | :---------------: | :-----------: | :-------------------: |
 | LiveCodeBench(2408-2505) (Pass@1)     |**60.35**	    |   59.53   |	55.12   |
 | Codeforces(Percentile) (Pass@1)       |**1830**	    |   1673    |	1580    |
@@ -57,8 +57,8 @@ We conduct a comprehensive evaluation of our models across two main domains: rea
 
 ### Reasoning \& Agentic
 
-| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking** 
-| :-------------: | :---------------: | :-----------: | :-------------------: | 
+| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking**
+| :-------------: | :---------------: | :-----------: | :-------------------: |
 | DROP (zero-shot F1)    |   **89.27**  	  | 60.21   |	87.13   |
 | BBH (EM)               |   **88.65**	  | 50.84   |	87.30   |
 | ARCPrize (Pass@1)      |   **19.00**	  | 3.12    |	3.88    |
@@ -67,8 +67,8 @@ We conduct a comprehensive evaluation of our models across two main domains: rea
 
 ### Alignment
 
-| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking** 
-| :-------------: | :---------------: | :-----------: | :-------------------: | 
+| **Benchmark**   | **Ring-lite-2507** | **Ring-lite-2506** | **Qwen3-8B-Thinking**
+| :-------------: | :---------------: | :-----------: | :-------------------: |
 | IFEval (Prompt Strict)    |   84.66   |   54.34   |	**85.40**   |
 | AlignBench v1.1(gpt-4.1)  |   **80.90**   |	69.60   |	74.70   |
 | FoFo (gpt-4-turbo)        |   **85.02**	|   67.81   |	81.93   |
@@ -100,7 +100,7 @@ To ensure a high-quality training dataset for reinforcement learning, we establi
 </div>
 
 ### Reasoning RL
-Compared to our previously released Ring-lite-2506, we expanded our reasoning dataset by incorporating more challenging math, coding, and STEM data. Specifically, we adopted 67K math problems, 32K coding problems, and 9.9K scientific problems for reasoning RL training. In addition, we amplified our reasoning dataset by including more than 19K logical games, such as ARC-AGI, Countdown, Sudoku, AlphaMaze, etc. For each type of problem, we specifically designed suitable reward functions to ensure our training examples are verifiable. 
+Compared to our previously released Ring-lite-2506, we expanded our reasoning dataset by incorporating more challenging math, coding, and STEM data. Specifically, we adopted 67K math problems, 32K coding problems, and 9.9K scientific problems for reasoning RL training. In addition, we amplified our reasoning dataset by including more than 19K logical games, such as ARC-AGI, Countdown, Sudoku, AlphaMaze, etc. For each type of problem, we specifically designed suitable reward functions to ensure our training examples are verifiable.
 
 
 ### General RL
@@ -112,12 +112,12 @@ Our general RL training incorporates a variety of tasks, including instruction f
 
 ```bibtex
 @misc{lingteam2025ringlitescalablereasoningc3postabilized,
-      title={Ring-lite: Scalable Reasoning via C3PO-Stabilized Reinforcement Learning for LLMs}, 
+      title={Ring-lite: Scalable Reasoning via C3PO-Stabilized Reinforcement Learning for LLMs},
       author={Ling Team and Bin Hu and Cai Chen and Deng Zhao and Ding Liu and Dingnan Jin and Feng Zhu and Hao Dai and Hongzhi Luan and Jia Guo and Jiaming Liu and Jiewei Wu and Jun Mei and Jun Zhou and Junbo Zhao and Junwu Xiong and Kaihong Zhang and Kuan Xu and Lei Liang and Liang Jiang and Liangcheng Fu and Longfei Zheng and Qiang Gao and Qing Cui and Quan Wan and Shaomian Zheng and Shuaicheng Li and Tongkai Yang and Wang Ren and Xiaodong Yan and Xiaopei Wan and Xiaoyun Feng and Xin Zhao and Xinxing Yang and Xinyu Kong and Xuemin Yang and Yang Li and Yingting Wu and Yongkang Liu and Zhankai Xu and Zhenduo Zhang and Zhenglei Zhou and Zhenyu Huang and Zhiqiang Zhang and Zihao Wang and Zujie Wen},
       year={2025},
       eprint={2506.14731},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2506.14731}, 
+      url={https://arxiv.org/abs/2506.14731},
 }
 ```

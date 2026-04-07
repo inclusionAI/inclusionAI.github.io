@@ -59,6 +59,52 @@
   text-align: right;
 }
 
+.postTags {
+  flex-shrink: 0;
+  display: flex;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.postTag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+/* Named color variants — matched to research.module.css badge colors */
+.tagBlue {
+  background-color: #e8f0fe;
+  color: #1a56db;
+  border-color: #c3d7fd;
+}
+
+.tagGreen {
+  background-color: #f0fdf4;
+  color: #166534;
+  border-color: #bbf7d0;
+}
+
+.tagAmber {
+  background-color: #fff7e6;
+  color: #b36b00;
+  border-color: #f9d77e;
+}
+
+.tagPurple {
+  background-color: #f5f3ff;
+  color: #5b21b6;
+  border-color: #ddd6fe;
+}
+
 /* ------------------------------------------------------------------ */
 /* Pagination                                                            */
 /* ------------------------------------------------------------------ */
@@ -141,6 +187,10 @@
   .postDate {
     font-size: 13px;
     width: 100px;
+  }
+
+  .postTags {
+    display: none;
   }
 
   .postsList {

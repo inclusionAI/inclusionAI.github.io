@@ -14,6 +14,15 @@ export default function BlogListPage({ metadata, items }: Props): ReactNode {
     return n === 1 ? "/blog" : `/blog/page/${n}`;
   }
 
+  function tagColorClass(label: string): string {
+    const l = label.toLowerCase();
+    if (l === "release") return styles.tagBlue;
+    if (l === "community") return styles.tagGreen;
+    if (l === "insights") return styles.tagPurple;
+    if (l === "tutorials" || l === "best practice") return styles.tagAmber;
+    return "";
+  }
+
   return (
     <Layout title="Blog" description="InclusionAI blog posts">
       {/* Hero */}
@@ -36,9 +45,22 @@ export default function BlogListPage({ metadata, items }: Props): ReactNode {
             day: "numeric",
             year: "numeric",
           });
+          const tags = BlogPostContent.metadata.tags ?? [];
           return (
             <Link key={permalink} to={permalink} className={styles.postRow}>
               <span className={styles.postTitle}>{title}</span>
+              {tags.length > 0 && (
+                <span className={styles.postTags}>
+                  {tags.map((tag) => (
+                    <span
+                      key={tag.label}
+                      className={clsx(styles.postTag, tagColorClass(tag.label))}
+                    >
+                      {tag.label}
+                    </span>
+                  ))}
+                </span>
+              )}
               <span className={styles.postDate}>
                 <time dateTime={date}>{formattedDate}</time>
               </span>
