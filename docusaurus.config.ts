@@ -48,6 +48,7 @@ const config: Config = {
         docs: false,
         blog: {
           showReadingTime: true,
+          postsPerPage: 10,
           blogSidebarCount: "ALL",
           feedOptions: {
             type: ["rss", "atom"],

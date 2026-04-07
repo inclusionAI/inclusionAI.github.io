@@ -4,6 +4,7 @@ date: 2026-02-15T00:00:03+08:00
 weight: 1
 math: true
 draft: true
+tags: [Tutorials, "Best Practice"]
 # search_hidden: false # to hide from search page
 show_reading_time: true
 show_bread_crumbs: true
@@ -19,7 +20,7 @@ show_word_count: true
 Ring 1T is a powerful open-source reasoning model designed for complex problem-solving and advanced coding tasks. It's built on the Ling 2.0 architecture with impressive capabilities:
 
 - **Scale**: 1 trillion total parameters with 50 billion activated parameters
-- **Context**: Supports up to 128K tokens context window  
+- **Context**: Supports up to 128K tokens context window
 - **Training**: Enhanced through large-scale verifiable reward reinforcement learning (RLVR)
 - **Strengths**: Excels at deep reasoning, natural language inference, and sophisticated code generation
 
@@ -53,8 +54,8 @@ Claude Code is designed to be your AI pair programmer, handling everything from 
 
 Combining these three tools gives you:
 
-- **Ring 1T's advanced reasoning** for complex coding challenges  
-- **Claude Code's intuitive interface** for seamless interaction  
+- **Ring 1T's advanced reasoning** for complex coding challenges
+- **Claude Code's intuitive interface** for seamless interaction
 - **ZenMux's unified platform** for easy model access and management
 
 This guide walks you through configuring Claude Code to use Ring 1T through ZenMux—it takes just a few environment variables. The key setting is: `ANTHROPIC_BASE_URL="https://zenmux.ai/api/anthropic"`
@@ -507,7 +508,7 @@ Now that you have Ring 1T configured with Claude Code, here are some ways to get
 
 **Learn More:**
 - Read [Claude Code documentation](https://code.claude.com/docs) for advanced features
-- Check [ZenMux documentation](https://docs.zenmux.ai) for platform details  
+- Check [ZenMux documentation](https://docs.zenmux.ai) for platform details
 - See the [Ring 1T model page](https://zenmux.ai/inclusionai/ring-1t) for model specifics
 
 ## Troubleshooting
