@@ -165,8 +165,8 @@
 }
 
 .pageNumActive {
-  color: #17191c !important;
-  border-color: #17191c !important;
+  color: #17191c;
+  border-color: #17191c;
   cursor: default;
   pointer-events: none;
 }
