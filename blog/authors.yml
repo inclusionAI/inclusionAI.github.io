@@ -2,5 +2,12 @@ inclusionai:
   name: inclusionAI
   title: Ant Group
   url: https://github.com/inclusionAI
-  image_url: /img/logo_head.png
-  email: oss@antgroup.com
+  image_url: https://avatars.githubusercontent.com/u/199075982?s=200&v=4
+  email: ospo@antgroup.com
+
+xiaoya:
+  name: Xia Xiaoya
+  title: Senior Researcher
+  url: https://github.com/xiaoya-yaya
+  image_url: https://avatars.githubusercontent.com/u/56542972?v=4
+  email: ospo@antgroup.com
