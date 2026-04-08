@@ -93,10 +93,7 @@ article.margin-bottom--xl header h2 {
   font-size: 1.5em !important;
 }
 
-/* Hide author row — single post page only */
-main.col--7 article header .row {
-  display: none !important;
-}
+
 
 .blog-post-content img {
   max-width: 100%;

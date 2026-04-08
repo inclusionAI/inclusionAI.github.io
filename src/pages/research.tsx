@@ -19,6 +19,10 @@ type BlogPost = { title: string; permalink: string; formattedDate: string };
 
 const LANDSCAPE_IMAGES = [
   {
+    src: "https://raw.githubusercontent.com/antgroup/llm-oss-landscape/refs/heads/main/reports/260401_agentic_landscape/2604_agentic_landscape.jpg",
+    alt: "Agentic AI Echosystem Landscape",
+  },
+  {
     src: "https://raw.githubusercontent.com/antgroup/llm-oss-landscape/main/reports/250913_llm_landscape/figures/llm_development_landscape.png",
     alt: "LLM Development Landscape",
   },
