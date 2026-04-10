@@ -2,6 +2,7 @@ export const NAV_LINKS = [
   { label: "Model", to: "/model" },
   { label: "System", to: "/system" },
   { label: "Research", to: "/research" },
+  { label: "Insights", to: "/insight" },
   { label: "Blog", to: "/blog" },
   // { label: "Publication", to: "/publication" },
   { label: "About", to: "/about" },
