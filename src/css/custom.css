@@ -272,3 +272,38 @@ article.margin-bottom--xl {
   overflow-x: auto;
   padding: 8px 0;
 }
+
+/* 自定义日期选择器样式 - 用于填满面板 */
+.custom-date-picker-popup .ant-picker-panel {
+  width: 200px !important;
+  height: 190px !important;
+}
+
+.custom-date-picker-popup .ant-picker-cell-inner {
+  width: 60px !important;
+  height: 34px !important;
+  text-align: center;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* 消除cell之间的间隙 */
+.custom-date-picker-popup .ant-picker-cell {
+  padding: 0 !important;
+}
+
+.custom-date-picker-popup .ant-picker-content {
+  width: 100% !important;
+}
+
+
+.custom-date-picker-popup .ant-picker-header {
+  width: 200px !important;
+  height: 34px !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+
+
