@@ -7,7 +7,7 @@
   padding: 50px 0 0 0;
 }
 
-.hero:first {
+.hero:first-of-type {
   padding: 150px 0 0 0;
 }
 
@@ -17,7 +17,7 @@
   font-weight: 700;
   color: #17191c;
   letter-spacing: 1.5px;
-  margin: 0 0 12px;
+  margin: 0 0 0;
 }
 
 /* h1.heroTitle {
@@ -130,7 +130,7 @@ h2.heroTitle {
   align-items: center;
   justify-content: center;
   gap: 4px;
-  padding: 50px 0;
+  padding: 16px 0 35px;
 }
 
 .pageArrow {
@@ -407,6 +407,514 @@ h2.heroTitle {
   background: #17191c;
 }
 
+/* ------------------------------------------------------------------ */
+/* Leaderboard                                                          */
+/* ------------------------------------------------------------------ */
+.leaderboard {
+  margin: 2em auto;
+  padding: 0 16px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.leaderboardFilters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+}
+
+.filterLabel {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  color: #555;
+  text-align: left;
+}
+
+.filterSelect {
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #17191c;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  outline: none;
+  width: 180px;
+  height: 42px;
+  box-sizing: border-box;
+}
+
+.filterSelect:hover {
+  border-color: #999;
+}
+
+.filterSelect:focus {
+  border-color: #17191c;
+}
+
+.filterInput {
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #17191c;
+  background: #fff;
+  transition: border-color 0.2s;
+  outline: none;
+  width: 180px;
+  height: 42px;
+  box-sizing: border-box;
+}
+
+.filterInput:hover {
+  border-color: #999;
+}
+
+.filterInput:focus {
+  border-color: #17191c;
+}
+
+.filterInput::placeholder {
+  color: #9ca3af;
+}
+
+/* 日期选择组 */
+.dateSelectGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dateSelectGroup .filterSelect {
+  min-width: 80px;
+}
+
+.dateSelectDivider {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+/* Tab buttons for time range type */
+.tabButtons {
+  display: flex;
+  gap: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  width: 160px;
+}
+
+.tabButton {
+  flex: 1;
+  padding: 8px 8px;
+  height: 40px;
+  border: none;
+  background: #fff;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.tabButton:hover {
+  background: #f3f4f6;
+  color: #17191c;
+}
+
+.tabButtonActive {
+  background: #22c55e;
+  color: #fff;
+}
+
+.tabButtonActive:hover {
+  background: #16a34a;
+  color: #fff;
+}
+
+
+.leaderboardTable {
+  overflow-x: auto;
+  border-collapse: collapse; /* 必须！ */
+  margin: 0 auto;
+}
+
+.contributorsTable th,
+.contributorsTable td {
+  /* 只设置底部边框（横线） */
+  border-bottom: 1px solid #e0e0e0;
+  /* 明确移除左右边框（竖线） */
+  border-left: none;
+  border-right: none;
+}
+
+/* 可选：移除最后一行的底部边框 */
+.contributorsTable tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* 表头样式 */
+.leaderboardHeader {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px 12px 0 0;
+  padding: 16px 0;
+  min-height: 48px;
+}
+
+/* 排名列 - 表头 */
+.headerCell.rankHeader {
+  width: 70px;
+  padding: 4px 8px;
+  text-align: center;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+/* 项目列 - 表头 */
+.headerCellProject {
+  flex: 1;
+  min-width: 320px;
+  padding: 4px 12px 4px 40px;
+  text-align: left;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+/* OpenRank列 - 表头 */
+.headerCellRank {
+  width: 230px;
+  padding: 4px 8px;
+  text-align: center;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+/* 参与者列 - 表头 */
+.headerCellParticipants {
+  width: 150px;
+  padding: 4px 8px;
+  text-align: center;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 15px;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.headerCellRank:hover,
+.headerCellProject:hover,
+.headerCellParticipants:hover,
+.headerCell.rankHeader:hover {
+  background: #e9ecef;
+}
+
+/* 数据区域 */
+.leaderboardTbody {
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 24px;
+}
+
+/* 条形区块样式 */
+.leaderboardRow {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.leaderboardRow:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.leaderboardRow:first-child {
+  border-radius: 0;
+}
+
+.leaderboardRow:hover {
+  background: #fafafa;
+  box-shadow: inset 0 0 0 1px #e5e7eb;
+}
+
+/* 排名列 - 表体 */
+.rankCellWrapper {
+  width: 80px;
+  padding: 4px 4px 4px 15px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* 排名单元格内容 - 水平排列 */
+.rankCellContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+/* 项目列 - 表体 */
+.projectCellWrapper {
+  flex: 1;
+  min-width: 320px;
+  padding: 4px 12px 4px 10px;
+  box-sizing: border-box;
+}
+
+/* OpenRank列 - 表体 */
+.openrankCell {
+  width: 230px;
+  padding: 4px 8px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* 参与者列 - 表体 */
+.participantsCell {
+  width: 150px;
+  padding: 4px 8px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.rankCell {
+  font-size: 24px;
+  display: block;
+}
+
+.rank1 {
+  filter: drop-shadow(0 0 4px #ffd700);
+}
+
+.rank2 {
+  filter: drop-shadow(0 0 4px #c0c0c0);
+}
+
+.rank3 {
+  filter: drop-shadow(0 0 4px #cd7f32);
+}
+
+/* Rank change indicators */
+.rankChange {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.rankUp {
+  color: #166534;
+}
+
+.rankDown {
+  color: #dc2626;
+}
+
+.rankNoChange {
+  color: #9ca3af;
+  font-size: 11px;
+}
+
+/* Project cell - 已在上方定义 */
+
+.projectInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.projectLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #f8f9fa;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+  min-width: 0;
+}
+
+.projectName {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #17191c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.projectNameLink {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #17191c;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+  line-height: 1.2;
+}
+
+.projectNameLink:hover {
+  color: #22c55e;
+}
+
+.projectDesc {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 12px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+/* OpenRank 值样式 */
+.openrankValue {
+  display: block;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a56db;
+  margin-bottom: 2px;
+}
+
+/* 参与者值样式 */
+.participantsValue {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #17191c;
+  margin-bottom: 2px;
+}
+
+/* Score cell wrapper */
+.scoreCellWrapper {
+  text-align: center;
+  vertical-align: middle;
+  width: 120px;
+}
+
+.totalScoreCell {
+  display: block;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 4px;
+}
+
+.scoreDetails {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.scoreDetails span {
+  padding: 2px 4px;
+  background: #f3f4f6;
+  border-radius: 3px;
+}
+
+.sortIcon {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+@media (max-width: 996px) {
+  .leaderboardFilters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filterGroup {
+    min-width: 100%;
+  }
+
+  .leaderboardTable th,
+  .leaderboardTable td {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+
+  .projectDesc {
+    display: none;
+  }
+
+  .scoreDetails {
+    display: none;
+  }
+}
+
 @media (max-width: 996px) {
   .sliderArrow {
     width: 32px;
@@ -416,5 +924,1249 @@ h2.heroTitle {
   .sliderArrow svg {
     width: 11px;
     height: 11px;
+  }
+}
+
+/* Leaderboard iframe wrapper */
+.leaderboardIframe {
+  width: 100%;
+  max-width: 1200px;
+  margin: 8px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(208, 208, 208, 0.5);
+}
+
+/* Loading container */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 16px;
+}
+
+.loadingContainer p {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* No data container */
+.noData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  width: 100%;
+  height: 300px;
+}
+
+.noData span {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* Error container */
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 16px;
+}
+
+.errorContainer p {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #dc2626;
+}
+
+.errorContainer button {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Project Detail Container */
+.projectDetailContainer {
+  padding: 40px 32px 80px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Back button */
+.backButton {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  margin-bottom: 32px;
+  transition: all 0.2s;
+}
+
+.backButton:hover {
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+/* Project header */
+.projectHeader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.projectDetailLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  object-fit: contain;
+  background: #f8f9fa;
+  padding: 8px;
+}
+
+.projectDetailInfo {
+  flex: 1;
+}
+
+.projectDetailTitle {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #17191c;
+  margin: 0 0 8px;
+}
+
+.projectDetailDesc {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 12px;
+}
+
+.projectMeta {
+  display: flex;
+  gap: 12px;
+}
+
+.orgTag, .countryTag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.orgTag {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.countryTag {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+/* Date selector */
+.dateSelector {
+  margin-bottom: 24px;
+}
+
+/* Stats grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.statTitle {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.statValue {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #17191c;
+  margin-bottom: 4px;
+}
+
+.statUnit {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.statChange {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.statChangeUp {
+  color: #16a34a;
+}
+
+.statChangeDown {
+  color: #dc2626;
+}
+
+/* Trend chart */
+.trendChart {
+  margin-bottom: 40px;
+}
+
+.trendChartTitle {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #17191c;
+  margin-bottom: 16px;
+}
+
+.trendChartContainer {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  height: 180px;
+}
+
+.trendChartYAxis {
+  position: absolute;
+  left: 8px;
+  top: 24px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.trendChartArea {
+  position: relative;
+  height: 100%;
+  margin-left: 40px;
+}
+
+.trendChartDot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #22c55e;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+
+.trendChartTooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #17191c;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 12px;
+  white-space: nowrap;
+  display: none;
+}
+
+.trendChartDot:hover .trendChartTooltip {
+  display: block;
+}
+
+.trendChartLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.trendChartXAxis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-left: 40px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Contributors section */
+.contributorsSection {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #17191c;
+  margin-bottom: 10px;
+}
+
+.contributorsTable {
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contributorsTable th {
+  width: 203px;
+  background: transparent;
+  padding: 10px 16px;
+  text-align: left;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.contributorsTable th:nth-child(3),
+.contributorsTable td:nth-child(3) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.contributorsTable td {
+  padding: 8px 40px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #17191c;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.contributorsTable th {
+  text-align: center;
+}
+
+.contributorsTable th:nth-child(2),
+.contributorsTable td:nth-child(2) {
+  text-align: left;
+  padding-left: 16px;
+}
+
+.contributorsTable th:first-child,
+.contributorsTable td:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.rankColumn {
+  text-align: left !important;
+  padding-left: 20px !important;
+}
+
+.platformColumn {
+  text-align: center !important;
+  padding-right: 1px !important;
+  width: 80px;
+}
+
+.changeColumn {
+  width: 90px;
+  text-align: center !important;
+}
+
+.contributorsTable th:nth-child(3),
+.contributorsTable td:nth-child(3) {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.contributorsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.contributorsTable tr:hover {
+  background: #fafafa;
+}
+
+.platformBadge {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.contributorName {
+  font-weight: 500;
+}
+
+.contributorOpenrank {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+/* ========== New Project Detail Styles ========== */
+
+/* Project Intro Section */
+.projectIntroSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  min-height: 100px;
+}
+
+.projectIntroLeft {
+  flex-shrink: 0;
+}
+
+.projectIntroLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #f8f9fa;
+  border: 1px solid #e5e7eb;
+}
+
+.userIntroLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #f8f9fa;
+  padding: 2px;
+  border: 1px solid #e5e7eb;
+}
+
+/* 用户元信息样式 */
+.userMetaItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.userMetaIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.userMetaText {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.userMetaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.userMetaDivider {
+  color: #d1d5db;
+  font-size: 14px;
+}
+
+.githubLinkButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  background: #24292f;
+  color: #fff;
+  border-radius: 8px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.githubLinkButton:hover {
+  background: #363d44;
+}
+
+.projectIntroRight {
+  flex: 1;
+  min-width: 0;
+}
+
+.projectTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.userTitleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.projectIntroTitle {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #17191c;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.githubLinkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  margin-top: 10px;
+  background: #24292f;
+  color: #fff;
+  border-radius: 8px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.projectIntroTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.projectTag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 16px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.projectIntroDesc {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  max-width: 1100px;
+}
+
+.projectIntroMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.websiteLink {
+  color: #22c55e;
+  text-decoration: none;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.websiteLink:hover {
+  color: #16a34a;
+  text-decoration: underline;
+}
+
+/* Stats Section */
+.statsSection {
+  margin-bottom: 24px;
+}
+
+.statsSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+
+.statsCards {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.statCardLarge {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 5px 10px;
+  min-width: 250px;
+  height: 80px;
+}
+
+.statCardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statCardLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+
+.statValueRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #dcfce7;
+  color: #16a34a;
+  flex-shrink: 0;
+}
+
+.statIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.statValueLarge {
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191c;
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #6b7280;
+}
+
+.statCardRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.statChangeLabel {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.timeSelector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Tab buttons */
+.tabButtons {
+  display: flex;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabButton {
+  padding: 8px 16px;
+  border: none;
+  background: #fff;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabButton:not(:last-child) {
+  border-right: 1px solid #e5e7eb;
+}
+
+.tabButton:hover {
+  background: #f9fafb;
+}
+
+.tabButtonActive {
+  background: #22c55e;
+  color: #fff;
+}
+
+.tabButtonActive:hover {
+  background: #16a34a;
+}
+
+/* Small Tab buttons */
+.tabButtonsSmall {
+  display: flex;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tabButtonSmall {
+  padding: 8px 8px;
+  border: none;
+  background: #fff;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 12px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabButtonSmall:not(:last-child) {
+  border-right: 1px solid #e5e7eb;
+}
+
+
+
+
+.tabButtonSmallActive {
+  background: #22c55e !important;
+  color: #fff !important;
+}
+
+.tabButtonSmallActive:hover {
+  background: #16a34a !important;
+  color: #fff !important;
+}
+
+/* Change indicator */
+.changeIndicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.changeArrow {
+  display: inline-block;
+  line-height: 0.6;
+  font-size: 18px;
+}
+
+.changeValue {
+  display: inline-block;
+}
+
+.changeUp {
+  color: #16a34a;
+}
+
+.changeDown {
+  color: #dc2626;
+}
+
+.changeZero {
+  color: #9ca3af;
+}
+
+/* History Section */
+.historySection {
+  margin-bottom: 24px;
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.chartCard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.chartTitle {
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #17191c;
+  margin-bottom: 16px;
+}
+
+/* Line Chart */
+.lineChartContainer {
+  position: relative;
+  height: 144px;
+}
+
+.lineChart {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: calc(100% - 25px);
+  height: calc(100% - 20px);
+}
+
+.lineChartXAxis {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+/* Contributors Section */
+.contributorsSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contributorsSectionHeader .sectionTitle {
+  margin-bottom: 10px;
+}
+
+.contributorsListControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contributorsTimeSelector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Pagination controls */
+.paginationControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.paginationButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+  color: #4b5563;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.paginationButton:disabled {
+  color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.paginationInfo {
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+  color: #6b7280;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Rank badges */
+.rankBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.rankBadge1 {
+  background: #fbbf24;
+  color: #fff;
+}
+
+.rankBadge2 {
+  background: #9ca3af;
+  color: #fff;
+}
+
+.rankBadge3 {
+  background: #d97706;
+  color: #fff;
+}
+
+/* Rank change in table */
+.rankWithChange {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rankChange {
+  display: inline-flex;
+  align-items: center;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 24px;
+}
+
+.rankChangeUp {
+  color: #16a34a;
+}
+
+.rankChangeDown {
+  color: #dc2626;
+}
+
+.rankChangeZero {
+  color: #9ca3af;
+}
+
+/* Contributor info */
+.contributorInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contributorUserBlock {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.contributorMetaBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.contributorAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.contributorName {
+  color: #17191c;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 130px;
+  cursor: pointer;
+}
+
+.contributorName:hover {
+  color: #22c55e;
+  text-decoration: underline;
+}
+
+.contributorLocation,
+.contributorCompany {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 11px;
+  color: #6b7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contributorLocation svg,
+.contributorCompany svg {
+  flex-shrink: 0;
+}
+
+/* User dashboard button */
+.userDashboardButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.userDashboardButton:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.userDashboardButton svg {
+  width: 18px;
+  height: 18px;
+  color: #4b5563;
+}
+
+/* Responsive */
+@media (max-width: 996px) {
+  .projectIntroSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projectIntroMeta {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .statsSectionHeader {
+    flex-direction: column;
+  }
+
+  .statsCards {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .timeSelector {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .chartsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Country Distribution Section */
+.countryDistributionSection {
+  margin-bottom: 40px;
+}
+
+.countryDistributionContent {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.countryDistributionList {
+  width: 450px;
+  max-height: 400px;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.countryListHeader {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f8f9fa;
+  font-family: Montserrat-Medium, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  border: 1px solid #e5e7eb;
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+}
+
+.countryListItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  font-family: Montserrat-Regular, Arial, sans-serif;
+  font-size: 13px;
+}
+
+.countryListItem:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.countryListItem:hover {
+  background: #fafafa;
+}
+
+.countryListCol1 {
+  width: 50px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.countryListCol2 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.countryListCol3 {
+  width: 100px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.countryListCol4 {
+  width: 100px;
+  text-align: right;
+  flex-shrink: 0;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.countryRankBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-family: Montserrat-Bold, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.countryRankBadge1 {
+  background: #fbbf24;
+  color: #fff;
+}
+
+.countryRankBadge2 {
+  background: #9ca3af;
+  color: #fff;
+}
+
+.countryRankBadge3 {
+  background: #d97706;
+  color: #fff;
+}
+
+.countryFlag {
+  font-size: 18px;
+}
+
+.countryName {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.countryMapContainer {
+  width: 600px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 400px;
+  height: 400px;
+  flex-shrink: 0;
+}
+
+/* Responsive for country distribution */
+@media (max-width: 996px) {
+  .countryDistributionContent {
+    flex-direction: column;
+  }
+
+  .countryDistributionList {
+    flex: none;
+    width: 100%;
+  }
+
+  .countryMapContainer {
+    min-height: 250px;
   }
 }

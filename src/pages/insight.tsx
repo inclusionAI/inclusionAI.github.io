@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import type { ReactNode } from "react";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
@@ -7,6 +7,8 @@ import { usePluginData } from "@docusaurus/useGlobalData";
 import styles from "./research.module.css";
 
 type BlogPost = { title: string; permalink: string; formattedDate: string };
+
+
 
 const LANDSCAPE_IMAGES = [
   {
@@ -86,6 +88,20 @@ export default function Insight(): ReactNode {
     landscapePosts: BlogPost[];
   };
 
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const [iframeHeight, setIframeHeight] = useState(700);
+
+  useEffect(() => {
+    const handleMessage = (event: MessageEvent) => {
+      if (event.data?.type === 'leaderboard-height') {
+        setIframeHeight(event.data.height);
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    return () => window.removeEventListener('message', handleMessage);
+  }, []);
+
   return (
     <Layout title="Insights" description="AI Landscape Insights by InclusionAI">
       <div className={styles.hero}>
@@ -101,29 +117,52 @@ export default function Insight(): ReactNode {
         <h2 className={styles.heroTitle}>Landscapes</h2>
 
         {/* Landscape slider */}
-        <LandscapeSlider />
+        <LandscapeSlider/>
+
+        {/* Leaderboard */}
+        <h3 className={styles.heroTitle} style={{fontSize: "36px", marginTop: "40px"}}>
+          Agentic AI Leaderboard
+        </h3>
+        <span style={{fontSize: "16px", fontWeight: "normal", color: "#666"}}>
+            powered by <a href="https://github.com/X-lab2017/open-digger" target="_blank" rel="noopener noreferrer"
+                          style={{color: "#0066cc"}}>OpenDigger</a>
+          </span>
+        <div className={styles.leaderboardIframe}>
+          <iframe
+              ref={iframeRef}
+              src="/Leaderboard"
+              title="Leaderboard"
+              width="100%"
+              height={iframeHeight}
+              style={{border: 'none', overflow: 'hidden'}}
+              scrolling="no"
+          />
+        </div>
+
+        {/*  项目leader board 看板  */}
+
 
         <div className={styles.papersList} id="landscape-news-list">
           {landscapePosts.map((post) => (
-            <Link
-              key={post.permalink}
-              to={post.permalink}
-              className={styles.paperRow}
-            >
-              <span className={styles.paperTitle}>{post.title}</span>
-              <span className={styles.paperMeta}>
+              <Link
+                  key={post.permalink}
+                  to={post.permalink}
+                  className={styles.paperRow}
+              >
+                <span className={styles.paperTitle}>{post.title}</span>
+                <span className={styles.paperMeta}>
                 <span className={styles.paperDate}>{post.formattedDate}</span>
               </span>
-            </Link>
+              </Link>
           ))}
         </div>
 
         <p className={styles.heroText}>
           For more details, please visit the original &nbsp;
           <a
-            href="https://github.com/antgroup/llm-oss-landscape"
-            target="_blank"
-            rel="noopener noreferrer"
+              href="https://github.com/antgroup/llm-oss-landscape"
+              target="_blank"
+              rel="noopener noreferrer"
           >
             GitHub Repository
           </a>
