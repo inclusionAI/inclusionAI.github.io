@@ -1,0 +1,47 @@
+# EditorConfig keeps formatting consistent across editors.
+# See https://editorconfig.org/
+
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+
+[*.{js,jsx,ts,tsx}]
+quote_type = double
+
+[*.{css,scss,html}]
+indent_size = 2
+
+[*.{json,jsonc}]
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[*.{md,mdx}]
+# Double trailing spaces may be intentional Markdown line breaks.
+trim_trailing_whitespace = false
+max_line_length = off
+
+[*.csv]
+trim_trailing_whitespace = false
+
+[*.{sh,bash,zsh,fish}]
+indent_size = 2
+
+[*.{bat,cmd,ps1}]
+end_of_line = crlf
+
+[Makefile]
+indent_style = tab
+
+[*.{png,jpg,jpeg,gif,webp,ico,svg,ttf,ttc,woff,woff2,pdf}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
