@@ -131,7 +131,7 @@ export default function Insight(): ReactNode {
               border: "none",
               overflow: "hidden",
               width: "960px",
-              height: "790px",
+              height: "480px",
               margin: "0 auto",
               willChange: "transform",
               padding: "0",
