@@ -129,6 +129,14 @@ export default function Home(): ReactNode {
               </div>
             </div>
           </div>
+          <Link className={styles.teamButton} to="/landscape">
+            Explore Landscape
+            <img
+              src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*vvp6R65SgM8AAAAAF6AAAAgAekZ_AQ/original"
+              alt="→"
+              style={{ width: 18, height: 18 }}
+            />
+          </Link>
         </div>
 
         {/* About the Team */}

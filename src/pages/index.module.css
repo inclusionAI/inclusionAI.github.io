@@ -166,7 +166,7 @@
 
 .teamButton {
   width: fit-content;
-  margin: 0 auto;
+  margin: 1em auto;
   padding: 8px 24px;
   border: 0.3px solid #979797;
   border-radius: 8px;

@@ -1,4 +1,5 @@
 export const NAV_LINKS = [
+  { label: "Landscape", to: "/landscape" },
   { label: "Model", to: "/model" },
   { label: "System", to: "/system" },
   { label: "Research", to: "/research" },
