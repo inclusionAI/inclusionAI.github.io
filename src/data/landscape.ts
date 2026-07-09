@@ -57,7 +57,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
             name: "Ling Guang",
             description: "Omni-modal AI assistant",
             link: "https://www.lingguang.com/",
-            logo: "https://mdn.alipayobjects.com/huamei_mrdrkc/afts/img/Lp_IR4bD1IYAAAAAQDAAAAgADnRDAQFr",
+            logo: "/img/landscape/lingguang.png",
           },
         ],
       },
@@ -67,7 +67,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
           {
             name: "MA XIAO CAI",
             description: "Financial AI Assistant",
-            logo: "/img/landscape/ants.jpg",
+            logo: "/img/landscape/maxiaocai.png",
           },
         ],
       },
@@ -107,7 +107,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
             description:
               "Search, understand, reproduce, and improve an idea with ease",
             link: "https://github.com/inclusionAI/AWorld",
-            logo: DEFAULT_LOGO,
+            logo: "/img/landscape/aworld.png",
           },
         ],
       },
@@ -118,7 +118,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
             name: "AEnvironment",
             description:
               "Standardized environment infrastructure for Agentic AI development",
-            logo: DEFAULT_LOGO, // replace with "/img/landscape/aenvironment.png"
+            logo: "/img/landscape/aenv.png",
             link: "https://github.com/inclusionAI/AEnvironment",
           },
         ],
@@ -131,7 +131,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
             description:
               "An Open-Source Large-Scale Reinforcement Learning Project for Search Agents",
             link: "https://github.com/inclusionAI/ASearcher",
-            logo: DEFAULT_LOGO, // replace with "/img/landscape/asearcher.png"
+            logo: "/img/landscape/aresearcher.png",
           },
         ],
       },
@@ -157,7 +157,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
             description:
               "GEMM kernel library specifically designed for quantized inference",
             link: "https://github.com/inclusionAI/Humming",
-            logo: DEFAULT_LOGO, // replace with "/img/landscape/humming.png"
+            logo: "/img/landscape/humming.png", // replace with "/img/landscape/humming.png"
           },
         ],
       },
@@ -175,7 +175,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
             description:
               "An industrial extension library of PyTorch to accelerate large scale model training",
             link: "https://github.com/intelligent-machine-learning/ATorch",
-            logo: DEFAULT_LOGO, // replace with "/img/landscape/atorch.png"
+            logo: "/img/landscape/atorch.png", // replace with "/img/landscape/atorch.png"
           },
         ],
       },
@@ -187,7 +187,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
             description:
               "The RL Bridge for LLM-based Agent Applications. Made Simple & Flexible",
             link: "https://areal-ai.io",
-            logo: "https://github.com/areal-project/AReaL/raw/main/assets/figures/logo.png", // replace with "/img/landscape/areal.png"
+            logo: "/img/landscape/areal.png", // replace with "/img/landscape/areal.png"
           },
           {
             name: "Asystem",
