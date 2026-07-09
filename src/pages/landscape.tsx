@@ -16,10 +16,10 @@ import styles from "./landscape.module.css";
  * project has no dedicated artwork.
  */
 function ProjectLogo({ project }: { project: LandscapeProject }) {
-  const src = useBaseUrl(project.logo || DEFAULT_LOGO);
-  if (!src || src == DEFAULT_LOGO) {
-    return <></>;
+  if (!project.logo || project.logo === DEFAULT_LOGO) {
+    return null;
   }
+  const src = useBaseUrl(project.logo);
 
   return (
     <div className={styles.logoBox}>
