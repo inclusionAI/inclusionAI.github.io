@@ -86,6 +86,7 @@ const config: Config = {
         style: { height: "36px" },
       },
       items: [
+        { to: "/landscape", label: "Landscape", position: "left" },
         { to: "/blog", label: "Blog", position: "left" },
         { to: "/publication", label: "Publication", position: "left" },
         { to: "/about", label: "About", position: "left" },
@@ -132,6 +133,7 @@ const config: Config = {
         {
           title: "Site",
           items: [
+            { label: "Landscape", to: "/landscape" },
             { label: "Blog", to: "/blog" },
             { label: "Publication", to: "/publication" },
             { label: "About", to: "/about" },
