@@ -17,6 +17,10 @@ import styles from "./landscape.module.css";
  */
 function ProjectLogo({ project }: { project: LandscapeProject }) {
   const src = useBaseUrl(project.logo || DEFAULT_LOGO);
+  if (!src || src == DEFAULT_LOGO) {
+    return <></>;
+  }
+
   return (
     <div className={styles.logoBox}>
       <img className={styles.logoImg} src={src} alt={project.name} />
@@ -27,11 +31,14 @@ function ProjectLogo({ project }: { project: LandscapeProject }) {
 function ProjectCard({ project }: { project: LandscapeProject }) {
   const content = (
     <>
-      <ProjectLogo project={project} />
       <div className={styles.projectBody}>
-        <span className={styles.projectName}>{project.name}</span>
+        <ProjectLogo project={project} />
+        <div className={styles.projectName}>{project.name}</div>
         {project.description && (
-          <span className={styles.projectDesc}>{project.description}</span>
+          <div
+            className={styles.projectDesc}
+            dangerouslySetInnerHTML={{ __html: project.description }}
+          />
         )}
       </div>
     </>
@@ -60,7 +67,10 @@ function Layer({ layer }: { layer: LandscapeLayer }) {
       <div className={styles.layerHeader}>
         <span className={styles.layerBadge}>{layer.title}</span>
         {layer.summary && (
-          <p className={styles.layerSummary}>{layer.summary}</p>
+          <div
+            className={styles.layerSummary}
+            dangerouslySetInnerHTML={{ __html: layer.summary }}
+          />
         )}
       </div>
       <div className={styles.groups}>
