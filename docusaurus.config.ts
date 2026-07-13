@@ -7,7 +7,7 @@ import rehypeKatex from "rehype-katex";
 const config: Config = {
   title: "INCLUSION AI",
   tagline:
-    "InclusionAI (IAI) envisions AGI as humanity's shared milestone, not a privileged asset",
+    "inclusionAI (IAI) envisions AGI as humanity's shared milestone, not a privileged asset",
   favicon: "img/favicon.png",
 
   future: {

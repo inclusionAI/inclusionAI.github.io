@@ -15,20 +15,20 @@ export interface ModelItem {
 export const MODEL_ITEMS: ModelItem[] = [
   // Foundation / Language
   {
-    title: "Ling: A MoE LLM Provided and Open-sourced by InclusionAI",
+    title: "Ling: A MoE LLM Provided and Open-sourced by inclusionAI",
     date: "May 8, 2025",
     category: "Foundation",
     blogSlug: "ling",
     description:
-      "A Mixture-of-Experts large language model fully open-sourced by InclusionAI.",
+      "A Mixture-of-Experts large language model fully open-sourced by inclusionAI.",
   },
   {
-    title: "Ring: A Reasoning MoE LLM Provided and Open-sourced by InclusionAI",
+    title: "Ring: A Reasoning MoE LLM Provided and Open-sourced by inclusionAI",
     date: "Apr 1, 2025",
     category: "Reasoning",
     blogSlug: "ring",
     description:
-      "A reasoning-focused MoE language model open-sourced by InclusionAI.",
+      "A reasoning-focused MoE language model open-sourced by inclusionAI.",
   },
   {
     title: "Introducing Ring-lite-2507",

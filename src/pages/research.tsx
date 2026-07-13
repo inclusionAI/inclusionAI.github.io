@@ -64,7 +64,7 @@ export default function Research(): ReactNode {
   return (
     <Layout
       title="Research"
-      description="InclusionAI research papers and releases"
+      description="inclusionAI research papers and releases"
     >
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>Research</h1>
@@ -145,7 +145,7 @@ export default function Research(): ReactNode {
       <div className={styles.hero}>
         <h2 className={styles.heroTitle}>Releases</h2>
         <p className={styles.heroText}>
-          Latest releases from InclusionAI, including models, systems, and
+          Latest releases from inclusionAI, including models, systems, and
           research tools.
         </p>
         <div className={styles.papersList}>
@@ -163,7 +163,6 @@ export default function Research(): ReactNode {
           ))}
         </div>
       </div>
-
     </Layout>
   );
 }

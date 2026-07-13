@@ -6,14 +6,14 @@ export default function About(): ReactNode {
   return (
     <Layout
       title="About"
-      description="InclusionAI (IAI) envisions AGI as humanity's shared milestone, not a privileged asset"
+      description="inclusionAI (IAI) envisions AGI as humanity's shared milestone, not a privileged asset"
     >
       {/* Vision */}
       <section className={styles.visionSection}>
         <div className={styles.visionContent}>
           <h1 className={styles.visionTitle}>Vision</h1>
           <p className={styles.visionText}>
-            InclusionAI (IAI) envisions AGI as humanity's shared milestone, not
+            inclusionAI (IAI) envisions AGI as humanity's shared milestone, not
             a privileged asset. Backed by Ant Research, we're forging a global
             open platform to accelerate collaborative breakthroughs in
             intelligent civilization.
@@ -53,7 +53,7 @@ export default function About(): ReactNode {
         <div className={styles.teamContent}>
           <h2 className={styles.sectionTitle}>About Team</h2>
           <p className={styles.teamText}>
-            InclusionAI (IAI), founded by Ant Group with researchers from
+            inclusionAI (IAI), founded by Ant Group with researchers from
             OpenAI, Google, and FAIR (Meta AI), envisions open-source AI built
             by and for everyone — believing AGI remains in its infancy and that
             collaborative innovation is the fastest way forward. We bring this

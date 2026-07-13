@@ -101,12 +101,12 @@ export default function Insight(): ReactNode {
   }, []);
 
   return (
-    <Layout title="Insights" description="AI Landscape Insights by InclusionAI">
+    <Layout title="Insights" description="AI Landscape Insights by inclusionAI">
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>Insights</h1>
         <p className={styles.heroText}>
           Data-driven community insights to what matters in the AI open-source
-          development space produced by InclusionAI.
+          development space produced by inclusionAI.
         </p>
       </div>
 
