@@ -24,7 +24,7 @@ export default function BlogListPage({ metadata, items }: Props): ReactNode {
   }
 
   return (
-    <Layout title="Blog" description="InclusionAI blog posts">
+    <Layout title="Blog" description="inclusionAI blog posts">
       {/* Hero */}
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>Blog</h1>

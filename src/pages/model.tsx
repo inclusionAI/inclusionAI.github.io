@@ -51,7 +51,7 @@ export default function Model(): ReactNode {
   return (
     <Layout
       title="Model"
-      description="InclusionAI foundational, reasoning, and multimodal models"
+      description="inclusionAI foundational, reasoning, and multimodal models"
     >
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>Model</h1>

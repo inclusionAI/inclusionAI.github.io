@@ -55,7 +55,7 @@ export default function System(): ReactNode {
   return (
     <Layout
       title="System"
-      description="InclusionAI reinforcement learning, agentic environments, and benchmarks"
+      description="inclusionAI reinforcement learning, agentic environments, and benchmarks"
     >
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>System</h1>

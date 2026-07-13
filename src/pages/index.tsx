@@ -18,7 +18,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="INCLUSION AI"
-      description="InclusionAI (IAI) envisions AGI as humanity's shared milestone, not a privileged asset"
+      description="inclusionAI (IAI) envisions AGI as humanity's shared milestone, not a privileged asset"
     >
       <div className={styles.homePage}>
         {/* Top shadow bar */}
@@ -60,7 +60,7 @@ export default function Home(): ReactNode {
           />
           <div style={{ marginTop: 32 }}>
             <div className={styles.flowerMainText}>
-              InclusionAI (IAI) envisions AGI as humanity's shared
+              inclusionAI (IAI) envisions AGI as humanity's shared
             </div>
             <div className={styles.flowerMainText}>
               milestone, not a privileged asset
@@ -147,10 +147,10 @@ export default function Home(): ReactNode {
           <img
             className={styles.teamImg}
             src="https://mdn.alipayobjects.com/huamei_ljitfi/afts/img/A*8tsvQ6NQZfEAAAAAUjAAAAgAekZ_AQ/original"
-            alt="InclusionAI Team"
+            alt="inclusionAI Team"
           />
           <div className={styles.teamText}>
-            InclusionAI (IAI) is founded by Ant Group with an earnest yet small
+            inclusionAI (IAI) is founded by Ant Group with an earnest yet small
             wish to bring small and usable intelligence to the world. With
             researchers formerly at OpenAI, Google and FAIR (Meta AI) and a
             strong engineering team, we take bold moves and understand it would
