@@ -192,7 +192,7 @@ export const LANDSCAPE_LAYERS: LandscapeLayer[] = [
           {
             name: "Asystem",
             description: "A Post-training Self-learning Infrastructure",
-            link: "https://github.com/inclusionAI/Asystem",
+            link: "https://asystem-ai.io/",
             logo: "/img/landscape/asystem.jpg",
           },
         ],
