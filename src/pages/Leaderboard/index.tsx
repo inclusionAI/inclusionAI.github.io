@@ -17,7 +17,6 @@ const OSS_BASE_URL = "https://oss.open-digger.cn";
 interface LeaderboardItem {
     rank: number;
     rankDelta: number;
-    prevRank: number;
     id: string;
     platform: string;
     avatar: string;
