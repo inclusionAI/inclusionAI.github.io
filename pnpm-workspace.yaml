@@ -1,6 +1,0 @@
-ignoredBuiltDependencies:
-  - core-js
-  - core-js-pure
-
-overrides:
-  webpack: 5.104.1
