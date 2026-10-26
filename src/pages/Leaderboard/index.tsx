@@ -33,7 +33,7 @@ interface LeaderboardItem {
 // 用户头像组件 - 如果头像不存在，使用随机颜色方块+首字母
 function ProjectLogo({ name, avatar, className }: { name: string; avatar?: string; className?: string }) {
   const [imgError, setImgError] = useState(false);
-  
+
   // 生成基于项目名的固定颜色
   const getColorFromName = (str: string): string => {
     let hash = 0;
@@ -41,45 +41,57 @@ function ProjectLogo({ name, avatar, className }: { name: string; avatar?: strin
       hash = str.charCodeAt(i) + ((hash << 5) - hash);
     }
     const colors = [
-      '#22c55e', '#3b82f6', '#f59e0b', '#ef4444', '#8b5cf6', 
-      '#ec4899', '#06b6d4', '#84cc16', '#f97316', '#14b8a6',
-      '#6366f1', '#d946ef', '#0ea5e9', '#eab308', '#a855f7'
+      "#22c55e",
+      "#3b82f6",
+      "#f59e0b",
+      "#ef4444",
+      "#8b5cf6",
+      "#ec4899",
+      "#06b6d4",
+      "#84cc16",
+      "#f97316",
+      "#14b8a6",
+      "#6366f1",
+      "#d946ef",
+      "#0ea5e9",
+      "#eab308",
+      "#a855f7",
     ];
     return colors[Math.abs(hash) % colors.length];
   };
-  
+
   // 获取首字母
   const getInitial = (str: string): string => {
     return str.charAt(0).toUpperCase();
   };
-  
+
   const hasValidAvatar = avatar && !imgError;
   const bgColor = getColorFromName(name);
   const initial = getInitial(name);
-  
+
   if (hasValidAvatar) {
     return (
-      <img 
-        src={avatar} 
-        alt={name} 
+      <img
+        src={avatar}
+        alt={name}
         className={className}
         onError={() => setImgError(true)}
       />
     );
   }
-  
+
   return (
-    <div 
-      className={className} 
-      style={{ 
-        backgroundColor: bgColor, 
-        color: '#fff',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+    <div
+      className={className}
+      style={{
+        backgroundColor: bgColor,
+        color: "#fff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         fontWeight: 600,
-        fontSize: '14px',
-        borderRadius: '8px'
+        fontSize: "14px",
+        borderRadius: "8px",
       }}
     >
       {initial}
@@ -124,21 +136,21 @@ async function fetchLeaderboardDataWithCheck(timeType: "month" | "year", year: s
 async function findNearestDataMonthWithData(timeType: "month" | "year", year: string, month: string): Promise<{ data: LeaderboardItem[]; year: string; month: string; found: boolean }> {
     const maxRetries = 3; // 最多往前找3个月
     let currentDate = dayjs(`${year}-${month}`, "YYYY-MM");
-    
+
     for (let i = 0; i <= maxRetries; i++) {
         const currentYear = String(currentDate.year());
         const currentMonth = currentDate.format('MM');
-        
+
         const result = await fetchLeaderboardDataWithCheck(timeType, currentYear, currentMonth);
-        
+
         if (result.found && result.data.length > 0) {
             return result;
         }
-        
+
         // 往前一个月
         currentDate = currentDate.subtract(1, 'month');
     }
-    
+
     // 没找到，返回空数据
     return { data: [], year, month, found: false };
 }
@@ -148,11 +160,11 @@ async function findNearestDataMonthWithData(timeType: "month" | "year", year: st
 const filterAndRecalculateRank = (items: LeaderboardItem[]): LeaderboardItem[] => {
     // 需要过滤的项目ID
     const filteredId = ':companies/huawei/cann';
-    
+
     // 找到需要过滤的项目的rank
     const itemToFilter = items.find(item => item.id === filteredId);
     const filteredRank = itemToFilter ? itemToFilter.rank : null;
-    
+
     // 过滤掉该项目
     const filteredItems = items.filter(item => item.id !== filteredId);
 
@@ -167,7 +179,7 @@ const filterAndRecalculateRank = (items: LeaderboardItem[]): LeaderboardItem[] =
         });
     }
 
-    
+
     return filteredItems;
 };
 
@@ -200,10 +212,10 @@ async function fetchLeaderboardData(timeType: "month" | "year", year: string, mo
             participants: item.participants || 0,
             participantsDelta: item.participantsDelta || 0,
         }));
-        
+
         // 过滤指定ID的项目，并重新计算排名
         const filteredItems = filterAndRecalculateRank(items);
-        
+
         return filteredItems;
     } catch (error) {
         console.error("Failed to fetch leaderboard data:", error);
@@ -218,9 +230,9 @@ export default function Leaderboard() {
             return { year: '2026', month: '04' };
         }
         const lastMonth = dayjs().subtract(1, 'month');
-        return { 
-            year: lastMonth.format("YYYY"), 
-            month: lastMonth.format("MM") 
+        return {
+          year: lastMonth.format("YYYY"),
+          month: lastMonth.format("MM"),
         };
     };
 
@@ -244,7 +256,7 @@ export default function Leaderboard() {
     const [loading, setLoading] = useState(true);
     const contentRef = useRef<HTMLDivElement>(null);
     const pageSize = 10;
-    
+
     // 用于标记是否是初始化加载（避免初始化时触发两次请求）
     const isInitialized = useRef(false);
 
